@@ -1,5 +1,5 @@
 /* ================================
-   VARIABLES & RESET
+   MINIMAL STYLES
    ================================ */
 
 :root {
@@ -9,22 +9,7 @@
     --white: #ffffff;
     --light-gray: #f8f9fa;
     --dark-gray: #555;
-    --text-light: rgba(255, 255, 255, 0.9);
-    
-    /* Font weights */
-    --font-regular: 400;
-    --font-medium: 500;
-    --font-semibold: 600;
-    --font-bold: 700;
-    
-    /* Transitions */
-    --transition-fast: 0.3s ease;
-    --transition-slow: 0.8s ease;
-    
-    /* Shadows */
-    --shadow-light: 0 2px 20px rgba(0, 0, 0, 0.1);
-    --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.1);
-    --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.15);
+    --border-gray: #e0e0e0;
 }
 
 * {
@@ -37,7 +22,6 @@ body {
     font-family: 'Rubik', sans-serif;
     line-height: 1.6;
     color: var(--black);
-    overflow-x: hidden;
 }
 
 .container {
@@ -58,12 +42,7 @@ nav {
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
-    transition: all var(--transition-fast);
-}
-
-nav.scrolled {
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: var(--shadow-light);
+    border-bottom: 1px solid var(--border-gray);
 }
 
 .nav-container {
@@ -78,32 +57,29 @@ nav.scrolled {
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     background: var(--primary-green);
-    border-radius: 8px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    overflow: hidden;
 }
 
 .logo-icon::before {
     content: 'V';
     color: var(--accent-yellow);
-    font-size: 24px;
-    font-weight: var(--font-semibold);
-    transform: rotate(-5deg);
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .logo-text {
-    font-size: 1.5rem;
-    font-weight: var(--font-semibold);
+    font-size: 1.25rem;
+    font-weight: 600;
     color: var(--black);
 }
 
@@ -116,42 +92,27 @@ nav.scrolled {
 .nav-links a {
     text-decoration: none;
     color: var(--black);
-    font-weight: var(--font-regular);
-    transition: color var(--transition-fast);
-    position: relative;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
 
 .nav-links a:hover {
+    background: var(--light-gray);
     color: var(--primary-green);
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background: var(--accent-yellow);
-    transition: width var(--transition-fast);
-}
-
-.nav-links a:hover::after {
-    width: 100%;
 }
 
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    gap: 4px;
+    gap: 3px;
 }
 
 .mobile-menu-toggle span {
-    width: 25px;
+    width: 24px;
     height: 3px;
     background: var(--black);
-    transition: all var(--transition-fast);
 }
 
 /* ================================
@@ -160,97 +121,57 @@ nav.scrolled {
 
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--primary-green) 0%, #1a9e5f 100%);
+    background: var(--primary-green);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="g" cx="50%" cy="50%"><stop offset="0%" stop-color="rgba(254,215,79,0.1)"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs><circle cx="200" cy="300" r="100" fill="url(%23g)"/><circle cx="800" cy="200" r="150" fill="url(%23g)"/><circle cx="600" cy="700" r="120" fill="url(%23g)"/></svg>');
-    animation: float 20s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { 
-        transform: translateY(0px) rotate(0deg); 
-    }
-    50% { 
-        transform: translateY(-20px) rotate(180deg); 
-    }
+    color: var(--white);
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
+    max-width: 700px;
     padding: 0 2rem;
 }
 
 .hero-logo {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background: var(--accent-yellow);
-    border-radius: 20px;
+    border-radius: 12px;
     margin: 0 auto 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    transform: rotate(-3deg);
-    transition: transform var(--transition-fast);
-}
-
-.hero-logo:hover {
-    transform: rotate(0deg) scale(1.05);
 }
 
 .hero-logo::before {
     content: 'V';
-    font-size: 80px;
-    font-weight: var(--font-semibold);
+    font-size: 60px;
+    font-weight: 600;
     color: var(--primary-green);
-    transform: rotate(3deg);
 }
 
 .hero h1 {
-    font-size: 4rem;
-    font-weight: var(--font-bold);
-    color: var(--white);
+    font-size: 3.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero .tagline {
     font-size: 1.5rem;
     color: var(--accent-yellow);
-    font-weight: var(--font-medium);
-    margin-bottom: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .hero .description {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    margin-bottom: 3rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
 }
-
-/* ================================
-   BUTTONS
-   ================================ */
 
 .cta-buttons {
     display: flex;
@@ -262,26 +183,21 @@ nav.scrolled {
 .btn {
     padding: 1rem 2rem;
     border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: var(--font-medium);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
     text-decoration: none;
-    transition: all var(--transition-fast);
     cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+    display: inline-block;
 }
 
 .btn-primary {
     background: var(--accent-yellow);
     color: var(--black);
-    box-shadow: 0 8px 20px rgba(254, 215, 79, 0.3);
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(254, 215, 79, 0.4);
+    background: #e8c441;
 }
 
 .btn-secondary {
@@ -293,7 +209,6 @@ nav.scrolled {
 .btn-secondary:hover {
     background: var(--white);
     color: var(--primary-green);
-    transform: translateY(-2px);
 }
 
 /* ================================
@@ -302,9 +217,8 @@ nav.scrolled {
 
 .section-title {
     text-align: center;
-    font-size: 3rem;
-    font-weight: var(--font-bold);
-    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 3rem;
     position: relative;
 }
@@ -312,13 +226,12 @@ nav.scrolled {
 .section-title::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
+    width: 60px;
+    height: 3px;
     background: var(--accent-yellow);
-    border-radius: 2px;
 }
 
 /* ================================
@@ -326,7 +239,7 @@ nav.scrolled {
    ================================ */
 
 .about {
-    padding: 6rem 0;
+    padding: 5rem 0;
     background: var(--light-gray);
 }
 
@@ -334,27 +247,18 @@ nav.scrolled {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
-    align-items: center;
-}
-
-.about-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--dark-gray);
 }
 
 .about-text h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--primary-green);
     margin-bottom: 1rem;
-    font-weight: var(--font-semibold);
+    font-weight: 600;
 }
 
-.highlight {
-    background: linear-gradient(120deg, var(--accent-yellow) 0%, var(--accent-yellow) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.3em;
-    background-position: 0 88%;
+.about-text p {
+    color: var(--dark-gray);
+    line-height: 1.7;
 }
 
 /* ================================
@@ -362,7 +266,7 @@ nav.scrolled {
    ================================ */
 
 .services {
-    padding: 6rem 0;
+    padding: 5rem 0;
     background: var(--white);
 }
 
@@ -376,50 +280,37 @@ nav.scrolled {
 .service-card {
     background: var(--white);
     padding: 2rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow-medium);
-    transition: all var(--transition-fast);
-    position: relative;
-    overflow: hidden;
-}
-
-.service-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-green), var(--accent-yellow));
+    border-radius: 8px;
+    border: 1px solid var(--border-gray);
+    text-align: center;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-heavy);
+    border-color: var(--primary-green);
 }
 
 .service-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: var(--primary-green);
-    border-radius: 12px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .service-card h3 {
-    font-size: 1.3rem;
-    font-weight: var(--font-semibold);
-    color: var(--black);
+    font-size: 1.25rem;
+    font-weight: 600;
     margin-bottom: 1rem;
+    color: var(--black);
 }
 
 .service-card p {
-    color: #666;
+    color: var(--dark-gray);
     line-height: 1.6;
 }
 
@@ -428,7 +319,7 @@ nav.scrolled {
    ================================ */
 
 .contact {
-    padding: 6rem 0;
+    padding: 5rem 0;
     background: var(--primary-green);
     color: var(--white);
     text-align: center;
@@ -438,11 +329,16 @@ nav.scrolled {
     color: var(--white);
 }
 
+.contact-description {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
 .contact-info {
     display: flex;
     justify-content: center;
     gap: 3rem;
-    margin-top: 3rem;
     flex-wrap: wrap;
 }
 
@@ -454,24 +350,24 @@ nav.scrolled {
 }
 
 .contact-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: var(--accent-yellow);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--black);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .contact-item h3 {
-    font-weight: var(--font-semibold);
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .contact-item p {
-    color: var(--text-light);
+    opacity: 0.9;
 }
 
 /* ================================
@@ -486,16 +382,10 @@ footer {
 }
 
 /* ================================
-   ANIMATIONS
+   FOCUS STYLES
    ================================ */
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all var(--transition-slow);
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+*:focus {
+    outline: 2px solid var(--accent-yellow);
+    outline-offset: 2px;
 }
