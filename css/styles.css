@@ -68,13 +68,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .logo-icon::before {
-    content: 'V';
-    color: var(--accent-yellow);
-    font-size: 20px;
-    font-weight: 600;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: var(--accent-yellow);
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20 15 Q50 5 80 15 Q85 25 80 35 L70 45 Q60 35 50 40 Q40 35 30 45 L20 35 Q15 25 20 15 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 25 Q45 20 50 30 Q55 20 65 25 Q60 35 50 40 Q40 35 35 25 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>') center/contain no-repeat;
+    -webkit-mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20 15 Q50 5 80 15 Q85 25 80 35 L70 45 Q60 35 50 40 Q40 35 30 45 L20 35 Q15 25 20 15 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 25 Q45 20 50 30 Q55 20 65 25 Q60 35 50 40 Q40 35 35 25 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>') center/contain no-repeat;
 }
 
 .logo-text {
@@ -143,13 +146,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .hero-logo::before {
-    content: 'V';
-    font-size: 60px;
-    font-weight: 600;
-    color: var(--primary-green);
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: var(--primary-green);
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20 15 Q50 5 80 15 Q85 25 80 35 L70 45 Q60 35 50 40 Q40 35 30 45 L20 35 Q15 25 20 15 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 25 Q45 20 50 30 Q55 20 65 25 Q60 35 50 40 Q40 35 35 25 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>') center/contain no-repeat;
+    -webkit-mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20 15 Q50 5 80 15 Q85 25 80 35 L70 45 Q60 35 50 40 Q40 35 30 45 L20 35 Q15 25 20 15 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 25 Q45 20 50 30 Q55 20 65 25 Q60 35 50 40 Q40 35 35 25 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>') center/contain no-repeat;
 }
 
 .hero h1 {
