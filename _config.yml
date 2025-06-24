@@ -1,3 +1,24 @@
-theme: jekyll-theme-minimal
-title: ValPere's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: Valentyn S
+description: "Extracts Everything"
+url: "https://valpere.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima  # or your chosen theme
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Social links
+github_username: valpere
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
