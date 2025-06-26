@@ -334,4 +334,4 @@ Consulting services optimize the scraper for sub-second API response times, and 
 
 **DataScrapexter** empowers users to extract web data efficiently, ethically, and at scale, offering tailored packages for every user—from hobbyists to global enterprises. Its Go-based architecture, combined with AI-driven innovation and enterprise-grade features, positions it as a leader in the web scraping industry.
 
-*Note: Pricing details for premium packages and custom features are available at https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction.*
+*Note: Pricing details for premium packages and custom features are available at <https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction>.*

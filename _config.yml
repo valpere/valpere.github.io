@@ -6,7 +6,7 @@ baseurl: ""
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima  # or your chosen theme
+theme: leap-day  # or your chosen theme from https://pages.github.com/themes/
 
 # Plugins (GitHub Pages compatible)
 plugins:
