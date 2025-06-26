@@ -6,13 +6,15 @@ baseurl: ""
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: leap-day  # or your chosen theme from https://pages.github.com/themes/
+# theme: minima  # or your chosen theme from https://pages.github.com/themes/
+remote_theme: pages-themes/leap-day@v0.2.0
 
 # Plugins (GitHub Pages compatible)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Social links
 github_username: valpere
