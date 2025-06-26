@@ -1,6 +1,3 @@
-# _config.yml
-# Jekyll configuration file for Valentyn S theme
-
 title: Valentyn S
 description: "Extracts Everything"
 url: "https://valpere.github.io"
@@ -9,35 +6,18 @@ baseurl: ""
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: null # Disable default theme to use custom files
+theme: minima  # or your chosen theme
 
-# Custom theme settings
-sass:
-  style: compressed
-  load_paths:
-    - _sass
-
-# Plugins
+# Plugins (GitHub Pages compatible)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Custom variables
-colors:
-  primary: "#168A53"
-  accent: "#FED74F"
-  text: "#000000"
-  background: "#ffffff"
+# Social links
+github_username: valpere
 
-# Default layout settings
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
-# Exclude files
+# Exclude files from processing
 exclude:
   - README.md
   - Gemfile
