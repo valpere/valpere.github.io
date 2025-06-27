@@ -4,9 +4,11 @@ title: DataScrapexter
 permalink: /datascrapexter/
 ---
 
-# DataScrapexter - Product Overview
+# Professional Data Scraper
 
 ## Brief Overview
+
+![Hero banner - product introduction](../assets//images/web_scraper/hero_banner-product_introduction-1-0960x0552.png)
 
 **DataScrapexter** is a high-performance, Go-based web scraping platform designed to extract data from any website while overcoming sophisticated anti-scraping measures. Built on Go 1.24+ with a robust tech stack (Colly, Goquery, chromedp), it offers four packages tailored to diverse needs:
 
@@ -17,7 +19,13 @@ permalink: /datascrapexter/
 
 Additional options include custom feature development, consulting, and premium support for tailored solutions.
 
+*Note: Pricing details for premium packages and custom features are available at <https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction>.*
+
+---
+
 ## Detailed Overview
+
+![Data output visualization](../assets//images/web_scraper/data_output_visualization-1-0768x0512.png)
 
 ### Product Description
 
@@ -305,6 +313,8 @@ datascrapexter health --namespace scraper-prod
 
 Consulting services optimize the scraper for sub-second API response times, and training equips the team to manage configurations independently.
 
+![Configuration workflow diagram](../assets//images/web_scraper/configuration_workflow_diagram-1-0768x0512.png)
+
 **Success Metrics**:
 
 - Support 1,000+ concurrent enterprise users.
@@ -333,5 +343,3 @@ Consulting services optimize the scraper for sub-second API response times, and 
 - **Compliance**: Built-in GDPR/CCPA compliance, robots.txt respect, and audit logging ensure ethical scraping.
 
 **DataScrapexter** empowers users to extract web data efficiently, ethically, and at scale, offering tailored packages for every user—from hobbyists to global enterprises. Its Go-based architecture, combined with AI-driven innovation and enterprise-grade features, positions it as a leader in the web scraping industry.
-
-*Note: Pricing details for premium packages and custom features are available at <https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction>.*

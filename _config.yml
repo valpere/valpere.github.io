@@ -6,15 +6,27 @@ baseurl: ""
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima  # or your chosen theme from https://pages.github.com/themes/
-# remote_theme: pages-themes/leap-day@v0.2.0
+theme: minima # or your chosen theme from https://pages.github.com/themes/
+
+# Minima skin configuration
+minima:
+  skin: solarized-light
 
 # Plugins (GitHub Pages compatible)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
 
 # Social links
 github_username: valpere

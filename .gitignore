@@ -1,6 +1,7 @@
 # OS generated files
 .DS_Store
 .DS_Store?
+
 ._*
 .Spotlight-V100
 .Trashes
@@ -23,3 +24,12 @@ node_modules/
 # Build files
 dist/
 build/
+Gemfile
+Gemfile.lock
+
+# Jekyll files
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
