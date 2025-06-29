@@ -11,7 +11,7 @@ Welcome to my site where I extract everything!
 
 ![Unleash the power of web scraping](../assets/images/web_scraper/unleash_the_power_of_web_scraping-1-0384x0256.png)
 
-### English
+### **English**
 
 You can effortlessly extract valuable data from any website, enabling seamless web crawling, e-commerce scraping, and data mining. Our advanced web scraper provides automation, anti-detection, and captcha-solving capabilities, ensuring you access clean, structured data for your data analysis and processing needs. With proxy rotation, you're able to bypass restrictions and scale your projects effortlessly.
 
@@ -23,7 +23,7 @@ You can effortlessly extract valuable data from any website, enabling seamless w
 
 Use cases include e-commerce scraping for competitor pricing analysis, web crawling for market research, or developing custom scrapers for niche data extraction. Whether you're a small business or enterprise, you can rely on clear, actionable insights.
 
-### Ukrainian
+### **Ukrainian**
 
 Ви можете без зусиль витягувати цінні дані з будь-якого веб-сайту, що забезпечує безперебійне сканування веб-сторінок, зчитування даних з електронних магазинів та видобуток даних. Наш вдосконалений веб-скрепер забезпечує автоматизацію, захист від виявлення та вирішення капчів, гарантуючи вам доступ до чистих, структурованих даних для ваших потреб в аналізі та обробці даних. Завдяки ротації проксі-серверів ви можете обходити обмеження та без зусиль масштабувати свої проекти.
 
@@ -39,9 +39,9 @@ Use cases include e-commerce scraping for competitor pricing analysis, web crawl
 
 ## [MaiChe -- Email Validation Tool](/maiche/)
 
-![Applications_and_benefits](../assets/images/maiche/applications_and_benefits-0512x0512.png)
+![Applications_and_benefits](../assets/images/maiche/applications_and_benefits-0256x0256.png)
 
-### English
+### **English**
 
 Can your business afford wasted marketing efforts, high bounce rates, or a damaged sender reputation?
 
@@ -53,7 +53,7 @@ You receive a detailed report, ready for immediate use, with your data handled s
 
 Enjoy higher deliverability, better engagement, and peace of mind— your email marketing can perform at its best!
 
-### Ukrainian
+### **Ukrainian**
 
 Чи може ваша компанія дозволити собі марні маркетингові зусилля, високий рівень відмов або пошкоджену репутацію відправника?
 
@@ -69,9 +69,9 @@ Enjoy higher deliverability, better engagement, and peace of mind— your email 
 
 ## [Web Page Analyzer -- All-in-One Web Page Analysis Tool](/web_page_analyzer/)
 
-![Overview feature highlight](../assets/images/web_page_analyzer/real_world-use_cases-landscape-0768x0512.png)
+![Overview feature highlight](../assets/images/web_page_analyzer/real_world-use_cases-landscape-0384x0256.png)
 
-### English
+### **English**
 
 Get your custom web analysis tools to automate data extraction, transformation, comparison, and analysis for your specific needs, such as market research or competitor monitoring.
 
@@ -81,7 +81,7 @@ These tools go beyond basic scraping, handling dynamic content with headless bro
 
 Automate your web data processing with efficient tools tailored for you.
 
-### Ukrainian
+### **Ukrainian**
 
 Отримайте власні інструменти веб-аналізу для автоматизації вилучення, перетворення, порівняння та аналізу даних відповідно до ваших конкретних потреб, таких як дослідження ринку або моніторинг конкурентів.
 
@@ -95,7 +95,7 @@ Automate your web data processing with efficient tools tailored for you.
 
 ## CLI Google Translator written on Golang
 
-### English
+### **English**
 
 A CLI application that translates text files using Google Translate API.
 
@@ -103,7 +103,7 @@ It supports both Basic and Advanced Google Translate APIs and various language o
 
 The Basic API is simpler but has fewer features, while the Advanced API offers more control but requires a Google Cloud Project ID.
 
-### Ukrainian
+### **Ukrainian**
 
 CLI-додаток, що перекладає текстові файли за допомогою API Google Translate.
 
@@ -115,11 +115,11 @@ CLI-додаток, що перекладає текстові файли за �
 
 ## Twitter-like API Server built with Groovy, Spring Boot, and MongoDB
 
-### English
+### **English**
 
 A robust Twitter-like API built with Groovy, Spring Boot, and MongoDB. This project implements core Twitter functionality including user registration, authentication with JWT, posting, liking, commenting, and following other users.
 
-### Ukrainian
+### **Ukrainian**
 
 Надійний API, схожий на Twitter, створений за допомогою Groovy, Spring Boot та MongoDB. Цей проект реалізує основні функції Twitter, включаючи реєстрацію користувачів, автентифікацію за допомогою JWT, публікацію дописів, лайки, коментарі та підписку на інших користувачів.
 
@@ -127,10 +127,10 @@ A robust Twitter-like API built with Groovy, Spring Boot, and MongoDB. This proj
 
 ## API server for a multilanguage dictionary written in Golang
 
-### English
+### **English**
 
 TryTraGo is a high-performance multi-language dictionary server designed to support approximately 60 million dictionary entries with robust API functionality, social features, and multi-database support.
 
-### Ukrainian
+### **Ukrainian**
 
 TryTraGo — це високопродуктивний багатомовний словник-сервер, розроблений для підтримки приблизно 60 мільйонів словникових статей із надійною функціональністю API, соціальними функціями та підтримкою декількох баз даних.
