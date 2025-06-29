@@ -8,7 +8,7 @@ permalink: /datascrapexter/
 
 ## Brief Overview
 
-![Hero banner - product introduction](../assets//images/web_scraper/hero_banner-product_introduction-1-0960x0552.png)
+![Professional web scraping solution](../assets//images/web_scraper/professional_web_scraping_solution-1-0768x0512.png)
 
 **DataScrapexter** is a high-performance, Go-based web scraping platform designed to extract data from any website while overcoming sophisticated anti-scraping measures. Built on Go 1.24+ with a robust tech stack (Colly, Goquery, chromedp), it offers four packages tailored to diverse needs:
 
@@ -33,7 +33,7 @@ Additional options include custom feature development, consulting, and premium s
 
 ### Package Details
 
-#### 1. Basic Package (MVP, v0.1.0)
+#### 1. Basic Package
 
 **Target Audience**: Hobbyists, individual developers, small startups, and data analysts.
 
@@ -94,7 +94,7 @@ The scraper processes 100+ pages reliably, exporting clean JSON data to `product
 - Process 100+ pages without errors.
 - Achieve community adoption (target: 1,000+ GitHub stars).
 
-#### 2. Standard Package (v0.5.0)
+#### 2. Standard Package
 
 **Target Audience**: Small to medium businesses, SaaS startups, and professional data teams.
 
@@ -158,7 +158,7 @@ The scraper handles 1,000+ pages, rotates proxies automatically, and stores vali
 - Limited scalability for massive datasets.
 - Lacks enterprise-grade monitoring and analytics.
 
-#### 3. Premium Package (v1.0.0)
+#### 3. Premium Package
 
 **Target Audience**: Professional services, mid-size companies, and enterprises.
 
@@ -211,7 +211,7 @@ The web dashboard provides real-time success rate monitoring (95%+), while Prome
 - Lacks AI-driven adaptation for site layout changes.
 - Limited automation for regulatory compliance reporting.
 
-#### 4. Advanced Package (v1.5.0)
+#### 4. Advanced Package
 
 **Target Audience**: Large enterprises, data-driven organizations, and technology innovators.
 
@@ -262,7 +262,7 @@ The system adapts to layout changes within 24 hours, achieves 99% accuracy in cl
 - Higher computational resource requirements.
 - Complex setup may require technical expertise.
 
-#### 5. Advanced - Custom Features (v2.0.0)
+#### 5. Advanced - Custom Features
 
 **Target Audience**: Enterprises with unique requirements, system integrators, and strategic accounts.
 
@@ -313,7 +313,7 @@ datascrapexter health --namespace scraper-prod
 
 Consulting services optimize the scraper for sub-second API response times, and training equips the team to manage configurations independently.
 
-![Configuration workflow diagram](../assets//images/web_scraper/configuration_workflow_diagram-1-0768x0512.png)
+![Hero banner - product introduction](../assets//images/web_scraper/hero_banner-product_introduction-1-0960x0552.png)
 
 **Success Metrics**:
 
