@@ -8,7 +8,7 @@ permalink: /datascrapexter/
 
 ## Brief Overview
 
-![Professional web scraping solution](../assets//images/web_scraper/professional_web_scraping_solution-1-0768x0512.png)
+![Professional web scraping solution](../assets//images/web_scraper/professional_web_scraping_solution-1-0384x0256.png)
 
 **DataScrapexter** is a high-performance, Go-based web scraping platform designed to extract data from any website while overcoming sophisticated anti-scraping measures. Built on Go 1.24+ with a robust tech stack (Colly, Goquery, chromedp), it offers four packages tailored to diverse needs:
 
@@ -25,7 +25,7 @@ Additional options include custom feature development, consulting, and premium s
 
 ## Detailed Overview
 
-![Data output visualization](../assets//images/web_scraper/data_output_visualization-1-0768x0512.png)
+![Data output visualization](../assets//images/web_scraper/data_output_visualization-1-0384x0256.png)
 
 ### Product Description
 
@@ -313,7 +313,7 @@ datascrapexter health --namespace scraper-prod
 
 Consulting services optimize the scraper for sub-second API response times, and training equips the team to manage configurations independently.
 
-![Hero banner - product introduction](../assets//images/web_scraper/hero_banner-product_introduction-1-0960x0552.png)
+![Hero banner - product introduction](../assets//images/web_scraper/hero_banner-product_introduction-1-0480x0276.png)
 
 **Success Metrics**:
 
