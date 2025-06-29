@@ -6,7 +6,11 @@ permalink: /maiche/
 
 # Email Validation Tool
 
+* [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+
 ## Brief Overview
+
 
 ![Applications_and_benefits](../assets/images/maiche/applications_and_benefits-0256x0256.png)
 

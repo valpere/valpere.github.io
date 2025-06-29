@@ -6,6 +6,9 @@ permalink: /datascrapexter/
 
 # Professional Data Scraper
 
+* [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+
 ## Brief Overview
 
 ![Professional web scraping solution](../assets//images/web_scraper/professional_web_scraping_solution-1-0384x0256.png)
@@ -19,7 +22,7 @@ permalink: /datascrapexter/
 
 Additional options include custom feature development, consulting, and premium support for tailored solutions.
 
-*Note: Pricing details for premium packages and custom features are available at <https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction>.*
+*Note: Pricing details for premium packages and custom features are available at "[I will develop web scraping solutions for data extraction](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)".*
 
 ---
 

@@ -11,6 +11,9 @@ Welcome to my site where I extract everything!
 
 ![Unleash the power of web scraping](../assets/images/web_scraper/unleash_the_power_of_web_scraping-1-0384x0256.png)
 
+* [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+
 ### **English**
 
 You can effortlessly extract valuable data from any website, enabling seamless web crawling, e-commerce scraping, and data mining. Our advanced web scraper provides automation, anti-detection, and captcha-solving capabilities, ensuring you access clean, structured data for your data analysis and processing needs. With proxy rotation, you're able to bypass restrictions and scale your projects effortlessly.
@@ -63,6 +66,9 @@ Use cases include e-commerce scraping for competitor pricing analysis, web crawl
 
 ![Applications_and_benefits](../assets/images/maiche/applications_and_benefits-0256x0256.png)
 
+* [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+
 ### **English**
 
 Can your business afford wasted marketing efforts, high bounce rates, or a damaged sender reputation?
@@ -109,9 +115,12 @@ Ciesz się wyższą dostarczalnością, lepszą interakcją i spokojem — Twój
 
 ---
 
-## [WebPageAnalyzer -- All-in-One Web Page Analysis Tool](/web_page_analyzer/)
+## [WebPageInvestigator -- All-in-One Web Page Analysis Tool](/web_page_analyzer/)
 
 ![Overview feature highlight](../assets/images/web_page_analyzer/real_world-use_cases-landscape-0384x0256.png)
+
+* [Fiverr](https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
 ### **English**
 
@@ -127,7 +136,7 @@ Automate your web data processing with efficient tools tailored for you.
 
 ### **Українська**
 
-**WebPageAnalyzer — універсальний інструмент для аналізу веб-сторінок**
+**WebPageInvestigator — універсальний інструмент для аналізу веб-сторінок**
 
 Отримайте власні інструменти веб-аналізу для автоматизації вилучення, перетворення, порівняння та аналізу даних відповідно до ваших конкретних потреб, таких як дослідження ринку або моніторинг конкурентів.
 
@@ -141,7 +150,7 @@ Automate your web data processing with efficient tools tailored for you.
 
 ### **Polski**
 
-**WebPageAnalyzer — wszechstronne narzędzie do analizy stron internetowych**
+**WebPageInvestigator — wszechstronne narzędzie do analizy stron internetowych**
 
 Uzyskaj niestandardowe narzędzia do analizy stron internetowych, które zautomatyzują pozyskiwanie, przekształcanie, porównywanie i analizę danych zgodnie z Twoimi konkretnymi potrzebami, takimi jak badania rynku lub monitorowanie konkurencji.
 
