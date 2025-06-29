@@ -4,6 +4,8 @@ title: WebPageAnalyzer
 permalink: /web_page_analyzer/
 ---
 
+# All-in-One Web Page Analysis Tool
+
 ## Brief Overview
 
 ![Overview feature highlight](../assets/images/web_page_analyzer/overview-feature_highlight-0-0400x0300.png)
