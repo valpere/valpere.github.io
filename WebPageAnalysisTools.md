@@ -6,7 +6,7 @@ permalink: /web_page_analyzer/
 
 ## Brief Overview
 
-![Overview feature highlight](../assets/images/web_page_analyzer/overview-feature_highlight-0-0800x0600.png)
+![Overview feature highlight](../assets/images/web_page_analyzer/overview-feature_highlight-0-0400x0300.png)
 
 Web Page Analyzer is a powerful Groovy-based command-line tool designed to streamline web content extraction, analysis, and transformation. It empowers developers, data analysts, and digital marketers to automate tasks like data scraping, competitor monitoring, content migration, and SEO analysis with precision and efficiency. The tool supports both static and JavaScript-rendered websites, handles international character sets flawlessly, and integrates seamlessly into workflows via CLI, Docker, or custom integrations.
 
@@ -117,7 +117,7 @@ Web Page Analyzer is a robust, cross-platform CLI tool built in Groovy, leveragi
 
 ### Real-World Use Cases and Examples
 
-![Real wworld use cases](../assets/images/web_page_analyzer/real_world-use_cases-portrait-0512x0768.png)
+![Real wworld use cases](../assets/images/web_page_analyzer/real_world-use_cases-portrait-0256x0384.png)
 
 #### 1. Content Migration
 
@@ -196,7 +196,7 @@ web-page-analyzer extract production.html "a" links.csv --format=csv --attribute
 
 ### Technical Foundation
 
-![Before after output formats](../assets/images/web_page_analyzer/before-after-output_formats-0768x0512.png)
+![Before after output formats](../assets/images/web_page_analyzer/before-after-output_formats-0384x0256.png)
 
 - **Language**: Groovy, ensuring cross-platform compatibility.
 - **Libraries**:
