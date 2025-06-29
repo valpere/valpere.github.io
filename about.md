@@ -33,7 +33,7 @@ Specialized Offerings:
 I deliver solutions with meticulous attention to detail and clear communication, ensuring your project exceeds expectations.
 Whether you need data extraction solutions, performance optimization, or complete system architecture, I provide enterprise-grade services tailored to your requirements.
 
-### **Ukrainian**
+### **Українська**
 
 Експерт у Go, Java, Groovy, Perl, хмарних технологіях (GCP, Kubernetes) та DevOps з великим досвідом у розподілених системах та масштабованих архітектурах.
 

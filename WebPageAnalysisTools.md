@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Web Page Analyzer
+title: WebPageAnalyzer
 permalink: /web_page_analyzer/
 ---
 
@@ -8,7 +8,7 @@ permalink: /web_page_analyzer/
 
 ![Overview feature highlight](../assets/images/web_page_analyzer/overview-feature_highlight-0-0400x0300.png)
 
-Web Page Analyzer is a powerful Groovy-based command-line tool designed to streamline web content extraction, analysis, and transformation. It empowers developers, data analysts, and digital marketers to automate tasks like data scraping, competitor monitoring, content migration, and SEO analysis with precision and efficiency. The tool supports both static and JavaScript-rendered websites, handles international character sets flawlessly, and integrates seamlessly into workflows via CLI, Docker, or custom integrations.
+WebPageAnalyzer is a powerful Groovy-based command-line tool designed to streamline web content extraction, analysis, and transformation. It empowers developers, data analysts, and digital marketers to automate tasks like data scraping, competitor monitoring, content migration, and SEO analysis with precision and efficiency. The tool supports both static and JavaScript-rendered websites, handles international character sets flawlessly, and integrates seamlessly into workflows via CLI, Docker, or custom integrations.
 
 ### Packages
 
@@ -26,7 +26,7 @@ Web Page Analyzer is a powerful Groovy-based command-line tool designed to strea
 
 ### Product Description
 
-Web Page Analyzer is a robust, cross-platform CLI tool built in Groovy, leveraging libraries like JSoup, Selenium WebDriver, and Apache HttpClient to provide comprehensive web content processing capabilities. It addresses common challenges such as JavaScript rendering, UTF-8 character handling, and complex DOM navigation, making it ideal for professionals needing reliable, scalable web analysis solutions. With six core commands—`parse`, `read`, `extract`, `stats`, `compare`, and `transform`—the tool supports a wide range of use cases, from data extraction to SEO optimization.
+WebPageAnalyzer is a robust, cross-platform CLI tool built in Groovy, leveraging libraries like JSoup, Selenium WebDriver, and Apache HttpClient to provide comprehensive web content processing capabilities. It addresses common challenges such as JavaScript rendering, UTF-8 character handling, and complex DOM navigation, making it ideal for professionals needing reliable, scalable web analysis solutions. With six core commands—`parse`, `read`, `extract`, `stats`, `compare`, and `transform`—the tool supports a wide range of use cases, from data extraction to SEO optimization.
 
 ### Key Features
 
@@ -238,4 +238,4 @@ web-page-analyzer --help
 
 ### Conclusion
 
-Web Page Analyzer is a versatile, professional-grade tool that simplifies web content processing. Whether you need to extract data, analyze websites, or automate workflows, its comprehensive feature set, robust architecture, and flexible packaging options make it an essential asset for businesses and individuals alike.
+WebPageAnalyzer is a versatile, professional-grade tool that simplifies web content processing. Whether you need to extract data, analyze websites, or automate workflows, its comprehensive feature set, robust architecture, and flexible packaging options make it an essential asset for businesses and individuals alike.
