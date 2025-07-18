@@ -32,8 +32,7 @@ Welcome to my portfolio.
 
 <a name="english1"></a>
 ### **English**
-
-
+This project involved developing components for the CloudBees CD/RO platform, focusing on automation and scalability. Key achievements include optimizing deployment pipelines and enhancing system reliability.
 <a name="ukrainian1"></a>
 ### **Українська**
 
