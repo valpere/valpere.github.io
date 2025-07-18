@@ -25,7 +25,7 @@ Welcome to my portfolio.
 <a name="cloudbees-cdro-platform-component-development"></a>
 ## [CloudBees CD/RO Platform Component Development](/portfolio/devops_cd_ro_automation/)
 
-![Unleash the power of web scraping](../assets/images/web_scraper/unleash_the_power_of_web_scraping-1-0384x0256.png)
+![CloudBees CD/RO Automation](../assets/images/cloudbees/cloudbees_cd_ro_automation-0384x0256.png)
 
 * [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
