@@ -1,7 +1,8 @@
 ---
 layout: page
 title: WebPageInvestigator
-permalink: /web_page_analyzer/
+permalink: /projects/web_page_analyzer/
+exclude: true
 ---
 
 # All-in-One Web Page Analysis Tool
@@ -21,7 +22,7 @@ WebPageInvestigator is a powerful Groovy-based command-line tool designed to str
 - **Standard**: Scrape dynamic content from 3 websites, multi-format output (JSON, CSV, Markdown), 7-day delivery, 2 revisions.
 - **Premium**: Full-suite analysis for 5 websites, all commands, advanced rendering, and optimizations, 10-day delivery, 3 revisions.
 - **Advanced**: Tailored solutions with features like GUI, login support, proxy rotation, or API integration.
-- **Optional Extras**: Add-ons like GUI interface ($80), login support ($45), proxy support ($35), or advanced SEO audits ($60).
+- **Optional Extras**: Add-ons like GUI interface, login support, proxy support, or advanced SEO audits.
 
 *Note: Pricing details for premium packages and custom features are available at "[I will help you extract, analyze, and transform web content](https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro)".*
 

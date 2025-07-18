@@ -11,6 +11,17 @@ theme: minima # or your chosen theme from https://pages.github.com/themes/
 # Minima skin configuration
 minima:
   skin: solarized-light
+  # nav_pages:
+    # - index.md
+    # - about.md
+    # - projects/index.md
+    # - portfolio/index.md
+
+header_pages:
+  - index.md
+  - about.md
+  - portfolio/index.md
+  - projects/index.md
 
 # Plugins (GitHub Pages compatible)
 plugins:

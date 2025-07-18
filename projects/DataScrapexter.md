@@ -1,7 +1,8 @@
 ---
 layout: page
 title: DataScrapexter
-permalink: /datascrapexter/
+permalink: /projects/datascrapexter/
+exclude: true
 ---
 
 # Professional Data Scraper
