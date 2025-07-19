@@ -1,7 +1,7 @@
 ---
 layout: page
 title: WebPageInvestigator
-permalink: /projects/web_page_analyzer/
+permalink: /projects/web_page_investigator/
 exclude: true
 ---
 
@@ -12,7 +12,7 @@ exclude: true
 
 ## Brief Overview
 
-![Overview feature highlight](../assets/images/web_page_analyzer/overview-feature_highlight-0-0400x0300.png)
+![Overview feature highlight](../assets/images/web_page_investigator/overview-feature_highlight-0-0400x0300.png)
 
 WebPageInvestigator is a powerful Groovy-based command-line tool designed to streamline web content extraction, analysis, and transformation. It empowers developers, data analysts, and digital marketers to automate tasks like data scraping, competitor monitoring, content migration, and SEO analysis with precision and efficiency. The tool supports both static and JavaScript-rendered websites, handles international character sets flawlessly, and integrates seamlessly into workflows via CLI, Docker, or custom integrations.
 
@@ -123,7 +123,7 @@ WebPageInvestigator is a robust, cross-platform CLI tool built in Groovy, levera
 
 ### Real-World Use Cases and Examples
 
-![Real wworld use cases](../assets/images/web_page_analyzer/real_world-use_cases-portrait-0256x0384.png)
+![Real wworld use cases](../assets/images/web_page_investigator/real_world-use_cases-portrait-0256x0384.png)
 
 #### 1. Content Migration
 
@@ -202,7 +202,7 @@ web-page-analyzer extract production.html "a" links.csv --format=csv --attribute
 
 ### Technical Foundation
 
-![Before after output formats](../assets/images/web_page_analyzer/before-after-output_formats-0384x0256.png)
+![Before after output formats](../assets/images/web_page_investigator/before-after-output_formats-0384x0256.png)
 
 - **Language**: Groovy, ensuring cross-platform compatibility.
 - **Libraries**:

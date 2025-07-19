@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Great beautiful deal
+title: Big Beautiful Deal
 ---
 
 Welcome to my projects.
@@ -8,6 +8,9 @@ Welcome to my projects.
 <!-- TOC start -->
 
 # Table of Contents
+- [Vibe Coding -- is blending AI with what you've known](#vibe-coding-is-blending)
+   * [**English**](#vibe-coding-english)
+   * [**Українська**](#vibe-coding-ukrainian)
 - [DataScrapexter -- Professional Data Scraper](#datascrapexter-professional-data-scraper)
    * [**English**](#datascrapexter-english)
    * [**Українська**](#datascrapexter-ukrainian)
@@ -18,23 +21,129 @@ Welcome to my projects.
    * [**English**](#webpageinvestigator-english)
    * [**Українська**](#webpageinvestigator-ukrainian)
 - [CLI Google Translator written on Golang](#cli-google-translator-written-on-golang)
+   * [**English**](#cli-google-translator-english)
+   * [**Українська**](#cli-google-translator-ukrainian)
 - [Twitter-like API Server built with Groovy, Spring Boot, and MongoDB](#twitter-like-api-server-built-with-groovy-spring-boot-and-mongodb)
+   * [**English**](#twitter-like-api-server-english)
+   * [**Українська**](#twitter-like-api-server-ukrainian)
 - [API server for a multilanguage dictionary written in Golang](#api-server-for-a-multilanguage-dictionary-written-in-golang)
+   * [**English**](#api-server-for-english)
+   * [**Українська**](#api-server-for-ukrainian)
 
 <!-- TOC end -->
 
 ---
 
-<a name="datascrapexter-professional-data-scraper"></a>
-## [DataScrapexter -- Professional Data Scraper](/projects/datascrapexter/)
+<a name="vibe-coding-is-blending"></a>
+## Vibe Coding -- is blending AI with what you've known
 
-![Unleash the power of web scraping](/projects/assets/images/web_scraper/unleash_the_power_of_web_scraping-1-0384x0256.png)
+* [Fiverr](https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+
+![Vibe Coding -- clean, scalable, lovable solutions](/projects/assets/images/vibe_coding/vibe_coding-1-0384x0256.png)
+
+<a name="vibe-coding-english"></a>
+### **English**
+
+[More detailed](/projects/vibe_coding/)
+
+**Vibe Coding -- an approach blending AI tools with programming languages, and low-code/no-code platforms to produce clean, scalable, and lovable solutions**
+
+AI-Powered Development for Your Business. Solve Real Problems, Faster
+
+Vibe Coding combines AI automation (Claude/Cursor) and low-code tools (Supabase/Replit) to deliver scalable solutions in days, not months.
+
+What You Need, Delivered Fast
+
+For Startups & Founders:
+
+* Launch investor-ready MVPs in 1–2 weeks
+* Build AI features (chatbots, automation, analytics) without hiring a whole team
+* Go from idea to working prototype 10x faster
+
+For Businesses & Teams:
+
+* Modernize legacy systems without risky rewrites
+* Add scalable microservices without infrastructure headaches
+* Automate workflows with low-code + AI integration
+
+For Developers:
+
+* Extend your stack with AI pair programming
+* Fix technical debt with Claude-powered code reviews
+* Deploy production-ready backends on Supabase/GCP
+
+How It Works:
+
+1. You share your goal (e.g., "Need a booking API for my SaaS")
+2. I vibe-code it using:
+   * AI: Claude + Cursor for bug-free, efficient code
+   * Low-Code: Supabase for instant databases/auth
+   * Scalability: Go/Java cores for high-traffic needs
+3. You get:
+   * A working system in 3–14 days
+   * Clean, documented code you can scale
+   * Optional Replit demo to test drive
+
+\#lovable_ai \#bolt_new \#mvp \#claude_code \#ai \#supabase \#replit \#cursor \#base44 \#n8n
+
+<a name="vibe-coding-ukrainian"></a>
+### **Українська**
+
+**Vibe Coding — підхід, що поєднує інструменти штучного інтелекту з мовами програмування та платформами з мінімальним або без коду для створення чітких, масштабованих і привабливих рішень**
+
+Розробка на основі штучного інтелекту для вашого бізнесу. Швидше вирішуйте реальні проблеми
+
+Vibe Coding поєднує автоматизацію на основі штучного інтелекту (Claude/Cursor) та інструменти з низьким рівнем кодування (Supabase/Replit), щоб надавати масштабовані рішення за лічені дні, а не місяці.
+
+Те, що вам потрібно, швидко
+
+Для стартапів та засновників:
+
+* Запустіть готові для інвесторів MVP за 1–2 тижні
+* Створіть функції штучного інтелекту (чат-боти, автоматизація, аналітика) без найму цілої команди
+* Перейдіть від ідеї до робочого прототипу в 10 разів швидше
+
+Для підприємств та команд:
+
+* Модернізуйте застарілі системи без ризикованих переписань
+* Додайте масштабовані мікросервіси без головного болю з інфраструктурою
+* Автоматизація робочих процесів за допомогою інтеграції low-code + AI
+
+Для розробників:
+
+* Розширення вашого стеку за допомогою парного програмування AI
+* Виправлення технічного боргу за допомогою перегляду коду на базі Claude
+* Розгортання готових до виробництва бекендів на Supabase/GCP
+
+Як це працює:
+
+1. Ви ділитеся своєю метою (наприклад, «Потрібен API для бронювання для мого SaaS»)
+2. Я пишу код, використовуючи:
+   * ШІ: Claude + Cursor для бездоганного та ефективного коду
+   * Low-Code: Supabase для миттєвих баз даних/аутентифікації
+   * Масштабованість: Go/Java cores для потреб з високим трафіком
+3. Ви отримуєте:
+   * Працюючу систему за 3–14 днів
+   * Чистий, задокументований код, який можна масштабувати
+   * Опціональну демо-версію Replit для тестування
+
+\#lovable_ai \#bolt_new \#mvp \#claude_code \#ai \#supabase \#replit \#cursor \#base44 \#n8n
+
+---
+
+<a name="datascrapexter-professional-data-scraper"></a>
+## DataScrapexter -- Professional Data Scraper
 
 * [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
-<a name="english1"></a>
+![Unleash the power of web scraping](/projects/assets/images/data_scrapexter/unleash_the_power_of_web_scraping-1-0384x0256.png)
+
+<a name="datascrapexter-english"></a>
 ### **English**
+
+[More detailed](/projects/datascrapexter/)
 
 You can effortlessly extract valuable data from any website, enabling seamless web crawling, e-commerce scraping, and data mining. Our advanced web scraper provides automation, anti-detection, and captcha-solving capabilities, ensuring you access clean, structured data for your data analysis and processing needs. With proxy rotation, you're able to bypass restrictions and scale your projects effortlessly.
 
@@ -48,7 +157,7 @@ Use cases include e-commerce scraping for competitor pricing analysis, web crawl
 
 \#data_scraping \#website_scraping \#web_scraper \#data_mining \#data_extraction
 
-<a name="ukrainian1"></a>
+<a name="datascrapexter-ukrainian"></a>
 ### **Українська**
 
 **DataScrapexter — професійний інструмент для збору даних**
@@ -68,15 +177,17 @@ Use cases include e-commerce scraping for competitor pricing analysis, web crawl
 ---
 
 <a name="maiche-email-validation-tool"></a>
-## [MaiChe -- Email Validation Tool](/projects/maiche/)
-
-![Applications_and_benefits](/projects/assets/images/maiche/applications_and_benefits-0256x0256.png)
+## MaiChe -- Email Validation Tool
 
 * [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
-<a name="english2"></a>
+![Applications_and_benefits](/projects/assets/images/maiche/applications_and_benefits-0256x0256.png)
+
+<a name="maiche-english"></a>
 ### **English**
+
+[More detailed](/projects/maiche/)
 
 Can your business afford wasted marketing efforts, high bounce rates, or a damaged sender reputation?
 
@@ -88,7 +199,7 @@ You receive a detailed report, ready for immediate use, with your data handled s
 
 Enjoy higher deliverability, better engagement, and peace of mind— your email marketing can perform at its best!
 
-<a name="ukrainian2"></a>
+<a name="maiche-ukrainian"></a>
 ### **Українська**
 
 **MaiChe — інструмент перевірки електронної пошти**
@@ -108,15 +219,17 @@ Enjoy higher deliverability, better engagement, and peace of mind— your email 
 ---
 
 <a name="webpageinvestigator-all-in-one-web-page-analysis-tool"></a>
-## [WebPageInvestigator -- All-in-One Web Page Analysis Tool](/projects/web_page_analyzer/)
-
-![Overview feature highlight](/projects/assets/images/web_page_analyzer/real_world-use_cases-landscape-0384x0256.png)
+## WebPageInvestigator -- All-in-One Web Page Analysis Tool
 
 * [Fiverr](https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
-<a name="english3"></a>
+![Overview feature highlight](/projects/assets/images/web_page_investigator/real_world-use_cases-landscape-0384x0256.png)
+
+<a name="webpageinvestigator-english"></a>
 ### **English**
+
+[More detailed](/projects/web_page_investigator/)
 
 Get your custom web analysis tools to automate data extraction, transformation, comparison, and analysis for your specific needs, such as market research or competitor monitoring.
 
@@ -128,7 +241,7 @@ Automate your web data processing with efficient tools tailored for you.
 
 \#data_scraping \#web_scraping \#web_scraper \#data_mining \#data_extraction
 
-<a name="ukrainian3"></a>
+<a name="webpageinvestigator-ukrainian"></a>
 ### **Українська**
 
 **WebPageInvestigator — універсальний інструмент для аналізу веб-сторінок**
@@ -148,7 +261,7 @@ Automate your web data processing with efficient tools tailored for you.
 <a name="cli-google-translator-written-on-golang"></a>
 ## CLI Google Translator written on Golang
 
-<a name="english10"></a>
+<a name="cli-google-translator-english"></a>
 ### **English**
 
 A CLI application that translates text files using Google Translate API.
@@ -157,7 +270,7 @@ It supports both Basic and Advanced Google Translate APIs and various language o
 
 The Basic API is simpler but has fewer features, while the Advanced API offers more control but requires a Google Cloud Project ID.
 
-<a name="ukrainian10"></a>
+<a name="cli-google-translator-ukrainian"></a>
 ### **Українська**
 
 CLI-додаток, що перекладає текстові файли за допомогою API Google Translate.
@@ -171,12 +284,12 @@ CLI-додаток, що перекладає текстові файли за �
 <a name="twitter-like-api-server-built-with-groovy-spring-boot-and-mongodb"></a>
 ## Twitter-like API Server built with Groovy, Spring Boot, and MongoDB
 
-<a name="english11"></a>
+<a name="twitter-like-api-server-english"></a>
 ### **English**
 
 A robust Twitter-like API built with Groovy, Spring Boot, and MongoDB. This project implements core Twitter functionality including user registration, authentication with JWT, posting, liking, commenting, and following other users.
 
-<a name="ukrainian11"></a>
+<a name="twitter-like-api-server-ukrainian"></a>
 ### **Українська**
 
 Надійний API, схожий на Twitter, створений за допомогою Groovy, Spring Boot та MongoDB. Цей проект реалізує основні функції Twitter, включаючи реєстрацію користувачів, автентифікацію за допомогою JWT, публікацію дописів, лайки, коментарі та підписку на інших користувачів.
@@ -186,12 +299,12 @@ A robust Twitter-like API built with Groovy, Spring Boot, and MongoDB. This proj
 <a name="api-server-for-a-multilanguage-dictionary-written-in-golang"></a>
 ## API server for a multilanguage dictionary written in Golang
 
-<a name="english12"></a>
+<a name="api-server-for-english"></a>
 ### **English**
 
 TryTraGo is a high-performance multi-language dictionary server designed to support approximately 60 million dictionary entries with robust API functionality, social features, and multi-database support.
 
-<a name="ukrainian12"></a>
+<a name="api-server-for-ukrainian"></a>
 ### **Українська**
 
 TryTraGo — це високопродуктивний багатомовний словник-сервер, розроблений для підтримки приблизно 60 мільйонів словникових статей із надійною функціональністю API, соціальними функціями та підтримкою декількох баз даних.

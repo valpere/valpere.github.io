@@ -12,7 +12,6 @@ exclude: true
 
 ## Brief Overview
 
-
 ![Applications_and_benefits](../assets/images/maiche/applications_and_benefits-0256x0256.png)
 
 **MaiChe** is a professional-grade command-line email validation tool built with Go for exceptional performance and accuracy. It validates email addresses through multiple verification stages—syntax checking, domain/MX record verification, and SMTP mailbox validation—without sending actual emails. Perfect for businesses needing to maintain clean email lists, reduce bounce rates, and protect sender reputation.

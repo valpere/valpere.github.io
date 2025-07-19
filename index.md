@@ -5,11 +5,9 @@ title: Home
 
 Welcome to my site where I extract everything!
 
----
+* [About me](/about/)
+* [Big Beautiful Deal](/projects/)
+* [Good Old Days](/portfolio/)
 
-## [Great beautiful deal](/projects/)
-
----
-
-## [Good old days](/portfolio/)
+![Full Logo](/assets/images/full-logo-0450x0404.png)
 

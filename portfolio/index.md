@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Good old days
+title: Good Old Days
 ---
 
 Welcome to my portfolio.
@@ -58,7 +58,7 @@ This project involved developing components for the CloudBees CD/RO platform, fo
 <a name="enterprise-email-platform-complete-redesign"></a>
 ## [Enterprise Email Platform Complete Redesign](/portfolio/email_service_redesign/)
 
-![Overview feature highlight](../assets/images/web_page_analyzer/real_world-use_cases-landscape-0384x0256.png)
+![Overview feature highlight](../assets/images/web_page_investigator/real_world-use_cases-landscape-0384x0256.png)
 
 * [Fiverr](https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
