@@ -1,7 +1,8 @@
 ---
 layout: page
 title: MaiChe
-permalink: /maiche/
+permalink: /projects/maiche/
+exclude: true
 ---
 
 # Email Validation Tool
@@ -10,7 +11,6 @@ permalink: /maiche/
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
 ## Brief Overview
-
 
 ![Applications_and_benefits](../assets/images/maiche/applications_and_benefits-0256x0256.png)
 
@@ -174,7 +174,7 @@ A B2B data provider validates all email lists before delivery:
 
 ![MaiChe is a rock email validation cli tool](../assets/images/maiche/maiche_is_a_rock_email_validation_cli_tool-0400x0300.png)
 
-#### Basic Package - Essential Validation ($50)
+#### Basic Package - Essential Validation
 
 Perfect for small businesses, startups, or individual marketers who need reliable email validation without complexity.
 
@@ -202,7 +202,7 @@ Perfect for small businesses, startups, or individual marketers who need reliabl
 maiche -i customers.csv -o validated.csv
 ```
 
-#### Standard Package - Professional Features ($150)
+#### Standard Package - Professional Features
 
 Designed for growing businesses with larger lists and more sophisticated needs.
 
@@ -233,7 +233,7 @@ maiche -c config.yaml -i large_list.csv -o results.csv
 maiche -i large_list.csv -o results.csv -r "invalid,timeout"
 ```
 
-#### Premium Package - Enterprise Solution ($300)
+#### Premium Package - Enterprise Solution
 
 Full-featured solution for organizations requiring maximum performance and reliability.
 
