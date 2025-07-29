@@ -6,10 +6,13 @@ permalink: /about/
 
 # About Me
 
-# Table of Contents
-- [**English**](#about-english)
-- [**Українська**](#about-ukrainian)
+* [Overview](#about-overview)
+  - [**English**](#about-english)
+  - [**Українська**](#about-ukrainian)
+* [Freelance Profiles](about-profiles)
 
+<a name="about-overview"></a>
+## Overview
 
 <a name="about-english"></a>
 ### **English**
@@ -66,3 +69,10 @@ Whether you need data extraction solutions, performance optimization, or complet
 
 Я надаю рішення з ретельною увагою до деталей та чіткою комунікацією, гарантуючи, що ваш проект перевершить очікування.
 Незалежно від того, чи потрібні вам рішення для вилучення даних, оптимізація продуктивності або повна архітектура системи, я надаю послуги корпоративного рівня, адаптовані до ваших вимог.
+
+<a name="about-profiles"></a>
+## Freelance Profiles
+
+* [Upwork](https://www.upwork.com/freelancers/~01ab3037d280df81ea)
+* [Fiverr](https://www.fiverr.com/users/pere_val)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)

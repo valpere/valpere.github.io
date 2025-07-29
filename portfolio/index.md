@@ -7,7 +7,6 @@ Welcome to my portfolio.
 
 <!-- TOC start -->
 
-# Table of Contents
 - [CloudBees CD/RO Platform Component Development](#cloudbees-cdro-platform-component-development)
 - [Telecom BSS Billing Core Components](#telecom-bss-billing-core-components)
 - [Enterprise Email Platform Complete Redesign](#enterprise-email-platform-complete-redesign)
