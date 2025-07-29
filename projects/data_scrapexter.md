@@ -340,7 +340,7 @@ Consulting services optimize the scraper for sub-second API response times, and 
 
 ### Why Choose DataScrapexter?
 
-- **Performance**: Go’s lightweight goroutines enable 10,000+ pages/hour with &lt;512MB memory per instance.
+- **Performance**: Go's lightweight goroutines enable 10,000+ pages/hour with &lt;512MB memory per instance.
 - **Evasion**: Advanced anti-detection (chromedp, Rod, 2Captcha) ensures 95%+ success rates on protected sites.
 - **Flexibility**: YAML/JSON configuration supports any website type, from static to SPA, with multi-format outputs.
 - **Scalability**: Kubernetes-ready architecture with auto-scaling and distributed processing for massive workloads.

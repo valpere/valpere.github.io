@@ -7,7 +7,6 @@ Welcome to my projects.
 
 <!-- TOC start -->
 
-# Table of Contents
 - [Vibe Coding -- is blending AI with what you've known](#vibe-coding-is-blending)
    * [**English**](#vibe-coding-english)
    * [**Українська**](#vibe-coding-ukrainian)
@@ -37,6 +36,7 @@ Welcome to my projects.
 <a name="vibe-coding-is-blending"></a>
 ## Vibe Coding -- is blending AI with what you've known
 
+* [Upwork](https://www.upwork.com/services/product/development-it-an-mvp-reviewed-fixed-or-created-with-ai-driven-vibe-coding-1949815181887134254)
 * [Fiverr](https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
@@ -191,7 +191,7 @@ Use cases include e-commerce scraping for competitor pricing analysis, web crawl
 
 Can your business afford wasted marketing efforts, high bounce rates, or a damaged sender reputation?
 
-With professional email list verification, your campaigns reach real people, not dead ends. You’re able to reduce bounces, avoid spam traps, and protect your domain from blacklisting. Every email address is verified for validity, syntax, domain, and mailbox status, ensuring your list remains fresh and compelling.
+With professional email list verification, your campaigns reach real people, not dead ends. You're able to reduce bounces, avoid spam traps, and protect your domain from blacklisting. Every email address is verified for validity, syntax, domain, and mailbox status, ensuring your list remains fresh and compelling.
 
 By removing invalid, disposable, and role-based emails, you save money and ensure your messages land in genuine inboxes. Regular list cleaning keeps your audience engaged and maximizes your marketing return on investment (ROI).
 
