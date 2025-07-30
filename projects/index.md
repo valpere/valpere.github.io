@@ -261,6 +261,8 @@ Automate your web data processing with efficient tools tailored for you.
 <a name="cli-google-translator-written-on-golang"></a>
 ## CLI Google Translator written on Golang
 
+[GitHub repo](https://github.com/valpere/gootrago)
+
 <a name="cli-google-translator-english"></a>
 ### **English**
 
@@ -284,6 +286,8 @@ CLI-додаток, що перекладає текстові файли за �
 <a name="twitter-like-api-server-built-with-groovy-spring-boot-and-mongodb"></a>
 ## Twitter-like API Server built with Groovy, Spring Boot, and MongoDB
 
+[GitHub repo](https://github.com/valpere/testwigr)
+
 <a name="twitter-like-api-server-english"></a>
 ### **English**
 
@@ -298,6 +302,8 @@ A robust Twitter-like API built with Groovy, Spring Boot, and MongoDB. This proj
 
 <a name="api-server-for-a-multilanguage-dictionary-written-in-golang"></a>
 ## API server for a multilanguage dictionary written in Golang
+
+[GitHub repo](https://github.com/valpere/trytrago)
 
 <a name="api-server-for-english"></a>
 ### **English**
