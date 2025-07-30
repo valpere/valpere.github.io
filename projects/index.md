@@ -263,6 +263,8 @@ Automate your web data processing with efficient tools tailored for you.
 
 [GitHub repo](https://github.com/valpere/gootrago)
 
+\#docker #docker-compose #golang #rest-api #viper #cobra #testify #uber-zap
+
 <a name="cli-google-translator-english"></a>
 ### **English**
 
@@ -288,6 +290,8 @@ CLI-додаток, що перекладає текстові файли за �
 
 [GitHub repo](https://github.com/valpere/testwigr)
 
+\#groovy #jwt #spring-boot #mongodb #rest-api #swagger #openapi #api-server #spring-security #spring-test #spring-data-mongodb #junit5 #spock-framework
+
 <a name="twitter-like-api-server-english"></a>
 ### **English**
 
@@ -304,6 +308,8 @@ A robust Twitter-like API built with Groovy, Spring Boot, and MongoDB. This proj
 ## API server for a multilanguage dictionary written in Golang
 
 [GitHub repo](https://github.com/valpere/trytrago)
+
+\#docker #docker-compose #redis #golang #caching #jwt #protobuf #rest-api #swagger #openapi #api-server #viper #gin #gorm #cobra #testify #uber-zap
 
 <a name="api-server-for-english"></a>
 ### **English**
