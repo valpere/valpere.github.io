@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Big Beautiful Deal
+title: Projects
 ---
 
 Welcome to my projects.
