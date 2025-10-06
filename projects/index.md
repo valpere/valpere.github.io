@@ -8,41 +8,46 @@ Welcome to my projects.
 <!-- TOC start -->
 
 - [Vibe Coding -- is blending AI with what you've known](#vibe-coding-is-blending)
-   * [**English**](#vibe-coding-english)
-   * [**Українська**](#vibe-coding-ukrainian)
+  - [**English**](#vibe-coding-english)
+  - [**Українська**](#vibe-coding-ukrainian)
+- [Rule-Based Telegram ChatBot -- a professional-grade Telegram bot](#rule-based-telegram-chatbot)
+  - [**English**](#rule-based-telegram-chatbot-english)
+  - [**Українська**](#rule-based-telegram-chatbot-ukrainian)
 - [DataScrapexter -- Professional Data Scraper](#datascrapexter-professional-data-scraper)
-   * [**English**](#datascrapexter-english)
-   * [**Українська**](#datascrapexter-ukrainian)
+  - [**English**](#datascrapexter-english)
+  - [**Українська**](#datascrapexter-ukrainian)
 - [MaiChe -- Email Validation Tool](#maiche-email-validation-tool)
-   * [**English**](#maiche-english)
-   * [**Українська**](#maiche-ukrainian)
+  - [**English**](#maiche-english)
+  - [**Українська**](#maiche-ukrainian)
 - [WebPageInvestigator -- All-in-One Web Page Analysis Tool](#webpageinvestigator-all-in-one-web-page-analysis-tool)
-   * [**English**](#webpageinvestigator-english)
-   * [**Українська**](#webpageinvestigator-ukrainian)
+  - [**English**](#webpageinvestigator-english)
+  - [**Українська**](#webpageinvestigator-ukrainian)
 - [CLI Google Translator written on Golang](#cli-google-translator-written-on-golang)
-   * [**English**](#cli-google-translator-english)
-   * [**Українська**](#cli-google-translator-ukrainian)
+  - [**English**](#cli-google-translator-english)
+  - [**Українська**](#cli-google-translator-ukrainian)
 - [Twitter-like API Server built with Groovy, Spring Boot, and MongoDB](#twitter-like-api-server-built-with-groovy-spring-boot-and-mongodb)
-   * [**English**](#twitter-like-api-server-english)
-   * [**Українська**](#twitter-like-api-server-ukrainian)
+  - [**English**](#twitter-like-api-server-english)
+  - [**Українська**](#twitter-like-api-server-ukrainian)
 - [API server for a multilanguage dictionary written in Golang](#api-server-for-a-multilanguage-dictionary-written-in-golang)
-   * [**English**](#api-server-for-english)
-   * [**Українська**](#api-server-for-ukrainian)
+  - [**English**](#api-server-for-english)
+  - [**Українська**](#api-server-for-ukrainian)
 
 <!-- TOC end -->
 
 ---
 
 <a name="vibe-coding-is-blending"></a>
+
 ## Vibe Coding -- is blending AI with what you've known
 
-* [Upwork](https://www.upwork.com/services/product/development-it-an-mvp-reviewed-fixed-or-created-with-ai-driven-vibe-coding-1949815181887134254)
-* [Fiverr](https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding)
-* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [Upwork](https://www.upwork.com/services/product/development-it-an-mvp-reviewed-fixed-or-created-with-ai-driven-vibe-coding-1949815181887134254)
+- [Fiverr](https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
 ![Vibe Coding -- clean, scalable, lovable solutions](/projects/assets/images/vibe_coding/vibe_coding-1-0384x0256.png)
 
 <a name="vibe-coding-english"></a>
+
 ### **English**
 
 [More detailed](/projects/vibe_coding/)
@@ -57,37 +62,38 @@ What You Need, Delivered Fast
 
 For Startups & Founders:
 
-* Launch investor-ready MVPs in 1–2 weeks
-* Build AI features (chatbots, automation, analytics) without hiring a whole team
-* Go from idea to working prototype 10x faster
+- Launch investor-ready MVPs in 1–2 weeks
+- Build AI features (chatbots, automation, analytics) without hiring a whole team
+- Go from idea to working prototype 10x faster
 
 For Businesses & Teams:
 
-* Modernize legacy systems without risky rewrites
-* Add scalable microservices without infrastructure headaches
-* Automate workflows with low-code + AI integration
+- Modernize legacy systems without risky rewrites
+- Add scalable microservices without infrastructure headaches
+- Automate workflows with low-code + AI integration
 
 For Developers:
 
-* Extend your stack with AI pair programming
-* Fix technical debt with Claude-powered code reviews
-* Deploy production-ready backends on Supabase/GCP
+- Extend your stack with AI pair programming
+- Fix technical debt with Claude-powered code reviews
+- Deploy production-ready backends on Supabase/GCP
 
 How It Works:
 
 1. You share your goal (e.g., "Need a booking API for my SaaS")
 2. I vibe-code it using:
-   * AI: Claude + Cursor for bug-free, efficient code
-   * Low-Code: Supabase for instant databases/auth
-   * Scalability: Go/Java cores for high-traffic needs
+   - AI: Claude + Cursor for bug-free, efficient code
+   - Low-Code: Supabase for instant databases/auth
+   - Scalability: Go/Java cores for high-traffic needs
 3. You get:
-   * A working system in 3–14 days
-   * Clean, documented code you can scale
-   * Optional Replit demo to test drive
+   - A working system in 3–14 days
+   - Clean, documented code you can scale
+   - Optional Replit demo to test drive
 
 \#lovable_ai \#bolt_new \#mvp \#claude_code \#ai \#supabase \#replit \#cursor \#base44 \#n8n
 
 <a name="vibe-coding-ukrainian"></a>
+
 ### **Українська**
 
 **Vibe Coding — підхід, що поєднує інструменти штучного інтелекту з мовами програмування та платформами з мінімальним або без коду для створення чітких, масштабованих і привабливих рішень**
@@ -100,47 +106,87 @@ Vibe Coding поєднує автоматизацію на основі штуч
 
 Для стартапів та засновників:
 
-* Запустіть готові для інвесторів MVP за 1–2 тижні
-* Створіть функції штучного інтелекту (чат-боти, автоматизація, аналітика) без найму цілої команди
-* Перейдіть від ідеї до робочого прототипу в 10 разів швидше
+- Запустіть готові для інвесторів MVP за 1–2 тижні
+- Створіть функції штучного інтелекту (чат-боти, автоматизація, аналітика) без найму цілої команди
+- Перейдіть від ідеї до робочого прототипу в 10 разів швидше
 
 Для підприємств та команд:
 
-* Модернізуйте застарілі системи без ризикованих переписань
-* Додайте масштабовані мікросервіси без головного болю з інфраструктурою
-* Автоматизація робочих процесів за допомогою інтеграції low-code + AI
+- Модернізуйте застарілі системи без ризикованих переписань
+- Додайте масштабовані мікросервіси без головного болю з інфраструктурою
+- Автоматизація робочих процесів за допомогою інтеграції low-code + AI
 
 Для розробників:
 
-* Розширення вашого стеку за допомогою парного програмування AI
-* Виправлення технічного боргу за допомогою перегляду коду на базі Claude
-* Розгортання готових до виробництва бекендів на Supabase/GCP
+- Розширення вашого стеку за допомогою парного програмування AI
+- Виправлення технічного боргу за допомогою перегляду коду на базі Claude
+- Розгортання готових до виробництва бекендів на Supabase/GCP
 
 Як це працює:
 
 1. Ви ділитеся своєю метою (наприклад, «Потрібен API для бронювання для мого SaaS»)
 2. Я пишу код, використовуючи:
-   * ШІ: Claude + Cursor для бездоганного та ефективного коду
-   * Low-Code: Supabase для миттєвих баз даних/аутентифікації
-   * Масштабованість: Go/Java cores для потреб з високим трафіком
+   - ШІ: Claude + Cursor для бездоганного та ефективного коду
+   - Low-Code: Supabase для миттєвих баз даних/аутентифікації
+   - Масштабованість: Go/Java cores для потреб з високим трафіком
 3. Ви отримуєте:
-   * Працюючу систему за 3–14 днів
-   * Чистий, задокументований код, який можна масштабувати
-   * Опціональну демо-версію Replit для тестування
+   - Працюючу систему за 3–14 днів
+   - Чистий, задокументований код, який можна масштабувати
+   - Опціональну демо-версію Replit для тестування
 
 \#lovable_ai \#bolt_new \#mvp \#claude_code \#ai \#supabase \#replit \#cursor \#base44 \#n8n
 
 ---
 
+<a name="rule-based-telegram-chatbot"></a>
+
+## Rule-Based Telegram ChatBot -- a professional-grade Telegram bot
+
+- [Upwork](https://www.upwork.com/services/product/development-it-a-custom-telegram-bot-to-automate-your-business-1965029712082056479)
+- [Fiverr](https://www.fiverr.com/pere_val/build-a-custom-telegram-bot-to-automate-your-business)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+
+![Rule-Based Telegram ChatBot -- Professional Infographic Of Bot Features](/projects/assets/images/rule-based_telegram_chatbot/professional-infographic-of-bot-features-1-0768x0512.jpg)
+
+<a name="rule-based-telegram-chatbot-english"></a>
+
+### **English**
+
+[More detailed](/rule-based_telegram_chatbot/)
+
+Take control of your Telegram presence with a powerful custom Telegram bot focused on autoresponder efficiency, Telegram automation, and bot development that drives real results. Powered by JavaScript/Go/Java for optimal speed and scalability, this Telegram chatbot leverages the telegram api to create smooth, rule-based experiences that keep your operations running smoothly.
+
+You can generate leads more effectively by setting up automated funnels that engage users from the first message, collect data, and convert visitors into customers. For crypto projects, your crypto bot can monitor markets, send price notifications, and manage community interactions with ease. Appointment bots simplify booking services, such as coaching or real estate viewings, with features like calendar sync and automated confirmations. E-commerce owners can automate support queries, upsell products, and track shipments through interactive menus.
+
+Through expert chatbot development, you can cut response times in half, increase conversions, and integrate with your tools for a unified system. Use cases range from lead generation in marketing campaigns to daily automation in news channels or secure crypto trading alerts.
+
+\#autoresponder \#telegram_bot \#crypto_bot \#telegram_automation \#custom_telegram_bot \#bot_development \#telegram_api
+
+<a name="rule-based-telegram-chatbot-ukrainian"></a>
+
+### **Українська**
+
+Керуйте своєю присутністю в Telegram за допомогою потужного кастомного бота Telegram, орієнтованого на ефективність автовідповідачів, автоматизацію Telegram та розробку ботів, які забезпечують реальні результати. Працює на JavaScript/Go/Java для оптимальної швидкості та масштабованості, цей чат-бот Telegram використовує API Telegram для створення плавного, заснованого на правилах досвіду, який забезпечує безперебійну роботу ваших операцій.
+
+Ви можете генерувати ліди ефективніше, налаштувавши автоматизовані воронки продажів, які залучають користувачів з першого повідомлення, збирають дані та перетворюють відвідувачів на клієнтів. Для крипто-проектів ваш крипто-бот може легко моніторити ринки, надсилати сповіщення про ціни та керувати взаємодією зі спільнотою. Боти для призначення зустрічей спрощують послуги бронювання, такі як коучинг або перегляд нерухомості, завдяки таким функціям, як синхронізація календаря та автоматичні підтвердження. Власники електронної комерції можуть автоматизувати запити служби підтримки, продавати додаткові товари та відстежувати відправлення через інтерактивні меню.
+
+Завдяки експертній розробці чат-ботів ви можете скоротити час відповіді вдвічі, збільшити конверсії та інтегруватися зі своїми інструментами для створення єдиної системи. Варіанти використання варіюються від генерації лідів у маркетингових кампаніях до щоденної автоматизації в новинних каналах або безпечних сповіщень про криптовалютну торгівлю.
+
+\#автовідповідач \#бот_telegram \#криптобот \#автоматизація_telegram \#користувацький_бот_telegram \#розробка_бота \#api_telegram
+
+---
+
 <a name="datascrapexter-professional-data-scraper"></a>
+
 ## DataScrapexter -- Professional Data Scraper
 
-* [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
-* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
 ![Unleash the power of web scraping](/projects/assets/images/data_scrapexter/unleash_the_power_of_web_scraping-1-0384x0256.png)
 
 <a name="datascrapexter-english"></a>
+
 ### **English**
 
 [More detailed](/projects/datascrapexter/)
@@ -158,6 +204,7 @@ Use cases include e-commerce scraping for competitor pricing analysis, web crawl
 \#data_scraping \#website_scraping \#web_scraper \#data_mining \#data_extraction
 
 <a name="datascrapexter-ukrainian"></a>
+
 ### **Українська**
 
 **DataScrapexter — професійний інструмент для збору даних**
@@ -177,14 +224,16 @@ Use cases include e-commerce scraping for competitor pricing analysis, web crawl
 ---
 
 <a name="maiche-email-validation-tool"></a>
+
 ## MaiChe -- Email Validation Tool
 
-* [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
-* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
 ![Applications_and_benefits](/projects/assets/images/maiche/applications_and_benefits-0256x0256.png)
 
 <a name="maiche-english"></a>
+
 ### **English**
 
 [More detailed](/projects/maiche/)
@@ -200,6 +249,7 @@ You receive a detailed report, ready for immediate use, with your data handled s
 Enjoy higher deliverability, better engagement, and peace of mind— your email marketing can perform at its best!
 
 <a name="maiche-ukrainian"></a>
+
 ### **Українська**
 
 **MaiChe — інструмент перевірки електронної пошти**
@@ -219,14 +269,16 @@ Enjoy higher deliverability, better engagement, and peace of mind— your email 
 ---
 
 <a name="webpageinvestigator-all-in-one-web-page-analysis-tool"></a>
+
 ## WebPageInvestigator -- All-in-One Web Page Analysis Tool
 
-* [Fiverr](https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro)
-* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [Fiverr](https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
 ![Overview feature highlight](/projects/assets/images/web_page_investigator/real_world-use_cases-landscape-0384x0256.png)
 
 <a name="webpageinvestigator-english"></a>
+
 ### **English**
 
 [More detailed](/projects/web_page_investigator/)
@@ -242,6 +294,7 @@ Automate your web data processing with efficient tools tailored for you.
 \#data_scraping \#web_scraping \#web_scraper \#data_mining \#data_extraction
 
 <a name="webpageinvestigator-ukrainian"></a>
+
 ### **Українська**
 
 **WebPageInvestigator — універсальний інструмент для аналізу веб-сторінок**
@@ -259,6 +312,7 @@ Automate your web data processing with efficient tools tailored for you.
 ---
 
 <a name="cli-google-translator-written-on-golang"></a>
+
 ## CLI Google Translator written on Golang
 
 [GitHub repo](https://github.com/valpere/gootrago)
@@ -266,6 +320,7 @@ Automate your web data processing with efficient tools tailored for you.
 \#docker #docker-compose #golang #rest-api #viper #cobra #testify #uber-zap
 
 <a name="cli-google-translator-english"></a>
+
 ### **English**
 
 A CLI application that translates text files using Google Translate API.
@@ -275,6 +330,7 @@ It supports both Basic and Advanced Google Translate APIs and various language o
 The Basic API is simpler but has fewer features, while the Advanced API offers more control but requires a Google Cloud Project ID.
 
 <a name="cli-google-translator-ukrainian"></a>
+
 ### **Українська**
 
 CLI-додаток, що перекладає текстові файли за допомогою API Google Translate.
@@ -286,6 +342,7 @@ CLI-додаток, що перекладає текстові файли за �
 ---
 
 <a name="twitter-like-api-server-built-with-groovy-spring-boot-and-mongodb"></a>
+
 ## Twitter-like API Server built with Groovy, Spring Boot, and MongoDB
 
 [GitHub repo](https://github.com/valpere/testwigr)
@@ -293,11 +350,13 @@ CLI-додаток, що перекладає текстові файли за �
 \#groovy #jwt #spring-boot #mongodb #rest-api #swagger #openapi #api-server #spring-security #spring-test #spring-data-mongodb #junit5 #spock-framework
 
 <a name="twitter-like-api-server-english"></a>
+
 ### **English**
 
 A robust Twitter-like API built with Groovy, Spring Boot, and MongoDB. This project implements core Twitter functionality including user registration, authentication with JWT, posting, liking, commenting, and following other users.
 
 <a name="twitter-like-api-server-ukrainian"></a>
+
 ### **Українська**
 
 Надійний API, схожий на Twitter, створений за допомогою Groovy, Spring Boot та MongoDB. Цей проект реалізує основні функції Twitter, включаючи реєстрацію користувачів, автентифікацію за допомогою JWT, публікацію дописів, лайки, коментарі та підписку на інших користувачів.
@@ -305,6 +364,7 @@ A robust Twitter-like API built with Groovy, Spring Boot, and MongoDB. This proj
 ---
 
 <a name="api-server-for-a-multilanguage-dictionary-written-in-golang"></a>
+
 ## API server for a multilanguage dictionary written in Golang
 
 [GitHub repo](https://github.com/valpere/trytrago)
@@ -312,11 +372,13 @@ A robust Twitter-like API built with Groovy, Spring Boot, and MongoDB. This proj
 \#docker #docker-compose #redis #golang #caching #jwt #protobuf #rest-api #swagger #openapi #api-server #viper #gin #gorm #cobra #testify #uber-zap
 
 <a name="api-server-for-english"></a>
+
 ### **English**
 
 TryTraGo is a high-performance multi-language dictionary server designed to support approximately 60 million dictionary entries with robust API functionality, social features, and multi-database support.
 
 <a name="api-server-for-ukrainian"></a>
+
 ### **Українська**
 
 TryTraGo — це високопродуктивний багатомовний словник-сервер, розроблений для підтримки приблизно 60 мільйонів словникових статей із надійною функціональністю API, соціальними функціями та підтримкою декількох баз даних.
