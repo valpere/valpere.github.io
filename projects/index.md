@@ -152,7 +152,7 @@ Vibe Coding поєднує автоматизацію на основі штуч
 
 ### **English**
 
-[More detailed](/rule-based_telegram_chatbot/)
+[More detailed](/projects/rule-based_telegram_chatbot/)
 
 Take control of your Telegram presence with a powerful custom Telegram bot focused on autoresponder efficiency, Telegram automation, and bot development that drives real results. Powered by JavaScript/Go/Java for optimal speed and scalability, this Telegram chatbot leverages the telegram api to create smooth, rule-based experiences that keep your operations running smoothly.
 
