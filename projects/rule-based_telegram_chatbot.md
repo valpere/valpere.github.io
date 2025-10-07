@@ -7,6 +7,10 @@ exclude: true
 
 # Rule-Based Telegram ChatBot
 
+[Те саме Українською](../rule-based_telegram_chatbot-ua)
+
+**Links:**
+
 - [Upwork](https://www.upwork.com/services/product/development-it-a-custom-telegram-bot-to-automate-your-business-1965029712082056479)
 - [Fiverr](https://www.fiverr.com/pere_val/build-a-custom-telegram-bot-to-automate-your-business)
 - [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
@@ -107,6 +111,6 @@ The Rule-Based Telegram ChatBot project is deployed via a straightforward proces
 
 ---
 
-### Call to Action
+### What you can do
 
-To explore how the Rule-Based Telegram ChatBot project can specifically benefit your business and enhance your customer interactions, contact our team for a personalized demonstration and consultation. We will work with you to tailor the bot’s capabilities to your unique needs and ensure a seamless integration that drives measurable results.
+To explore how the Rule-Based Telegram ChatBot project can specifically benefit your business and enhance your customer interactions, contact me for a personalized demonstration and consultation. I will work with you to tailor the bot’s capabilities to your unique needs and ensure a seamless integration that drives measurable results.
