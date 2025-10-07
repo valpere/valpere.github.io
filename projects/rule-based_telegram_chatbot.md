@@ -11,7 +11,7 @@ exclude: true
 - [Fiverr](https://www.fiverr.com/pere_val/build-a-custom-telegram-bot-to-automate-your-business)
 - [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
 
-![Professional web scraping solution](../assets//images/data_scrapexter/professional_web_scraping_solution-1-0384x0256.png)
+![Telegram bot solutions comparison overview](../assets/images/rule-based_telegram_chatbot/telegram_bot_solutions-comparison-overview-0768x0512.png)
 
 ---
 
@@ -108,7 +108,5 @@ The Rule-Based Telegram ChatBot project is deployed via a straightforward proces
 ---
 
 ### Call to Action
-
-![Telegram bot solutions comparison overview](../assets/images/rule-based_telegram_chatbot/telegram_bot_solutions-comparison-overview-0768x0512.png)
 
 To explore how the Rule-Based Telegram ChatBot project can specifically benefit your business and enhance your customer interactions, contact our team for a personalized demonstration and consultation. We will work with you to tailor the bot’s capabilities to your unique needs and ensure a seamless integration that drives measurable results.
