@@ -13,6 +13,9 @@ Welcome to my projects.
 - [Rule-Based Telegram ChatBot -- a professional-grade Telegram bot](#rule-based-telegram-chatbot)
   - [**English**](#rule-based-telegram-chatbot-english)
   - [**Українська**](#rule-based-telegram-chatbot-ukrainian)
+- [ShoPogoda (Що Погода) - Enterprise Weather Bot](#shopogoda-enterprise-weather-bot)
+  - [**English**](#shopogoda-english)
+  - [**Українська**](#shopogoda-ukrainian)
 - [DataScrapexter -- Professional Data Scraper](#datascrapexter-professional-data-scraper)
   - [**English**](#datascrapexter-english)
   - [**Українська**](#datascrapexter-ukrainian)
@@ -90,7 +93,7 @@ How It Works:
    - Clean, documented code you can scale
    - Optional Replit demo to test drive
 
-\#lovable_ai \#bolt_new \#mvp \#claude_code \#ai \#supabase \#replit \#cursor \#base44 \#n8n
+\#lovable_ai #bolt_new #mvp #claude_code #ai #supabase #replit #cursor #base44 #n8n
 
 <a name="vibe-coding-ukrainian"></a>
 
@@ -134,7 +137,7 @@ Vibe Coding поєднує автоматизацію на основі штуч
    - Чистий, задокументований код, який можна масштабувати
    - Опціональну демо-версію Replit для тестування
 
-\#lovable_ai \#bolt_new \#mvp \#claude_code \#ai \#supabase \#replit \#cursor \#base44 \#n8n
+\#lovable_ai #bolt_new #mvp #claude_code #ai #supabase #replit #cursor #base44 #n8n
 
 ---
 
@@ -160,7 +163,7 @@ You can generate leads more effectively by setting up automated funnels that eng
 
 Through expert chatbot development, you can cut response times in half, increase conversions, and integrate with your tools for a unified system. Use cases range from lead generation in marketing campaigns to daily automation in news channels or secure crypto trading alerts.
 
-\#autoresponder \#telegram_bot \#crypto_bot \#telegram_automation \#custom_telegram_bot \#bot_development \#telegram_api
+\#autoresponder #telegram_bot #crypto_bot #telegram_automation #custom_telegram_bot #bot_development #telegram_api
 
 <a name="rule-based-telegram-chatbot-ukrainian"></a>
 
@@ -174,7 +177,46 @@ Through expert chatbot development, you can cut response times in half, increase
 
 Завдяки експертній розробці чат-ботів ви можете скоротити час відповіді вдвічі, збільшити конверсії та інтегруватися зі своїми інструментами для створення єдиної системи. Варіанти використання варіюються від генерації лідів у маркетингових кампаніях до щоденної автоматизації в новинних каналах або безпечних сповіщень про криптовалютну торгівлю.
 
-\#автовідповідач \#бот_telegram \#криптобот \#автоматизація_telegram \#користувацький_бот_telegram \#розробка_бота \#api_telegram
+\#автовідповідач #бот_telegram #криптобот #автоматизація_telegram #користувацький_бот_telegram #розробка_бота #api_telegram
+
+---
+
+<a name="shopogoda-enterprise-weather-bot"></a>
+
+## ShoPogoda (Що Погода) - Enterprise Weather Bot
+
+- [GitHub](https://github.com/valpere/shopogoda)
+- Live Demo: [ShoPogodaBot](https://t.me/shopogoda_bot)
+
+![For Every Industry, Every Condition](/projects/assets/images/shopogoda/for_every_industry-every_condition-1-0384x0256.png)
+
+<a name="shopogoda-english"></a>
+
+### **English**
+
+[More detailed](/projects/shopogoda/)
+
+ShoPogoda is a production-ready Telegram bot for weather monitoring, environmental alerts, and enterprise integrations, deployed on Railway with Supabase PostgreSQL and Upstash Redis.
+Core features: real-time weather, 5-day forecasts, air quality, smart locations, multi-language support (UA, EN, DE, FR, ES).
+Enterprise: custom alerts, Slack/Teams integration, RBAC, Prometheus/Grafana monitoring, high availability.
+Technical: scalable design, 30.5% test coverage, Docker/CI/CD, security with rate limiting and logs.
+
+
+\#product_development #ai_assisted_development #open_source #automation #vibe_coding #ai_engineering #cloud_architecture #cost_optimization #production_engineering #devops
+
+<a name="shopogoda-ukrainian"></a>
+
+### **Українська**
+
+[Більш детально](/projects/shopogoda-ua/)
+
+ShoPogoda — це готовий до виробництва бот Telegram для моніторингу погоди, екологічних сповіщень та інтеграції підприємств, розгорнутий на Railway з Supabase PostgreSQL та Upstash Redis.
+Основні функції: погода в режимі реального часу, 5-денний прогноз, якість повітря, розумні локації, багатомовна підтримка (UA, EN, DE, FR, ES).
+Підприємство: індивідуальні сповіщення, інтеграція Slack/Teams, RBAC, моніторинг Prometheus/Grafana, висока доступність.
+Технічні характеристики: масштабована конструкція, 30,5% тестове покриття, Docker/CI/CD, безпека з обмеженням швидкості та журналами.
+
+
+\#розробка_продукту #розробка_за_допомогою_ші #відкрите_програмне_забезпечення #автоматизація #vibe_coding #інженерія_ші #хмарна_архітектура #оптимізація_витрат #виробнича_інженерія #devops
 
 ---
 
@@ -203,7 +245,7 @@ You can effortlessly extract valuable data from any website, enabling seamless w
 
 Use cases include e-commerce scraping for competitor pricing analysis, web crawling for market research, or developing custom scrapers for niche data extraction. Whether you're a small business or enterprise, you can rely on clear, actionable insights.
 
-\#data_scraping \#website_scraping \#web_scraper \#data_mining \#data_extraction
+\#data_scraping #website_scraping #web_scraper #data_mining #data_extraction
 
 <a name="datascrapexter-ukrainian"></a>
 
@@ -221,7 +263,7 @@ Use cases include e-commerce scraping for competitor pricing analysis, web crawl
 
 Приклади використання включають веб-скрейпінг електронної комерції для аналізу цін конкурентів, веб-сканування для дослідження ринку або розробку спеціальних скрейперів для вилучення нішевих даних. Незалежно від того, чи є ви малим бізнесом чи великим підприємством, ви можете покластися на чіткі, практичні аналітичні дані.
 
-\#збір_інформації \#збирання_даних \#збирання_даних_з_веб-сайтів \#веб-скрейпер \#аналіз_даних \#витяг_даних
+\#збір_інформації #збирання_даних #збирання_даних_з_веб-сайтів #веб-скрейпер #аналіз_даних #витяг_даних
 
 ---
 
@@ -266,7 +308,7 @@ Enjoy higher deliverability, better engagement, and peace of mind— your email 
 
 Насолоджуйтесь вищою доставкою, кращою взаємодією та спокоєм — ваш електронний маркетинг може працювати на повну потужність!
 
-\#перевірка_електронної_пошти \#очищення_списку \#автоматизація \#програмування \#кодування
+\#перевірка_електронної_пошти #очищення_списку #автоматизація #програмування #кодування
 
 ---
 
@@ -293,7 +335,7 @@ These tools go beyond basic scraping, handling dynamic content with headless bro
 
 Automate your web data processing with efficient tools tailored for you.
 
-\#data_scraping \#web_scraping \#web_scraper \#data_mining \#data_extraction
+\#data_scraping #web_scraping #web_scraper #data_mining #data_extraction
 
 <a name="webpageinvestigator-ukrainian"></a>
 
@@ -309,7 +351,7 @@ Automate your web data processing with efficient tools tailored for you.
 
 Автоматизуйте обробку веб-даних за допомогою ефективних інструментів, розроблених спеціально для вас.
 
-\#збирання_даних \#збирання_даних_з_веб-сторінок \#збирання_даних_з_веб-сторінок \#видобування_даних \#видобування_даних
+\#збирання_даних #збирання_даних_з_веб-сторінок #збирання_даних_з_веб-сторінок #видобування_даних #видобування_даних
 
 ---
 
