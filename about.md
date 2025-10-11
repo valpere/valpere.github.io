@@ -6,7 +6,7 @@ permalink: /about/
 
 # About Me
 
-* [Links](about-links)
+* [Links](#about-links)
 * [Overview](#about-overview)
   * [**English**](#about-english)
   * [**Українська**](#about-ukrainian)
@@ -18,7 +18,7 @@ permalink: /about/
 * [LinkeIn](https://www.linkedin.com/in/valentynsolomko/)
 * [Upwork](https://www.upwork.com/freelancers/~01ab3037d280df81ea)
 * [Fiverr](https://www.fiverr.com/users/pere_val)
-* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 <a name="about-overview"></a>
 

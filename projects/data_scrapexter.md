@@ -8,7 +8,7 @@ exclude: true
 # Professional Data Scraper
 
 * [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
-* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ## Brief Overview
 

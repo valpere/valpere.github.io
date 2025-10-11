@@ -45,7 +45,7 @@ Welcome to my projects.
 
 - [Upwork](https://www.upwork.com/services/product/development-it-an-mvp-reviewed-fixed-or-created-with-ai-driven-vibe-coding-1949815181887134254)
 - [Fiverr](https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding)
-- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ![Vibe Coding -- clean, scalable, lovable solutions](/projects/assets/images/vibe_coding/vibe_coding-1-0384x0256.png)
 
@@ -147,7 +147,7 @@ Vibe Coding поєднує автоматизацію на основі штуч
 
 - [Upwork](https://www.upwork.com/services/product/development-it-a-custom-telegram-bot-to-automate-your-business-1965029712082056479)
 - [Fiverr](https://www.fiverr.com/pere_val/build-a-custom-telegram-bot-to-automate-your-business)
-- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ![Rule-Based Telegram ChatBot -- Professional Infographic Of Bot Features](/projects/assets/images/rule-based_telegram_chatbot/professional-infographic-of-bot-features-1-0768x0512.jpg)
 
@@ -225,7 +225,7 @@ ShoPogoda — це готовий до виробництва бот Telegram д
 ## DataScrapexter -- Professional Data Scraper
 
 - [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
-- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ![Unleash the power of web scraping](/projects/assets/images/data_scrapexter/unleash_the_power_of_web_scraping-1-0384x0256.png)
 
@@ -272,7 +272,7 @@ Use cases include e-commerce scraping for competitor pricing analysis, web crawl
 ## MaiChe -- Email Validation Tool
 
 - [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
-- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ![Applications_and_benefits](/projects/assets/images/maiche/applications_and_benefits-0256x0256.png)
 
@@ -317,7 +317,7 @@ Enjoy higher deliverability, better engagement, and peace of mind— your email 
 ## WebPageInvestigator -- All-in-One Web Page Analysis Tool
 
 - [Fiverr](https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro)
-- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ![Overview feature highlight](/projects/assets/images/web_page_investigator/real_world-use_cases-landscape-0384x0256.png)
 

@@ -11,7 +11,7 @@ exclude: true
 
 **Links:**
 
-- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 A production-ready Telegram bot for weather monitoring, environmental alerts, and enterprise integrations. Currently deployed on Railway with Supabase PostgreSQL and Upstash Redis.
 
