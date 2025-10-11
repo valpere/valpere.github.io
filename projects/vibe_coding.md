@@ -9,7 +9,7 @@ exclude: true
 
 - [Upwork](https://www.upwork.com/services/product/development-it-an-mvp-reviewed-fixed-or-created-with-ai-driven-vibe-coding-1949815181887134254)
 - [Fiverr](https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding)
-- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ## Transform Your Ideas Into Reality - Fast, Smart, and Scalable
 

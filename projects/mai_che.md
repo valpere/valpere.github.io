@@ -8,7 +8,7 @@ exclude: true
 # Email Validation Tool
 
 * [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
-* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+* [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ## Brief Overview
 

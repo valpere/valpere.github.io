@@ -11,7 +11,7 @@ exclude: true
 
 **Покликання:**
 
-- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html)
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 Готовий до роботи Telegram-бот для моніторингу погоди, сповіщень про стан навколишнього середовища та корпоративних інтеграцій. Наразі розгорнуто на Railway з Supabase PostgreSQL та Upstash Redis.
 
