@@ -16,6 +16,9 @@ Welcome to my projects.
 - [ShoPogoda (Що Погода) - Enterprise Weather Bot](#shopogoda-enterprise-weather-bot)
   - [**English**](#shopogoda-english)
   - [**Українська**](#shopogoda-ukrainian)
+- [KeepinCRM Automation for E-Commerce](#keepincrm-automation-for-e-commerce)
+  - [**English**](#keepincrm-english)
+  - [**Українська**](#keepincrm-ukrainian)
 - [DataScrapexter -- Professional Data Scraper](#datascrapexter-professional-data-scraper)
   - [**English**](#datascrapexter-english)
   - [**Українська**](#datascrapexter-ukrainian)
@@ -217,6 +220,41 @@ ShoPogoda — це готовий до виробництва бот Telegram д
 
 
 \#розробка_продукту #розробка_за_допомогою_ші #відкрите_програмне_забезпечення #автоматизація #vibe_coding #інженерія_ші #хмарна_архітектура #оптимізація_витрат #виробнича_інженерія #devops
+
+---
+
+<a name="keepincrm-automation-for-e-commerce"></a>
+
+## KeepinCRM Automation for E-Commerce
+
+- [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
+
+![KeepinCRM Automation Infographics](/projects/assets/images/keepincrm/keepincrm_ua-2-0316x0212.png)
+
+
+<a name="keepincrm-english"></a>
+
+### **English**
+
+[More detailed](/projects/keepincrm/)
+
+Go daemon that fully automates a Ukrainian e-commerce store's CRM workflow: moves deals through the sales funnel based on Nova Poshta delivery statuses, generates fiscal receipts via Checkbox (ПРРО) with correct payment types, and sends automated SMS notifications via TurboSMS.
+
+WayForPay orders are fiscalized immediately upon arrival in CRM — without waiting for a tracking number. SQLite deduplication guarantees every event (stage move, SMS, receipt) fires exactly once. Deployed as a systemd unit on the client's VPS, running 24/7.
+
+\#golang #systemd #sqlite #rest_api #keepincrm #nova_poshta #checkbox #turbosms #wayforpay #e_commerce #crm_automation #fiscalization #prro
+
+<a name="keepincrm-ukrainian"></a>
+
+### **Українська**
+
+[Більш детально](/projects/keepincrm-ua/)
+
+Go-демон, що повністю автоматизує CRM-процеси українського інтернет-магазину: переміщує угоди по воронці продажів на основі статусів доставки Нової Пошти, формує фіскальні чеки через Checkbox (ПРРО) з коректними типами оплати та надсилає SMS-сповіщення через TurboSMS.
+
+Замовлення WayForPay фіскалізуються одразу при появі в CRM — без очікування ТТН. SQLite-дедублікація гарантує, що кожна подія (зміна етапу, SMS, чек) виконується рівно один раз. Задеплоєно як systemd-юніт на VPS клієнта, працює 24/7.
+
+\#golang #systemd #sqlite #rest_api #keepincrm #nova_poshta #checkbox #turbosms #wayforpay #електронна_комерція #автоматизація_crm #фіскалізація #прро
 
 ---
 
