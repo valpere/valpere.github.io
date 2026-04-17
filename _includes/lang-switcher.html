@@ -1,7 +1,5 @@
-{% if page.lang_alt %}
-<div class="lang-switcher" style="font-size:var(--text-sm); margin-bottom:var(--sp-4);">
-  <a href="{{ page.lang_alt | relative_url }}" style="color:var(--brand-muted); text-decoration:none; border:1px solid var(--brand-border); padding:2px 10px; border-radius:var(--r-full);">
-    {% if page.lang == 'uk' %}EN{% else %}UA{% endif %}
-  </a>
-</div>
+{% if site.active_lang == 'en' %}
+<a href="/uk{{ page.url }}" class="lang-btn" lang="uk" hreflang="uk" aria-label="Switch to Ukrainian">UA</a>
+{% else %}
+<a {% static_href %}href="{{ page.url | remove_first: '/uk' | relative_url }}"{% endstatic_href %} class="lang-btn" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
 {% endif %}
