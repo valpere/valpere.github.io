@@ -1,13 +1,12 @@
 ---
 layout: project
 title: TryTraGo Dictionary
-permalink: /projects/trytrago-ua/
+permalink: /projects/trytrago/
 exclude: true
 lang: uk
 lang_alt: /projects/trytrago/
 ---
 
-[The same in English](../trytrago)
 
 **Посилання:** [GitHub](https://github.com/valpere/trytrago)
 

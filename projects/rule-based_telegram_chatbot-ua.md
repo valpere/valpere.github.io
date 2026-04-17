@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Telegram ChatBot на основі правил
-permalink: /projects/rule-based_telegram_chatbot-ua/
+permalink: /projects/rule-based_telegram_chatbot/
 exclude: true
 lang: uk
 lang_alt: /projects/rule-based_telegram_chatbot/
@@ -9,7 +9,6 @@ lang_alt: /projects/rule-based_telegram_chatbot/
 
 # Telegram ChatBot на основі правил
 
-[The same in English](../rule-based_telegram_chatbot)
 
 **Посилання:**
 

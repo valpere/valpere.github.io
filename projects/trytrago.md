@@ -4,10 +4,9 @@ title: TryTraGo Dictionary
 permalink: /projects/trytrago/
 exclude: true
 lang: en
-lang_alt: /projects/trytrago-ua/
+lang_alt: /uk/projects/trytrago/
 ---
 
-[The same in Ukrainian](../trytrago-ua)
 
 **Links:** [GitHub](https://github.com/valpere/trytrago)
 

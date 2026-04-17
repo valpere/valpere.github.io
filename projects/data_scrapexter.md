@@ -34,7 +34,7 @@ Additional options include custom feature development, consulting, and premium s
 
 ### Product Description
 
-**DataScrapexter** is a modular, scalable web scraping solution built on Go 1.21+, designed to handle diverse websites—from static HTML to JavaScript-heavy single-page applications (SPAs)—while evading advanced anti-scraping protections. It combines configuration-driven operation (via YAML/JSON with Viper) with sophisticated anti-detection mechanisms (chromedp, Rod, 2Captcha) and a robust data processing pipeline (GORM, Kafka). The platform supports multi-format outputs (JSON, CSV, Excel, databases) and integrates with cloud services (AWS, Google Cloud) for storage and analytics, ensuring compliance with GDPR/CCPA through built-in features like robots.txt respect and audit logging.
+**DataScrapexter** is a modular, scalable web scraping solution built on Go 1.24+, designed to handle diverse websites—from static HTML to JavaScript-heavy single-page applications (SPAs)—while evading advanced anti-scraping protections. It combines configuration-driven operation (via YAML/JSON with Viper) with sophisticated anti-detection mechanisms (chromedp, Rod, 2Captcha) and a robust data processing pipeline (GORM, Kafka). The platform supports multi-format outputs (JSON, CSV, Excel, databases) and integrates with cloud services (AWS, Google Cloud) for storage and analytics, ensuring compliance with GDPR/CCPA through built-in features like robots.txt respect and audit logging.
 
 ### Package Details
 

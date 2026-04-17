@@ -1,13 +1,12 @@
 ---
 layout: project
 title: Twitter-like REST API
-permalink: /projects/testwigr-ua/
+permalink: /projects/testwigr/
 exclude: true
 lang: uk
 lang_alt: /projects/testwigr/
 ---
 
-[The same in English](../testwigr)
 
 **Посилання:** [GitHub](https://github.com/valpere/testwigr)
 

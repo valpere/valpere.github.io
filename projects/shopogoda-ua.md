@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Огляд проекту ShoPogoda
-permalink: /projects/shopogoda-ua/
+permalink: /projects/shopogoda/
 exclude: true
 lang: uk
 lang_alt: /projects/shopogoda/
@@ -9,7 +9,6 @@ lang_alt: /projects/shopogoda/
 
 # Що Погода (ShoPogoda) - Корпоративний бот погоди
 
-[The same in English](../shopogoda)
 
 **Посилання:**
 

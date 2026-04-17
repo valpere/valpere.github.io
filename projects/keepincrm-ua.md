@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Автоматизація KeepinCRM для інтернет-магазину
-permalink: /projects/keepincrm-ua/
+permalink: /projects/keepincrm/
 exclude: true
 lang: uk
 lang_alt: /projects/keepincrm/
@@ -9,7 +9,6 @@ lang_alt: /projects/keepincrm/
 
 # Автоматизація KeepinCRM для інтернет-магазину
 
-[The same in English](../keepincrm/)
 
 **Посилання:**
 

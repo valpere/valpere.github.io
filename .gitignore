@@ -7,6 +7,9 @@
 !_drafts/
 !_config.yml
 
+# GitHub Actions — override global .* gitignore pattern
+!.github/
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -33,8 +36,6 @@ node_modules/
 # Build files
 dist/
 build/
-Gemfile
-Gemfile.lock
 
 # Jekyll files
 _site

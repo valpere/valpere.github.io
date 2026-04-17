@@ -1,4 +1,9 @@
 {% assign i = include.item %}
+{% if site.active_lang == 'uk' %}
+  {% assign card_summary = i.summary_uk | default: i.summary_en %}
+{% else %}
+  {% assign card_summary = i.summary_en %}
+{% endif %}
 <article class="card">
   {% if i.hero_image and i.hero_image != "" %}
   <img src="{{ i.hero_image | relative_url }}" alt="{{ i.client }}" class="card__image" loading="lazy" width="384" height="216">
@@ -8,7 +13,7 @@
       <a href="{{ i.permalink | relative_url }}">{{ i.client }}</a>
     </h3>
     <p class="card__summary">{{ i.role }} · {{ i.period }}</p>
-    <p class="card__summary">{{ i.summary_en }}</p>
+    <p class="card__summary">{{ card_summary }}</p>
     {% if i.stack %}
     <div class="tag-list">
       {% for t in i.stack limit: 5 %}<span class="tag">{{ t }}</span>{% endfor %}
@@ -16,6 +21,6 @@
     {% endif %}
   </div>
   <div class="card__footer">
-    <a href="{{ i.permalink | relative_url }}" class="btn btn--outline btn--sm">View Details</a>
+    <a href="{{ i.permalink | relative_url }}" class="btn btn--outline btn--sm">{% if site.active_lang == 'uk' %}Детальніше{% else %}View Details{% endif %}</a>
   </div>
 </article>

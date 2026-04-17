@@ -4,10 +4,9 @@ title: CLI Google Translator
 permalink: /projects/gootrago/
 exclude: true
 lang: en
-lang_alt: /projects/gootrago-ua/
+lang_alt: /uk/projects/gootrago/
 ---
 
-[The same in Ukrainian](../gootrago-ua)
 
 **Links:** [GitHub](https://github.com/valpere/gootrago)
 
