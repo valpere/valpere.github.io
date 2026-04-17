@@ -7,6 +7,9 @@
 !_drafts/
 !_config.yml
 
+# GitHub Actions — override global .* gitignore pattern
+!.github/
+
 # OS generated files
 .DS_Store
 .DS_Store?
