@@ -1,0 +1,112 @@
+/* ── Home page ── */
+.home-projects {
+  padding-block: var(--sp-9);
+
+  @media (max-width: 640px) { padding-block: var(--sp-7); }
+}
+
+.home-portfolio {
+  padding-block: var(--sp-9);
+  background: var(--brand-surface);
+
+  @media (max-width: 640px) { padding-block: var(--sp-7); }
+}
+
+.home-about {
+  padding-block: var(--sp-9);
+
+  @media (max-width: 640px) { padding-block: var(--sp-7); }
+}
+
+.home-cta {
+  background: var(--brand-green);
+  color: var(--brand-white);
+  padding-block: var(--sp-9);
+  text-align: center;
+
+  h2 { color: var(--brand-white); margin: 0 0 var(--sp-3) 0; }
+  p  { color: rgba(255,255,255,0.85); margin-bottom: var(--sp-6); }
+}
+
+/* ── Project/portfolio detail pages ── */
+.page-hero {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--r-lg);
+  margin-bottom: var(--sp-6);
+}
+
+.project-header {
+  margin-bottom: var(--sp-6);
+
+  h1 {
+    margin-bottom: var(--sp-3);
+    font-size: var(--text-4xl);
+    @media (max-width: 640px) { font-size: var(--text-3xl); }
+  }
+}
+
+.page-content {
+  max-width: var(--max-prose);
+
+  h2 { font-size: var(--text-2xl); }
+  h3 { font-size: var(--text-xl); }
+
+  img {
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
+    margin-block: var(--sp-5);
+  }
+}
+
+/* Sticky sidebar TOC */
+.page-toc {
+  @media (min-width: 1024px) {
+    position: sticky;
+    top: calc(var(--header-height) + var(--sp-5));
+    max-height: calc(100vh - var(--header-height) - var(--sp-10));
+    overflow-y: auto;
+  }
+
+  h3 {
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--brand-muted);
+    margin-top: 0;
+    margin-bottom: var(--sp-3);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: var(--text-sm);
+
+    li { margin-bottom: var(--sp-2); }
+    a {
+      color: var(--brand-muted);
+      text-decoration: none;
+      &:hover { color: var(--brand-green); }
+      &.active { color: var(--brand-green); font-weight: var(--fw-medium); }
+    }
+  }
+}
+
+/* ── About page ── */
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-block: var(--sp-4);
+}
+
+/* ── Projects index page ── */
+.projects-intro {
+  text-align: center;
+  max-width: 60ch;
+  margin-inline: auto;
+  color: var(--brand-muted);
+  margin-bottom: var(--sp-7);
+}
