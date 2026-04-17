@@ -39,3 +39,4 @@ exclude:
   - CLAUDE.md
   - ".claude/"
   - "freelancehunt-*.txt"
+  - "assets/images/brand/README.md"
