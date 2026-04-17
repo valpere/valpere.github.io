@@ -12,12 +12,6 @@ theme: minima # or your chosen theme from https://pages.github.com/themes/
 minima:
   skin: solarized-light
 
-header_pages:
-  - index.md
-  - about.md
-  - portfolio/index.md
-  - projects/index.md
-
 # Plugins (GitHub Pages compatible)
 plugins:
   - jekyll-feed
