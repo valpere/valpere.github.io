@@ -1,0 +1,18 @@
+- slug: deep-dive
+  label_en: "Technical Deep-Dives"
+  label_uk: "Технічні огляди"
+- slug: case-study
+  label_en: "Case Studies"
+  label_uk: "Кейси"
+- slug: methodology
+  label_en: "Methodology"
+  label_uk: "Методологія"
+- slug: ai-practice
+  label_en: "AI Practice"
+  label_uk: "AI-практика"
+- slug: release-notes
+  label_en: "Release Notes"
+  label_uk: "Нотатки"
+- slug: thoughts
+  label_en: "Thoughts"
+  label_uk: "Думки"

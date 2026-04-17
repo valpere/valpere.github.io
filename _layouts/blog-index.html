@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<!-- Page band -->
+<div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">
+  <div class="container">
+    {% if site.active_lang == 'uk' %}
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Блог</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
+      Думки про Go, отримання даних, AI-інструменти та фриланс-розробку.
+    </p>
+    {% else %}
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Blog</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
+      Thoughts on Go, data extraction, AI tooling, and freelance engineering.
+    </p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container section">
+  <!-- Category filter row -->
+  <div class="category-filter">
+    <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' or page.url == '/blog/index.html' %} class="active"{% endif %}>
+      {% if site.active_lang == 'uk' %}Усі{% else %}All{% endif %}
+    </a>
+    {% for cat in site.data.blog-categories %}
+    <a href="{{ '/blog/categories/' | append: cat.slug | append: '/' | relative_url }}">
+      {% if site.active_lang == 'uk' %}{{ cat.label_uk }}{% else %}{{ cat.label_en }}{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+
+  <!-- Post list -->
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts %}
+    {% include post-card.html post=post %}
+    {% endfor %}
+  {% else %}
+  <p class="projects-intro">{% if site.active_lang == 'uk' %}Публікацій ще немає. Заходьте пізніше!{% else %}No posts yet. Check back soon!{% endif %}</p>
+  {% endif %}
+</div>
