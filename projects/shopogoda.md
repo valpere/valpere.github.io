@@ -1,8 +1,10 @@
 ---
-layout: page
+layout: project
 title: ShoPogoda
 permalink: /projects/shopogoda/
 exclude: true
+lang: en
+lang_alt: /projects/shopogoda-ua/
 ---
 
 # ShoPogoda (Що Погода) - Enterprise Weather Bot

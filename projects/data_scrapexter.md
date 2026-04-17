@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: project
 title: DataScrapexter
 permalink: /projects/datascrapexter/
 exclude: true
+lang: en
 ---
 
 # Professional Data Scraper

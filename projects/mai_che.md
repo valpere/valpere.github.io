@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: project
 title: MaiChe
 permalink: /projects/maiche/
 exclude: true
+lang: en
 ---
 
 # Email Validation Tool

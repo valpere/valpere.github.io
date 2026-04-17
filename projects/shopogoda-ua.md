@@ -1,8 +1,10 @@
 ---
-layout: page
+layout: project
 title: Огляд проекту ShoPogoda
 permalink: /projects/shopogoda-ua/
 exclude: true
+lang: uk
+lang_alt: /projects/shopogoda/
 ---
 
 # Що Погода (ShoPogoda) - Корпоративний бот погоди
