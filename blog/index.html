@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Valentyn S</title>
-  <meta name="description" content="Extracts Everything">
+  <title>Blog | Valentyn S</title>
+  <meta name="description" content="Thoughts on Go, data extraction, AI tooling, and freelance engineering.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32.png">
@@ -24,20 +24,20 @@
 
   <!-- SEO -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home | Valentyn S</title>
+<title>Blog | Valentyn S</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Blog" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Extracts Everything" />
-<meta property="og:description" content="Extracts Everything" />
-<link rel="canonical" href="https://valpere.github.io/" />
-<meta property="og:url" content="https://valpere.github.io/" />
+<meta name="description" content="Thoughts on Go, data extraction, AI tooling, and freelance engineering." />
+<meta property="og:description" content="Thoughts on Go, data extraction, AI tooling, and freelance engineering." />
+<link rel="canonical" href="https://valpere.github.io/blog/" />
+<meta property="og:url" content="https://valpere.github.io/blog/" />
 <meta property="og:site_name" content="Valentyn S" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
+<meta property="twitter:title" content="Blog" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Extracts Everything","headline":"Home","name":"Valentyn S","url":"https://valpere.github.io/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Thoughts on Go, data extraction, AI tooling, and freelance engineering.","headline":"Blog","url":"https://valpere.github.io/blog/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link type="application/atom+xml" rel="alternate" href="https://valpere.github.io/feed.xml" title="Valentyn S" />
@@ -63,7 +63,7 @@
         <ul class="site-nav" role="list">
           
           <li>
-            <a href="/" class="active" aria-current="page">
+            <a href="/">
               Home
             </a>
           </li>
@@ -88,7 +88,7 @@
           
         </ul>
         
-<a href="/uk/" class="lang-btn" lang="uk" hreflang="uk" aria-label="Switch to Ukrainian">UA</a>
+<a href="/uk/blog/" class="lang-btn" lang="uk" hreflang="uk" aria-label="Switch to Ukrainian">UA</a>
 
 
       </nav>
@@ -98,7 +98,7 @@
     <ul class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" role="list">
       
       <li>
-        <a href="/" aria-current="page">
+        <a href="/">
           Home
         </a>
       </li>
@@ -125,265 +125,53 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <!-- Hero -->
-<section class="hero" aria-labelledby="hero-heading">
+    <!-- Page band -->
+<div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">
   <div class="container">
-    <img src="/assets/images/brand/logo-mark.png" alt="Valentyn S logo" class="hero__logo" width="80" height="80">
-    <div class="hero__tagline">EXTRACTS EVERYTHING</div>
-    <h1 class="hero__title" id="hero-heading">Valentyn Solomko</h1>
     
-    <p class="hero__subtitle">Backend developer &amp; freelancer specialising in Go, Perl, data extraction, Telegram bots, and AI integration.</p>
-    <div class="hero__actions">
-      <a href="/projects/" class="btn btn--primary">View Projects</a>
-      <a href="/about/" class="btn btn--hero-outline">About Me</a>
-    </div>
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Blog</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
+      Thoughts on Go, data extraction, AI tooling, and freelance engineering.
+    </p>
     
   </div>
-</section>
+</div>
 
+<div class="container section">
+  <!-- Category filter row -->
+  <div class="category-filter">
+    <a href="/blog/" class="active">
+      All
+    </a>
+    
+    <a href="/blog/categories/deep-dive/">
+      Technical Deep-Dives
+    </a>
+    
+    <a href="/blog/categories/case-study/">
+      Case Studies
+    </a>
+    
+    <a href="/blog/categories/methodology/">
+      Methodology
+    </a>
+    
+    <a href="/blog/categories/ai-practice/">
+      AI Practice
+    </a>
+    
+    <a href="/blog/categories/release-notes/">
+      Release Notes
+    </a>
+    
+    <a href="/blog/categories/thoughts/">
+      Thoughts
+    </a>
+    
+  </div>
 
-
-
-<!-- Featured Projects -->
-<section class="home-projects" aria-labelledby="projects-heading">
-  <div class="container">
-    <div class="section-heading">
-      
-      <h2 id="projects-heading">Featured Projects</h2>
-      <p>Open-source tools and client solutions built with Go, Perl, and modern cloud infrastructure.</p>
-      
-    </div>
-    <div class="card-grid">
-      
-      
-      
-
-<article class="card">
+  <!-- Post list -->
   
-  <img src="/projects/assets/images/rule-based_telegram_chatbot/professional-infographic-of-bot-features-1-0768x0512.jpg" alt="Rule-Based Telegram ChatBot" class="card__image" loading="lazy" width="384" height="216">
-  
-  <div class="card__body">
-    <h3 class="card__title" style="font-size:var(--text-lg);">
-      <a href="/projects/rule-based_telegram_chatbot/">Rule-Based Telegram ChatBot</a>
-    </h3>
-    <p class="card__summary">Professional-grade custom Telegram bot powered by JavaScript/Go/Java for autoresponder efficiency and business automation. Supports lead generation, crypto bots, appointment booking, and e-commerce workflows.</p>
-    
-    <div class="tag-list">
-      <span class="tag">Go</span><span class="tag">JavaScript</span><span class="tag">Java</span><span class="tag">Telegram API</span>
-    </div>
-    
-  </div>
-  <div class="card__footer">
-    <a href="/projects/rule-based_telegram_chatbot/" class="btn btn--outline btn--sm">Details</a>
-    
-  </div>
-</article>
-
-      
-      
-
-<article class="card">
-  
-  <img src="/projects/assets/images/shopogoda/for_every_industry-every_condition-1-0384x0256.png" alt="ShoPogoda" class="card__image" loading="lazy" width="384" height="216">
-  
-  <div class="card__body">
-    <h3 class="card__title" style="font-size:var(--text-lg);">
-      <a href="/projects/shopogoda/">ShoPogoda</a>
-    </h3>
-    <p class="card__summary">Production-ready Telegram weather bot with real-time forecasts, air quality, smart locations, and multi-language support (UA/EN/DE/FR/ES). Enterprise features: custom alerts, Slack/Teams integration, RBAC, Prometheus/Grafana monitoring.</p>
-    
-    <div class="tag-list">
-      <span class="tag">Go</span><span class="tag">Telegram API</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Docker</span>
-    </div>
-    
-  </div>
-  <div class="card__footer">
-    <a href="/projects/shopogoda/" class="btn btn--outline btn--sm">Details</a>
-    <a href="https://github.com/valpere/shopogoda" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">GitHub</a>
-  </div>
-</article>
-
-      
-      
-
-<article class="card">
-  
-  <img src="/projects/assets/images/keepincrm/keepincrm_ua-2-0316x0212.png" alt="KeepinCRM Automation" class="card__image" loading="lazy" width="384" height="216">
-  
-  <div class="card__body">
-    <h3 class="card__title" style="font-size:var(--text-lg);">
-      <a href="/projects/keepincrm/">KeepinCRM Automation</a>
-    </h3>
-    <p class="card__summary">Go daemon fully automating a Ukrainian e-commerce CRM workflow: moves deals through the sales funnel based on Nova Poshta delivery statuses, generates fiscal receipts via Checkbox (ПРРО), and sends automated SMS via TurboSMS.</p>
-    
-    <div class="tag-list">
-      <span class="tag">Go</span><span class="tag">SQLite</span><span class="tag">REST API</span><span class="tag">Nova Poshta</span><span class="tag">Checkbox</span>
-    </div>
-    
-  </div>
-  <div class="card__footer">
-    <a href="/projects/keepincrm/" class="btn btn--outline btn--sm">Details</a>
-    
-  </div>
-</article>
-
-      
-      
-
-<article class="card">
-  
-  <img src="/projects/assets/images/data_scrapexter/unleash_the_power_of_web_scraping-1-0384x0256.png" alt="DataScrapexter" class="card__image" loading="lazy" width="384" height="216">
-  
-  <div class="card__body">
-    <h3 class="card__title" style="font-size:var(--text-lg);">
-      <a href="/projects/datascrapexter/">DataScrapexter</a>
-    </h3>
-    <p class="card__summary">Professional Go-powered web scraping framework with anti-detection, captcha-solving, proxy rotation, and distributed processing. Outputs structured data in JSON, CSV, or database formats via customizable YAML/JSON configurations.</p>
-    
-    <div class="tag-list">
-      <span class="tag">Go</span><span class="tag">YAML</span><span class="tag">JSON</span><span class="tag">Proxy Rotation</span><span class="tag">Anti-Detection</span>
-    </div>
-    
-  </div>
-  <div class="card__footer">
-    <a href="/projects/datascrapexter/" class="btn btn--outline btn--sm">Details</a>
-    
-  </div>
-</article>
-
-      
-      
-
-<article class="card">
-  
-  <img src="/projects/assets/images/web_page_investigator/real_world-use_cases-landscape-0384x0256.png" alt="WebPageInvestigator" class="card__image" loading="lazy" width="384" height="216">
-  
-  <div class="card__body">
-    <h3 class="card__title" style="font-size:var(--text-lg);">
-      <a href="/projects/web_page_investigator/">WebPageInvestigator</a>
-    </h3>
-    <p class="card__summary">All-in-one web page analysis tool for automated data extraction, transformation, comparison, and SEO analysis. Handles dynamic content with headless browsers and outputs to JSON, CSV, or custom formats.</p>
-    
-    <div class="tag-list">
-      <span class="tag">Go</span><span class="tag">Headless Browser</span><span class="tag">CSS Selectors</span><span class="tag">JSON</span><span class="tag">CSV</span>
-    </div>
-    
-  </div>
-  <div class="card__footer">
-    <a href="/projects/web_page_investigator/" class="btn btn--outline btn--sm">Details</a>
-    
-  </div>
-</article>
-
-      
-    </div>
-    <div style="text-align:center; margin-top: var(--sp-7);">
-      <a href="/projects/" class="btn btn--outline">All Projects →</a>
-    </div>
-  </div>
-</section>
-
-<!-- Selected Work (Portfolio) -->
-<section class="home-portfolio" aria-labelledby="portfolio-heading">
-  <div class="container">
-    <div class="section-heading">
-      
-      <h2 id="portfolio-heading">Selected Work</h2>
-      <p>Professional contracts and long-term engagements delivering enterprise-grade solutions.</p>
-      
-    </div>
-    <div class="card-grid">
-      
-      
-
-<article class="card">
-  
-  <img src="/portfolio/assets/images/cbcdro/05-screenshot-new_task-0551x0274.png" alt="CloudBees CD/RO" class="card__image" loading="lazy" width="384" height="216">
-  
-  <div class="card__body">
-    <h3 class="card__title" style="font-size:var(--text-lg);">
-      <a href="/portfolio/cbcdro/">CloudBees CD/RO</a>
-    </h3>
-    <p class="card__summary">Senior Software Engineer / Plugin Developer · Nov 2018 — May 2019</p>
-    <p class="card__summary">Developed enterprise DevOps platform components for CloudBees CD/RO serving Fortune 500 clients. Created 50+ reusable plugins in Java, Groovy, and Perl, reducing code duplication by 60% and achieving 95% automated test coverage.</p>
-    
-    <div class="tag-list">
-      <span class="tag">Java</span><span class="tag">Groovy</span><span class="tag">Go</span><span class="tag">Perl</span><span class="tag">Docker</span>
-    </div>
-    
-  </div>
-  <div class="card__footer">
-    <a href="/portfolio/cbcdro/" class="btn btn--outline btn--sm">View Details</a>
-  </div>
-</article>
-
-      
-      
-
-<article class="card">
-  
-  <img src="/portfolio/assets/images/portaswitch/screenshot-1-0371x0305.png" alt="PortaSwitch / PortaOne" class="card__image" loading="lazy" width="384" height="216">
-  
-  <div class="card__body">
-    <h3 class="card__title" style="font-size:var(--text-lg);">
-      <a href="/portfolio/portaswitch/">PortaSwitch / PortaOne</a>
-    </h3>
-    <p class="card__summary">Team Lead / Senior Backend Developer · Mar 2013 — Mar 2018</p>
-    <p class="card__summary">Led Kyiv development team for 5+ years building core components for PortaSwitch BSS, Billing, and Softswitch platform serving MNO/MVNO/MVNE, cable, VoIP, and IoT providers. Architected billing solutions with 99.9% system reliability.</p>
-    
-    <div class="tag-list">
-      <span class="tag">Perl</span><span class="tag">Linux</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">VoIP</span>
-    </div>
-    
-  </div>
-  <div class="card__footer">
-    <a href="/portfolio/portaswitch/" class="btn btn--outline btn--sm">View Details</a>
-  </div>
-</article>
-
-      
-      
-
-<article class="card">
-  
-  <img src="/portfolio/assets/images/mailua/mu-spam-0650x0330.jpg" alt="Mail.UA" class="card__image" loading="lazy" width="384" height="216">
-  
-  <div class="card__body">
-    <h3 class="card__title" style="font-size:var(--text-lg);">
-      <a href="/portfolio/mailua/">Mail.UA</a>
-    </h3>
-    <p class="card__summary">System Architect / Head of System Development Department · Jun 2011 — Jun 2014</p>
-    <p class="card__summary">Architected complete redesign of enterprise email platform mail.ua serving 1M+ active users. Managed 20+ backend engineers through 3-year platform transformation, transitioning from Waterfall to Agile with automated testing pipelines.</p>
-    
-    <div class="tag-list">
-      <span class="tag">Perl</span><span class="tag">Shell Scripting</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Linux</span>
-    </div>
-    
-  </div>
-  <div class="card__footer">
-    <a href="/portfolio/mailua/" class="btn btn--outline btn--sm">View Details</a>
-  </div>
-</article>
-
-      
-    </div>
-    <div style="text-align:center; margin-top: var(--sp-7);">
-      <a href="/portfolio/" class="btn btn--outline">Full Portfolio →</a>
-    </div>
-  </div>
-</section>
-
-<!-- Latest Writing -->
-
-<section class="home-blog" aria-labelledby="blog-heading">
-  <div class="container">
-    <div class="section-heading">
-      
-      <h2 id="blog-heading">Latest Writing</h2>
-      <p>Notes on Go, data extraction, AI tooling, and freelance engineering.</p>
-      
-    </div>
-    
     
     
 
@@ -485,27 +273,8 @@
 </article>
 
     
-    <div style="text-align:center; margin-top: var(--sp-7);">
-      <a href="/blog/" class="btn btn--outline">All Posts →</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- CTA -->
-<section class="home-cta" aria-labelledby="cta-heading">
-  <div class="container">
-    
-    <h2 id="cta-heading">Ready to work together?</h2>
-    <p>Available for backend development, automation, data extraction, and AI integration projects.</p>
-    
-    <div class="cta-row" style="justify-content:center;">
-      <a href="https://www.upwork.com/freelancers/~01ab3037d280df81ea" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Upwork</a>
-      <a href="https://www.fiverr.com/users/pere_val" class="btn btn--hero-outline" target="_blank" rel="noopener noreferrer">Fiverr</a>
-      <a href="https://freelancehunt.com/freelancer/valpere.html#portfolio" class="btn btn--hero-outline" target="_blank" rel="noopener noreferrer">FreelanceHunt</a>
-    </div>
-  </div>
-</section>
+  
+</div>
 
   </main>
 
