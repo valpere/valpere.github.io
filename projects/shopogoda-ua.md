@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Огляд проекту ShoPogoda
-permalink: /projects/shopogoda-ua/
+permalink: /projects/shopogoda/
 exclude: true
 lang: uk
 lang_alt: /projects/shopogoda/

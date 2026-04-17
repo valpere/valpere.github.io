@@ -4,7 +4,7 @@ title: KeepinCRM Automation for E-Commerce
 permalink: /projects/keepincrm/
 exclude: true
 lang: en
-lang_alt: /projects/keepincrm-ua/
+lang_alt: /uk/projects/keepincrm/
 ---
 
 # KeepinCRM Automation for E-Commerce

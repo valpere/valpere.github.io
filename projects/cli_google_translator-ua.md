@@ -1,7 +1,7 @@
 ---
 layout: project
 title: CLI Google Translator
-permalink: /projects/gootrago-ua/
+permalink: /projects/gootrago/
 exclude: true
 lang: uk
 lang_alt: /projects/gootrago/

@@ -4,7 +4,7 @@ title: Rule-Based Telegram ChatBot
 permalink: /projects/rule-based_telegram_chatbot/
 exclude: true
 lang: en
-lang_alt: /projects/rule-based_telegram_chatbot-ua/
+lang_alt: /uk/projects/rule-based_telegram_chatbot/
 ---
 
 # Rule-Based Telegram ChatBot

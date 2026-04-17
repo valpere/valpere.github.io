@@ -1,7 +1,7 @@
 ---
 layout: project
 title: TryTraGo Dictionary
-permalink: /projects/trytrago-ua/
+permalink: /projects/trytrago/
 exclude: true
 lang: uk
 lang_alt: /projects/trytrago/

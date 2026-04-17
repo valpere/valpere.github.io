@@ -4,7 +4,7 @@ title: Twitter-like REST API
 permalink: /projects/testwigr/
 exclude: true
 lang: en
-lang_alt: /projects/testwigr-ua/
+lang_alt: /uk/projects/testwigr/
 ---
 
 [The same in Ukrainian](../testwigr-ua)
