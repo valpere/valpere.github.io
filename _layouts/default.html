@@ -48,7 +48,7 @@
           {% for item in site.data.nav %}
           <li>
             <a href="{{ item.url | relative_url }}"{% if item.url == '/' %}{% if page.url == '/' %} class="active" aria-current="page"{% endif %}{% elsif page.url contains item.url %} class="active" aria-current="page"{% endif %}>
-              {{ item.label }}
+              {% if site.active_lang == 'uk' %}{{ item.label_uk | default: item.label }}{% else %}{{ item.label }}{% endif %}
             </a>
           </li>
           {% endfor %}
@@ -62,7 +62,7 @@
       {% for item in site.data.nav %}
       <li>
         <a href="{{ item.url | relative_url }}"{% if item.url == '/' %}{% if page.url == '/' %} aria-current="page"{% endif %}{% elsif page.url contains item.url %} aria-current="page"{% endif %}>
-          {{ item.label }}
+          {% if site.active_lang == 'uk' %}{{ item.label_uk | default: item.label }}{% else %}{{ item.label }}{% endif %}
         </a>
       </li>
       {% endfor %}

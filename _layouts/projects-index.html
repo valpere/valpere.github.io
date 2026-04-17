@@ -4,10 +4,17 @@ layout: default
 <!-- Page band -->
 <div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">
   <div class="container">
+    {% if site.active_lang == 'uk' %}
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Проєкти</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
+      Відкриті інструменти та клієнтські рішення — від фреймворків для скрейпінгу до Telegram-ботів та AI-інтеграцій.
+    </p>
+    {% else %}
     <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Projects</h1>
     <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
       Open-source tools and client solutions — from web scraping frameworks to Telegram bots and AI integrations.
     </p>
+    {% endif %}
   </div>
 </div>
 

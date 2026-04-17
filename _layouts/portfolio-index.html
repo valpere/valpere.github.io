@@ -4,10 +4,17 @@ layout: default
 <!-- Page band -->
 <div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">
   <div class="container">
+    {% if site.active_lang == 'uk' %}
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Портфоліо</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
+      Професійні контракти та довгострокові замовлення — корпоративні системи, телекомунікаційні платформи та поштова інфраструктура.
+    </p>
+    {% else %}
     <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Portfolio</h1>
     <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
       Professional contracts and long-term engagements — enterprise systems, telecom platforms, and email infrastructure.
     </p>
+    {% endif %}
   </div>
 </div>
 
