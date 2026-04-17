@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<!-- Page band -->
+<div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">
+  <div class="container">
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Projects</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
+      Open-source tools and client solutions — from web scraping frameworks to Telegram bots and AI integrations.
+    </p>
+  </div>
+</div>
+
+<div class="container section">
+  {{ content }}
+  <div class="card-grid">
+    {% for project in site.data.projects %}
+    <article class="card">
+      {% if project.hero_image and project.hero_image != "" %}
+      <img src="{{ project.hero_image | relative_url }}" alt="{{ project.title }}" class="card__image" loading="lazy">
+      {% else %}
+      <div class="card__image" style="background: var(--brand-surface); min-height:160px; display:flex; align-items:center; justify-content:center;">
+        <span style="color:var(--brand-muted); font-size:var(--text-sm);">{{ project.title }}</span>
+      </div>
+      {% endif %}
+      <div class="card__body">
+        <h2 class="card__title" style="font-size:var(--text-lg);">
+          <a href="{{ project.permalink | relative_url }}">{{ project.title }}</a>
+        </h2>
+        <p class="card__summary">{{ project.summary_en }}</p>
+        {% if project.tech %}
+        <div class="tag-list">
+          {% for t in project.tech limit: 5 %}
+          <span class="tag">{{ t }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="card__footer">
+        <a href="{{ project.permalink | relative_url }}" class="btn btn--outline btn--sm">Details</a>
+        {% if project.links.github %}
+        <a href="{{ project.links.github }}" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">GitHub</a>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
