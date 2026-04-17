@@ -41,10 +41,9 @@ layout: default
     </div>
     {% endif %}
   </div>
-  {% endif %}
-
   {% if item.hero_image and item.hero_image != "" %}
   <img src="{{ item.hero_image | relative_url }}" alt="{{ page.title }} preview" class="page-hero" loading="lazy">
+  {% endif %}
   {% endif %}
 
   <article class="page-content">
