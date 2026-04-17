@@ -2,8 +2,10 @@
 layout: default
 ---
 {% assign cat_data = site.data.blog-categories | where: "slug", page.category | first %}
-{% assign cat_label = cat_data.label_en %}
-{% if site.active_lang == 'uk' %}{% assign cat_label = cat_data.label_uk %}{% endif %}
+{% assign cat_label = page.title | default: page.category %}
+{% if cat_data %}
+  {% if site.active_lang == 'uk' %}{% assign cat_label = cat_data.label_uk %}{% else %}{% assign cat_label = cat_data.label_en %}{% endif %}
+{% endif %}
 
 <!-- Page band -->
 <div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">

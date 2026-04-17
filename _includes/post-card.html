@@ -1,9 +1,9 @@
 {% assign post = include.post %}
 {% assign cat_data = site.data.blog-categories | where: "slug", post.category | first %}
-{% if site.active_lang == 'uk' %}
-  {% assign category_label = cat_data.label_uk %}
+{% if cat_data %}
+  {% if site.active_lang == 'uk' %}{% assign category_label = cat_data.label_uk %}{% else %}{% assign category_label = cat_data.label_en %}{% endif %}
 {% else %}
-  {% assign category_label = cat_data.label_en %}
+  {% assign category_label = post.category %}
 {% endif %}
 
 <article class="post-card">
@@ -12,7 +12,7 @@
     {% if post.category and cat_data %}
     <span class="category-pill category-pill--{{ post.category }}">{{ category_label }}</span>
     {% endif %}
-    <span class="reading-time">{{ post.content | number_of_words | divided_by: 200 | plus: 1 }} {% if site.active_lang == 'uk' %}хв{% else %}min{% endif %}</span>
+    <span class="reading-time">{{ post.content | number_of_words | plus: 199 | divided_by: 200 }} {% if site.active_lang == 'uk' %}хв{% else %}min{% endif %}</span>
   </div>
   <h3 class="post-card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
   <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>

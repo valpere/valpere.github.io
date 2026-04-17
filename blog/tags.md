@@ -16,7 +16,6 @@ description: "All blog post tags"
 {% endfor %}
 </div>
 
-{% assign sorted_tags = site.tags | sort %}
 {% for tag in sorted_tags %}
   {% assign tag_name = tag | first %}
   {% assign tag_posts = tag | last %}

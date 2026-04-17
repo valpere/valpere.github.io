@@ -20,11 +20,11 @@ layout: default
       {% if page.category %}
         {% assign cat_data = site.data.blog-categories | where: "slug", page.category | first %}
         <a href="{{ '/blog/categories/' | append: page.category | append: '/' | relative_url }}" class="category-pill category-pill--{{ page.category }}">
-          {% if site.active_lang == 'uk' %}{{ cat_data.label_uk }}{% else %}{{ cat_data.label_en }}{% endif %}
+          {% if cat_data %}{% if site.active_lang == 'uk' %}{{ cat_data.label_uk }}{% else %}{{ cat_data.label_en }}{% endif %}{% else %}{{ page.category }}{% endif %}
         </a>
       {% endif %}
 
-      <span class="reading-time">{{ content | number_of_words | divided_by: 200 | plus: 1 }}{% if site.active_lang == 'uk' %} хв читання{% else %} min read{% endif %}</span>
+      <span class="reading-time">{{ content | number_of_words | plus: 199 | divided_by: 200 }}{% if site.active_lang == 'uk' %} хв читання{% else %} min read{% endif %}</span>
 
       {% include lang-switcher.html %}
     </div>
@@ -41,7 +41,7 @@ layout: default
     <strong>{% if site.active_lang == 'uk' %}Теги{% else %}Tags{% endif %}:</strong>
     <div class="tag-list">
       {% for t in page.tags %}
-      <a href="{{ '/blog/tags/' | append: t | append: '/' | relative_url }}" class="tag">{{ t }}</a>
+      <a href="{{ '/blog/tags/' | relative_url }}#{{ t | slugify }}" class="tag">{{ t }}</a>
       {% endfor %}
     </div>
   </div>
