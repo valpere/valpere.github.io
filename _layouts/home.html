@@ -72,6 +72,30 @@ layout: default
   </div>
 </section>
 
+<!-- Latest Writing -->
+{% if site.posts.size > 0 %}
+<section class="home-blog" aria-labelledby="blog-heading">
+  <div class="container">
+    <div class="section-heading">
+      {% if site.active_lang == 'uk' %}
+      <h2 id="blog-heading">Останні статті</h2>
+      <p>Нотатки про Go, витягання даних, AI-інструменти та фріланс.</p>
+      {% else %}
+      <h2 id="blog-heading">Latest Writing</h2>
+      <p>Notes on Go, data extraction, AI tooling, and freelance engineering.</p>
+      {% endif %}
+    </div>
+    {% assign recent_posts = site.posts | limit: 3 %}
+    {% for post in recent_posts %}
+    {% include post-card.html post=post %}
+    {% endfor %}
+    <div style="text-align:center; margin-top: var(--sp-7);">
+      <a href="{{ '/blog/' | relative_url }}" class="btn btn--outline">{% if site.active_lang == 'uk' %}Всі статті →{% else %}All Posts →{% endif %}</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <!-- CTA -->
 <section class="home-cta" aria-labelledby="cta-heading">
   <div class="container">
