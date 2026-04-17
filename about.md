@@ -6,25 +6,14 @@ permalink: /about/
 
 # About Me
 
-* [Links](#about-links)
-* [Overview](#about-overview)
-  * [**English**](#about-english)
-  * [**Українська**](#about-ukrainian)
-
-<a name="about-links"></a>
-
 ## Links
 
-* [LinkeIn](https://www.linkedin.com/in/valentynsolomko/)
+* [LinkedIn](https://www.linkedin.com/in/valentynsolomko/)
 * [Upwork](https://www.upwork.com/freelancers/~01ab3037d280df81ea)
 * [Fiverr](https://www.fiverr.com/users/pere_val)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
-<a name="about-overview"></a>
-
 ## Overview
-
-<a name="about-english"></a>
 
 ### **English**
 
@@ -73,8 +62,6 @@ Specialized backend development, testing your ideas, and quickly launching MVP, 
   * Create marketing automation solutions with high deliverability rates
   * Build communication systems and telephony solutions
   * Implement data processing workflows for marketing campaigns
-
-<a name="about-ukrainian"></a>
 
 ### **Українська**
 

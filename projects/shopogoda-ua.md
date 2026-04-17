@@ -9,7 +9,7 @@ exclude: true
 
 [The same in English](../shopogoda)
 
-**Покликання:**
+**Посилання:**
 
 - [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
