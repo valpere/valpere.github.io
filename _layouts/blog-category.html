@@ -1,0 +1,42 @@
+---
+layout: default
+---
+{% assign cat_data = site.data.blog-categories | where: "slug", page.category | first %}
+{% assign cat_label = page.title | default: page.category %}
+{% if cat_data %}
+  {% if site.active_lang == 'uk' %}{% assign cat_label = cat_data.label_uk %}{% else %}{% assign cat_label = cat_data.label_en %}{% endif %}
+{% endif %}
+
+<!-- Page band -->
+<div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">
+  <div class="container">
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">{{ cat_label }}</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
+      {% if site.active_lang == 'uk' %}Думки про Go, отримання даних, AI-інструменти та фриланс-розробку.{% else %}Thoughts on Go, data extraction, AI tooling, and freelance engineering.{% endif %}
+    </p>
+  </div>
+</div>
+
+<div class="container section">
+  <!-- Category filter row -->
+  <div class="category-filter">
+    <a href="{{ '/blog/' | relative_url }}">
+      {% if site.active_lang == 'uk' %}Усі{% else %}All{% endif %}
+    </a>
+    {% for cat in site.data.blog-categories %}
+    <a href="{{ '/blog/categories/' | append: cat.slug | append: '/' | relative_url }}"{% if cat.slug == page.category %} class="active"{% endif %}>
+      {% if site.active_lang == 'uk' %}{{ cat.label_uk }}{% else %}{{ cat.label_en }}{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+
+  <!-- Filtered post list -->
+  {% assign cat_posts = site.posts | where: "category", page.category %}
+  {% if cat_posts.size > 0 %}
+    {% for post in cat_posts %}
+    {% include post-card.html post=post %}
+    {% endfor %}
+  {% else %}
+  <p class="projects-intro">{% if site.active_lang == 'uk' %}У цій категорії ще немає публікацій.{% else %}No posts in this category yet.{% endif %}</p>
+  {% endif %}
+</div>

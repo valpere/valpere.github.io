@@ -1,0 +1,22 @@
+{% assign post = include.post %}
+{% assign cat_data = site.data.blog-categories | where: "slug", post.category | first %}
+{% if cat_data %}
+  {% if site.active_lang == 'uk' %}{% assign category_label = cat_data.label_uk %}{% else %}{% assign category_label = cat_data.label_en %}{% endif %}
+{% else %}
+  {% assign category_label = post.category %}
+{% endif %}
+
+<article class="post-card">
+  <div class="post-card__meta">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    {% if post.category and cat_data %}
+    <span class="category-pill category-pill--{{ post.category }}">{{ category_label }}</span>
+    {% endif %}
+    <span class="reading-time">{{ post.content | number_of_words | plus: 199 | divided_by: 200 }} {% if site.active_lang == 'uk' %}хв{% else %}min{% endif %}</span>
+  </div>
+  <h3 class="post-card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+  <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+  {% if post.tags and post.tags.size > 0 %}
+  <div class="tag-list">{% for t in post.tags limit: 4 %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+  {% endif %}
+</article>
