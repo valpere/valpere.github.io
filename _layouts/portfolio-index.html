@@ -15,28 +15,7 @@ layout: default
   {{ content }}
   <div class="card-grid">
     {% for item in site.data.portfolio %}
-    <article class="card">
-      {% if item.hero_image and item.hero_image != "" %}
-      <img src="{{ item.hero_image | relative_url }}" alt="{{ item.client }}" class="card__image" loading="lazy">
-      {% endif %}
-      <div class="card__body">
-        <h2 class="card__title" style="font-size:var(--text-lg);">
-          <a href="{{ item.permalink | relative_url }}">{{ item.client }}</a>
-        </h2>
-        <p class="card__summary">{{ item.role }} · {{ item.period }}</p>
-        <p class="card__summary">{{ item.summary_en }}</p>
-        {% if item.stack %}
-        <div class="tag-list">
-          {% for t in item.stack limit: 5 %}
-          <span class="tag">{{ t }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
-      </div>
-      <div class="card__footer">
-        <a href="{{ item.permalink | relative_url }}" class="btn btn--outline btn--sm">View Details</a>
-      </div>
-    </article>
+    {% include portfolio-card.html item=item %}
     {% endfor %}
   </div>
 </div>

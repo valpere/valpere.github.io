@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% assign slug = page.permalink | remove: '/' | replace: 'projects/', '' %}
 {% assign project = site.data.projects | where: "permalink", page.permalink | first %}
 
 <div class="container" style="padding-block: var(--sp-7);">
@@ -29,10 +28,10 @@ layout: default
         </div>
         <!-- CTA row -->
         <div class="cta-row">
-          {% if project.links.upwork %}<a href="{{ project.links.upwork }}" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Upwork</a>{% endif %}
-          {% if project.links.fiverr %}<a href="{{ project.links.fiverr }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener">Fiverr</a>{% endif %}
-          {% if project.links.freelancehunt %}<a href="{{ project.links.freelancehunt }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener">FreelanceHunt</a>{% endif %}
-          {% if project.links.github %}<a href="{{ project.links.github }}" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">GitHub</a>{% endif %}
+          {% if project.links.upwork %}<a href="{{ project.links.upwork }}" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Upwork</a>{% endif %}
+          {% if project.links.fiverr %}<a href="{{ project.links.fiverr }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Fiverr</a>{% endif %}
+          {% if project.links.freelancehunt %}<a href="{{ project.links.freelancehunt }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">FreelanceHunt</a>{% endif %}
+          {% if project.links.github %}<a href="{{ project.links.github }}" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
         </div>
         {% endif %}
         {% if project.hero_image and project.hero_image != "" %}

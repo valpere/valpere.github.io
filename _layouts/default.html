@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
         <ul class="site-nav" role="list">
           {% for item in site.data.nav %}
           <li>
-            <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>
+            <a href="{{ item.url | relative_url }}"{% if item.url == '/' %}{% if page.url == '/' %} class="active" aria-current="page"{% endif %}{% elsif page.url contains item.url %} class="active" aria-current="page"{% endif %}>
               {{ item.label }}
             </a>
           </li>
@@ -60,7 +60,7 @@
     <ul class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" role="list">
       {% for item in site.data.nav %}
       <li>
-        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>
+        <a href="{{ item.url | relative_url }}"{% if item.url == '/' %}{% if page.url == '/' %} aria-current="page"{% endif %}{% elsif page.url contains item.url %} aria-current="page"{% endif %}>
           {{ item.label }}
         </a>
       </li>
