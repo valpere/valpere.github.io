@@ -13,7 +13,6 @@ lang_alt: /projects/vibe_coding/
 - [Fiverr](https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding)
 - [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
-[The same in English](../vibe_coding/)
 
 ## Перетворіть свої ідеї на реальність — швидко, розумно та масштабовано
 

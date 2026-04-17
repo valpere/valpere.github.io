@@ -9,7 +9,6 @@ lang_alt: /projects/rule-based_telegram_chatbot/
 
 # Telegram ChatBot на основі правил
 
-[The same in English](../rule-based_telegram_chatbot)
 
 **Посилання:**
 

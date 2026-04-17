@@ -9,7 +9,6 @@ lang_alt: /projects/shopogoda/
 
 # Що Погода (ShoPogoda) - Корпоративний бот погоди
 
-[The same in English](../shopogoda)
 
 **Посилання:**
 

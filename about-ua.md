@@ -8,7 +8,6 @@ lang_alt: /about/
 
 # Про мене
 
-[The same in English](../about/)
 
 ## Посилання
 

@@ -9,7 +9,6 @@ lang_alt: /projects/keepincrm/
 
 # Автоматизація KeepinCRM для інтернет-магазину
 
-[The same in English](../keepincrm/)
 
 **Посилання:**
 

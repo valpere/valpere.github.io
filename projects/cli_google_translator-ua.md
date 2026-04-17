@@ -7,7 +7,6 @@ lang: uk
 lang_alt: /projects/gootrago/
 ---
 
-[The same in English](../gootrago)
 
 **Посилання:** [GitHub](https://github.com/valpere/gootrago)
 

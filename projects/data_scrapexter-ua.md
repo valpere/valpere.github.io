@@ -12,7 +12,6 @@ lang_alt: /projects/datascrapexter/
 * [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
-[The same in English](../data_scrapexter/)
 
 ## Короткий огляд
 
@@ -39,7 +38,7 @@ lang_alt: /projects/datascrapexter/
 
 ### Опис продукту
 
-**DataScrapexter** — це модульне, масштабоване рішення для веб-скрейпінгу на Go 1.21+, розроблене для роботи з різноманітними веб-сайтами — від статичного HTML до важких JavaScript односторінкових додатків (SPA) — з обходом передових засобів захисту від скрейпінгу. Платформа поєднує конфігурованість (через YAML/JSON та Viper) із досконалими механізмами захисту від виявлення (chromedp, Rod, 2Captcha) та надійним конвеєром обробки даних (GORM, Kafka). Підтримуються виводи в декількох форматах (JSON, CSV, Excel, бази даних) та інтеграція з хмарними сервісами (AWS, Google Cloud).
+**DataScrapexter** — це модульне, масштабоване рішення для веб-скрейпінгу на Go 1.24+, розроблене для роботи з різноманітними веб-сайтами — від статичного HTML до важких JavaScript односторінкових додатків (SPA) — з обходом передових засобів захисту від скрейпінгу. Платформа поєднує конфігурованість (через YAML/JSON та Viper) із досконалими механізмами захисту від виявлення (chromedp, Rod, 2Captcha) та надійним конвеєром обробки даних (GORM, Kafka). Підтримуються виводи в декількох форматах (JSON, CSV, Excel, бази даних) та інтеграція з хмарними сервісами (AWS, Google Cloud).
 
 ### Деталі пакетів
 

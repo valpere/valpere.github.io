@@ -7,7 +7,6 @@ lang: uk
 lang_alt: /projects/trytrago/
 ---
 
-[The same in English](../trytrago)
 
 **Посилання:** [GitHub](https://github.com/valpere/trytrago)
 

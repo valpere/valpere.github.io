@@ -7,7 +7,6 @@ lang: en
 lang_alt: /uk/projects/gootrago/
 ---
 
-[The same in Ukrainian](../gootrago-ua)
 
 **Links:** [GitHub](https://github.com/valpere/gootrago)
 

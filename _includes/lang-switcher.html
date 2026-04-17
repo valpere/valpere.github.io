@@ -1,5 +1,5 @@
 {% if site.active_lang == 'en' %}
-<a href="/uk{{ page.url }}" class="lang-btn" lang="uk" hreflang="uk" aria-label="Switch to Ukrainian">UA</a>
+<a {% static_href %}href="{{ page.url | prepend: '/uk' | relative_url }}"{% endstatic_href %} class="lang-btn" lang="uk" hreflang="uk" aria-label="Switch to Ukrainian">UA</a>
 {% else %}
 <a {% static_href %}href="{{ page.url | remove_first: '/uk' | relative_url }}"{% endstatic_href %} class="lang-btn" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
 {% endif %}

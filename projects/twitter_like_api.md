@@ -7,7 +7,6 @@ lang: en
 lang_alt: /uk/projects/testwigr/
 ---
 
-[The same in Ukrainian](../testwigr-ua)
 
 **Links:** [GitHub](https://github.com/valpere/testwigr)
 

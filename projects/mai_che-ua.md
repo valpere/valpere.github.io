@@ -12,7 +12,6 @@ lang_alt: /projects/maiche/
 * [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
-[The same in English](../mai_che/)
 
 ## Короткий огляд
 

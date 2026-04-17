@@ -7,7 +7,6 @@ lang: uk
 lang_alt: /projects/testwigr/
 ---
 
-[The same in English](../testwigr)
 
 **Посилання:** [GitHub](https://github.com/valpere/testwigr)
 
