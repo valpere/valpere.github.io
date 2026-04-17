@@ -1,0 +1,25 @@
+{% assign p = include.project %}
+<article class="card">
+  {% if p.hero_image and p.hero_image != "" %}
+  <img src="{{ p.hero_image | relative_url }}" alt="{{ p.title }}" class="card__image" loading="lazy" width="384" height="216">
+  {% else %}
+  <div class="card__image" style="background:var(--brand-surface);min-height:160px;display:flex;align-items:center;justify-content:center;">
+    <span style="color:var(--brand-muted);font-size:var(--text-sm);">{{ p.title }}</span>
+  </div>
+  {% endif %}
+  <div class="card__body">
+    <h3 class="card__title" style="font-size:var(--text-lg);">
+      <a href="{{ p.permalink | relative_url }}">{{ p.title }}</a>
+    </h3>
+    <p class="card__summary">{{ p.summary_en }}</p>
+    {% if p.tech %}
+    <div class="tag-list">
+      {% for t in p.tech limit: 5 %}<span class="tag">{{ t }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  <div class="card__footer">
+    <a href="{{ p.permalink | relative_url }}" class="btn btn--outline btn--sm">Details</a>
+    {% if p.links.github %}<a href="{{ p.links.github }}" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
+  </div>
+</article>

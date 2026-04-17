@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<!-- Page band -->
+<div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">
+  <div class="container">
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Projects</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
+      Open-source tools and client solutions — from web scraping frameworks to Telegram bots and AI integrations.
+    </p>
+  </div>
+</div>
+
+<div class="container section">
+  {{ content }}
+  <div class="card-grid">
+    {% for project in site.data.projects %}
+    {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</div>

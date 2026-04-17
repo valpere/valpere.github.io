@@ -1,8 +1,10 @@
 ---
-layout: page
+layout: project
 title: Rule-Based Telegram ChatBot
 permalink: /projects/rule-based_telegram_chatbot/
 exclude: true
+lang: en
+lang_alt: /projects/rule-based_telegram_chatbot-ua/
 ---
 
 # Rule-Based Telegram ChatBot

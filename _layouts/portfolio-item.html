@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% assign item = site.data.portfolio | where: "permalink", page.permalink | first %}
+
+<div class="container" style="padding-block: var(--sp-7);">
+  <!-- Breadcrumb -->
+  <nav aria-label="Breadcrumb">
+    <div class="breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <span class="sep" aria-hidden="true">›</span>
+      <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+      <span class="sep" aria-hidden="true">›</span>
+      <span aria-current="page">{{ page.title }}</span>
+    </div>
+  </nav>
+
+  {% if item %}
+  <!-- Info bar -->
+  <div class="info-bar" role="region" aria-label="Project details">
+    <div class="info-bar__item">
+      <span class="info-bar__label">Client</span>
+      <span class="info-bar__value">{{ item.client }}</span>
+    </div>
+    <div class="info-bar__item">
+      <span class="info-bar__label">Role</span>
+      <span class="info-bar__value">{{ item.role }}</span>
+    </div>
+    <div class="info-bar__item">
+      <span class="info-bar__label">Period</span>
+      <span class="info-bar__value">{{ item.period }}</span>
+    </div>
+    {% if item.stack %}
+    <div class="info-bar__item">
+      <span class="info-bar__label">Stack</span>
+      <div class="tag-list">
+        {% for t in item.stack %}
+        <span class="tag tag--green">{{ t }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  {% if item.hero_image and item.hero_image != "" %}
+  <img src="{{ item.hero_image | relative_url }}" alt="{{ page.title }} preview" class="page-hero" loading="lazy">
+  {% endif %}
+  {% endif %}
+
+  <article class="page-content">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </article>
+</div>

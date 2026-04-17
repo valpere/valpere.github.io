@@ -1,0 +1,29 @@
+- slug: "cbcdro"
+  client: "CloudBees CD/RO"
+  role: "Senior Software Engineer / Plugin Developer"
+  period: "Nov 2018 — May 2019"
+  stack: ["Java", "Groovy", "Go", "Perl", "Docker", "Kubernetes", "Helm", "Ansible", "Terraform", "Jenkins", "GitLab CI", "JFrog Artifactory"]
+  summary_en: "Developed enterprise DevOps platform components for CloudBees CD/RO serving Fortune 500 clients. Created 50+ reusable plugins in Java, Groovy, and Perl, reducing code duplication by 60% and achieving 95% automated test coverage."
+  summary_uk: "Розробка компонентів корпоративної DevOps-платформи CloudBees CD/RO для клієнтів зі списку Fortune 500. Створено 50+ багаторазових плагінів на Java, Groovy та Perl, скорочення дублювання коду на 60%, покриття тестами 95%."
+  permalink: "/portfolio/cbcdro/"
+  hero_image: "/portfolio/assets/images/cbcdro/05-screenshot-new_task-0551x0274.png"
+
+- slug: "portaswitch"
+  client: "PortaSwitch / PortaOne"
+  role: "Team Lead / Senior Backend Developer"
+  period: "Mar 2013 — Mar 2018"
+  stack: ["Perl", "Linux", "MySQL", "PostgreSQL", "VoIP", "SIP", "BSS", "PortaSwitch", "Git", "Youtrack", "Confluence"]
+  summary_en: "Led Kyiv development team for 5+ years building core components for PortaSwitch BSS, Billing, and Softswitch platform serving MNO/MVNO/MVNE, cable, VoIP, and IoT providers. Architected billing solutions with 99.9% system reliability."
+  summary_uk: "Керівництво командою розробників у Києві понад 5 років зі створення основних компонентів платформи PortaSwitch BSS, Billing та Softswitch для MNO/MVNO/MVNE, кабельних, VoIP та IoT-провайдерів. Надійність системи 99,9%."
+  permalink: "/portfolio/portaswitch/"
+  hero_image: "/portfolio/assets/images/portaswitch/screenshot-1-0371x0305.png"
+
+- slug: "mailua"
+  client: "Mail.UA"
+  role: "System Architect / Head of System Development Department"
+  period: "Jun 2011 — Jun 2014"
+  stack: ["Perl", "Shell Scripting", "MySQL", "PostgreSQL", "Linux", "Apache", "SMTP", "POP3", "IMAP", "Nagios", "SVN", "Redmine"]
+  summary_en: "Architected complete redesign of enterprise email platform mail.ua serving 1M+ active users. Managed 20+ backend engineers through 3-year platform transformation, transitioning from Waterfall to Agile with automated testing pipelines."
+  summary_uk: "Архітектура повного редизайну корпоративної поштової платформи mail.ua для 1M+ активних користувачів. Керівництво 20+ бекенд-інженерами протягом 3-річної трансформації платформи, перехід від Waterfall до Agile."
+  permalink: "/portfolio/mailua/"
+  hero_image: "/portfolio/assets/images/mailua/mu-spam-0650x0330.jpg"

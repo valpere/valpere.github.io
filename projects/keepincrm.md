@@ -1,8 +1,10 @@
 ---
-layout: page
+layout: project
 title: KeepinCRM Automation for E-Commerce
 permalink: /projects/keepincrm/
 exclude: true
+lang: en
+lang_alt: /projects/keepincrm-ua/
 ---
 
 # KeepinCRM Automation for E-Commerce

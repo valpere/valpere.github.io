@@ -1,0 +1,7 @@
+{% assign lnk = include.links %}
+<div class="cta-row">
+  {% if lnk.upwork %}<a href="{{ lnk.upwork }}" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Upwork</a>{% endif %}
+  {% if lnk.fiverr %}<a href="{{ lnk.fiverr }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Fiverr</a>{% endif %}
+  {% if lnk.freelancehunt %}<a href="{{ lnk.freelancehunt }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">FreelanceHunt</a>{% endif %}
+  {% if lnk.github %}<a href="{{ lnk.github }}" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
+</div>

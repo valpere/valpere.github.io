@@ -1,3 +1,12 @@
+# Jekyll directories — override global _* gitignore pattern
+!_data/
+!_includes/
+!_layouts/
+!_sass/
+!_posts/
+!_drafts/
+!_config.yml
+
 # OS generated files
 .DS_Store
 .DS_Store?

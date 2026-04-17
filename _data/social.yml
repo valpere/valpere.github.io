@@ -1,0 +1,15 @@
+github:
+  url: "https://github.com/valpere"
+  label: "GitHub"
+linkedin:
+  url: "https://www.linkedin.com/in/valentynsolomko/"
+  label: "LinkedIn"
+upwork:
+  url: "https://www.upwork.com/freelancers/~01ab3037d280df81ea"
+  label: "Upwork"
+fiverr:
+  url: "https://www.fiverr.com/users/pere_val"
+  label: "Fiverr"
+freelancehunt:
+  url: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
+  label: "FreelanceHunt"

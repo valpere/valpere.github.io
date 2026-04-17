@@ -1,0 +1,126 @@
+- slug: "vibe_coding"
+  title: "Vibe Coding Platform"
+  title_uk: "Платформа Vibe Coding"
+  summary_en: "AI-Powered Development combining Claude/Cursor automation and low-code tools (Supabase/Replit) to deliver scalable solutions in days. Launch MVPs, modernize legacy systems, and automate workflows faster."
+  summary_uk: "Розробка на основі ШІ, що поєднує автоматизацію Claude/Cursor та інструменти low-code (Supabase/Replit) для масштабованих рішень за лічені дні. Запуск MVP, модернізація застарілих систем та автоматизація процесів."
+  permalink: "/projects/vibe_coding/"
+  hero_image: "/projects/assets/images/vibe_coding/vibe_coding-1-0384x0256.png"
+  featured: false
+  tech: ["Go", "Java", "Claude", "Supabase", "Replit", "Cursor", "n8n"]
+  links:
+    upwork: "https://www.upwork.com/services/product/development-it-an-mvp-reviewed-fixed-or-created-with-ai-driven-vibe-coding-1949815181887134254"
+    fiverr: "https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding"
+    freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
+
+- slug: "rule-based_telegram_chatbot"
+  title: "Rule-Based Telegram ChatBot"
+  title_uk: "Telegram-чатбот на основі правил"
+  summary_en: "Professional-grade custom Telegram bot powered by JavaScript/Go/Java for autoresponder efficiency and business automation. Supports lead generation, crypto bots, appointment booking, and e-commerce workflows."
+  summary_uk: "Кастомний Telegram-бот професійного рівня на JavaScript/Go/Java для автовідповідачів та автоматизації бізнесу. Генерація лідів, крипто-боти, бронювання та e-commerce."
+  permalink: "/projects/rule-based_telegram_chatbot/"
+  hero_image: "/projects/assets/images/rule-based_telegram_chatbot/professional-infographic-of-bot-features-1-0768x0512.jpg"
+  featured: true
+  tech: ["Go", "JavaScript", "Java", "Telegram API"]
+  links:
+    upwork: "https://www.upwork.com/services/product/development-it-a-custom-telegram-bot-to-automate-your-business-1965029712082056479"
+    fiverr: "https://www.fiverr.com/pere_val/build-a-custom-telegram-bot-to-automate-your-business"
+    freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
+
+- slug: "shopogoda"
+  title: "ShoPogoda"
+  title_uk: "ShoPogoda"
+  summary_en: "Production-ready Telegram weather bot with real-time forecasts, air quality, smart locations, and multi-language support (UA/EN/DE/FR/ES). Enterprise features: custom alerts, Slack/Teams integration, RBAC, Prometheus/Grafana monitoring."
+  summary_uk: "Готовий до виробництва Telegram-бот для погоди з прогнозами в реальному часі, якістю повітря, розумними локаціями та підтримкою багатьох мов. Корпоративні функції: сповіщення, інтеграція Slack/Teams, RBAC, моніторинг."
+  permalink: "/projects/shopogoda/"
+  hero_image: "/projects/assets/images/shopogoda/for_every_industry-every_condition-1-0384x0256.png"
+  featured: true
+  tech: ["Go", "Telegram API", "PostgreSQL", "Redis", "Docker", "Railway", "Supabase"]
+  links:
+    github: "https://github.com/valpere/shopogoda"
+
+- slug: "keepincrm"
+  title: "KeepinCRM Automation"
+  title_uk: "Автоматизація KeepinCRM"
+  summary_en: "Go daemon fully automating a Ukrainian e-commerce CRM workflow: moves deals through the sales funnel based on Nova Poshta delivery statuses, generates fiscal receipts via Checkbox (ПРРО), and sends automated SMS via TurboSMS."
+  summary_uk: "Go-демон, що автоматизує CRM-процеси інтернет-магазину: переміщує угоди по воронці на основі статусів Нової Пошти, формує фіскальні чеки через Checkbox (ПРРО) та надсилає SMS через TurboSMS."
+  permalink: "/projects/keepincrm/"
+  hero_image: "/projects/assets/images/keepincrm/keepincrm_ua-2-0316x0212.png"
+  featured: true
+  tech: ["Go", "SQLite", "REST API", "Nova Poshta", "Checkbox", "TurboSMS", "WayForPay", "systemd"]
+  links:
+    freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
+
+- slug: "datascrapexter"
+  title: "DataScrapexter"
+  title_uk: "DataScrapexter"
+  summary_en: "Professional Go-powered web scraping framework with anti-detection, captcha-solving, proxy rotation, and distributed processing. Outputs structured data in JSON, CSV, or database formats via customizable YAML/JSON configurations."
+  summary_uk: "Професійний фреймворк для веб-скрейпінгу на Go із захистом від виявлення, розпізнаванням капчі, ротацією проксі та розподіленою обробкою. Вивід структурованих даних у JSON, CSV або базу даних."
+  permalink: "/projects/datascrapexter/"
+  hero_image: "/projects/assets/images/data_scrapexter/unleash_the_power_of_web_scraping-1-0384x0256.png"
+  featured: true
+  tech: ["Go", "YAML", "JSON", "Proxy Rotation", "Anti-Detection"]
+  links:
+    fiverr: "https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction"
+    freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
+
+- slug: "maiche"
+  title: "MaiChe"
+  title_uk: "MaiChe"
+  summary_en: "Enterprise-grade email validation CLI tool that verifies syntax, domain, and mailbox status for every address. Removes invalid, disposable, and role-based emails to reduce bounces and protect sender reputation."
+  summary_uk: "Інструмент CLI корпоративного рівня для перевірки електронної пошти: валідація синтаксису, домену та стану поштової скриньки. Видаляє недійсні, одноразові та рольові адреси, зменшує кількість відмов та захищає репутацію відправника."
+  permalink: "/projects/maiche/"
+  hero_image: "/projects/assets/images/maiche/applications_and_benefits-0256x0256.png"
+  featured: false
+  tech: ["Go", "CLI", "Email Validation", "DNS"]
+  links:
+    fiverr: "https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool"
+    freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
+
+- slug: "web_page_investigator"
+  title: "WebPageInvestigator"
+  title_uk: "WebPageInvestigator"
+  summary_en: "All-in-one web page analysis tool for automated data extraction, transformation, comparison, and SEO analysis. Handles dynamic content with headless browsers and outputs to JSON, CSV, or custom formats."
+  summary_uk: "Універсальний інструмент аналізу веб-сторінок для автоматизованого вилучення даних, трансформації, порівняння та SEO-аналізу. Обробляє динамічний контент за допомогою headless-браузерів."
+  permalink: "/projects/web_page_investigator/"
+  hero_image: "/projects/assets/images/web_page_investigator/real_world-use_cases-landscape-0384x0256.png"
+  featured: true
+  tech: ["Go", "Headless Browser", "CSS Selectors", "JSON", "CSV"]
+  links:
+    fiverr: "https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro"
+    freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
+
+- slug: "gootrago"
+  title: "CLI Google Translator"
+  title_uk: "CLI-перекладач Google"
+  summary_en: "CLI application written in Go for translating text files using Google Translate API. Supports both Basic and Advanced Google Translate APIs with various language options and Google Cloud Project integration."
+  summary_uk: "CLI-додаток на Go для перекладу текстових файлів за допомогою API Google Translate. Підтримує базовий та розширений Google Translate API з різними мовними опціями."
+  permalink: "/projects/gootrago/"
+  hero_image: ""
+  featured: false
+  tech: ["Go", "Google Translate API", "CLI", "Docker", "Cobra", "Viper"]
+  links:
+    github: "https://github.com/valpere/gootrago"
+
+- slug: "testwigr"
+  title: "TestWigr (Twitter-like API)"
+  title_uk: "TestWigr (Twitter-подібний API)"
+  summary_en: "Robust Twitter-like REST API built with Groovy, Spring Boot, and MongoDB. Implements core Twitter functionality: user registration, JWT authentication, posting, liking, commenting, and following users."
+  summary_uk: "Надійний Twitter-подібний REST API на Groovy, Spring Boot та MongoDB. Реалізує основні функції Twitter: реєстрацію, JWT-автентифікацію, публікацію дописів, лайки, коментарі та підписки."
+  permalink: "/projects/testwigr/"
+  hero_image: ""
+  featured: false
+  tech: ["Groovy", "Spring Boot", "MongoDB", "JWT", "REST API", "Swagger", "OpenAPI"]
+  links:
+    github: "https://github.com/valpere/testwigr"
+
+- slug: "trytrago"
+  title: "TryTraGo"
+  title_uk: "TryTraGo"
+  summary_en: "High-performance multi-language dictionary API server written in Go, designed to support approximately 60 million dictionary entries with robust API functionality, social features, and multi-database support."
+  summary_uk: "Високопродуктивний багатомовний словник-сервер на Go для підтримки близько 60 мільйонів словникових статей із надійним API, соціальними функціями та підтримкою декількох баз даних."
+  permalink: "/projects/trytrago/"
+  hero_image: ""
+  featured: false
+  tech: ["Go", "REST API", "gRPC", "Redis", "PostgreSQL", "Docker", "JWT", "Gin", "GORM"]
+  links:
+    github: "https://github.com/valpere/trytrago"

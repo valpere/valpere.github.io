@@ -1,0 +1,116 @@
+---
+layout: default
+---
+<!-- Hero -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container">
+    <img src="{{ '/assets/images/brand/logo-mark.png' | relative_url }}" alt="Valentyn S logo" class="hero__logo" width="80" height="80">
+    <div class="hero__tagline">EXTRACTS EVERYTHING</div>
+    <h1 class="hero__title" id="hero-heading">Valentyn Solomko</h1>
+    <p class="hero__subtitle">Backend developer &amp; freelancer specialising in Go, Perl, data extraction, Telegram bots, and AI integration.</p>
+    <div class="hero__actions">
+      <a href="{{ '/projects/' | relative_url }}" class="btn btn--primary">View Projects</a>
+      <a href="{{ '/about/' | relative_url }}" class="btn btn--hero-outline">About Me</a>
+    </div>
+  </div>
+</section>
+
+{{ content }}
+
+<!-- Featured Projects -->
+<section class="home-projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <div class="section-heading">
+      <h2 id="projects-heading">Featured Projects</h2>
+      <p>Open-source tools and client solutions built with Go, Perl, and modern cloud infrastructure.</p>
+    </div>
+    <div class="card-grid">
+      {% assign featured = site.data.projects | where: "featured", true %}
+      {% for project in featured %}
+      <article class="card">
+        {% if project.hero_image and project.hero_image != "" %}
+        <img src="{{ project.hero_image | relative_url }}" alt="{{ project.title }}" class="card__image" loading="lazy">
+        {% else %}
+        <div class="card__image" style="background: var(--brand-surface); display:flex; align-items:center; justify-content:center;">
+          <span style="color:var(--brand-muted); font-size:var(--text-sm);">{{ project.title }}</span>
+        </div>
+        {% endif %}
+        <div class="card__body">
+          <h3 class="card__title">
+            <a href="{{ project.permalink | relative_url }}">{{ project.title }}</a>
+          </h3>
+          <p class="card__summary">{{ project.summary_en }}</p>
+          {% if project.tech %}
+          <div class="tag-list">
+            {% for t in project.tech limit: 4 %}
+            <span class="tag">{{ t }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        <div class="card__footer">
+          <a href="{{ project.permalink | relative_url }}" class="btn btn--outline btn--sm">View Project</a>
+          {% if project.links.github %}
+          <a href="{{ project.links.github }}" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <div style="text-align:center; margin-top: var(--sp-7);">
+      <a href="{{ '/projects/' | relative_url }}" class="btn btn--outline">All Projects →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Selected Work (Portfolio) -->
+<section class="home-portfolio" aria-labelledby="portfolio-heading">
+  <div class="container">
+    <div class="section-heading">
+      <h2 id="portfolio-heading">Selected Work</h2>
+      <p>Professional contracts and long-term engagements delivering enterprise-grade solutions.</p>
+    </div>
+    <div class="card-grid">
+      {% for item in site.data.portfolio %}
+      <article class="card">
+        {% if item.hero_image and item.hero_image != "" %}
+        <img src="{{ item.hero_image | relative_url }}" alt="{{ item.client }}" class="card__image" loading="lazy">
+        {% endif %}
+        <div class="card__body">
+          <h3 class="card__title">
+            <a href="{{ item.permalink | relative_url }}">{{ item.client }}</a>
+          </h3>
+          <p class="card__summary">{{ item.role }} · {{ item.period }}</p>
+          <p class="card__summary">{{ item.summary_en }}</p>
+          {% if item.stack %}
+          <div class="tag-list">
+            {% for t in item.stack limit: 4 %}
+            <span class="tag">{{ t }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        <div class="card__footer">
+          <a href="{{ item.permalink | relative_url }}" class="btn btn--outline btn--sm">View Details</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <div style="text-align:center; margin-top: var(--sp-7);">
+      <a href="{{ '/portfolio/' | relative_url }}" class="btn btn--outline">Full Portfolio →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="home-cta" aria-labelledby="cta-heading">
+  <div class="container">
+    <h2 id="cta-heading">Ready to work together?</h2>
+    <p>Available for backend development, automation, data extraction, and AI integration projects.</p>
+    <div class="cta-row" style="justify-content:center;">
+      <a href="{{ site.data.social.upwork.url }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Upwork</a>
+      <a href="{{ site.data.social.fiverr.url }}" class="btn btn--hero-outline" target="_blank" rel="noopener noreferrer">Fiverr</a>
+      <a href="{{ site.data.social.freelancehunt.url | default: '#' }}" class="btn btn--hero-outline" target="_blank" rel="noopener noreferrer">FreelanceHunt</a>
+    </div>
+  </div>
+</section>

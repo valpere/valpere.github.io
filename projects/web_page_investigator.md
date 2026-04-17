@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: project
 title: WebPageInvestigator
 permalink: /projects/web_page_investigator/
 exclude: true
+lang: en
 ---
 
 # Web Page Analysis Tools: Your Complete Solution for Web Content Intelligence

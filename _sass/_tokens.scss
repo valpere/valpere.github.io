@@ -1,0 +1,66 @@
+:root {
+  /* Brand colors */
+  --brand-green: #168A53;
+  --brand-green-dark: #0f6a3e;
+  --brand-green-light: #1fad68;
+  --brand-yellow: #FED74F;
+  --brand-yellow-dark: #e8c23a;
+  --brand-black: #0a0a0a;
+  --brand-white: #ffffff;
+  --brand-muted: #5a5a5a;
+  --brand-surface: #f8f7f2;
+  --brand-border: #e4e2d8;
+
+  /* Typography */
+  --font-sans: 'Rubik', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.75rem;
+  --text-5xl: 3.5rem;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+
+  /* Spacing scale */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  /* Radii */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 16px;
+  --r-xl: 24px;
+  --r-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.10);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.15);
+  --shadow-green: 0 4px 16px rgba(22, 138, 83, 0.25);
+
+  /* Layout */
+  --max-page: 1200px;
+  --max-prose: 72ch;
+  --header-height: 64px;
+
+  /* Transitions */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 200ms;
+}

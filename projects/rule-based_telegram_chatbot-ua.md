@@ -1,15 +1,17 @@
 ---
-layout: page
+layout: project
 title: Telegram ChatBot на основі правил
 permalink: /projects/rule-based_telegram_chatbot-ua/
 exclude: true
+lang: uk
+lang_alt: /projects/rule-based_telegram_chatbot/
 ---
 
 # Telegram ChatBot на основі правил
 
 [The same in English](../rule-based_telegram_chatbot)
 
-**Покликання:**
+**Посилання:**
 
 - [Upwork](https://www.upwork.com/services/product/development-it-a-custom-telegram-bot-to-automate-your-business-1965029712082056479)
 - [Fiverr](https://www.fiverr.com/pere_val/build-a-custom-telegram-bot-to-automate-your-business)

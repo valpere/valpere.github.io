@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: project
 title: Vibe Coding
 permalink: /projects/vibe_coding/
 exclude: true
+lang: en
 ---
 
 # Vibe Coding: AI-Powered Development Solutions
