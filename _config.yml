@@ -12,12 +12,21 @@ theme: minima # or your chosen theme from https://pages.github.com/themes/
 minima:
   skin: solarized-light
 
-# Plugins (GitHub Pages compatible)
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-remote-theme
+  - jekyll-polyglot
+
+# Polyglot i18n
+languages: ["en", "uk"]
+default_lang: "en"
+url_langs: ["uk"]
+parallel_localization: false
+exclude_from_localization:
+  - assets
+  - robots.txt
 
 kramdown:
   syntax_highlighter: rouge
