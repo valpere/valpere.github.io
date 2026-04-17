@@ -1,0 +1,7 @@
+{% if page.lang_alt %}
+<div class="lang-switcher" style="font-size:var(--text-sm); margin-bottom:var(--sp-4);">
+  <a href="{{ page.lang_alt | relative_url }}" style="color:var(--brand-muted); text-decoration:none; border:1px solid var(--brand-border); padding:2px 10px; border-radius:var(--r-full);">
+    {% if page.lang == 'uk' %}EN{% else %}UA{% endif %}
+  </a>
+</div>
+{% endif %}
