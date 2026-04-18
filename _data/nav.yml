@@ -10,3 +10,6 @@
 - label: "Projects"
   label_uk: "Проєкти"
   url: "/projects/"
+- label: "Blog"
+  label_uk: "Блог"
+  url: "/blog/"
