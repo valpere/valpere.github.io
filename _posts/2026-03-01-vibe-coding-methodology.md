@@ -8,7 +8,10 @@ tags: [ai, methodology, vibe-coding, claude, cursor]
 lang: en
 description: "Why AI-assisted development needs the same engineering discipline as hand-written code — and the practices that keep it maintainable."
 excerpt: "Vibe coding — the practice of describing what you want and letting an AI generate the implementation — is real and productive. It is also a reliable way to accumulate technical debt at AI speed if you treat the AI as a replacement for engineering discipline rather than an accelerant."
+image: /projects/assets/images/vibe_coding/vibe_coding-1-0768x0512.png
 ---
+
+![Vibe coding with AI tools](/projects/assets/images/vibe_coding/vibe_coding-1-0768x0512.png)
 
 Vibe coding — the practice of describing what you want and letting an AI generate the implementation — is real and productive. It is also a reliable way to accumulate technical debt at AI speed if you treat the AI as a replacement for engineering discipline rather than an accelerant.
 
