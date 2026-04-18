@@ -29,19 +29,15 @@
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <!-- Header (inline until _includes/ is ready) -->
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="{{ '/' | relative_url }}" class="header-logo" aria-label="{{ site.title }} home">
-        <img src="{{ '/assets/images/brand/logo-mark.png' | relative_url }}" alt="" aria-hidden="true" width="36" height="36">
-        <span class="header-logo__name">{{ site.title }}</span>
+        <img src="{{ '/assets/images/brand/logo-mark.png' | relative_url }}" alt="" aria-hidden="true" width="38" height="38">
+        <span>
+          <span class="header-logo__name">Valentyn Solomko</span>
+          <span class="header-logo__tag">Backend · AI · Automation</span>
+        </span>
       </a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-      </button>
 
       <nav aria-label="Main navigation">
         <ul class="site-nav" role="list">
@@ -53,11 +49,22 @@
           </li>
           {% endfor %}
         </ul>
-        {% include lang-switcher.html %}
       </nav>
+
+      <div class="nav-util">
+        <span class="avail-pill">
+          <span class="avail-dot"></span>
+          {% if site.active_lang == 'uk' %}Доступний{% else %}Available{% endif %}
+        </span>
+        {% include lang-switcher.html %}
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
     </div>
 
-    <!-- Mobile nav drawer -->
     <ul class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" role="list">
       {% for item in site.data.nav %}
       <li>
@@ -75,7 +82,6 @@
 
   <!-- Footer (inline until _includes/ is ready) -->
   <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
       <p class="footer-copy">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
       <div class="social-icons">
         {% if site.data.social.upwork %}
@@ -99,10 +105,8 @@
         </a>
         {% endif %}
       </div>
-    </div>
   </footer>
 
-  <!-- Mobile nav toggle script -->
   <script>
     const toggle = document.querySelector('.nav-toggle');
     const mobileNav = document.getElementById('mobile-nav');
@@ -113,6 +117,25 @@
         mobileNav.classList.toggle('is-open');
       });
     }
+  </script>
+  <script>
+    (function() {
+      var filters = document.getElementById('blog-filters');
+      var grid = document.getElementById('blog-grid');
+      if (!filters || !grid) return;
+      filters.addEventListener('click', function(e) {
+        var chip = e.target.closest('.filter-chip');
+        if (!chip) return;
+        var cat = chip.dataset.cat;
+        filters.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('on'); });
+        chip.classList.add('on');
+        grid.querySelectorAll('.blog-post-card').forEach(function(card) {
+          if (cat === 'all') { card.style.display = ''; return; }
+          var cats = (card.dataset.cats || '').trim().split(/\s+/);
+          card.style.display = cats.indexOf(cat) > -1 ? '' : 'none';
+        });
+      });
+    })();
   </script>
 </body>
 </html>

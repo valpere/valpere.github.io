@@ -15,10 +15,11 @@ body {
   font-weight: var(--fw-normal);
   font-size: var(--text-base);
   line-height: var(--leading-normal);
-  color: var(--brand-black);
-  background-color: var(--brand-white);
+  color: var(--ink);
+  background-color: var(--paper);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Skip link */
