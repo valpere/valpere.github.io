@@ -5,8 +5,6 @@ permalink: /projects/chorus/
 lang: en
 ---
 
-![chorus — cross-agent plugin mesh](/projects/assets/images/chorus/infographic-0900x0530.png)
-
 Most AI coding tools are designed like islands.
 
 You pick one — Claude Code, OpenCode, Gemini CLI, or Codex — and stay inside its workflow. A second opinion means copying context, switching terminals, re-explaining the task, waiting, comparing answers, and manually carrying the result back.
