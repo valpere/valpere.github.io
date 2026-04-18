@@ -129,7 +129,8 @@
   h3 { font-size: var(--text-xl); margin-block: var(--sp-5) var(--sp-2); }
   p { margin-bottom: var(--sp-4); }
   code { background: var(--brand-surface); padding: 2px 6px; border-radius: var(--r-sm); font-size: 0.9em; }
-  pre { background: var(--brand-surface); padding: var(--sp-4); border-radius: var(--r-md); overflow-x: auto; margin-bottom: var(--sp-4); }
+  pre { background: var(--brand-black); color: var(--brand-white); padding: var(--sp-4); border-radius: var(--r-md); overflow-x: auto; margin-bottom: var(--sp-4); }
+  pre code { background: none; border: none; padding: 0; color: inherit; }
   blockquote { border-left: 3px solid var(--brand-green); padding-left: var(--sp-4); color: var(--brand-muted); margin: var(--sp-4) 0; }
 }
 .post-nav {
