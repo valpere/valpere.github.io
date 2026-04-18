@@ -9,10 +9,6 @@
 <article class="card">
   {% if p.hero_image and p.hero_image != "" %}
   <img src="{{ p.hero_image | relative_url }}" alt="{{ card_title }}" class="card__image" loading="lazy" width="384" height="216">
-  {% else %}
-  <div class="card__image" style="background:var(--brand-surface);min-height:160px;display:flex;align-items:center;justify-content:center;">
-    <span style="color:var(--brand-muted);font-size:var(--text-sm);">{{ card_title }}</span>
-  </div>
   {% endif %}
   <div class="card__body">
     <h3 class="card__title" style="font-size:var(--text-lg);">
