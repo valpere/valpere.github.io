@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "AI as a Development Tool"
-date: 2026-04-18
+date: 2025-12-24
 category: methodology
 tags: [AI, vibe-coding, methodology, AIAD, spec-driven]
 lang: en
-permalink: /blog/2026/04/18/ai-as-development-tool/
+permalink: /blog/2025/12/24/ai-as-development-tool/
 description: "Working definitions for AI development paradigms — from Vibe Coding to Self-Healing Systems. A common language for discussing what we're actually doing and what risk level we're accepting."
 image: /assets/images/posts/ai-as-development-tool/infographics-1-1200x655.png
 ---

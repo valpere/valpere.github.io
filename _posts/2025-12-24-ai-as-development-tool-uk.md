@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "ШІ як інструмент розробки"
-date: 2026-04-18
+date: 2025-12-24
 category: methodology
 tags: [AI, vibe-coding, methodology, AIAD, spec-driven]
 lang: uk
-permalink: /blog/2026/04/18/ai-as-development-tool/
+permalink: /blog/2025/12/24/ai-as-development-tool/
 description: "Робочі визначення парадигм розробки з ШІ — від Vibe Coding до Self-Healing Systems. Спільна мова для обговорення того, що саме ми робимо і який рівень ризику приймаємо."
 image: /assets/images/posts/ai-as-development-tool/infographics-2-1200x671.png
 ---
