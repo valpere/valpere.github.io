@@ -8,7 +8,10 @@ tags: [claude-code, ai, workflow, freelance]
 lang: en
 description: "How I integrated Claude Code's subagent-driven development into real freelance projects — concrete workflow, lessons, and tradeoffs."
 excerpt: "Six months ago I started using Claude Code as a primary development tool on client work. Not as an autocomplete or a rubber duck, but as a structured part of a repeatable workflow. Here is what that actually looks like in practice."
+image: /projects/assets/images/vibe_coding/ai+low-code_fusion-1-0768x0512.png
 ---
+
+![AI and low-code fusion in freelance workflow](/projects/assets/images/vibe_coding/ai+low-code_fusion-1-0768x0512.png)
 
 Six months ago I started using Claude Code as a primary development tool on client work. Not as an autocomplete or a rubber duck, but as a structured part of a repeatable workflow. Here is what that actually looks like in practice — with the warts included.
 

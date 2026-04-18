@@ -8,7 +8,10 @@ tags: [go, crm, automation, nova-poshta, telegram]
 lang: en
 description: "How a Go daemon watches Nova Poshta parcel statuses, moves CRM deals automatically, generates fiscal receipts, and sends SMS notifications."
 excerpt: "The client runs a small e-commerce operation — handmade goods, 50 to 80 orders on a busy day. Every morning started the same way: open Nova Poshta, check each tracking number, open KeepinCRM, move each deal to the matching stage. Forty-five minutes, every day, on a task a machine should own."
+image: /projects/assets/images/keepincrm/keepincrm_en-1-0632x0424.png
 ---
+
+![KeepinCRM automation](/projects/assets/images/keepincrm/keepincrm_en-1-0632x0424.png)
 
 The client runs a small e-commerce operation — handmade goods, 50 to 80 orders on a busy day. Every morning started the same way: open Nova Poshta, check each tracking number, open KeepinCRM, move each deal to the matching stage. Forty-five minutes, every day, on a task a machine should own.
 

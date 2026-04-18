@@ -8,7 +8,10 @@ tags: [go, scraping, architecture, colly]
 lang: en
 description: "A walkthrough of DataScrapexter's layered Go architecture — from request management to anti-detection to multi-format output."
 excerpt: "Most scraping tools are either a thin wrapper around an HTTP client or a full browser automation harness. DataScrapexter sits between those extremes deliberately, and the architecture reflects that choice."
+image: /projects/assets/images/data_scrapexter/professional_web_scraping_solution-1-0768x0512.png
 ---
+
+![DataScrapexter — professional web scraping solution](/projects/assets/images/data_scrapexter/professional_web_scraping_solution-1-0768x0512.png)
 
 Most scraping tools are either a thin wrapper around an HTTP client or a full browser automation harness. DataScrapexter sits between those extremes deliberately, and the architecture reflects that choice.
 
@@ -24,6 +27,8 @@ DataScrapexter is offered as a tiered service, and the tiers are not just pricin
 This tiering is reflected in the codebase as a factory pattern: a `FetcherFactory` takes a config struct and returns a `Fetcher` interface. The caller never instantiates Colly or chromedp directly.
 
 ## The Pipeline
+
+![Configuration workflow diagram](/projects/assets/images/data_scrapexter/configuration_workflow_diagram-1-0768x0512.png)
 
 Every request flows through five stages regardless of tier:
 
@@ -88,3 +93,5 @@ output:
 ```
 
 This approach keeps the core framework stable while client-specific logic stays in version-controlled config files rather than forked code.
+
+![Data output visualization](/projects/assets/images/data_scrapexter/data_output_visualization-1-0768x0512.png)
