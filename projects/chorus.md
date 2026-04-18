@@ -2,14 +2,10 @@
 layout: project
 title: "chorus — cross-agent plugin mesh"
 permalink: /projects/chorus/
-hero_image: /assets/images/posts/chorus/infographic-900x530.png
-tech: ["Claude Code", "OpenCode", "Gemini CLI", "Codex", "MCP", "Plugin"]
-links:
-  github: "https://github.com/valpere/chorus"
 lang: en
 ---
 
-![chorus — cross-agent plugin mesh](/assets/images/posts/chorus/infographic-900x530.png)
+![chorus — cross-agent plugin mesh](/projects/assets/images/chorus/infographic-0900x0530.png)
 
 Most AI coding tools are designed like islands.
 

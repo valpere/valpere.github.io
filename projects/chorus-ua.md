@@ -2,14 +2,10 @@
 layout: project
 title: "chorus — крос-агентна plugin mesh"
 permalink: /projects/chorus/
-hero_image: /assets/images/posts/chorus/infographic-900x530.png
-tech: ["Claude Code", "OpenCode", "Gemini CLI", "Codex", "MCP", "Plugin"]
-links:
-  github: "https://github.com/valpere/chorus"
 lang: uk
 ---
 
-![chorus — крос-агентна plugin mesh](/assets/images/posts/chorus/infographic-900x530.png)
+![chorus — крос-агентна plugin mesh](/projects/assets/images/chorus/infographic-0900x0530.png)
 
 Більшість AI coding tools зроблені як острови.
 
