@@ -2,114 +2,277 @@
 layout: default
 ---
 <!-- Hero -->
-<section class="hero" aria-labelledby="hero-heading">
-  <div class="container">
-    <img src="{{ '/assets/images/brand/logo-mark.png' | relative_url }}" alt="Valentyn S logo" class="hero__logo" width="80" height="80">
-    <div class="hero__tagline">EXTRACTS EVERYTHING</div>
-    <h1 class="hero__title" id="hero-heading">Valentyn Solomko</h1>
-    {% if site.active_lang == 'uk' %}
-    <p class="hero__subtitle">Бекенд-розробник та фрілансер, що спеціалізується на Go, Java, Groovy, Perl, витяганні даних, Telegram-ботах та AI-інтеграції.</p>
-    <div class="hero__actions">
-      <a href="{{ '/projects/' | relative_url }}" class="btn btn--primary">Проєкти</a>
-      <a href="{{ '/about/' | relative_url }}" class="btn btn--hero-outline">Про мене</a>
+<section class="ed-hero" aria-labelledby="hero-heading">
+  <div>
+    <div class="eyebrow">
+      <span class="num">01</span>
+      <span>{% if site.active_lang == 'uk' %}Бекенд-розробник та фрілансер{% else %}Backend Developer &amp; Freelancer{% endif %}</span>
     </div>
-    {% else %}
-    <p class="hero__subtitle">Backend developer &amp; freelancer specialising in Go, Java, Groovy, Perl, data extraction, Telegram bots, and AI integration.</p>
-    <div class="hero__actions">
-      <a href="{{ '/projects/' | relative_url }}" class="btn btn--primary">View Projects</a>
-      <a href="{{ '/about/' | relative_url }}" class="btn btn--hero-outline">About Me</a>
+    <h1 id="hero-heading">
+      {% if site.active_lang == 'uk' %}
+      <em>Валентин</em><br>Соломко<span class="swatch" aria-hidden="true"></span>
+      {% else %}
+      <em>Backend</em><br>Dev<span class="swatch" aria-hidden="true"></span>
+      {% endif %}
+    </h1>
+    <p class="lede">
+      {% if site.active_lang == 'uk' %}
+      Бекенд-розробник та фрілансер, що спеціалізується на <b>Go, Java, Groovy, Perl</b>, витяганні даних, Telegram-ботах та AI-інтеграції.
+      {% else %}
+      Backend developer &amp; freelancer specialising in <b>Go, Java, Groovy, Perl</b>, data extraction, Telegram bots, and AI integration.
+      {% endif %}
+    </p>
+    <div class="hero-cta">
+      <a href="{{ '/projects/' | relative_url }}" class="btn--ed-primary">
+        {% if site.active_lang == 'uk' %}Проєкти {% else %}View Projects {% endif %}→
+      </a>
+      <a href="{{ '/about/' | relative_url }}" class="btn--ed-ghost">
+        {% if site.active_lang == 'uk' %}Про мене{% else %}About Me{% endif %}
+      </a>
     </div>
-    {% endif %}
   </div>
+
+  <!-- Right: dark feature card -->
+  {% assign fp = site.data.projects | where: "featured", true | first %}
+  {% if fp %}
+  <div class="ed-hero-card" aria-label="{% if site.active_lang == 'uk' %}Поточний проєкт{% else %}Current project{% endif %}">
+    <img src="{{ '/assets/images/brand/logo-mark.png' | relative_url }}" alt="" aria-hidden="true" class="card-mk">
+    <span class="card-meta">{% if site.active_lang == 'uk' %}Зараз будується{% else %}Currently building{% endif %}</span>
+    <h3>{{ fp.title }}</h3>
+    <div class="card-stats">
+      <div><div class="stat-n">4</div><div class="stat-l">agents</div></div>
+      <div><div class="stat-n">12</div><div class="stat-l">routes</div></div>
+      <div><div class="stat-n">1</div><div class="stat-l">install</div></div>
+      <div><div class="stat-n">∞</div><div class="stat-l">workflows</div></div>
+    </div>
+    <div class="card-avail">
+      <span class="avail-dot"></span>
+      <span>{% if site.active_lang == 'uk' %}Доступний до співпраці{% else %}Available for work{% endif %}</span>
+    </div>
+  </div>
+  {% endif %}
 </section>
 
-{{ content }}
+<!-- Tech tape -->
+<div class="ed-tape" aria-hidden="true">
+  <div class="ed-tape-inner">
+    <span>
+      <i class="tape-dot"></i> Go
+      <i class="tape-dot"></i> Java
+      <i class="tape-dot"></i> Groovy
+      <i class="tape-dot"></i> Perl
+      <i class="tape-dot"></i> Claude Code
+      <i class="tape-dot"></i> MCP
+      <i class="tape-dot"></i> Telegram API
+      <i class="tape-dot"></i> PostgreSQL
+      <i class="tape-dot"></i> Redis
+      <i class="tape-dot"></i> Docker
+      <i class="tape-dot"></i> Kubernetes
+      <i class="tape-dot"></i> REST API
+      <i class="tape-dot"></i> gRPC
+      <i class="tape-dot"></i> n8n
+      <i class="tape-dot"></i> Supabase
+    </span>
+    <span aria-hidden="true">
+      <i class="tape-dot"></i> Go
+      <i class="tape-dot"></i> Java
+      <i class="tape-dot"></i> Groovy
+      <i class="tape-dot"></i> Perl
+      <i class="tape-dot"></i> Claude Code
+      <i class="tape-dot"></i> MCP
+      <i class="tape-dot"></i> Telegram API
+      <i class="tape-dot"></i> PostgreSQL
+      <i class="tape-dot"></i> Redis
+      <i class="tape-dot"></i> Docker
+      <i class="tape-dot"></i> Kubernetes
+      <i class="tape-dot"></i> REST API
+      <i class="tape-dot"></i> gRPC
+      <i class="tape-dot"></i> n8n
+      <i class="tape-dot"></i> Supabase
+    </span>
+  </div>
+</div>
 
 <!-- Featured Projects -->
-<section class="home-projects" aria-labelledby="projects-heading">
-  <div class="container">
-    <div class="section-heading">
-      {% if site.active_lang == 'uk' %}
-      <h2 id="projects-heading">Вибрані проєкти</h2>
-      <p>Відкриті інструменти та клієнтські рішення, побудовані на Go, Java, Groovy, Perl та сучасній хмарній інфраструктурі.</p>
-      {% else %}
-      <h2 id="projects-heading">Featured Projects</h2>
-      <p>Open-source tools and client solutions built with Go, Java, Groovy, Perl, and modern cloud infrastructure.</p>
-      {% endif %}
-    </div>
-    <div class="card-grid">
-      {% assign featured = site.data.projects | where: "featured", true %}
-      {% for project in featured %}
-      {% include project-card.html project=project %}
-      {% endfor %}
-    </div>
-    <div style="text-align:center; margin-top: var(--sp-7);">
-      <a href="{{ '/projects/' | relative_url }}" class="btn btn--outline">{% if site.active_lang == 'uk' %}Усі проєкти →{% else %}All Projects →{% endif %}</a>
-    </div>
+<section class="ed-projects" aria-labelledby="projects-heading">
+  <div class="ed-sec-head">
+    <span class="sec-num">02</span>
+    <h2 id="projects-heading">{% if site.active_lang == 'uk' %}Вибрані проєкти{% else %}Featured Projects{% endif %}</h2>
+    <p class="sec-sub">{% if site.active_lang == 'uk' %}Відкриті інструменти та клієнтські рішення.{% else %}Open-source tools &amp; client solutions.{% endif %}</p>
   </div>
-</section>
 
-<!-- Selected Work (Portfolio) -->
-<section class="home-portfolio" aria-labelledby="portfolio-heading">
-  <div class="container">
-    <div class="section-heading">
-      {% if site.active_lang == 'uk' %}
-      <h2 id="portfolio-heading">Вибрані роботи</h2>
-      <p>Професійні контракти та довгострокові замовлення з розробки корпоративних рішень.</p>
-      {% else %}
-      <h2 id="portfolio-heading">Selected Work</h2>
-      <p>Professional contracts and long-term engagements delivering enterprise-grade solutions.</p>
+  <div class="ed-proj-grid">
+    {% assign featured = site.data.projects | where: "featured", true %}
+    {% for project in featured %}
+    <a href="{{ project.permalink | relative_url }}" class="ed-proj{% if forloop.first %} ed-proj--hero{% endif %}">
+      {% if project.hero_image %}
+      <div class="proj-thumb">
+        <img src="{{ project.hero_image | relative_url }}" alt="{{ project.title }}" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
+      </div>
       {% endif %}
-    </div>
-    <div class="card-grid">
-      {% for item in site.data.portfolio %}
-      {% include portfolio-card.html item=item %}
-      {% endfor %}
-    </div>
-    <div style="text-align:center; margin-top: var(--sp-7);">
-      <a href="{{ '/portfolio/' | relative_url }}" class="btn btn--outline">{% if site.active_lang == 'uk' %}Повне портфоліо →{% else %}Full Portfolio →{% endif %}</a>
-    </div>
-  </div>
-</section>
-
-<!-- Latest Writing -->
-{% if site.posts.size > 0 %}
-<section class="home-blog" aria-labelledby="blog-heading">
-  <div class="container">
-    <div class="section-heading">
-      {% if site.active_lang == 'uk' %}
-      <h2 id="blog-heading">Останні статті</h2>
-      <p>Нотатки про Go, витягання даних, AI-інструменти та фріланс.</p>
-      {% else %}
-      <h2 id="blog-heading">Latest Writing</h2>
-      <p>Notes on Go, data extraction, AI tooling, and freelance engineering.</p>
-      {% endif %}
-    </div>
-    {% assign recent_posts = site.posts | limit: 3 %}
-    {% for post in recent_posts %}
-    {% include post-card.html post=post %}
+      <div class="proj-body">
+        <div class="proj-tagline">
+          <span class="proj-sq"></span>
+          <span>{{ project.tech | first }}</span>
+        </div>
+        <h3>{{ project.title }}</h3>
+        <p>{% if site.active_lang == 'uk' %}{{ project.summary_uk }}{% else %}{{ project.summary_en }}{% endif %}</p>
+        <div class="proj-chips">
+          {% for t in project.tech limit: 5 %}
+          <span class="proj-chip">{{ t }}</span>
+          {% endfor %}
+        </div>
+        <div class="proj-foot">
+          <div class="proj-links">
+            {% if project.links.github %}<a href="{{ project.links.github }}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">GitHub</a>{% endif %}
+            {% if project.links.fiverr %}<a href="{{ project.links.fiverr }}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Fiverr</a>{% endif %}
+            {% if project.links.upwork %}<a href="{{ project.links.upwork }}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Upwork</a>{% endif %}
+          </div>
+          <span style="font-size:20px;line-height:1">→</span>
+        </div>
+      </div>
+    </a>
     {% endfor %}
-    <div style="text-align:center; margin-top: var(--sp-7);">
-      <a href="{{ '/blog/' | relative_url }}" class="btn btn--outline">{% if site.active_lang == 'uk' %}Всі статті →{% else %}All Posts →{% endif %}</a>
+  </div>
+
+  <div class="ed-proj-more">
+    <a href="{{ '/projects/' | relative_url }}" class="btn--ed-ghost">{% if site.active_lang == 'uk' %}Усі проєкти →{% else %}All Projects →{% endif %}</a>
+  </div>
+</section>
+
+<!-- Work table -->
+<section class="ed-work" aria-labelledby="work-heading">
+  <div class="ed-sec-head" style="padding-left:0;padding-right:0">
+    <span class="sec-num">03</span>
+    <h2 id="work-heading">{% if site.active_lang == 'uk' %}Вибрані роботи{% else %}Selected Work{% endif %}</h2>
+    <p class="sec-sub">{% if site.active_lang == 'uk' %}Корпоративні контракти та довгострокові замовлення.{% else %}Enterprise contracts &amp; long-term engagements.{% endif %}</p>
+  </div>
+
+  <div class="ed-work-list">
+    {% for item in site.data.portfolio %}
+    <a href="{{ item.permalink | relative_url }}" class="ed-work-row">
+      <span class="work-idx">0{{ forloop.index }}</span>
+      <span class="work-co">{{ item.client }}</span>
+      <span class="work-role">{{ item.role }}</span>
+      <span class="work-yr">{{ item.period }}</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="ed-work-more">
+    <a href="{{ '/portfolio/' | relative_url }}" class="btn--ed-ghost">{% if site.active_lang == 'uk' %}Повне портфоліо →{% else %}Full Portfolio →{% endif %}</a>
+  </div>
+</section>
+
+<!-- Blog -->
+{% if site.posts.size > 0 %}
+<section class="ed-blog" aria-labelledby="blog-heading">
+  <div class="ed-sec-head" style="padding-left:0;padding-right:0">
+    <span class="sec-num">04</span>
+    <h2 id="blog-heading">{% if site.active_lang == 'uk' %}Останні статті{% else %}Latest Writing{% endif %}</h2>
+    <p class="sec-sub">{% if site.active_lang == 'uk' %}Go, ШІ-інструменти, фріланс.{% else %}Go, AI tooling, freelance engineering.{% endif %}</p>
+  </div>
+
+  {% assign all_cats = site.posts | map: "categories" | flatten | uniq %}
+  {% if all_cats.size > 0 %}
+  <div class="blog-filters" id="blog-filters">
+    <span class="filter-label">{% if site.active_lang == 'uk' %}Фільтр{% else %}Filter{% endif %}</span>
+    <button class="filter-chip on" data-cat="all">{% if site.active_lang == 'uk' %}Всі{% else %}All{% endif %}</button>
+    {% for cat in all_cats %}
+    <button class="filter-chip" data-cat="{{ cat | slugify }}">{{ cat }}</button>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% assign first_post = site.posts | first %}
+  {% if first_post %}
+  <a href="{{ first_post.url | relative_url }}" class="blog-featured">
+    <div class="feat-img">
+      {% if first_post.image %}
+      <img src="{{ first_post.image | relative_url }}" alt="{{ first_post.title }}" loading="eager">
+      {% endif %}
+      <span class="feat-badge">{% if site.active_lang == 'uk' %}Нова стаття{% else %}Latest Post{% endif %}</span>
     </div>
+    <div class="feat-body">
+      <div class="feat-meta">
+        {% if first_post.categories.size > 0 %}<span class="feat-cat">{{ first_post.categories | first }}</span>{% endif %}
+        <span>{{ first_post.date | date: "%B %d, %Y" }}</span>
+      </div>
+      <h3>{{ first_post.title }}</h3>
+      {% if first_post.excerpt %}<p>{{ first_post.excerpt | strip_html | truncate: 200 }}</p>{% endif %}
+      {% if first_post.tags.size > 0 %}
+      <div class="feat-tags">
+        {% for tag in first_post.tags limit: 4 %}<span class="feat-tag">{{ tag }}</span>{% endfor %}
+      </div>
+      {% endif %}
+      <span class="feat-readmore">{% if site.active_lang == 'uk' %}Читати далі{% else %}Read More{% endif %} →</span>
+    </div>
+  </a>
+  {% endif %}
+
+  {% assign grid_posts = site.posts | offset: 1 | limit: 3 %}
+  <div class="blog-grid" id="blog-grid">
+    {% for post in grid_posts %}
+    <a href="{{ post.url | relative_url }}" class="blog-post-card" data-cats="{% for c in post.categories %}{{ c | slugify }} {% endfor %}">
+      <div class="post-meta">
+        <span class="post-cat">{{ post.categories | first | default: "Post" }}</span>
+        <span>{{ post.date | date: "%b %d" }}</span>
+      </div>
+      <h4>{{ post.title }}</h4>
+      {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 100 }}</p>{% endif %}
+      <div class="post-foot">
+        <span class="post-tag">{{ post.tags | first }}</span>
+        <span class="post-arr">→</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="blog-all">
+    <span class="blog-count">{{ site.posts.size }} {% if site.active_lang == 'uk' %}статей{% else %}posts{% endif %}</span>
+    <a href="{{ '/blog/' | relative_url }}">{% if site.active_lang == 'uk' %}Всі статті →{% else %}View All Posts →{% endif %}</a>
   </div>
 </section>
 {% endif %}
 
 <!-- CTA -->
-<section class="home-cta" aria-labelledby="cta-heading">
-  <div class="container">
-    {% if site.active_lang == 'uk' %}
-    <h2 id="cta-heading">Готові до співпраці?</h2>
-    <p>Доступний для бекенд-розробки, автоматизації, витягання даних та AI-інтеграції.</p>
-    {% else %}
-    <h2 id="cta-heading">Ready to work together?</h2>
-    <p>Available for backend development, automation, data extraction, and AI integration projects.</p>
-    {% endif %}
-    <div class="cta-row" style="justify-content:center;">
-      <a href="{{ site.data.social.upwork.url }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Upwork</a>
-      <a href="{{ site.data.social.fiverr.url }}" class="btn btn--hero-outline" target="_blank" rel="noopener noreferrer">Fiverr</a>
-      <a href="{{ site.data.social.freelancehunt.url | default: '#' }}" class="btn btn--hero-outline" target="_blank" rel="noopener noreferrer">FreelanceHunt</a>
+<section class="ed-cta-wrap" aria-labelledby="cta-heading">
+  <div class="ed-cta">
+    <div class="cta-inner">
+      <h2 id="cta-heading">
+        {% if site.active_lang == 'uk' %}
+        Готові до <em>співпраці?</em>
+        {% else %}
+        Ready to <em>work<br>together?</em>
+        {% endif %}
+      </h2>
+      <div class="cta-links">
+        {% if site.data.social.upwork %}
+        <a href="{{ site.data.social.upwork.url }}" target="_blank" rel="noopener noreferrer">
+          {{ site.data.social.upwork.label }} <span class="cta-arr">↗ 01</span>
+        </a>
+        {% endif %}
+        {% if site.data.social.fiverr %}
+        <a href="{{ site.data.social.fiverr.url }}" target="_blank" rel="noopener noreferrer">
+          {{ site.data.social.fiverr.label }} <span class="cta-arr">↗ 02</span>
+        </a>
+        {% endif %}
+        {% if site.data.social.freelancehunt %}
+        <a href="{{ site.data.social.freelancehunt.url }}" target="_blank" rel="noopener noreferrer">
+          {{ site.data.social.freelancehunt.label }} <span class="cta-arr">↗ 03</span>
+        </a>
+        {% endif %}
+        {% if site.data.social.linkedin %}
+        <a href="{{ site.data.social.linkedin.url }}" target="_blank" rel="noopener noreferrer">
+          {{ site.data.social.linkedin.label }} <span class="cta-arr">↗ 04</span>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="cta-foot">
+      <span>&copy; {{ 'now' | date: "%Y" }} Valentyn Solomko</span>
+      <span>Backend · AI · Automation</span>
+      <a href="{{ site.data.social.github.url }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
     </div>
   </div>
 </section>
