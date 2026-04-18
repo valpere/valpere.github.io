@@ -5,8 +5,6 @@ permalink: /projects/chorus/
 lang: uk
 ---
 
-![chorus — крос-агентна plugin mesh](/projects/assets/images/chorus/infographic-0900x0530.png)
-
 Більшість AI coding tools зроблені як острови.
 
 Ви обираєте один — Claude Code, OpenCode, Gemini CLI або Codex — і залишаєтеся в його workflow. Хочете другу думку? Треба скопіювати контекст, перейти в інший термінал, заново пояснити задачу, зачекати, порівняти відповіді й вручну перенести корисне назад.
