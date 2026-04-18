@@ -36,7 +36,7 @@ layout: default
   {% assign fp = site.data.projects | where: "featured", true | first %}
   {% if fp %}
   <div class="ed-hero-card" aria-label="{% if site.active_lang == 'uk' %}Поточний проєкт{% else %}Current project{% endif %}">
-    <img src="{{ '/assets/images/brand/logo-mark.png' | relative_url }}" alt="" aria-hidden="true" class="card-mk">
+    <img src="{{ '/assets/images/brand/logo-mark.png' | relative_url }}" alt="" aria-hidden="true" class="card-mk" width="64" height="64">
     <span class="card-meta">{% if site.active_lang == 'uk' %}Зараз будується{% else %}Currently building{% endif %}</span>
     <h3>{{ fp.title }}</h3>
     <div class="card-stats">
@@ -104,10 +104,10 @@ layout: default
   <div class="ed-proj-grid">
     {% assign featured = site.data.projects | where: "featured", true %}
     {% for project in featured %}
-    <a href="{{ project.permalink | relative_url }}" class="ed-proj{% if forloop.first %} ed-proj--hero{% endif %}">
+    <article class="ed-proj{% if forloop.first %} ed-proj--hero{% endif %}">
       {% if project.hero_image %}
       <div class="proj-thumb">
-        <img src="{{ project.hero_image | relative_url }}" alt="{{ project.title }}" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
+        <img src="{{ project.hero_image | relative_url }}" alt="{{ project.title }}" width="1600" height="900" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
       </div>
       {% endif %}
       <div class="proj-body">
@@ -115,7 +115,7 @@ layout: default
           <span class="proj-sq"></span>
           <span>{{ project.tech | first }}</span>
         </div>
-        <h3>{{ project.title }}</h3>
+        <h3><a href="{{ project.permalink | relative_url }}" class="proj-link">{{ project.title }}</a></h3>
         <p>{% if site.active_lang == 'uk' %}{{ project.summary_uk }}{% else %}{{ project.summary_en }}{% endif %}</p>
         <div class="proj-chips">
           {% for t in project.tech limit: 5 %}
@@ -124,14 +124,14 @@ layout: default
         </div>
         <div class="proj-foot">
           <div class="proj-links">
-            {% if project.links.github %}<a href="{{ project.links.github }}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">GitHub</a>{% endif %}
-            {% if project.links.fiverr %}<a href="{{ project.links.fiverr }}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Fiverr</a>{% endif %}
-            {% if project.links.upwork %}<a href="{{ project.links.upwork }}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Upwork</a>{% endif %}
+            {% if project.links.github %}<a href="{{ project.links.github }}" target="_blank" rel="noopener noreferrer" class="proj-link--ext">GitHub</a>{% endif %}
+            {% if project.links.fiverr %}<a href="{{ project.links.fiverr }}" target="_blank" rel="noopener noreferrer" class="proj-link--ext">Fiverr</a>{% endif %}
+            {% if project.links.upwork %}<a href="{{ project.links.upwork }}" target="_blank" rel="noopener noreferrer" class="proj-link--ext">Upwork</a>{% endif %}
           </div>
-          <span style="font-size:20px;line-height:1">→</span>
+          <span class="proj-arrow" aria-hidden="true">→</span>
         </div>
       </div>
-    </a>
+    </article>
     {% endfor %}
   </div>
 
@@ -142,7 +142,7 @@ layout: default
 
 <!-- Work table -->
 <section class="ed-work" aria-labelledby="work-heading">
-  <div class="ed-sec-head" style="padding-left:0;padding-right:0">
+  <div class="ed-sec-head ed-sec-head--flush">
     <span class="sec-num">03</span>
     <h2 id="work-heading">{% if site.active_lang == 'uk' %}Вибрані роботи{% else %}Selected Work{% endif %}</h2>
     <p class="sec-sub">{% if site.active_lang == 'uk' %}Корпоративні контракти та довгострокові замовлення.{% else %}Enterprise contracts &amp; long-term engagements.{% endif %}</p>
@@ -167,7 +167,7 @@ layout: default
 <!-- Blog -->
 {% if site.posts.size > 0 %}
 <section class="ed-blog" aria-labelledby="blog-heading">
-  <div class="ed-sec-head" style="padding-left:0;padding-right:0">
+  <div class="ed-sec-head ed-sec-head--flush">
     <span class="sec-num">04</span>
     <h2 id="blog-heading">{% if site.active_lang == 'uk' %}Останні статті{% else %}Latest Writing{% endif %}</h2>
     <p class="sec-sub">{% if site.active_lang == 'uk' %}Go, ШІ-інструменти, фріланс.{% else %}Go, AI tooling, freelance engineering.{% endif %}</p>
@@ -189,7 +189,7 @@ layout: default
   <a href="{{ first_post.url | relative_url }}" class="blog-featured">
     <div class="feat-img">
       {% if first_post.image %}
-      <img src="{{ first_post.image | relative_url }}" alt="{{ first_post.title }}" loading="eager">
+      <img src="{{ first_post.image | relative_url }}" alt="{{ first_post.title }}" width="{{ first_post.image_width | default: 1200 }}" height="{{ first_post.image_height | default: 630 }}" loading="eager">
       {% endif %}
       <span class="feat-badge">{% if site.active_lang == 'uk' %}Нова стаття{% else %}Latest Post{% endif %}</span>
     </div>

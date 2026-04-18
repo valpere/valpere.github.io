@@ -292,7 +292,7 @@
     z-index: 1;
     color: var(--paper);
 
-    .avail-dot { width: 8px; height: 8px; border-radius: 999px; background: #34D37A; flex-shrink: 0; }
+    .avail-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--color-online); flex-shrink: 0; }
   }
 }
 
@@ -333,6 +333,12 @@
 
   &:hover { background: var(--ink); color: var(--paper); }
   &:focus-visible { outline: 3px solid var(--brand-yellow); outline-offset: 2px; }
+}
+
+/* Project card arrow affordance */
+.proj-arrow {
+  font-size: 20px;
+  line-height: 1;
 }
 
 /* ── Site header — Editorial ── */
@@ -446,7 +452,7 @@
       width: 6px;
       height: 6px;
       border-radius: 999px;
-      background: #34D37A;
+      background: var(--color-online);
       box-shadow: 0 0 0 3px rgba(52,211,122,.25);
       flex-shrink: 0;
     }
