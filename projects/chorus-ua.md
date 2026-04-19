@@ -7,22 +7,24 @@ lang: uk
 
 Більшість AI coding tools зроблені як острови.
 
-Ви обираєте один — Claude Code, OpenCode, Gemini CLI або Codex — і залишаєтеся в його workflow. Хочете другу думку? Треба скопіювати контекст, перейти в інший термінал, заново пояснити задачу, зачекати, порівняти відповіді й вручну перенести корисне назад.
+Ви обираєте один — Claude Code, OpenCode, Gemini CLI, Codex, Cursor або Kilo — і залишаєтеся в його workflow. Хочете другу думку? Треба скопіювати контекст, перейти в інший термінал, заново пояснити задачу, зачекати, порівняти відповіді й вручну перенести корисне назад.
 
 **chorus** прибирає цей крок.
 
 ## Що це таке
 
-chorus — open-source колекція плагінів, яка створює **mesh делегування 4×3** між чотирма AI coding CLI:
+chorus — open-source колекція плагінів, яка створює **повну mesh делегування 6×6** між шістьма AI coding CLI:
 
-| Від \ До | Claude | OpenCode | Gemini | Codex |
-|----------|--------|----------|--------|-------|
-| Claude Code | — | ✅ | ✅ | ✅ |
-| OpenCode | ✅ | — | ✅ | ✅ |
-| Gemini CLI | ✅ | ✅ | — | ✅ |
-| Codex | ✅ | ✅ | ✅ | — |
+| Від \\ До | Claude | OpenCode | Gemini | Codex | Cursor | Kilo |
+|----------|:------:|:--------:|:------:|:-----:|:------:|:----:|
+| Claude Code | — | ✅ | ✅ | ✅ | ✅ | ✅ |
+| OpenCode | ✅ | — | ✅ | ✅ | ✅ | ✅ |
+| Gemini CLI | ✅ | ✅ | — | ✅ | ✅ | ✅ |
+| Codex | ✅ | ✅ | ✅ | — | ✅ | ✅ |
+| Cursor | ✅ | ✅ | ✅ | ✅ | — | ✅ |
+| Kilo | ✅ | ✅ | ✅ | ✅ | ✅ | — |
 
-Кожен агент може делегувати задачі трьом іншим, не виходячи зі свого інтерфейсу.
+Кожен агент може делегувати задачі п'ятьом іншим, не виходячи зі свого інтерфейсу.
 
 ## Інтеграція
 
@@ -31,6 +33,8 @@ chorus — open-source колекція плагінів, яка створює 
 /opencode:run refactor the auth module
 /gemini:review check this diff for edge cases
 /codex:run write tests for the new retry logic
+/cursor:run check if this fits existing codebase patterns
+/kilo:run review for naming clarity and maintainability
 ```
 
 **OpenCode** отримує MCP tools:
@@ -38,32 +42,38 @@ chorus — open-source колекція плагінів, яка створює 
 delegate_claude("review this migration for data loss risk")
 delegate_gemini("analyze this for performance bottlenecks")
 delegate_codex("add integration tests")
+delegate_cursor("check pattern consistency across the repo")
+delegate_kilo("review for long-term readability")
 ```
 
-**Gemini CLI** і **Codex** отримують skills — встановіть раз, потім просто скажіть агенту делегувати природною мовою.
+**Gemini CLI**, **Codex**, **Cursor** і **Kilo** отримують skills/rules — встановіть раз, потім просто делегуйте природною мовою.
 
 ## Паралельне code review
 
-Даєте трьом різним агентам один diff незалежно, кожен із різним фокусом:
+Даєте п'ятьом різним агентам один diff незалежно, кожен із різним фокусом:
 
 ```text
-/gemini:review — correctness та edge cases
-/codex:run    — test coverage
-/opencode:run — архітектура та спрощення
+/gemini:review   — correctness та edge cases
+/codex:run       — test coverage та пропущені кейси
+/cursor:run      — інтеграція з кодовою базою та узгодженість патернів
+/kilo:run        — підтримуваність та якість найменування
+/claude:review   — безпека та коректність
 ```
 
 У різних моделей різні слабкі місця. Один пропустить edge case, який інший спіймає. chorus надає матеріал, рішення залишається за вами.
+
+OpenCode бере участь у повній mesh 6×6, але виключений із паралельних workflow-патернів — його TUI stdout не можна перехопити програмно.
 
 ## Named workflow команди
 
 | Команда | Що робить |
 |---|---|
-| `/chorus:review` | Паралельне review `git diff HEAD` — одна команда, 3 незалежні думки |
-| `/chorus:council` | Одне завдання трьом агентам із різними ролями; host синтезує |
-| `/chorus:debug` | Ранжовані гіпотези першопричини від 3 агентів для симптому баґу |
+| `/chorus:review` | Паралельне review `git diff HEAD` — одна команда, 5 незалежних думок |
+| `/chorus:council` | Одне завдання п'ятьом агентам із різними ролями; host синтезує |
+| `/chorus:debug` | Ранжовані гіпотези першопричини від 5 агентів для симптому баґу |
 | `/chorus:second-opinion` | Швидка незалежна перевірка одним обраним агентом |
 
-OpenCode отримує їх як MCP tools: `council`, `parallel_review`, `parallel_debug`, `second_opinion`. Gemini CLI та Codex — як skills.
+OpenCode отримує їх як MCP tools: `council`, `parallel_review`, `parallel_debug`, `second_opinion`. Gemini CLI, Codex, Cursor та Kilo — як skills/rules.
 
 ## Встановлення
 
@@ -73,8 +83,13 @@ claude plugin install https://github.com/valpere/chorus
 
 # OpenCode
 opencode plugin @valpere/chorus-opencode
+
+# Gemini CLI
+gemini skills install https://github.com/valpere/chorus --path for-gemini/claude
+gemini skills install https://github.com/valpere/chorus --path for-gemini/opencode
+# ... та інші агенти
 ```
 
-Повне встановлення для Gemini CLI та Codex — у [README](https://github.com/valpere/chorus).
+Повне встановлення для Codex, Cursor та Kilo — у [README](https://github.com/valpere/chorus).
 
-chorus не намагається стати новою IDE або orchestration platform. Це plumbing між інструментами, якими розробники вже користуються. Одна інсталяція, чотири агенти, жодних нових workflow.
+chorus не намагається стати новою IDE або orchestration platform. Це plumbing між інструментами, якими розробники вже користуються. Одна інсталяція, шість агентів, жодних нових workflow.

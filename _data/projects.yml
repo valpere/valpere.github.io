@@ -1,12 +1,12 @@
 - slug: "chorus"
   title: "chorus"
   title_uk: "chorus"
-  summary_en: "Open-source cross-agent plugin mesh connecting Claude Code, OpenCode, Gemini CLI, and Codex into a 4×3 delegation network. One install gives any agent the ability to delegate tasks to the other three — parallel reviews, council mode, root-cause debugging."
-  summary_uk: "Open-source крос-агентна mesh, що з'єднує Claude Code, OpenCode, Gemini CLI та Codex у мережу делегування 4×3. Один плагін дозволяє будь-якому агенту делегувати задачі трьом іншим — паралельні review, council-режим, дебагінг."
+  summary_en: "Open-source cross-agent plugin mesh connecting Claude Code, OpenCode, Gemini CLI, Codex, Cursor, and Kilo into a full 6×6 delegation network. One install gives any agent the ability to delegate tasks to the other five — parallel reviews, council mode, root-cause debugging."
+  summary_uk: "Open-source крос-агентна mesh, що з'єднує Claude Code, OpenCode, Gemini CLI, Codex, Cursor та Kilo у повну мережу делегування 6×6. Один плагін дозволяє будь-якому агенту делегувати задачі п'ятьом іншим — паралельні review, council-режим, дебагінг."
   permalink: "/projects/chorus/"
   hero_image: "/projects/assets/images/chorus/infographic-0900x0530.png"
   featured: true
-  tech: ["Claude Code", "OpenCode", "Gemini CLI", "Codex", "MCP", "Plugin"]
+  tech: ["Claude Code", "OpenCode", "Gemini CLI", "Codex", "Cursor", "Kilo", "MCP", "Plugin"]
   links:
     github: "https://github.com/valpere/chorus"
 
