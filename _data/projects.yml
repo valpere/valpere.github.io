@@ -56,7 +56,7 @@
   summary_en: "Go daemon fully automating a Ukrainian e-commerce CRM workflow: moves deals through the sales funnel based on Nova Poshta delivery statuses, generates fiscal receipts via Checkbox (ПРРО), and sends automated SMS via TurboSMS."
   summary_uk: "Go-демон, що автоматизує CRM-процеси інтернет-магазину: переміщує угоди по воронці на основі статусів Нової Пошти, формує фіскальні чеки через Checkbox (ПРРО) та надсилає SMS через TurboSMS."
   permalink: "/projects/keepincrm/"
-  hero_image: "/projects/assets/images/keepincrm/keepincrm_ua-2-0632x0424.png"
+  hero_image: "/projects/assets/images/keepincrm/keepincrm_ua-2-1264x0848.png"
   featured: true
   tech: ["Go", "SQLite", "REST API", "Nova Poshta", "Checkbox", "TurboSMS", "WayForPay", "systemd"]
   links:
