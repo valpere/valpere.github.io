@@ -6,7 +6,8 @@ category: release-notes
 tags: [AI, chorus, claude-code, opencode, gemini, codex, cursor, kilo, open-source]
 lang: en
 permalink: /blog/2026/04/17/chorus-cross-agent-plugin-mesh/
-description: "chorus is an open-source plugin collection that creates a full 6×6 delegation mesh between Claude Code, OpenCode, Gemini CLI, Codex, Cursor, and Kilo — without leaving your current interface."
+description: "chorus creates a 6×6 mesh across Claude Code, OpenCode, Gemini CLI, Codex, Cursor, and Kilo."
+excerpt: "Most AI coding tools are designed like islands."
 image: /assets/images/posts/chorus/infographic-900x530.png
 ---
 
@@ -36,7 +37,7 @@ Each agent can delegate tasks to the other five, without leaving its own interfa
 ## How it integrates
 
 **Claude Code** gets slash commands:
-```
+```text
 /opencode:run refactor the auth module
 /gemini:review check this diff for edge cases
 /codex:run write tests for the new retry logic
@@ -45,7 +46,7 @@ Each agent can delegate tasks to the other five, without leaving its own interfa
 ```
 
 **OpenCode** gets MCP tools:
-```
+```text
 delegate_claude("review this migration for data loss risk")
 delegate_gemini("analyze this for performance bottlenecks")
 delegate_codex("add integration tests")

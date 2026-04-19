@@ -6,7 +6,8 @@ category: release-notes
 tags: [AI, chorus, claude-code, opencode, gemini, codex, cursor, kilo, open-source]
 lang: uk
 permalink: /blog/2026/04/17/chorus-cross-agent-plugin-mesh/
-description: "chorus — open-source колекція плагінів, яка створює повну mesh делегування 6×6 між Claude Code, OpenCode, Gemini CLI, Codex, Cursor та Kilo, не виходячи з поточного інтерфейсу."
+description: "chorus — open-source колекція плагінів для делегування між Claude Code, OpenCode, Gemini CLI, Codex, Cursor і Kilo."
+excerpt: "Більшість AI coding tools зроблені як острови."
 image: /assets/images/posts/chorus/infographic-900x530.png
 ---
 
@@ -36,7 +37,7 @@ chorus — open-source колекція плагінів, яка створює 
 ## Інтеграція
 
 **Claude Code** отримує slash commands:
-```
+```text
 /opencode:run refactor the auth module
 /gemini:review check this diff for edge cases
 /codex:run write tests for the new retry logic
@@ -45,7 +46,7 @@ chorus — open-source колекція плагінів, яка створює 
 ```
 
 **OpenCode** отримує MCP tools:
-```
+```text
 delegate_claude("review this migration for data loss risk")
 delegate_gemini("analyze this for performance bottlenecks")
 delegate_codex("add integration tests")
