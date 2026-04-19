@@ -16,7 +16,7 @@
   summary_en: "AI-Powered Development combining Claude/Cursor automation and low-code tools (Supabase/Replit) to deliver scalable solutions in days. Launch MVPs, modernize legacy systems, and automate workflows faster."
   summary_uk: "Розробка на основі ШІ, що поєднує автоматизацію Claude/Cursor та інструменти low-code (Supabase/Replit) для масштабованих рішень за лічені дні. Запуск MVP, модернізація застарілих систем та автоматизація процесів."
   permalink: "/projects/vibe_coding/"
-  hero_image: "/projects/assets/images/vibe_coding/vibe_coding-1-0384x0256.png"
+  hero_image: "/projects/assets/images/vibe_coding/vibe_coding-1-0768x0512.png"
   featured: false
   tech: ["Go", "Java", "Claude", "Supabase", "Replit", "Cursor", "n8n"]
   links:
@@ -44,7 +44,7 @@
   summary_en: "Production-ready Telegram weather bot with real-time forecasts, air quality, smart locations, and multi-language support (UA/EN/DE/FR/ES). Enterprise features: custom alerts, Slack/Teams integration, RBAC, Prometheus/Grafana monitoring."
   summary_uk: "Готовий до виробництва Telegram-бот для погоди з прогнозами в реальному часі, якістю повітря, розумними локаціями та підтримкою багатьох мов. Корпоративні функції: сповіщення, інтеграція Slack/Teams, RBAC, моніторинг."
   permalink: "/projects/shopogoda/"
-  hero_image: "/projects/assets/images/shopogoda/for_every_industry-every_condition-1-0384x0256.png"
+  hero_image: "/projects/assets/images/shopogoda/for_every_industry-every_condition-1-0768x0512.png"
   featured: true
   tech: ["Go", "Telegram API", "PostgreSQL", "Redis", "Docker", "Railway", "Supabase"]
   links:
@@ -56,7 +56,7 @@
   summary_en: "Go daemon fully automating a Ukrainian e-commerce CRM workflow: moves deals through the sales funnel based on Nova Poshta delivery statuses, generates fiscal receipts via Checkbox (ПРРО), and sends automated SMS via TurboSMS."
   summary_uk: "Go-демон, що автоматизує CRM-процеси інтернет-магазину: переміщує угоди по воронці на основі статусів Нової Пошти, формує фіскальні чеки через Checkbox (ПРРО) та надсилає SMS через TurboSMS."
   permalink: "/projects/keepincrm/"
-  hero_image: "/projects/assets/images/keepincrm/keepincrm_ua-2-0316x0212.png"
+  hero_image: "/projects/assets/images/keepincrm/keepincrm_ua-2-0632x0424.png"
   featured: true
   tech: ["Go", "SQLite", "REST API", "Nova Poshta", "Checkbox", "TurboSMS", "WayForPay", "systemd"]
   links:
@@ -68,7 +68,7 @@
   summary_en: "Professional Go-powered web scraping framework with anti-detection, captcha-solving, proxy rotation, and distributed processing. Outputs structured data in JSON, CSV, or database formats via customizable YAML/JSON configurations."
   summary_uk: "Професійний фреймворк для веб-скрейпінгу на Go із захистом від виявлення, розпізнаванням капчі, ротацією проксі та розподіленою обробкою. Вивід структурованих даних у JSON, CSV або базу даних."
   permalink: "/projects/datascrapexter/"
-  hero_image: "/projects/assets/images/data_scrapexter/unleash_the_power_of_web_scraping-1-0384x0256.png"
+  hero_image: "/projects/assets/images/data_scrapexter/unleash_the_power_of_web_scraping-1-0768x0512.png"
   featured: true
   tech: ["Go", "YAML", "JSON", "Proxy Rotation", "Anti-Detection"]
   links:
@@ -94,7 +94,7 @@
   summary_en: "All-in-one web page analysis tool for automated data extraction, transformation, comparison, and SEO analysis. Handles dynamic content with headless browsers and outputs to JSON, CSV, or custom formats."
   summary_uk: "Універсальний інструмент аналізу веб-сторінок для автоматизованого вилучення даних, трансформації, порівняння та SEO-аналізу. Обробляє динамічний контент за допомогою headless-браузерів."
   permalink: "/projects/web_page_investigator/"
-  hero_image: "/projects/assets/images/web_page_investigator/real_world-use_cases-landscape-0384x0256.png"
+  hero_image: "/projects/assets/images/web_page_investigator/real_world-use_cases-landscape-0768x0512.png"
   featured: true
   tech: ["Go", "Headless Browser", "CSS Selectors", "JSON", "CSV"]
   links:
