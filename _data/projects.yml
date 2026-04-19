@@ -94,7 +94,7 @@
   summary_en: "All-in-one web page analysis tool for automated data extraction, transformation, comparison, and SEO analysis. Handles dynamic content with headless browsers and outputs to JSON, CSV, or custom formats."
   summary_uk: "Універсальний інструмент аналізу веб-сторінок для автоматизованого вилучення даних, трансформації, порівняння та SEO-аналізу. Обробляє динамічний контент за допомогою headless-браузерів."
   permalink: "/projects/web_page_investigator/"
-  hero_image: "/projects/assets/images/web_page_investigator/real_world-use_cases-landscape-0384x0256.png"
+  hero_image: "/projects/assets/images/web_page_investigator/real_world-use_cases-landscape-1536x1024.png"
   featured: true
   tech: ["Go", "Headless Browser", "CSS Selectors", "JSON", "CSV"]
   links:
