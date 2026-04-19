@@ -15,7 +15,7 @@ lang: uk
 
 chorus — open-source колекція плагінів, яка створює **повну mesh делегування 6×6** між шістьма AI coding CLI:
 
-| Від \ До | Claude | OpenCode | Gemini | Codex | Cursor | Kilo |
+| Від \\ До | Claude | OpenCode | Gemini | Codex | Cursor | Kilo |
 |----------|:------:|:--------:|:------:|:-----:|:------:|:----:|
 | Claude Code | — | ✅ | ✅ | ✅ | ✅ | ✅ |
 | OpenCode | ✅ | — | ✅ | ✅ | ✅ | ✅ |

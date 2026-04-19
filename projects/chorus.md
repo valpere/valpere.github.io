@@ -15,7 +15,7 @@ You pick one — Claude Code, OpenCode, Gemini CLI, Codex, Cursor, or Kilo — a
 
 chorus is an open-source plugin collection that creates a **full 6×6 delegation mesh** between six AI coding CLIs:
 
-| From \ To   | Claude | OpenCode | Gemini | Codex | Cursor | Kilo |
+| From \\ To  | Claude | OpenCode | Gemini | Codex | Cursor | Kilo |
 |-------------|:------:|:--------:|:------:|:-----:|:------:|:----:|
 | Claude Code |   —    |  ✅      |  ✅    |  ✅   |  ✅    |  ✅  |
 | OpenCode    |  ✅    |   —      |  ✅    |  ✅   |  ✅    |  ✅  |
