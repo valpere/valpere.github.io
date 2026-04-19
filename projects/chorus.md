@@ -7,22 +7,24 @@ lang: en
 
 Most AI coding tools are designed like islands.
 
-You pick one — Claude Code, OpenCode, Gemini CLI, or Codex — and stay inside its workflow. A second opinion means copying context, switching terminals, re-explaining the task, waiting, comparing answers, and manually carrying the result back.
+You pick one — Claude Code, OpenCode, Gemini CLI, Codex, Cursor, or Kilo — and stay inside its workflow. A second opinion means copying context, switching terminals, re-explaining the task, waiting, comparing answers, and manually carrying the result back.
 
 **chorus** removes that step.
 
 ## What It Does
 
-chorus is an open-source plugin collection that creates a **4×3 delegation mesh** between four AI coding CLIs:
+chorus is an open-source plugin collection that creates a **full 6×6 delegation mesh** between six AI coding CLIs:
 
-| From \ To   | Claude | OpenCode | Gemini | Codex |
-|-------------|--------|----------|--------|-------|
-| Claude Code |   —    |  ✅      |  ✅    |  ✅   |
-| OpenCode    |  ✅    |  —       |  ✅    |  ✅   |
-| Gemini CLI  |  ✅    |  ✅      |  —     |  ✅   |
-| Codex       |  ✅    |  ✅      |  ✅    |  —    |
+| From \ To   | Claude | OpenCode | Gemini | Codex | Cursor | Kilo |
+|-------------|:------:|:--------:|:------:|:-----:|:------:|:----:|
+| Claude Code |   —    |  ✅      |  ✅    |  ✅   |  ✅    |  ✅  |
+| OpenCode    |  ✅    |   —      |  ✅    |  ✅   |  ✅    |  ✅  |
+| Gemini CLI  |  ✅    |  ✅      |   —    |  ✅   |  ✅    |  ✅  |
+| Codex       |  ✅    |  ✅      |  ✅    |   —   |  ✅    |  ✅  |
+| Cursor      |  ✅    |  ✅      |  ✅    |  ✅   |   —    |  ✅  |
+| Kilo        |  ✅    |  ✅      |  ✅    |  ✅   |  ✅    |   —  |
 
-Each agent can delegate tasks to the other three, without leaving its own interface.
+Each agent can delegate tasks to the other five, without leaving its own interface.
 
 ## Integration
 
@@ -31,6 +33,8 @@ Each agent can delegate tasks to the other three, without leaving its own interf
 /opencode:run refactor the auth module
 /gemini:review check this diff for edge cases
 /codex:run write tests for the new retry logic
+/cursor:run check if this fits existing codebase patterns
+/kilo:run review for naming clarity and maintainability
 ```
 
 **OpenCode** gets MCP tools:
@@ -38,32 +42,38 @@ Each agent can delegate tasks to the other three, without leaving its own interf
 delegate_claude("review this migration for data loss risk")
 delegate_gemini("analyze this for performance bottlenecks")
 delegate_codex("add integration tests")
+delegate_cursor("check pattern consistency across the repo")
+delegate_kilo("review for long-term readability")
 ```
 
-**Gemini CLI** and **Codex** get skills — install once, then ask in natural language.
+**Gemini CLI**, **Codex**, **Cursor**, and **Kilo** get skills/rules — install once, then delegate in natural language.
 
 ## Parallel Code Review
 
-Ask three different agents to review the same diff independently, each with a different focus:
+Ask five different agents to review the same diff independently, each with a different focus:
 
 ```text
-/gemini:review — correctness and edge cases
-/codex:run    — test coverage
-/opencode:run — architecture and simplification
+/gemini:review   — correctness and edge cases
+/codex:run       — test coverage and missing cases
+/cursor:run      — codebase integration and pattern consistency
+/kilo:run        — maintainability and naming clarity
+/claude:review   — security and correctness
 ```
 
 Different models have genuinely different failure modes. One may miss an edge case another catches. chorus provides the raw material; judgment stays with you.
+
+OpenCode participates in the full 6×6 mesh but is excluded from parallel workflow patterns — its TUI stdout isn't capturable programmatically.
 
 ## Named Workflow Commands
 
 | Command | What it does |
 |---|---|
-| `/chorus:review` | Parallel review of `git diff HEAD` — one command, 3 independent opinions |
-| `/chorus:council` | Same task to all 3 agents with different roles; host synthesizes |
-| `/chorus:debug` | Ranked root-cause hypotheses from 3 agents for a bug symptom |
+| `/chorus:review` | Parallel review of `git diff HEAD` — one command, 5 independent opinions |
+| `/chorus:council` | Same task to all 5 agents with different roles; host synthesizes |
+| `/chorus:debug` | Ranked root-cause hypotheses from 5 agents for a bug symptom |
 | `/chorus:second-opinion` | Quick independent check from one chosen agent |
 
-OpenCode gets these as MCP tools: `council`, `parallel_review`, `parallel_debug`, `second_opinion`. Gemini CLI and Codex get them as skills.
+OpenCode gets these as MCP tools: `council`, `parallel_review`, `parallel_debug`, `second_opinion`. Gemini CLI, Codex, Cursor, and Kilo get them as skills/rules.
 
 ## Install
 
@@ -73,8 +83,13 @@ claude plugin install https://github.com/valpere/chorus
 
 # OpenCode
 opencode plugin @valpere/chorus-opencode
+
+# Gemini CLI
+gemini skills install https://github.com/valpere/chorus --path for-gemini/claude
+gemini skills install https://github.com/valpere/chorus --path for-gemini/opencode
+# ... and other agents
 ```
 
-Full installation for Gemini CLI and Codex is in the [README](https://github.com/valpere/chorus).
+Full installation for Codex, Cursor, and Kilo is in the [README](https://github.com/valpere/chorus).
 
-chorus is not trying to be a new IDE or orchestration platform. It is plumbing between tools developers already use. One install, four agents, zero new workflows forced on you.
+chorus is not trying to be a new IDE or orchestration platform. It is plumbing between tools developers already use. One install, six agents, zero new workflows forced on you.
