@@ -6,8 +6,8 @@ permalink: /blog/2026/04/27/ai-agent-cost-optimization/
 category: ai-practice
 tags: [AI, cost-optimization, claude-code, subagents, openrouter, haiku, sonnet]
 lang: uk
-description: "Як ми скоротили витрати на субагентів на 70–85%, замінивши суцільне використання Sonnet 4.6 гібридом із чотирьох патернів: прямий OpenRouter для аналітичних задач, Haiku як оркестратор, CLI-воркери для файлових циклів і Sonnet лише для критичних агентів."
-excerpt: "Наша платформа використовує 11 AI-субагентів для автоматизації розробки. Всі вони за замовчуванням працювали на Claude Sonnet 4.6. Це стало найбільшою статтею витрат на AI — і більшість із них була зайвою."
+description: "Як ми скоротили витрати на AI-субагентів на 70–85% гібридом із чотирьох патернів: OpenRouter, Haiku-оркестратор, CLI-воркери та Sonnet лише для критичних задач."
+excerpt: "Наша платформа використовує 11 AI-субагентів для автоматизації розробки — code review, генерація тестів, security-аналіз, документація. Всі за замовчуванням на Claude Sonnet 4.6 за $3/$15 за 1M токенів. Це стало найбільшою статтею витрат на AI, і більшість із них була зайвою."
 image: /assets/images/posts/ai-agent-cost-optimization/ai-agent-cost-optimization.png
 ---
 
@@ -45,8 +45,8 @@ image: /assets/images/posts/ai-agent-cost-optimization/ai-agent-cost-optimizatio
 
 Для чисто аналітичних задач, де вхід — невеликий артефакт (diff, лінт-виведення), а вихід — структурований блоб (звіт, список пропозицій).
 
-```
-батьківський Claude → Skill (тонкий bash) → rest_post до OpenRouter → результат
+```text
+батьківський Claude → Skill (тонкий bash) → HTTP POST до OpenRouter → результат
 ```
 
 Жодного agentic-циклу, жодного Sonnet. Skill `/fix-review` вже робить це — три раунди OpenRouter-моделей, один Sonnet Arbiter. `code-simplifier` першим мігрує за Патерном A.
@@ -55,7 +55,7 @@ image: /assets/images/posts/ai-agent-cost-optimization/ai-agent-cost-optimizatio
 
 Для агентів, які потребують валідаційного шлюзу: генеруємо результат дешевою моделлю, потім Haiku перевіряє форму або запускає тести.
 
-```
+```text
 Haiku-субагент
   → OpenRouter-модель генерує кандидат
   → Haiku валідує + запускає верифікатор
@@ -68,9 +68,9 @@ Haiku-субагент
 
 Коли задача потребує реального файлового I/O та ітеративного використання інструментів (редагування кількох файлів, цикли збірки), делегуємо CLI-інструменту з вбудованим tool-use-циклом.
 
-```
+```text
 Haiku-субагент
-  → codex exec / opencode run (через openrouter/deepseek-v3.2)
+  → codex exec / opencode run (через openrouter/deepseek/deepseek-v3.2)
   → Haiku перевіряє diff + лінт + тести перед commit
 ```
 

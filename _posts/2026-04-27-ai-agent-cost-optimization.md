@@ -6,8 +6,8 @@ permalink: /blog/2026/04/27/ai-agent-cost-optimization/
 category: ai-practice
 tags: [AI, cost-optimization, claude-code, subagents, openrouter, haiku, sonnet]
 lang: en
-description: "How we cut subagent spend 70–85% by replacing blanket Sonnet 4.6 usage with a four-pattern hybrid: direct OpenRouter for analytical tasks, Haiku as orchestrator, CLI workers for file-IO loops, and Sonnet only for high-blast-radius agents."
-excerpt: "Our platform runs 11 AI subagents to automate development workflows. All defaulted to Claude Sonnet 4.6. That became our biggest AI cost line — and most of it was unnecessary."
+description: "How we cut AI subagent spend 70–85% with a four-pattern hybrid: OpenRouter for analytical tasks, Haiku as orchestrator, CLI workers for file-IO loops."
+excerpt: "Our platform runs 11 AI subagents to automate development workflows — code review, test generation, security analysis, and documentation. All defaulted to Claude Sonnet 4.6 at $3/$15 per 1M tokens. That became our biggest AI cost line, and most of it was unnecessary."
 image: /assets/images/posts/ai-agent-cost-optimization/ai-agent-cost-optimization.png
 ---
 
@@ -45,8 +45,8 @@ Verified prices as of 2026-04-22:
 
 For pure analytical tasks whose input is a small artifact (diff, lint output) and whose output is a structured blob (report, suggestion list).
 
-```
-parent Claude → Skill (thin bash) → rest_post to OpenRouter → output
+```text
+parent Claude → Skill (thin bash) → HTTP POST to OpenRouter → output
 ```
 
 No agentic loop, no Sonnet at all. The `/fix-review` skill already does this — three OpenRouter model rounds, one Sonnet Arbiter. `code-simplifier` is the first to migrate via Pattern A.
@@ -55,7 +55,7 @@ No agentic loop, no Sonnet at all. The `/fix-review` skill already does this —
 
 For agents that need a validation gate: generate output with a cheap model, then have Haiku verify shape or run tests.
 
-```
+```text
 Haiku subagent
   → OpenRouter model generates candidate
   → Haiku validates + runs verifier
@@ -68,9 +68,9 @@ Applies to `test-generator`, `docs-maintainer`, `pm-issue-writer`, `security-rev
 
 When the task requires real file I/O and iterative tool use (multi-file edits, build loops), delegate to a CLI with a built-in tool-use loop.
 
-```
+```text
 Haiku subagent
-  → codex exec / opencode run (via openrouter/deepseek-v3.2)
+  → codex exec / opencode run (via openrouter/deepseek/deepseek-v3.2)
   → Haiku reviews diff + lint + test output before commit
 ```
 
