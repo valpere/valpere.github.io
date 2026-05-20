@@ -18,23 +18,24 @@ lang_alt: /about/
 
 ## Огляд
 
-Спеціалізована розробка бекенду, тестування ваших ідей та швидкий запуск MVP, вилучення даних, перевірка електронної пошти та розробка ботів.
+Senior Software Engineer та CTO з 20+ роками досвіду. Наразі керую інженерією та впровадженням ШІ-робочих процесів для команди 20+ осіб, паралельно беручи вибіркові фріланс-проєкти. Спеціалізація: бекенд-розробка, швидкий запуск MVP, AI-assisted розробка, вилучення даних та автоматизація ботів.
 
-**Навички:** Очищення даних · Вилучення даних · GORM · Docker · Перевірка електронної пошти · Go · Java · PostgreSQL · Gigs · Gin · Скрейпінг даних · Spring Boot · Автоматизація · Google Cloud Platform (GCP) · MySQL · MongoDB · Веб-скрапінг · Terraform · Видобуток даних · Vibe coding · gRPC · LevelDB · Claude · Інтернет-програмне забезпечення · Спеціальне програмне забезпечення · Безкоштовне програмне забезпечення · Програмна інфраструктура · Інженерія
+**Навички:** Go · Java · TypeScript · React 19 · Supabase · Supabase Edge Functions · PostgreSQL · Docker · GORM · Gin · gRPC · Spring Boot · Автоматизація · Google Cloud Platform (GCP) · MySQL · MongoDB · Веб-скрапінг · Terraform · Видобуток даних · AI-Assisted Development · Claude Code · Langfuse · LevelDB · Спеціальне програмне забезпечення · Програмна інфраструктура · Інженерія
 
 * **Розробка та архітектура бекенду:**
 
-  * Проектування та впровадження масштабованих бекенд-систем з використанням Go, Java, Groovy та Perl
+  * Проектування та впровадження масштабованих бекенд-систем з використанням Go, Java, Groovy, TypeScript та Perl
   * Розробка RESTful API та архітектур мікросервісів для високопродуктивних додатків
   * Створення власних інструментів CLI та програмних рішень корпоративного рівня
   * Оптимізація продуктивності баз даних та розробка ефективних рішень для зберігання даних
 
-* **Vibe Coding та інтеграція штучного інтелекту:**
+* **AI-Assisted Development:**
 
-  * Платформа Vibe coding: Lovable AI, Cursor, Claude Code, Replit
-  * Цільова платформа: кросплатформені додатки
-  * Точність дизайну: дизайн високої точності; дизайн, створений за допомогою Prompt-AI
-  * База даних: Supabase, PostgreSQL, MySQL, MongoDB (за потреби), власні бекенди
+  * AI-платформа: Claude Code, Cursor, Aider, Lovable AI, Replit
+  * Мультипровайдерна інтеграція та failover LLM (Anthropic, OpenAI, Google, Ollama, OpenRouter)
+  * LLM observability з Langfuse, оцінка моделей з Promptfoo
+  * Цільова платформа: кросплатформені додатки (Mobile, Desktop, Web)
+  * База даних: Supabase / PostgreSQL, MySQL, MongoDB, Redis/Upstash
   * Середовище розгортання: GCP, GitHub Pages, Railway, Fly.io, Vercel, Docker, Kubernetes
 
 * **Розробка та автоматизація Telegram-ботів:**

@@ -15,23 +15,24 @@ permalink: /about/
 
 ## Overview
 
-Specialized backend development, testing your ideas, and quickly launching MVP, data extraction, email validation, and bot development.
+Senior Software Engineer and CTO with 20+ years of experience. Currently directing engineering and AI workflow integration for a 20+ person product team, while taking on select freelance engagements. Specialized in backend development, rapid MVP launch, AI-assisted development, data extraction, and bot automation.
 
-**Skills:** Data Cleaning · Data Extraction · GORM · Docker · Email validation · Go · Java · PostgreSQL · Gigs · Gin · Data Scraping · Spring Boot · Automation · Google Cloud Platform (GCP) · MySQL · MongoDB · Web Scraping · Terraform · Data Mining · Vibe coding · gRPC · LevelDB · Claude · Internet Software · Custom Software · Free Software · Software Infrastructure · Engineering
+**Skills:** Go · Java · TypeScript · React 19 · Supabase · Supabase Edge Functions · PostgreSQL · Docker · GORM · Gin · gRPC · Spring Boot · Automation · Google Cloud Platform (GCP) · MySQL · MongoDB · Web Scraping · Terraform · Data Mining · AI-Assisted Development · Claude Code · Langfuse · LevelDB · Custom Software · Software Infrastructure · Engineering
 
 * **Backend Development & Architecture:**
 
-  * Design and implement scalable backend systems using Go, Java, Groovy, and Perl
+  * Design and implement scalable backend systems using Go, Java, Groovy, TypeScript, and Perl
   * Develop RESTful APIs and microservices architectures for high-performance applications
   * Create custom CLI tools and enterprise-grade software solutions
   * Optimize database performance and design efficient data storage solutions
 
-* **Vibe Coding & AI Integration:**
+* **AI-Assisted Development:**
 
-  * Vibe coding platform: Lovable AI, Cursor, Claude Code, Replit
-  * Target platform: Cross-platform app
-  * Design fidelity: High-Fidelity design; Prompt-AI generated design
-  * Database: Supabase, PostgreSQL, MySQL, MongoDB (as needed), custom backends
+  * AI coding platform: Claude Code, Cursor, Aider, Lovable AI, Replit
+  * Multi-provider LLM integration and failover (Anthropic, OpenAI, Google, Ollama, OpenRouter)
+  * LLM observability with Langfuse and evaluation with Promptfoo
+  * Target platform: Cross-platform app (Mobile, Desktop, Web)
+  * Database: Supabase / PostgreSQL, MySQL, MongoDB, Redis/Upstash
   * Deployment environment: GCP, GitHub Pages, Railway, Fly.io, Vercel, Docker, Kubernetes
 
 * **Telegram Bot Development & Automation:**
