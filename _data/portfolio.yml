@@ -1,3 +1,13 @@
+- slug: "ivr-elevenlabs"
+  client: "Micromobility Startup (NDA)"
+  role: "Freelance Backend Engineer / AI Integration"
+  period: "May — Jun 2026"
+  stack: ["Go", "Binotel", "OpenAI Whisper", "GPT-4o-mini", "ElevenLabs", "Azure TTS", "Redis", "PostgreSQL"]
+  summary_en: "Built a voice AI agent automating 80% of 20,000 monthly support calls for a micromobility company. Delivered in 24 days: Go backend, Binotel webhooks, Whisper STT, GPT-4o-mini function calling, ElevenLabs/Azure TTS, Redis session state."
+  summary_uk: "Голосовий AI-агент, що автоматизує 80% із 20 000 щомісячних дзвінків підтримки для компанії мікромобільності. Доставка за 24 дні: Go-бекенд, Binotel webhook, Whisper STT, GPT-4o-mini function calling, ElevenLabs/Azure TTS, Redis."
+  permalink: "/portfolio/ivr-elevenlabs/"
+  hero_image: "/portfolio/assets/images/ivr-elevenlabs/architecture-1-0795x0590.svg"
+
 - slug: "cbcdro"
   client: "CloudBees CD/RO"
   role: "Senior Software Engineer / Plugin Developer"
