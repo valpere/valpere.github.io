@@ -3,6 +3,7 @@ layout: portfolio-item
 title: "AI-голосовий агент — підтримка клієнтів мікромобільності"
 permalink: /portfolio/ivr-elevenlabs/
 lang: uk
+lang_alt: /portfolio/ivr-elevenlabs/
 ---
 
 ## Огляд
