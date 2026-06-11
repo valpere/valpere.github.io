@@ -2,6 +2,58 @@
 # Ordered strongest-first (featured: true), then by category cluster.
 # Bilingual: *_en / *_uk. Card shows category badge + tech tags.
 
+# ──────────────── EVIDENCE-BACKED (from portfolio & blog case studies) ────────────────
+
+- slug: "voice-ai-agent"
+  featured: true
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "Voice AI Agent for Customer Support"
+  title_uk: "Голосовий AI-агент для підтримки клієнтів"
+  body_en: "Replace repetitive support calls with a voice AI agent. The caller speaks, the bot transcribes (Whisper), understands intent via LLM function-calling, queries your CRM, takes action, and either resolves the call or escalates to a human with full context. Pre-recorded ElevenLabs voice for instant standard phrases, Azure TTS for dynamic replies, Redis session state across telephony webhooks. Delivered a system handling ~20K calls/month at ~80% automation."
+  body_uk: "Замініть рутинні дзвінки підтримки голосовим AI-агентом. Клієнт говорить, бот транскрибує (Whisper), розпізнає намір через LLM function-calling, звертається до CRM, виконує дію і або закриває дзвінок, або передає оператору з повним контекстом. Готовий голос ElevenLabs для миттєвих стандартних фраз, Azure TTS для динамічних відповідей, стан сесії в Redis між телефонними webhook. Реалізовано систему на ~20K дзвінків/міс із ~80% автоматизації."
+  tech: ["Go", "Whisper", "ElevenLabs", "Telephony"]
+
+- slug: "rag-knowledge-base"
+  featured: true
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "RAG Knowledge Base with Private Embeddings"
+  title_uk: "RAG-база знань з приватними embeddings"
+  body_en: "Add accurate, source-grounded AI answers over your own documents. I build RAG systems with pgvector HNSW search and local Ollama bge-m3 embeddings — your data never leaves your server, and retrieval keeps working even when the cloud LLM is down. Multilingual, privacy-first, resilient. Ideal for regulated domains and sensitive corpora where cloud embedding APIs are a compliance risk and a single point of failure."
+  body_uk: "Додайте точні AI-відповіді, обґрунтовані вашими ж документами. Будую RAG-системи з пошуком pgvector HNSW і локальними embeddings Ollama bge-m3 — дані не покидають ваш сервер, а retrieval працює навіть коли хмарний LLM недоступний. Мультимовно, privacy-first, резильєнтно. Ідеально для регульованих доменів і чутливих корпусів, де хмарні embedding-API — це ризик відповідності й єдина точка відмови."
+  tech: ["pgvector", "Ollama", "RAG", "PostgreSQL"]
+
+- slug: "ai-document-automation"
+  featured: true
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "AI Document & Spreadsheet Automation"
+  title_uk: "AI-автоматизація документів та таблиць"
+  body_en: "Turn messy conversations or briefs into finished documents. An LLM extracts structured facts with schema validation, then fills your templates — including Excel files with intact formula chains (input cells only, formulas untouched). Consistency checks enforce your business rules before output. Built a Telegram-driven generator producing valid .xlsx at 100% artefact validity. Perfect for proposals, applications, reports, and quote generation."
+  body_uk: "Перетворюйте сумбурні розмови чи брифи на готові документи. LLM вилучає структуровані факти з валідацією схеми й заповнює ваші шаблони — зокрема Excel зі збереженими ланцюгами формул (лише вхідні комірки, формули недоторкані). Перевірки консистентності застосовують ваші бізнес-правила перед видачею. Реалізовано Telegram-генератор, що видає валідні .xlsx зі 100% валідністю артефактів. Ідеально для заявок, пропозицій, звітів і прорахунків."
+  tech: ["Go", "excelize", "LLM", "Telegram"]
+
+- slug: "llm-cost-optimization"
+  featured: true
+  category_en: "AI Strategy"
+  category_uk: "AI-стратегія"
+  title_en: "LLM Cost Optimization & Multi-Provider Architecture"
+  title_uk: "Оптимізація вартості LLM та мультипровайдерна архітектура"
+  body_en: "AI bill out of control? I cut LLM and agent spend 70–85% with a hybrid architecture: route analytical tasks to cheap OpenRouter models, use Haiku as orchestrator, and keep premium models only for high-blast-radius work. Multi-provider failover (Anthropic, OpenAI, Google, Ollama, OpenRouter), response caching, and pinned model IDs to avoid silent drift. Equivalent quality on structured tasks at a fraction of the cost — measured over a rolling window."
+  body_uk: "AI-рахунок вийшов з-під контролю? Скорочую витрати на LLM і агентів на 70–85% гібридною архітектурою: аналітичні задачі — на дешеві моделі OpenRouter, Haiku — як оркестратор, преміум-моделі — лише для задач з високим blast-radius. Failover між провайдерами (Anthropic, OpenAI, Google, Ollama, OpenRouter), кешування відповідей і зафіксовані ID моделей проти тихого дрейфу. Та сама якість на структурованих задачах за частку вартості — з вимірюванням на ковзному вікні."
+  tech: ["OpenRouter", "Claude", "Ollama", "Cost"]
+
+- slug: "multi-model-review-pipeline"
+  featured: true
+  category_en: "AI Strategy"
+  category_uk: "AI-стратегія"
+  title_en: "Multi-Model AI Code Review Pipeline"
+  title_uk: "Пайплайн AI-рев'ю коду на кількох моделях"
+  body_en: "One model misses what three catch. I set up automated PR review pipelines that fan out each diff to multiple AI models in parallel, then a single arbiter consolidates findings — fewer false positives, higher recall, a vote count as a confidence signal. Integrates with GitHub Actions and your CI, posts a summary on the PR, and auto-merges clean runs. Based on real cross-agent orchestration and a production multi-model review pipeline."
+  body_uk: "Одна модель пропускає те, що ловлять три. Налаштовую автоматизовані пайплайни рев'ю PR, що паралельно роздають кожен diff кільком AI-моделям, після чого єдиний арбітр консолідує знахідки — менше хибних спрацювань, вища повнота, кількість «голосів» як сигнал впевненості. Інтеграція з GitHub Actions і вашим CI, підсумок у PR, автомердж чистих прогонів. На базі реальної крос-агентної оркестрації та production-пайплайну мультимодельного рев'ю."
+  tech: ["AI", "CI/CD", "Code Review", "OpenRouter"]
+
 # ─────────────────────────── FEATURED (strongest) ───────────────────────────
 
 - slug: "full-platform-redesign"
