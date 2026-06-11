@@ -13,7 +13,6 @@ lang_alt: /uk/projects/rule-based_telegram_chatbot/
 
 **Links:**
 
-- [Upwork](https://www.upwork.com/services/product/development-it-a-custom-telegram-bot-to-automate-your-business-1965029712082056479)
 - [Fiverr](https://www.fiverr.com/pere_val/build-a-custom-telegram-bot-to-automate-your-business)
 - [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
