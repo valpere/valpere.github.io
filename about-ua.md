@@ -12,7 +12,6 @@ lang_alt: /about/
 ## Посилання
 
 * [LinkedIn](https://www.linkedin.com/in/valentynsolomko/)
-* [Upwork](https://www.upwork.com/freelancers/~01ab3037d280df81ea)
 * [Fiverr](https://www.fiverr.com/users/pere_val)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 

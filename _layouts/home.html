@@ -126,7 +126,6 @@ layout: default
           <div class="proj-links">
             {% if project.links.github %}<a href="{{ project.links.github }}" target="_blank" rel="noopener noreferrer" class="proj-link--ext">GitHub</a>{% endif %}
             {% if project.links.fiverr %}<a href="{{ project.links.fiverr }}" target="_blank" rel="noopener noreferrer" class="proj-link--ext">Fiverr</a>{% endif %}
-            {% if project.links.upwork %}<a href="{{ project.links.upwork }}" target="_blank" rel="noopener noreferrer" class="proj-link--ext">Upwork</a>{% endif %}
           </div>
           <span class="proj-arrow" aria-hidden="true">→</span>
         </div>
@@ -247,24 +246,19 @@ layout: default
         {% endif %}
       </h2>
       <div class="cta-links">
-        {% if site.data.social.upwork %}
-        <a href="{{ site.data.social.upwork.url }}" target="_blank" rel="noopener noreferrer">
-          {{ site.data.social.upwork.label }} <span class="cta-arr">↗ 01</span>
-        </a>
-        {% endif %}
         {% if site.data.social.fiverr %}
         <a href="{{ site.data.social.fiverr.url }}" target="_blank" rel="noopener noreferrer">
-          {{ site.data.social.fiverr.label }} <span class="cta-arr">↗ 02</span>
+          {{ site.data.social.fiverr.label }} <span class="cta-arr">↗ 01</span>
         </a>
         {% endif %}
         {% if site.data.social.freelancehunt %}
         <a href="{{ site.data.social.freelancehunt.url }}" target="_blank" rel="noopener noreferrer">
-          {{ site.data.social.freelancehunt.label }} <span class="cta-arr">↗ 03</span>
+          {{ site.data.social.freelancehunt.label }} <span class="cta-arr">↗ 02</span>
         </a>
         {% endif %}
         {% if site.data.social.linkedin %}
         <a href="{{ site.data.social.linkedin.url }}" target="_blank" rel="noopener noreferrer">
-          {{ site.data.social.linkedin.label }} <span class="cta-arr">↗ 04</span>
+          {{ site.data.social.linkedin.label }} <span class="cta-arr">↗ 03</span>
         </a>
         {% endif %}
       </div>
