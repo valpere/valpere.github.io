@@ -11,11 +11,11 @@
 <article class="card" id="mvb-{{ b.slug }}">
   <div class="card__body">
     <p class="card__summary" style="margin:0 0 var(--sp-2) 0;">
-      <span class="tag">{{ card_cat }}</span>
+      <span class="tag">{{ card_cat | escape }}</span>
       {% if b.featured %}<span class="tag" style="background:var(--brand-green); color:white;">★ Featured</span>{% endif %}
     </p>
-    <h3 class="card__title" style="font-size:var(--text-lg);">{{ card_title }}</h3>
-    <p class="card__summary">{{ card_body }}</p>
+    <h3 class="card__title" style="font-size:var(--text-lg);">{{ card_title | escape }}</h3>
+    <p class="card__summary">{{ card_body | escape }}</p>
     {% if b.tech %}
     <div class="tag-list">
       {% for t in b.tech limit: 4 %}<span class="tag">{{ t }}</span>{% endfor %}
