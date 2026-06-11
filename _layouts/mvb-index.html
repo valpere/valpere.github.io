@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<!-- Page band -->
+<div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">
+  <div class="container">
+    {% if site.active_lang == 'uk' %}
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Minimal Viable Briefs</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:60ch; margin-inline:auto; margin-bottom:0;">
+      Стислі описи послуг — від backend-розробки та AI-інтеграції до рефакторингу, відновлення систем і автоматизації. Кожен бриф окреслює суть пропозиції; деталі — на запит.
+    </p>
+    {% else %}
+    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Minimal Viable Briefs</h1>
+    <p style="color:rgba(255,255,255,0.85); max-width:60ch; margin-inline:auto; margin-bottom:0;">
+      Concise service offerings — from backend development and AI integration to refactoring, system recovery, and automation. Each brief outlines the core of an engagement; full details on request.
+    </p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container section">
+  {{ content }}
+  <div class="card-grid">
+    {% for brief in site.data.mvb %}
+    {% include mvb-card.html brief=brief %}
+    {% endfor %}
+  </div>
+
+  <div style="text-align:center; margin-top:var(--sp-8);">
+    {% if site.active_lang == 'uk' %}
+    <p style="margin-bottom:var(--sp-3);">Зацікавив якийсь напрям? Обговорімо ваш проєкт.</p>
+    {% else %}
+    <p style="margin-bottom:var(--sp-3);">See something that fits? Let's talk about your project.</p>
+    {% endif %}
+    {% assign cta = site.data.social %}
+    <div class="cta-row" style="justify-content:center;">
+      <a href="{{ cta.upwork.url }}" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Upwork</a>
+      <a href="{{ cta.fiverr.url }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Fiverr</a>
+      <a href="{{ cta.freelancehunt.url }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">FreelanceHunt</a>
+      <a href="{{ cta.linkedin.url }}" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</div>

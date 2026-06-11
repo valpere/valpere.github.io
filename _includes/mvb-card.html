@@ -1,0 +1,25 @@
+{% assign b = include.brief %}
+{% if site.active_lang == 'uk' %}
+  {% assign card_title = b.title_uk | default: b.title_en %}
+  {% assign card_body = b.body_uk | default: b.body_en %}
+  {% assign card_cat = b.category_uk | default: b.category_en %}
+{% else %}
+  {% assign card_title = b.title_en %}
+  {% assign card_body = b.body_en %}
+  {% assign card_cat = b.category_en %}
+{% endif %}
+<article class="card" id="mvb-{{ b.slug }}">
+  <div class="card__body">
+    <p class="card__summary" style="margin:0 0 var(--sp-2) 0;">
+      <span class="tag">{{ card_cat }}</span>
+      {% if b.featured %}<span class="tag" style="background:var(--brand-green); color:white;">★ Featured</span>{% endif %}
+    </p>
+    <h3 class="card__title" style="font-size:var(--text-lg);">{{ card_title }}</h3>
+    <p class="card__summary">{{ card_body }}</p>
+    {% if b.tech %}
+    <div class="tag-list">
+      {% for t in b.tech limit: 4 %}<span class="tag">{{ t }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</article>
