@@ -1,0 +1,577 @@
+# Minimal Viable Briefs — concise service offerings.
+# Ordered strongest-first (featured: true), then by category cluster.
+# Bilingual: *_en / *_uk. Card shows category badge + tech tags.
+
+# ─────────────────────────── FEATURED (strongest) ───────────────────────────
+
+- slug: "full-platform-redesign"
+  featured: true
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Full Platform Redesign"
+  title_uk: "Повний редизайн платформи"
+  body_en: "Your platform hit its architectural ceiling? I've led complete platform redesigns — including a major enterprise email service (mail.ua, 20+ engineers). I architect the new system, plan a phased migration, and execute without killing uptime: modern stack, better scalability, clean APIs. Your business keeps running while everything under the hood transforms."
+  body_uk: "Платформа вперлася в архітектурну стелю? Я вів повні редизайни платформ — зокрема велику корпоративну поштову службу (mail.ua, 20+ інженерів). Проєктую нову систему, планую поетапну міграцію і виконую її без втрати аптайму: сучасний стек, краща масштабованість, чисті API. Бізнес працює, поки все під капотом трансформується."
+  tech: ["Architecture", "Migration", "Go", "Kubernetes"]
+
+- slug: "crisis-recovery"
+  featured: true
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Crisis Recovery & System Revitalization"
+  title_uk: "Кризове відновлення та ревіталізація систем"
+  body_en: "System failing in production? Revenue at risk? I've led crisis recovery at the CEO/CTO level — restructuring IT departments and revitalizing mission-critical telecom infrastructure (SMS/MMS gateways, VoIP, high-traffic platforms). Fast triage, root-cause analysis, stabilization, then systematic improvements. Your systems breathe again."
+  body_uk: "Система падає в проді? Під загрозою виручка? Я вів кризове відновлення на рівні CEO/CTO — реструктуризація IT-відділів і ревіталізація критичної телеком-інфраструктури (SMS/MMS-шлюзи, VoIP, високонавантажені платформи). Швидке тріажування, аналіз першопричин, стабілізація, далі системні покращення. Ваші системи знову дихають."
+  tech: ["Triage", "VoIP", "Stabilization", "Leadership"]
+
+- slug: "monolith-to-microservices"
+  featured: true
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Monolith to Microservices Decomposition"
+  title_uk: "Декомпозиція моноліту в мікросервіси"
+  body_en: "Your monolith is getting harder to deploy, scale, and maintain? I decompose monolithic systems into clean microservices — identifying domain boundaries, extracting services, and building API contracts between them. Go/Java with Docker/Kubernetes. Preserve your business logic while gaining independent deployability, team autonomy, and horizontal scaling."
+  body_uk: "Моноліт стає все важче деплоїти, масштабувати й підтримувати? Декомпоную моноліти в чисті мікросервіси — визначаю доменні межі, виокремлюю сервіси, будую API-контракти між ними. Go/Java з Docker/Kubernetes. Зберігаю бізнес-логіку, додаючи незалежний деплой, автономію команд і горизонтальне масштабування."
+  tech: ["Microservices", "DDD", "Go", "Kubernetes"]
+
+- slug: "project-rescue"
+  featured: true
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Abandoned Project Recovery & Codebase Rescue"
+  title_uk: "Порятунок покинутого проєкту та кодової бази"
+  body_en: "Inherited a codebase with no docs, no tests, and the original developer is gone? I reverse-engineer the architecture, document the system, stabilize critical paths, and create a recovery roadmap. AI-assisted analysis accelerates understanding of unfamiliar code. From 'nobody knows how this works' to a maintainable, documented system your team can own again."
+  body_uk: "Дістався код без документації, без тестів, а автор зник? Реверс-інжинірю архітектуру, документую систему, стабілізую критичні шляхи й будую дорожню карту відновлення. AI-аналіз пришвидшує розуміння незнайомого коду. Від «ніхто не знає, як це працює» до підтримуваної, задокументованої системи, якою команда знову володіє."
+  tech: ["Reverse-Engineering", "Documentation", "AI-assisted"]
+
+- slug: "architecture-audit"
+  featured: true
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Architecture Audit & Refactoring Roadmap"
+  title_uk: "Аудит архітектури та дорожня карта рефакторингу"
+  body_en: "Before you refactor anything, you need a map. I audit your codebase architecture: bottlenecks, coupling issues, scaling limits, security gaps, and tech-debt hotspots. You get a prioritized refactoring roadmap with effort estimates, risk assessments, and recommended sequence. Know exactly what to fix first and why — before writing a single line of code."
+  body_uk: "Перш ніж щось рефакторити, потрібна карта. Проводжу аудит архітектури: вузькі місця, надмірна зв'язність, межі масштабування, прогалини безпеки й осередки техборгу. Ви отримуєте пріоритизовану дорожню карту з оцінками зусиль, ризиків і рекомендованою послідовністю. Точно знаєте, що чинити першим і чому — ще до першого рядка коду."
+  tech: ["Audit", "Architecture", "Roadmap"]
+
+- slug: "legacy-modernization"
+  featured: true
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Legacy System Modernization"
+  title_uk: "Модернізація legacy-систем"
+  body_en: "Stuck with outdated tech? I migrate legacy systems to modern cloud-native architectures using Go/Java microservices, Docker/Kubernetes, and CI/CD automation. AI-assisted refactoring cuts the timeline. Preserve business logic while gaining scalability, performance, and maintainability."
+  body_uk: "Застрягли на застарілому стеку? Мігрую legacy-системи до сучасних cloud-native архітектур на Go/Java-мікросервісах, Docker/Kubernetes і CI/CD-автоматизації. AI-рефакторинг скорочує терміни. Зберігаю бізнес-логіку, додаючи масштабованість, продуктивність і підтримуваність."
+  tech: ["Go", "Java", "Cloud-Native", "CI/CD"]
+
+- slug: "saas-platform"
+  featured: true
+  category_en: "MVP & Vibe Coding"
+  category_uk: "MVP та Vibe Coding"
+  title_en: "Production-Ready SaaS Platform"
+  title_uk: "Production-ready SaaS-платформа"
+  body_en: "Complete SaaS foundation: 15+ features, microservices architecture, AI integrations, multi-tenant support, CI/CD pipeline, monitoring, and security audit. Stripe payments, analytics, onboarding flows. Go from concept to paying customers in 10–14 days. Perfect for VC-ready launches and internal business tools."
+  body_uk: "Повноцінний фундамент SaaS: 15+ функцій, мікросервісна архітектура, AI-інтеграції, multi-tenant, CI/CD, моніторинг і аудит безпеки. Платежі Stripe, аналітика, онбординг. Від ідеї до платних клієнтів за 10–14 днів. Ідеально для VC-ready запусків і внутрішніх бізнес-інструментів."
+  tech: ["Go", "Supabase", "Stripe", "CI/CD"]
+
+- slug: "go-backend"
+  featured: true
+  category_en: "Backend & DevOps"
+  category_uk: "Backend та DevOps"
+  title_en: "Go Backend Development & Optimization"
+  title_uk: "Розробка та оптимізація backend на Go"
+  body_en: "High-performance backend systems in Go: RESTful APIs, microservices, gRPC, concurrent processing, and database optimization. 3+ years of Go expertise backed by 20+ years of enterprise development. Clean Architecture, comprehensive testing, production-ready deployment. From startup APIs to enterprise platforms."
+  body_uk: "Високопродуктивні backend-системи на Go: REST API, мікросервіси, gRPC, конкурентна обробка й оптимізація БД. 3+ роки на Go, підкріплені 20+ роками enterprise-розробки. Clean Architecture, повне покриття тестами, production-ready деплой. Від стартап-API до enterprise-платформ."
+  tech: ["Go", "gRPC", "PostgreSQL", "Clean Architecture"]
+
+- slug: "ai-paradigm-assessment"
+  featured: true
+  category_en: "AI Strategy"
+  category_uk: "AI-стратегія"
+  title_en: "AI Development Paradigm Assessment"
+  title_uk: "Оцінка парадигми AI-розробки"
+  body_en: "Not sure how AI fits your team's workflow? I audit your current SDLC and map it to the right AI paradigm — from Vibe Coding for prototypes to Spec-Driven AI for regulated systems. You get a clear decision tree, risk matrix, and actionable adoption roadmap. No hype, no guesswork — just engineering clarity on where AI helps and where it hurts."
+  body_uk: "Не певні, як AI лягає на робочий процес команди? Проводжу аудит вашого SDLC і зіставляю його з правильною AI-парадигмою — від Vibe Coding для прототипів до Spec-Driven AI для регульованих систем. Ви отримуєте дерево рішень, матрицю ризиків і дієву карту впровадження. Без хайпу — лише інженерна ясність, де AI допомагає, а де шкодить."
+  tech: ["AI Strategy", "SDLC", "Governance"]
+
+- slug: "spec-driven-ai"
+  featured: true
+  category_en: "AI Strategy"
+  category_uk: "AI-стратегія"
+  title_en: "AI-Augmented Spec-Driven Development"
+  title_uk: "Spec-Driven розробка з підсиленням AI"
+  body_en: "Building core business logic? I implement the safest AI development paradigm: specifications as the single source of truth, AI generates code and tests from structured requirements. Highest predictability and compliance alignment. Perfect for fintech, healthcare, and regulated systems where moving fast and breaking things isn't an option."
+  body_uk: "Будуєте ядро бізнес-логіки? Впроваджую найбезпечнішу AI-парадигму: специфікація як єдине джерело істини, AI генерує код і тести зі структурованих вимог. Максимальна передбачуваність і відповідність вимогам. Ідеально для фінтеху, healthcare й регульованих систем, де «швидко й ламаючи» неприйнятно."
+  tech: ["Spec-Driven", "AI", "Compliance"]
+
+- slug: "genai-architecture"
+  featured: true
+  category_en: "AI Strategy"
+  category_uk: "AI-стратегія"
+  title_en: "Generative AI for System Design & Architecture"
+  title_uk: "Генеративний AI для дизайну та архітектури систем"
+  body_en: "Start your project right with AI-generated architecture. I use AI to produce draft specifications, system diagrams, test plans, and API contracts from your requirements — then refine with engineering judgment. Cut weeks off your planning phase while exploring more design alternatives than manual brainstorming allows."
+  body_uk: "Почніть проєкт правильно — з AI-згенерованої архітектури. Використовую AI для чернеток специфікацій, діаграм систем, тест-планів і API-контрактів з ваших вимог, далі шліфую інженерним судженням. Скорочую фазу планування на тижні, досліджуючи більше дизайн-альтернатив, ніж дає ручний брейншторм."
+  tech: ["GenAI", "Architecture", "API Design"]
+
+- slug: "ai-governance"
+  featured: true
+  category_en: "AI Strategy"
+  category_uk: "AI-стратегія"
+  title_en: "AI Risk Assessment & Governance Framework"
+  title_uk: "Оцінка ризиків AI та фреймворк governance"
+  body_en: "Adopting AI development but worried about risk? I build governance frameworks with clear policies: what's allowed by default, what needs approval, and what's prohibited. Color-coded risk matrix, decision trees, and team-specific guidelines. Based on real paradigm analysis — not theoretical checklists. Your team moves fast with confidence."
+  body_uk: "Впроваджуєте AI-розробку, але турбує ризик? Будую фреймворки governance з чіткими політиками: що дозволено за замовчуванням, що потребує погодження, що заборонено. Кольорова матриця ризиків, дерева рішень і гайдлайни під команду. На базі реального аналізу парадигм, а не теоретичних чеклістів. Команда рухається швидко й упевнено."
+  tech: ["Governance", "Risk", "Policy"]
+
+- slug: "ai-dev-consulting"
+  featured: true
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "AI-Augmented Development Consulting"
+  title_uk: "Консалтинг з AI-augmented розробки"
+  body_en: "Accelerate your team's development with AI-assisted workflows. I set up and train your team on Claude Code, Cursor, and Aider for faster coding, testing, and refactoring. Reduce development time while maintaining code quality. Custom workflow setup and best-practices documentation included."
+  body_uk: "Прискорте розробку команди через AI-assisted процеси. Налаштовую й навчаю команду роботі з Claude Code, Cursor і Aider для швидшого кодування, тестування й рефакторингу. Скорочую час розробки, зберігаючи якість коду. Включно з налаштуванням процесу під вас і документацією best practices."
+  tech: ["Claude Code", "Cursor", "Aider"]
+
+- slug: "ai-workshop"
+  featured: true
+  category_en: "AI Strategy"
+  category_uk: "AI-стратегія"
+  title_en: "AI Development Workshop for Engineering Teams"
+  title_uk: "Воркшоп з AI-розробки для інженерних команд"
+  body_en: "Upskill your team on AI-assisted development! Hands-on workshops covering the full paradigm spectrum — from safe AI pair programming to spec-driven generation. Your developers learn when to trust AI, when to verify, and how to pick the right approach for each task. Includes decision-tree framework, tooling setup, and best-practices playbook."
+  body_uk: "Прокачайте команду в AI-assisted розробці! Практичні воркшопи по всьому спектру парадигм — від безпечного AI pair programming до spec-driven генерації. Розробники вчаться, коли довіряти AI, коли перевіряти і як обрати підхід під кожну задачу. Включно з деревом рішень, налаштуванням інструментів і плейбуком best practices."
+  tech: ["Workshop", "AI", "Enablement"]
+
+- slug: "cicd-engineering"
+  featured: true
+  category_en: "Backend & DevOps"
+  category_uk: "Backend та DevOps"
+  title_en: "CI/CD Pipeline Engineering"
+  title_uk: "Інженерія CI/CD-пайплайнів"
+  body_en: "Automate your delivery pipeline end-to-end! GitHub Actions, GitLab CI, or Jenkins setup with automated testing, security scanning, artifact management, and multi-environment deployment. Former CloudBees engineer with 5+ years building enterprise CI/CD for Fortune 500 clients."
+  body_uk: "Автоматизуйте конвеєр доставки наскрізно! Налаштування GitHub Actions, GitLab CI чи Jenkins з автотестами, скануванням безпеки, керуванням артефактами й деплоєм у кілька середовищ. Колишній інженер CloudBees із 5+ роками побудови enterprise CI/CD для клієнтів Fortune 500."
+  tech: ["GitHub Actions", "GitLab CI", "Jenkins"]
+
+- slug: "telecom-modernization"
+  featured: true
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Telecom & VoIP System Modernization"
+  title_uk: "Модернізація телеком- та VoIP-систем"
+  body_en: "Running legacy telecom infrastructure — SIP, SMPP, IVR, or billing systems? I modernize VoIP architectures, SMS/MMS gateways, and BSS platforms with experience from PortaOne and TVCom. Redesign for scalability, integrate modern APIs, and containerize for cloud deployment. Carrier-grade reliability preserved."
+  body_uk: "Працюєте на legacy-телекомі — SIP, SMPP, IVR чи білінг? Модернізую VoIP-архітектури, SMS/MMS-шлюзи й BSS-платформи з досвідом PortaOne і TVCom. Редизайн під масштабованість, інтеграція сучасних API, контейнеризація для хмари. Carrier-grade надійність збережено."
+  tech: ["VoIP", "SIP", "SMPP", "BSS"]
+
+- slug: "startup-mvp"
+  featured: true
+  category_en: "MVP & Vibe Coding"
+  category_uk: "MVP та Vibe Coding"
+  title_en: "Startup MVP — Test Your Idea in 3 Days"
+  title_uk: "Стартап-MVP — перевірте ідею за 3 дні"
+  body_en: "Got a startup idea? I build working prototypes with 3–5 core features, user auth, and a Supabase backend. Live demo on Vercel/Replit you can show investors immediately. React/Next.js + Tailwind frontend. Faster and cheaper than traditional development. You own 100% of the clean, documented code."
+  body_uk: "Маєте стартап-ідею? Будую робочі прототипи з 3–5 ключовими функціями, авторизацією і backend на Supabase. Живе демо на Vercel/Replit, яке одразу покажете інвесторам. Фронт React/Next.js + Tailwind. Швидше й дешевше за класичну розробку. Чистий задокументований код — на 100% ваш."
+  tech: ["React", "Next.js", "Supabase", "Vercel"]
+
+- slug: "docs-recovery"
+  featured: true
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Documentation Recovery & Reverse Engineering"
+  title_uk: "Відновлення документації та реверс-інжиніринг"
+  body_en: "The docs are outdated, incomplete, or nonexistent? I reverse-engineer your system and produce living documentation: architecture diagrams (UML, C4), API references, data-flow maps, deployment guides, and onboarding docs. AI accelerates analysis, human judgment ensures accuracy. New team members onboard in days instead of months."
+  body_uk: "Документація застаріла, неповна або відсутня? Реверс-інжинірю систему і створюю живу документацію: діаграми архітектури (UML, C4), API-довідники, карти потоків даних, гайди з деплою й онбордингу. AI пришвидшує аналіз, людське судження гарантує точність. Нові люди в команді онбордяться за дні, а не місяці."
+  tech: ["Documentation", "UML", "C4", "Reverse-Engineering"]
+
+# ─────────────────────────── MVP & Vibe Coding ───────────────────────────
+
+- slug: "full-feature-mvp"
+  category_en: "MVP & Vibe Coding"
+  category_uk: "MVP та Vibe Coding"
+  title_en: "Full-Feature MVP for Investor Demos"
+  title_uk: "Повнофункціональний MVP для демо інвесторам"
+  body_en: "Launch-ready MVP with 8–12 features: REST API, payment integration, admin dashboard, user management, and Docker deployment. Supabase/PostgreSQL backend with testing and documentation. Built with AI-assisted development for speed without compromising quality. Best for early-stage businesses preparing to demo."
+  body_uk: "Готовий до запуску MVP з 8–12 функціями: REST API, платежі, адмін-панель, керування користувачами, деплой у Docker. Backend Supabase/PostgreSQL з тестами й документацією. Зібрано через AI-assisted розробку — швидко й без втрати якості. Найкраще для ранніх стадій бізнесу перед демо."
+  tech: ["Go", "Supabase", "Docker", "REST API"]
+
+- slug: "ai-code-review"
+  category_en: "MVP & Vibe Coding"
+  category_uk: "MVP та Vibe Coding"
+  title_en: "AI-Powered Code Review & Tech Debt Fix"
+  title_uk: "AI-рев'ю коду та усунення техборгу"
+  body_en: "Technical debt slowing you down? I use AI pair programming (Claude Code, Cursor) to review, refactor, and fix your codebase fast: bug fixes, performance optimization, security patches, and modernization. Send your GitHub repo for a free assessment. Results in days, not months."
+  body_uk: "Техборг гальмує? Використовую AI pair programming (Claude Code, Cursor), щоб швидко відрев'ювати, відрефакторити й полагодити код: виправлення багів, оптимізація продуктивності, патчі безпеки, модернізація. Надішліть GitHub-репозиторій для безкоштовної оцінки. Результат за дні, а не місяці."
+  tech: ["Claude Code", "Cursor", "Refactoring"]
+
+- slug: "rest-api"
+  category_en: "MVP & Vibe Coding"
+  category_uk: "MVP та Vibe Coding"
+  title_en: "REST API / Microservice Development"
+  title_uk: "Розробка REST API / мікросервісів"
+  body_en: "Need a fast, scalable API? I build production-ready REST/gRPC services in Go or Java with PostgreSQL/Supabase, Docker deployment, comprehensive testing, and API documentation. Clean architecture, SOLID principles, enterprise-grade error handling. From prototype to production in 7 days."
+  body_uk: "Потрібен швидкий масштабований API? Будую production-ready REST/gRPC-сервіси на Go чи Java з PostgreSQL/Supabase, деплоєм у Docker, повним покриттям тестами й документацією API. Clean architecture, принципи SOLID, enterprise-обробка помилок. Від прототипу до прод за 7 днів."
+  tech: ["Go", "gRPC", "PostgreSQL", "Docker"]
+
+- slug: "vibe-coding-sprint"
+  category_en: "MVP & Vibe Coding"
+  category_uk: "MVP та Vibe Coding"
+  title_en: "Vibe Coding Sprint — Prototype in 48 Hours"
+  title_uk: "Vibe Coding спринт — прототип за 48 годин"
+  body_en: "Got an idea that needs to exist yesterday? Vibe Coding is the fastest path from concept to clickable prototype. I use AI to generate working code from your description — no architecture debates, no sprint planning. Ideal for demos, investor pitches, hackathons, and concept validation. Not for production — but perfect for proving your idea works."
+  body_uk: "Ідея, що мала існувати ще вчора? Vibe Coding — найшвидший шлях від концепції до клікабельного прототипу. Використовую AI для генерації робочого коду з вашого опису — без дебатів про архітектуру й спринт-планування. Ідеально для демо, пітчів, хакатонів і валідації ідеї. Не для прод — але ідеально, щоб довести, що ідея працює."
+  tech: ["AI", "Prototype", "Rapid"]
+
+# ─────────────────────────── Backend & DevOps ───────────────────────────
+
+- slug: "docker-k8s"
+  category_en: "Backend & DevOps"
+  category_uk: "Backend та DevOps"
+  title_en: "Docker & Kubernetes Deployment Setup"
+  title_uk: "Налаштування деплою Docker та Kubernetes"
+  body_en: "Containerize your application and deploy to production! Docker images, Kubernetes manifests, Helm charts, CI/CD pipelines (GitHub Actions, GitLab CI), and monitoring (Prometheus + Grafana). GCP/GKE deployment with auto-scaling and health checks. Infrastructure as Code with Terraform."
+  body_uk: "Контейнеризуйте застосунок і задеплойте в прод! Docker-образи, Kubernetes-маніфести, Helm-чарти, CI/CD (GitHub Actions, GitLab CI) і моніторинг (Prometheus + Grafana). Деплой на GCP/GKE з автоскейлом і health-чеками. Infrastructure as Code на Terraform."
+  tech: ["Docker", "Kubernetes", "Helm", "Terraform"]
+
+- slug: "gcp-infra"
+  category_en: "Backend & DevOps"
+  category_uk: "Backend та DevOps"
+  title_en: "Cloud Infrastructure Setup (GCP)"
+  title_uk: "Налаштування хмарної інфраструктури (GCP)"
+  body_en: "Deploy your application on Google Cloud Platform with production-grade infrastructure. GKE clusters, Cloud SQL, load balancing, SSL, monitoring, and alerting. Terraform IaC for reproducible environments. Cost-optimized architecture that scales with your business."
+  body_uk: "Розгорніть застосунок на Google Cloud Platform з production-інфраструктурою. Кластери GKE, Cloud SQL, балансування навантаження, SSL, моніторинг і алертинг. Terraform IaC для відтворюваних середовищ. Оптимізована за вартістю архітектура, що масштабується разом з бізнесом."
+  tech: ["GCP", "GKE", "Terraform", "Cloud SQL"]
+
+- slug: "db-optimization"
+  category_en: "Backend & DevOps"
+  category_uk: "Backend та DevOps"
+  title_en: "Database Performance Optimization"
+  title_uk: "Оптимізація продуктивності баз даних"
+  body_en: "Slow queries killing your app? I optimize PostgreSQL/MySQL performance: query analysis, index tuning, schema redesign, caching strategies (Redis), and connection pooling. 20+ years of database experience across enterprise systems. Measurable performance improvements."
+  body_uk: "Повільні запити вбивають застосунок? Оптимізую продуктивність PostgreSQL/MySQL: аналіз запитів, тюнінг індексів, редизайн схеми, стратегії кешування (Redis) і пулінг з'єднань. 20+ років досвіду з БД у enterprise-системах. Вимірювані покращення продуктивності."
+  tech: ["PostgreSQL", "MySQL", "Redis", "Indexing"]
+
+- slug: "cli-tool"
+  category_en: "Backend & DevOps"
+  category_uk: "Backend та DevOps"
+  title_en: "Custom CLI Tool Development"
+  title_uk: "Розробка кастомних CLI-інструментів"
+  body_en: "Need a specialized command-line tool? I build robust, cross-platform CLI applications in Go with Cobra+Viper, structured logging, configuration management, and comprehensive documentation. From data processing to system administration. Enterprise-grade quality with clean architecture."
+  body_uk: "Потрібен спеціалізований інструмент командного рядка? Будую надійні крос-платформні CLI-застосунки на Go з Cobra+Viper, структурованим логуванням, керуванням конфігурацією й повною документацією. Від обробки даних до системного адміністрування. Enterprise-якість і чиста архітектура."
+  tech: ["Go", "Cobra", "Viper", "CLI"]
+
+- slug: "perf-profiling"
+  category_en: "Backend & DevOps"
+  category_uk: "Backend та DevOps"
+  title_en: "Performance Profiling & Bottleneck Elimination"
+  title_uk: "Профілювання продуктивності та усунення вузьких місць"
+  body_en: "Application slow and you don't know why? I profile your system end-to-end: database queries, API response times, memory leaks, concurrency issues, and infrastructure bottlenecks. Concrete fixes with measurable before/after metrics. Go, Java, Perl, and PostgreSQL/MySQL optimization. Stop guessing — find and fix what's actually slow."
+  body_uk: "Застосунок повільний, а причина невідома? Профілюю систему наскрізно: запити до БД, час відповіді API, витоки пам'яті, проблеми конкурентності й інфраструктурні вузькі місця. Конкретні виправлення з вимірюваними метриками до/після. Оптимізація Go, Java, Perl і PostgreSQL/MySQL. Досить вгадувати — знаходжу й чиню те, що справді повільне."
+  tech: ["Profiling", "Go", "Java", "PostgreSQL"]
+
+- slug: "devops-recovery"
+  category_en: "Backend & DevOps"
+  category_uk: "Backend та DevOps"
+  title_en: "DevOps Process Recovery & Automation"
+  title_uk: "Відновлення та автоматизація DevOps-процесів"
+  body_en: "Deployments are manual, scary, and take hours? I recover your DevOps process: automate builds, set up proper environments (dev/staging/prod), implement deployment pipelines, add monitoring and rollback. Former CloudBees engineer — I've built CI/CD for Fortune 500 companies. Turn 'deploy Friday and pray' into confident, automated releases."
+  body_uk: "Деплої ручні, страшні й тривають годинами? Відновлюю ваш DevOps-процес: автоматизую білди, налаштовую середовища (dev/staging/prod), впроваджую деплой-пайплайни, додаю моніторинг і rollback. Колишній інженер CloudBees — будував CI/CD для компаній Fortune 500. Перетворюю «задеплой у п'ятницю й молись» на впевнені автоматичні релізи."
+  tech: ["CI/CD", "Automation", "Monitoring"]
+
+- slug: "platform-migration"
+  category_en: "Backend & DevOps"
+  category_uk: "Backend та DevOps"
+  title_en: "Platform Migration (On-Prem to Cloud, Windows to Linux)"
+  title_uk: "Міграція платформи (On-Prem у хмару, Windows у Linux)"
+  body_en: "Moving from on-premises to cloud, or Windows to Linux? I plan and execute platform migrations with zero-downtime strategies: containerization, infrastructure as code (Terraform), CI/CD setup, and monitoring. Led mission-critical Windows-to-Linux migrations serving 500+ users. Your operations modernize without business disruption."
+  body_uk: "Переходите з on-premises у хмару чи з Windows на Linux? Планую й виконую міграції платформ зі стратегіями zero-downtime: контейнеризація, infrastructure as code (Terraform), налаштування CI/CD і моніторинг. Вів критичні міграції Windows→Linux для 500+ користувачів. Операції модернізуються без зупинки бізнесу."
+  tech: ["Migration", "Terraform", "Linux", "Docker"]
+
+# ─────────────────────────── AI Integration & Automation ───────────────────────────
+
+- slug: "ai-chatbot-backend"
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "AI-Powered Chatbot Backend"
+  title_uk: "Backend для AI-чатбота"
+  body_en: "Add AI intelligence to your application! I integrate OpenAI/Claude APIs into your backend for smart conversations, content generation, data analysis, and decision support. Go/Java implementation with rate limiting, caching, and fallback strategies. Production-ready with monitoring and cost controls."
+  body_uk: "Додайте AI-інтелект у застосунок! Інтегрую API OpenAI/Claude у backend для розумних діалогів, генерації контенту, аналізу даних і підтримки рішень. Реалізація на Go/Java з rate limiting, кешуванням і fallback-стратегіями. Production-ready з моніторингом і контролем витрат."
+  tech: ["OpenAI", "Claude", "Go", "Caching"]
+
+- slug: "automation-pipeline"
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "Intelligent Automation Pipeline"
+  title_uk: "Інтелектуальний конвеєр автоматизації"
+  body_en: "Automate repetitive business processes with AI! Smart data extraction, document processing, email classification, and workflow automation. Integrates with your existing tools via APIs. Built in Go for speed and reliability. Save hours of manual work and reduce errors."
+  body_uk: "Автоматизуйте рутинні бізнес-процеси через AI! Розумне вилучення даних, обробка документів, класифікація пошти й автоматизація workflow. Інтегрується з наявними інструментами через API. Зібрано на Go для швидкості й надійності. Економте години ручної роботи й зменшуйте кількість помилок."
+  tech: ["Go", "AI", "Automation", "ETL"]
+
+- slug: "ai-agent-automation"
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "AI-Agent Task Automation for Internal Tools"
+  title_uk: "Автоматизація задач AI-агентами для внутрішніх інструментів"
+  body_en: "Automate bounded internal tasks with AI agents that decompose goals and execute independently. Code generation from specs, auto-testing, monitoring, and bug detection — with strict guardrails. Perfect for internal tooling and clearly scoped automation where you want AI doing the heavy lifting under human oversight."
+  body_uk: "Автоматизуйте обмежені внутрішні задачі AI-агентами, що декомпозують цілі й виконують їх самостійно. Генерація коду зі специфікацій, автотестування, моніторинг і виявлення багів — зі суворими guardrails. Ідеально для внутрішнього тулінгу й чітко окресленої автоматизації, де AI робить важку роботу під наглядом людини."
+  tech: ["AI Agents", "Automation", "Guardrails"]
+
+- slug: "ai-refactoring"
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "AI-Powered Refactoring & Tech Debt Reduction"
+  title_uk: "AI-рефакторинг та зменшення техборгу"
+  body_en: "Legacy codebase drowning in tech debt? I use AI autonomous refactoring under strict rules — analyzing code, identifying problems, optimizing performance, and enforcing consistency. Every change reviewed before merge. Measurable improvements: cleaner code, fewer bugs, better maintainability. Your codebase gets healthier without a rewrite from scratch."
+  body_uk: "Legacy-код тоне в техборгу? Застосовую автономний AI-рефакторинг за суворими правилами — аналіз коду, виявлення проблем, оптимізація продуктивності й забезпечення консистентності. Кожна зміна рев'юється перед merge. Вимірювані покращення: чистіший код, менше багів, краща підтримуваність. Код оздоровлюється без переписування з нуля."
+  tech: ["AI", "Refactoring", "Code Quality"]
+
+- slug: "ai-cicd-gen"
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "AI-Driven CI/CD Pipeline Generation"
+  title_uk: "AI-генерація CI/CD-пайплайнів"
+  body_en: "Let AI build and maintain your DevOps pipelines! I implement Policy-to-AI-to-CI/CD automation: auto-generated configs, security-scanning orchestration, dependency enforcement, and deployment automation. Reduce operational risk while accelerating releases. GitHub Actions, GitLab CI, or Jenkins — all policy-driven and audit-ready."
+  body_uk: "Хай AI будує й підтримує ваші DevOps-пайплайни! Впроваджую автоматизацію Policy→AI→CI/CD: автозгенеровані конфіги, оркестрація сканування безпеки, контроль залежностей і автоматизація деплою. Зменшую операційний ризик, пришвидшуючи релізи. GitHub Actions, GitLab CI чи Jenkins — усе policy-driven і audit-ready."
+  tech: ["CI/CD", "AI", "Security", "Policy"]
+
+- slug: "devsecops-ai"
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "DevSecOps AI Integration"
+  title_uk: "Інтеграція AI у DevSecOps"
+  body_en: "Security shouldn't slow you down. I integrate AI-powered security scanning into your pipeline: automated vulnerability detection, dependency auditing, policy enforcement, and compliance reporting. AI handles the scanning orchestration while your team focuses on fixes. GDPR, SOC2, and HIPAA-aware configurations available."
+  body_uk: "Безпека не має гальмувати. Інтегрую AI-сканування безпеки у пайплайн: автоматичне виявлення вразливостей, аудит залежностей, забезпечення політик і звітність відповідності. AI керує оркестрацією сканувань, а команда зосереджується на виправленнях. Доступні конфігурації під GDPR, SOC2 і HIPAA."
+  tech: ["DevSecOps", "AI", "Compliance", "Trivy"]
+
+# ─────────────────────────── Telegram Bots ───────────────────────────
+
+- slug: "tg-autoresponder"
+  category_en: "Telegram Bots"
+  category_uk: "Telegram-боти"
+  title_en: "Telegram Autoresponder Bot for Lead Generation"
+  title_uk: "Telegram-автовідповідач для лідогенерації"
+  body_en: "Need 24/7 customer engagement on Telegram? I build rule-based autoresponder bots that capture leads, handle FAQs, and send welcome messages — automatically. Your bot works around the clock so you don't have to. Built in JavaScript/Go/Java with SQLite, full source code included. Setup in 2 days."
+  body_uk: "Потрібна взаємодія з клієнтами 24/7 у Telegram? Будую rule-based ботів-автовідповідачів, що збирають ліди, обробляють FAQ і надсилають вітальні повідомлення — автоматично. Бот працює цілодобово замість вас. На JavaScript/Go/Java зі SQLite, з повним вихідним кодом. Налаштування за 2 дні."
+  tech: ["Go", "JavaScript", "Telegram API", "SQLite"]
+
+- slug: "tg-crypto"
+  category_en: "Telegram Bots"
+  category_uk: "Telegram-боти"
+  title_en: "Telegram Crypto Trading Bot with Price Alerts"
+  title_uk: "Telegram крипто-бот з ціновими алертами"
+  body_en: "Want real-time crypto alerts and automated trading on Telegram? I develop custom crypto bots with live price monitoring, portfolio tracking, and auto-buy/sell triggers. Integrates with CoinGecko and major exchanges. Secure, fast, and fully yours. Built in Go for maximum performance. Stop watching charts — let the bot do it."
+  body_uk: "Хочете крипто-алерти в реальному часі й автоматичну торгівлю в Telegram? Розробляю кастомних крипто-ботів з моніторингом цін, відстеженням портфеля й тригерами авто-купівлі/продажу. Інтеграція з CoinGecko і провідними біржами. Безпечно, швидко і повністю ваше. На Go для максимальної продуктивності. Досить дивитися графіки — хай це робить бот."
+  tech: ["Go", "Telegram API", "CoinGecko"]
+
+- slug: "tg-booking"
+  category_en: "Telegram Bots"
+  category_uk: "Telegram-боти"
+  title_en: "Telegram Appointment Booking Bot"
+  title_uk: "Telegram-бот для запису на прийом"
+  body_en: "Automate scheduling and reduce no-shows! I build Telegram bots with calendar integration, automated reminders, and booking confirmations. Perfect for healthcare, real estate, consultants, and service businesses. Includes admin notifications and CRM sync. Your clients book in seconds, you focus on delivering."
+  body_uk: "Автоматизуйте запис і зменшіть кількість неявок! Будую Telegram-ботів з інтеграцією календаря, автонагадуваннями й підтвердженнями бронювання. Ідеально для healthcare, нерухомості, консультантів і сервісного бізнесу. Включно зі сповіщеннями адміну й синхронізацією з CRM. Клієнти бронюють за секунди, ви — працюєте."
+  tech: ["Go", "Telegram API", "Calendar", "CRM"]
+
+- slug: "tg-ecommerce"
+  category_en: "Telegram Bots"
+  category_uk: "Telegram-боти"
+  title_en: "Telegram E-Commerce Bot with Payments"
+  title_uk: "Telegram e-commerce бот з платежами"
+  body_en: "Turn Telegram into your sales channel! I develop bots with product catalogs, cart systems, Stripe/PayPal/crypto payments, and order tracking — all inside Telegram. Auto-invoicing, customer segmentation, and broadcast messaging included. Full source code and Docker deployment."
+  body_uk: "Перетворіть Telegram на канал продажів! Розробляю ботів з каталогами товарів, кошиком, платежами Stripe/PayPal/крипто й відстеженням замовлень — усе всередині Telegram. Авто-інвойсинг, сегментація клієнтів і розсилки. Повний вихідний код і деплой у Docker."
+  tech: ["Go", "Telegram API", "Stripe", "Docker"]
+
+- slug: "tg-enterprise"
+  category_en: "Telegram Bots"
+  category_uk: "Telegram-боти"
+  title_en: "Enterprise Telegram Bot with AI & CRM Integration"
+  title_uk: "Enterprise Telegram-бот з AI та CRM"
+  body_en: "Scale your business communication with an enterprise-grade Telegram bot. AI-powered conversations, CRM integration (HubSpot, Salesforce), payment processing, analytics dashboard, and multi-language support. Docker + GCP deployment with monitoring. For established businesses and agencies needing professional automation."
+  body_uk: "Масштабуйте бізнес-комунікацію enterprise-ботом для Telegram. AI-діалоги, інтеграція з CRM (HubSpot, Salesforce), обробка платежів, дашборд аналітики й багатомовність. Деплой Docker + GCP з моніторингом. Для усталеного бізнесу й агенцій, яким потрібна професійна автоматизація."
+  tech: ["Go", "AI", "CRM", "GCP"]
+
+- slug: "tg-moderation"
+  category_en: "Telegram Bots"
+  category_uk: "Telegram-боти"
+  title_en: "Telegram Community Moderation Bot"
+  title_uk: "Telegram-бот для модерації спільнот"
+  body_en: "Keep your Telegram group safe and organized! Auto-moderation, spam filtering, user role management, welcome flows, and analytics. Track engagement, manage subscriptions, and run giveaways. Scales to 10,000+ users without slowing down. Complete source code and deployment support included."
+  body_uk: "Тримайте Telegram-групу безпечною й організованою! Автомодерація, фільтрація спаму, керування ролями, вітальні флоу й аналітика. Відстеження залученості, керування підписками й розіграші. Масштабується до 10 000+ користувачів без втрати швидкості. Повний вихідний код і підтримка деплою."
+  tech: ["Go", "Telegram API", "Moderation"]
+
+- slug: "multi-channel-bot"
+  category_en: "Telegram Bots"
+  category_uk: "Telegram-боти"
+  title_en: "Multi-Channel Bot Development"
+  title_uk: "Розробка багатоканальних ботів"
+  body_en: "Beyond Telegram — I build bots for Discord, WhatsApp, and SMS/Voice channels. Unified backend with multi-channel broadcasting, consistent user experience across platforms, and centralized analytics. Perfect for businesses needing omnichannel automated communication."
+  body_uk: "Не лише Telegram — будую ботів для Discord, WhatsApp і SMS/Voice. Єдиний backend з мультиканальними розсилками, однаковим UX на всіх платформах і централізованою аналітикою. Ідеально для бізнесу, якому потрібна омніканальна автоматизована комунікація."
+  tech: ["Discord", "WhatsApp", "SMS", "Go"]
+
+# ─────────────────────────── Web Scraping ───────────────────────────
+
+- slug: "scraper-static"
+  category_en: "Web Scraping"
+  category_uk: "Веб-скрейпінг"
+  title_en: "Static Website Data Scraper"
+  title_uk: "Скрейпер статичних сайтів"
+  body_en: "Need product listings, contacts, or prices from any website? I build custom Go-based scrapers that extract clean, structured data from static sites. JSON/CSV output, rate limiting, and User-Agent rotation included. Up to 100 pages, delivered in 3 days. Perfect for market research and competitor analysis."
+  body_uk: "Потрібні товари, контакти чи ціни з будь-якого сайту? Будую кастомні скрейпери на Go, що вилучають чисті структуровані дані зі статичних сайтів. Вивід JSON/CSV, rate limiting і ротація User-Agent. До 100 сторінок, доставка за 3 дні. Ідеально для маркет-рісьорчу й аналізу конкурентів."
+  tech: ["Go", "Colly", "JSON", "CSV"]
+
+- slug: "scraper-dynamic"
+  category_en: "Web Scraping"
+  category_uk: "Веб-скрейпінг"
+  title_en: "Dynamic Website Scraper (JS-Rendered)"
+  title_uk: "Скрейпер динамічних сайтів (JS-рендеринг)"
+  body_en: "Scraping React, Vue, or Angular sites? I handle JavaScript-heavy websites with headless Chrome, automatic proxy rotation, and CAPTCHA detection. PostgreSQL storage, data validation, and deduplication built in. Up to 5,000 pages from 10 sources. Ideal for e-commerce price monitoring and news aggregation."
+  body_uk: "Скрейпите React, Vue чи Angular? Обробляю JS-важкі сайти через headless Chrome з автоматичною ротацією проксі й виявленням CAPTCHA. Зберігання в PostgreSQL, валідація даних і дедуплікація. До 5 000 сторінок із 10 джерел. Ідеально для моніторингу цін e-commerce й агрегації новин."
+  tech: ["Go", "chromedp", "Proxy", "PostgreSQL"]
+
+- slug: "scraper-enterprise"
+  category_en: "Web Scraping"
+  category_uk: "Веб-скрейпінг"
+  title_en: "Enterprise Web Scraping Platform"
+  title_uk: "Enterprise-платформа веб-скрейпінгу"
+  body_en: "Large-scale data collection with 95%+ success rate on protected sites. Anti-detection (fingerprinting, TLS randomization), automated CAPTCHA solving (2Captcha), distributed processing, Prometheus monitoring, and a web dashboard. Kubernetes-ready. Up to 100K pages. For market research and competitive intelligence teams."
+  body_uk: "Масштабний збір даних з 95%+ успішністю на захищених сайтах. Anti-detection (fingerprinting, рандомізація TLS), автоматичне розв'язання CAPTCHA (2Captcha), розподілена обробка, моніторинг Prometheus і веб-дашборд. Готово до Kubernetes. До 100K сторінок. Для команд маркет-рісьорчу й конкурентної розвідки."
+  tech: ["Go", "Anti-Detection", "Kubernetes", "Prometheus"]
+
+- slug: "scraper-price"
+  category_en: "Web Scraping"
+  category_uk: "Веб-скрейпінг"
+  title_en: "E-Commerce Price Monitoring Scraper"
+  title_uk: "Скрейпер моніторингу цін e-commerce"
+  body_en: "Track competitor prices automatically! I build scrapers that monitor product pricing across multiple e-commerce sites, detect changes, and deliver alerts. Handles pagination, dynamic content, and anti-bot protection. Scheduled daily/weekly runs with CSV/JSON reports. Save hours of manual research."
+  body_uk: "Відстежуйте ціни конкурентів автоматично! Будую скрейпери, що моніторять ціни на товари по багатьох e-commerce сайтах, виявляють зміни й надсилають алерти. Обробляють пагінацію, динамічний контент і анти-бот захист. Заплановані щоденні/щотижневі запуски зі звітами CSV/JSON. Економте години ручної роботи."
+  tech: ["Go", "Scheduling", "Anti-Bot", "JSON"]
+
+- slug: "scraper-leadgen"
+  category_en: "Web Scraping"
+  category_uk: "Веб-скрейпінг"
+  title_en: "Job Listing & Lead Generation Scraper"
+  title_uk: "Скрейпер вакансій та лідогенерації"
+  body_en: "Automate lead collection from job boards, directories, and professional sites. Extract names, emails, companies, and positions into clean CSV/JSON. Proxy rotation and rate limiting for uninterrupted scraping. Configurable YAML setup — no code changes needed for new sites."
+  body_uk: "Автоматизуйте збір лідів з джоб-бордів, каталогів і професійних сайтів. Вилучення імен, email, компаній і посад у чисті CSV/JSON. Ротація проксі й rate limiting для безперервного скрейпінгу. Налаштування через YAML — без змін коду для нових сайтів."
+  tech: ["Go", "YAML", "Proxy", "CSV"]
+
+- slug: "seo-tool"
+  category_en: "Web Scraping"
+  category_uk: "Веб-скрейпінг"
+  title_en: "Web Page Analysis & SEO Tool"
+  title_uk: "Інструмент аналізу сторінок та SEO"
+  body_en: "Extract, analyze, and compare web content with custom CLI tools. CSS-selector extraction, SEO metrics (links, headings, content ratio), page comparison for change tracking, and multi-format output (JSON, CSV, Markdown). Handles both static and JS-rendered sites. Perfect for content teams and SEO agencies."
+  body_uk: "Вилучайте, аналізуйте й порівнюйте веб-контент кастомними CLI-інструментами. Вилучення за CSS-селекторами, SEO-метрики (посилання, заголовки, співвідношення контенту), порівняння сторінок для відстеження змін і вивід у кількох форматах (JSON, CSV, Markdown). Працює зі статичними та JS-сайтами. Ідеально для контент-команд і SEO-агенцій."
+  tech: ["Go", "CLI", "SEO", "CSS Selectors"]
+
+- slug: "scraper-realestate"
+  category_en: "Web Scraping"
+  category_uk: "Веб-скрейпінг"
+  title_en: "Real Estate Data Scraper"
+  title_uk: "Скрейпер даних нерухомості"
+  body_en: "Collect property listings, prices, locations, and agent contacts from real estate portals. Handles pagination, dynamic loading, and geo-filtering. Scheduled runs keep your database fresh. JSON/CSV/database output. Perfect for investors, agencies, and market analysts who need comprehensive property data."
+  body_uk: "Збирайте оголошення нерухомості, ціни, локації й контакти агентів з порталів нерухомості. Обробка пагінації, динамічного завантаження й гео-фільтрації. Заплановані запуски тримають базу свіжою. Вивід JSON/CSV/база даних. Ідеально для інвесторів, агенцій і аналітиків ринку, яким потрібні повні дані про об'єкти."
+  tech: ["Go", "Geo-Filtering", "Scheduling"]
+
+- slug: "scraper-api"
+  category_en: "Web Scraping"
+  category_uk: "Веб-скрейпінг"
+  title_en: "Web Scraping API Service"
+  title_uk: "API-сервіс веб-скрейпінгу"
+  body_en: "Turn any scraping job into a reusable REST API! I build API endpoints that deliver fresh data on demand from any target website. Authentication, rate limiting, caching, and webhook support included. Docker-deployed, Kubernetes-ready. Transform manual data collection into an automated service."
+  body_uk: "Перетворіть будь-яку задачу скрейпінгу на багаторазовий REST API! Будую ендпоінти, що віддають свіжі дані на вимогу з будь-якого цільового сайту. Авторизація, rate limiting, кешування й підтримка webhook. Деплой у Docker, готово до Kubernetes. Ручний збір даних стає автоматизованим сервісом."
+  tech: ["Go", "REST API", "Docker", "Webhooks"]
+
+- slug: "bot-scraper-integration"
+  category_en: "Web Scraping"
+  category_uk: "Веб-скрейпінг"
+  title_en: "Telegram Bot + Web Scraper Integration"
+  title_uk: "Інтеграція Telegram-бота та веб-скрейпера"
+  body_en: "Combine the power of automation! Get scraped data delivered directly to Telegram — price alerts, new listings, competitor updates, or lead notifications. Scheduled scraping with instant Telegram alerts. Two powerful tools working together for real-time business intelligence."
+  body_uk: "Поєднайте силу автоматизації! Отримуйте зіскрейплені дані прямо в Telegram — цінові алерти, нові оголошення, оновлення конкурентів чи сповіщення про ліди. Запланований скрейпінг з миттєвими Telegram-алертами. Два потужні інструменти разом для real-time бізнес-аналітики."
+  tech: ["Go", "Telegram API", "Scraping"]
+
+# ─────────────────────────── Email Tools ───────────────────────────
+
+- slug: "email-validation"
+  category_en: "Email Tools"
+  category_uk: "Email-інструменти"
+  title_en: "Email List Validation — Reduce Bounces by 95%"
+  title_uk: "Валідація email-списків — мінус 95% відмов"
+  body_en: "Clean your email lists with enterprise-grade validation! SMTP mailbox verification without sending emails, domain/MX checking, disposable and role-based detection. Process 10,000+ emails/hour with concurrent workers. Protect sender reputation, avoid blacklisting, and save money on wasted sends. CSV input/output, detailed analytics."
+  body_uk: "Очистіть email-списки enterprise-валідацією! SMTP-перевірка скриньки без надсилання листів, перевірка домену/MX, виявлення одноразових і рольових адрес. Обробка 10 000+ email/год конкурентними воркерами. Захист репутації відправника, уникнення блеклистів, економія на марних відправленнях. Ввід/вивід CSV, детальна аналітика."
+  tech: ["Go", "SMTP", "MX", "CSV"]
+
+- slug: "email-bulk"
+  category_en: "Email Tools"
+  category_uk: "Email-інструменти"
+  title_en: "Bulk Email Verification with Proxy Support"
+  title_uk: "Масова перевірка email з підтримкою проксі"
+  body_en: "Validate up to 50K emails with proxy rotation, resume capability, and history tracking via SQLite. Recheck failed emails, enhanced logging, and configurable validation steps. Reduce bounce rates below 1% and maintain GDPR/CCPA compliance. Perfect for SaaS companies and agencies managing large campaigns."
+  body_uk: "Перевіряйте до 50K email з ротацією проксі, відновленням і відстеженням історії через SQLite. Повторна перевірка невдалих адрес, розширене логування й налаштовувані кроки валідації. Знижте bounce-рейт нижче 1% і дотримуйтесь GDPR/CCPA. Ідеально для SaaS-компаній і агенцій з великими кампаніями."
+  tech: ["Go", "Proxy", "SQLite", "GDPR"]
+
+- slug: "email-enterprise"
+  category_en: "Email Tools"
+  category_uk: "Email-інструменти"
+  title_en: "Enterprise Email Hygiene Platform"
+  title_uk: "Enterprise-платформа гігієни email"
+  body_en: "Process 100K+ emails with multiple proxy rotation, advanced performance optimization, and detailed analytics reporting. Resume interrupted jobs, Docker deployment, and integration-ready architecture. ROI: prevent blacklisting, save on invalid sends, and boost deliverability across all campaigns."
+  body_uk: "Обробляйте 100K+ email з ротацією багатьох проксі, просунутою оптимізацією продуктивності й детальною аналітикою. Відновлення перерваних задач, деплой у Docker і готова до інтеграцій архітектура. ROI: запобігання блеклистам, економія на невалідних відправленнях і вища доставлюваність у всіх кампаніях."
+  tech: ["Go", "Proxy", "Docker", "Analytics"]
+
+- slug: "marketing-tools"
+  category_en: "Email Tools"
+  category_uk: "Email-інструменти"
+  title_en: "Automated Marketing & Email Tools"
+  title_uk: "Інструменти автоматизації маркетингу та email"
+  body_en: "Boost campaign performance with custom automation! Email validation, list cleaning, broadcast scheduling, A/B testing support, and deliverability optimization. Integrates with your existing ESP. Built in Go for processing millions of records efficiently. Data-driven marketing at scale."
+  body_uk: "Підвищте ефективність кампаній кастомною автоматизацією! Валідація email, очищення списків, планування розсилок, підтримка A/B-тестів і оптимізація доставлюваності. Інтеграція з вашим ESP. На Go для ефективної обробки мільйонів записів. Data-driven маркетинг у масштабі."
+  tech: ["Go", "Email", "A/B Testing"]
+
+# ─────────────────────────── Refactoring & Recovery (rest) ───────────────────────────
+
+- slug: "api-redesign"
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "API Redesign & Modernization"
+  title_uk: "Редизайн та модернізація API"
+  body_en: "Your API is a patchwork of inconsistent endpoints, breaking changes, and missing documentation? I redesign APIs with clean contracts, proper versioning, consistent error handling, and OpenAPI/Swagger docs. Migrate from REST to gRPC where performance matters. Backward-compatible migration so existing clients don't break."
+  body_uk: "Ваш API — клаптики неузгоджених ендпоінтів, ламких змін і відсутньої документації? Перепроєктовую API з чистими контрактами, належним версіонуванням, консистентною обробкою помилок і доками OpenAPI/Swagger. Міграція з REST на gRPC там, де важлива продуктивність. Зворотно-сумісна міграція, щоб наявні клієнти не ламались."
+  tech: ["REST", "gRPC", "OpenAPI", "Versioning"]
+
+- slug: "test-suite-recovery"
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Test Suite Recovery — Adding Tests to Untested Code"
+  title_uk: "Відновлення тестів — покриття непокритого коду"
+  body_en: "No tests? No confidence in changes? I create comprehensive test suites for existing codebases — unit, integration, and end-to-end coverage for critical paths. AI-assisted test generation accelerates coverage while I ensure tests are meaningful, not just green. Your team deploys with confidence instead of crossing fingers."
+  body_uk: "Немає тестів? Немає впевненості у змінах? Створюю повні набори тестів для наявних кодових баз — unit, інтеграційні й end-to-end для критичних шляхів. AI-генерація тестів пришвидшує покриття, а я гарантую, що тести змістовні, а не просто «зелені». Команда деплоїть упевнено, а не схрестивши пальці."
+  tech: ["Testing", "AI-assisted", "Go", "Java"]
+
+- slug: "plugin-architecture"
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Plugin & Component Architecture Refactoring"
+  title_uk: "Рефакторинг архітектури плагінів та компонентів"
+  body_en: "Your plugin system or component library is tangled, fragile, or impossible to extend? I refactor it into reusable, decoupled packages with clean interfaces — based on 5+ years building enterprise plugin architectures at CloudBees. Clear contracts, independent versioning, extensibility by design. Your platform becomes a foundation others can build on."
+  body_uk: "Ваша система плагінів чи бібліотека компонентів заплутана, крихка або нерозширювана? Рефакторю її в багаторазові, слабко зв'язані пакети з чистими інтерфейсами — на базі 5+ років побудови enterprise-плагінів у CloudBees. Чіткі контракти, незалежне версіонування, розширюваність за дизайном. Платформа стає фундаментом для інших."
+  tech: ["Plugin Architecture", "Java", "Groovy"]
+
+- slug: "codebase-standardization"
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Codebase Standardization & Style Recovery"
+  title_uk: "Стандартизація кодової бази та відновлення стилю"
+  body_en: "Multiple developers, no standards, inconsistent code everywhere? I establish coding standards, enforce linting rules (perlcritic, golangci-lint, checkstyle), automate formatting in CI/CD, and refactor existing code to match. AI-assisted consistency checks across the entire codebase. Your team writes code that looks like one person wrote it."
+  body_uk: "Багато розробників, жодних стандартів, всюди неузгоджений код? Встановлюю стандарти кодування, налаштовую лінтери (perlcritic, golangci-lint, checkstyle), автоматизую форматування в CI/CD і рефакторю наявний код під них. AI-перевірки консистентності по всій базі. Команда пише код так, ніби його написала одна людина."
+  tech: ["Linting", "CI/CD", "Go", "Perl"]
+
+- slug: "microservices-comms"
+  category_en: "Refactoring & Recovery"
+  category_uk: "Рефакторинг та відновлення"
+  title_en: "Microservices Communication Redesign"
+  title_uk: "Редизайн комунікації між мікросервісами"
+  body_en: "Services talking via spaghetti HTTP calls and shared databases? I redesign inter-service communication with proper patterns: event-driven architecture, message queues, API gateways, and circuit breakers. Reduce coupling, improve fault tolerance, and enable independent scaling. From distributed monolith to truly decoupled microservices."
+  body_uk: "Сервіси спілкуються спагеті-HTTP-викликами й спільними базами? Перепроєктовую міжсервісну комунікацію правильними патернами: event-driven архітектура, черги повідомлень, API-шлюзи й circuit breakers. Зменшую зв'язність, підвищую відмовостійкість і вмикаю незалежне масштабування. Від розподіленого моноліту до справді розв'язаних мікросервісів."
+  tech: ["Event-Driven", "Message Queues", "API Gateway"]
