@@ -2,6 +2,10 @@
 layout: portfolio-item
 title: "AI Voice Agent — Micromobility Customer Support"
 permalink: /portfolio/ivr-elevenlabs/
+image:
+  path: /portfolio/assets/images/ivr-elevenlabs/og-card.png
+  width: 1200
+  height: 630
 ---
 
 ## Overview
