@@ -2,10 +2,7 @@
 layout: portfolio-item
 title: "AI Application Assistant — Telegram Bot for GovTech"
 permalink: /portfolio/application-assistant/
-image:
-  path: /portfolio/assets/images/application-assistant/og-card.png
-  width: 1200
-  height: 630
+image: /portfolio/assets/images/application-assistant/og-card.png
 ---
 
 ## Overview
