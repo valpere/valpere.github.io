@@ -6,7 +6,7 @@
   summary_en: "Conversational AI assistant (Telegram bot) for a Ukrainian application-writing consultancy. RAG + LLM fills Excel templates while preserving formula chains. 8-week solo delivery: 65 sessions completed, 100% Excel artefact validity, 22% escalation rate."
   summary_uk: "Conversational AI-помічник (Telegram-бот) для українського консультаційного сервісу із подання заявок. RAG + LLM заповнює Excel-шаблони зі збереженням формул. Соло, 8 тижнів: 65 сесій, 100% валідність артефактів, 22% ескалацій."
   permalink: "/portfolio/application-assistant/"
-  hero_image: "/portfolio/assets/images/application-assistant/arch-1-0936x0634.svg"
+  hero_image: "/portfolio/assets/images/application-assistant/ai-application-assistant-en.png"
 
 - slug: "ivr-elevenlabs"
   client: "Micromobility Startup (NDA)"
@@ -16,7 +16,7 @@
   summary_en: "Built a voice AI agent automating 80% of 20,000 monthly support calls for a micromobility company. Delivered in 24 days: Go backend, Binotel webhooks, Whisper STT, GPT-4o-mini function calling, ElevenLabs/Azure TTS, Redis session state."
   summary_uk: "Голосовий AI-агент, що автоматизує 80% із 20 000 щомісячних дзвінків підтримки для компанії мікромобільності. Доставка за 24 дні: Go-бекенд, Binotel webhook, Whisper STT, GPT-4o-mini function calling, ElevenLabs/Azure TTS, Redis."
   permalink: "/portfolio/ivr-elevenlabs/"
-  hero_image: "/portfolio/assets/images/ivr-elevenlabs/architecture-1-0795x0590.svg"
+  hero_image: "/portfolio/assets/images/ivr-elevenlabs/ai_voice_agent-en.png"
 
 - slug: "cbcdro"
   client: "CloudBees CD/RO"

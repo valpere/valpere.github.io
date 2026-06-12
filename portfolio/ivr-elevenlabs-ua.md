@@ -18,8 +18,6 @@ lang_alt: /portfolio/ivr-elevenlabs/
 
 ## Архітектура
 
-![Системна архітектура — Binotel webhook пайплайн](/portfolio/assets/images/ivr-elevenlabs/architecture-1-0795x0590.svg)
-
 ```
 Binotel webhook → Whisper STT (UA/RU) → GPT-4o-mini → CRM API
                                                         ↓
@@ -33,6 +31,8 @@ Binotel webhook → Whisper STT (UA/RU) → GPT-4o-mini → CRM API
 5. Запит до CRM іде асинхронно (де транспорт, яка зона, статус поїздки)
 6. Бот виконує дію або задає уточнювальне питання
 7. Якщо вирішено — завершує дзвінок; якщо ні — передає оператору
+
+![Системна архітектура — Binotel webhook пайплайн](/portfolio/assets/images/ivr-elevenlabs/architecture-1-0795x0590.svg)
 
 ---
 

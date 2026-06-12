@@ -35,9 +35,9 @@ When AI confidence drops below threshold, the conversation escalates to a human 
 
 ## Architecture
 
-![System architecture overview](/portfolio/assets/images/application-assistant/arch-1-0936x0634.svg)
-
 Nine subsystems compiled to a single Go binary: Channel Adapter, AI Core, Knowledge Base, Session Store, Billing, People & Access, Workplaces, Observability, Integration Layer. Deployed via `docker compose up` on a Hetzner CCX23 (4 vCPU AMD EPYC, 16 GB RAM, ~€28/mo).
+
+![System architecture overview](/portfolio/assets/images/application-assistant/arch-1-0936x0634.svg)
 
 ---
 
