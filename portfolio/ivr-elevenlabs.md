@@ -17,8 +17,6 @@ Operators spent 80% of their time on four recurring scenarios: trip completion i
 
 ## Architecture
 
-![System architecture — Binotel webhook pipeline](/portfolio/assets/images/ivr-elevenlabs/architecture-1-0795x0590.svg)
-
 ```
 Binotel webhook → Whisper STT (UA/RU) → GPT-4o-mini → CRM API
                                                         ↓
@@ -32,6 +30,8 @@ Binotel webhook → Whisper STT (UA/RU) → GPT-4o-mini → CRM API
 5. CRM query runs async (vehicle location, zone status, trip status)
 6. Bot executes action or asks a follow-up question
 7. Resolved → ends call; unresolved → transfers to operator
+
+![System architecture — Binotel webhook pipeline](/portfolio/assets/images/ivr-elevenlabs/architecture-1-0795x0590.svg)
 
 ---
 

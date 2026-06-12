@@ -36,9 +36,9 @@ Conversational AI-помічник у вигляді Telegram-бота для у
 
 ## Архітектура
 
-![Огляд системної архітектури](/portfolio/assets/images/application-assistant/arch-1-0936x0634.svg)
-
 Дев'ять підсистем скомпільовані в один Go-бінарник: Channel Adapter, AI Core, Knowledge Base, Session Store, Billing, People & Access, Workplaces, Observability, Integration Layer. Деплой через `docker compose up` на Hetzner CCX23 (4 vCPU AMD EPYC, 16 GB RAM, ~€28/міс).
+
+![Огляд системної архітектури](/portfolio/assets/images/application-assistant/arch-1-0936x0634.svg)
 
 ---
 
