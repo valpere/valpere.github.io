@@ -72,6 +72,14 @@ I use AI agents in my daily development workflow, but I know exactly where the "
 
 If you are tired of playing the prompt lottery, and want to finally understand how to design databases properly, manage model context windows, and build real, production-ready products — **I can help you get there**.
 
+Three types of people typically come to this kind of learning:
+
+- **Vibe coders** — already burned, but still believing in the magic. A good fit: small group online workshops where we dissect a real project, build a prompting system, and develop practical techniques for daily work.
+- **Non-IT professionals** — marketers, managers, product people, business owners — who want to boost their results with AI without going deep into programming. Same group format, but focused on their specific tools and workflows.
+- **Those who want to grow seriously** — individual mentoring and coaching: your project, your pace, targeted feedback.
+
+In all three cases, learning is built around projects directly relevant to your field — not abstract exercises for the sake of it.
+
 * Check out my real [Projects](/projects/) to see the architectural approaches I put into practice.
 * Read my [Blog](/blog/) where I share hands-on engineering insights.
 * Dive into my [Portfolio](/portfolio/) to learn more about my tech stack and collaboration formats (ranging from one-on-one mentorship to practical workshops for teams).
