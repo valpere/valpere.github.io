@@ -8,10 +8,10 @@ tags: [ai, vibe-coding, methodology, claude, llm, learning]
 lang: en
 description: "Vibe coding feels like magic — until it doesn't. Why AI amplifies what's already in your head, and why that makes foundational knowledge more valuable, not less."
 excerpt: "Anyone who has tried writing code with modern AI agents knows that feeling of pure euphoria. You type a prompt, hit Enter, and watch hundreds of lines of working code materialize. But give it a week, and the magic evaporates. Why? AI is a mirroring multiplier — it amplifies whatever is already in your head."
-image: /assets/images/posts/vibe-coding-amplifier/0-ua.png
+image: /assets/images/posts/vibe-coding-amplifier/0-en.png
 ---
 
-![AI as Amplifier](/assets/images/posts/vibe-coding-amplifier/0-ua.png)
+![AI as Amplifier](/assets/images/posts/vibe-coding-amplifier/0-en.png)
 
 Anyone who has ever tried writing code with modern AI agents like Claude Code or Cursor knows that feeling of pure euphoria. You type a prompt in plain English, hit Enter, and watch hundreds of lines of working code materialize right before your eyes. Buttons click, databases sync, the app runs. You feel like a tech deity, and traditional learning feels like a relic of the past. Welcome to the era of "vibe coding."
 
