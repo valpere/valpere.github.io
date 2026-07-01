@@ -1,3 +1,15 @@
+- slug: "session-indexer"
+  title: "session-indexer"
+  title_uk: "session-indexer"
+  summary_en: "Per-project semantic search over Claude Code session history. Indexes JSONL transcripts into local SQLite; retrieves via bge-m3 embeddings (Ollama) with FTS5 BM25 fallback. No central store — every project's memory is isolated and append-only."
+  summary_uk: "Семантичний пошук по історії сесій Claude Code, ізольований для кожного проєкту. Індексує JSONL у локальний SQLite; пошук через bge-m3 embeddings (Ollama) з fallback на FTS5 BM25. Без централізованого сховища — пам'ять кожного проєкту ізольована та append-only."
+  permalink: "/projects/session-indexer/"
+  hero_image: "/projects/assets/images/session-indexer/infographic-0900x0530.png"
+  featured: false
+  tech: ["Go", "SQLite", "Ollama", "bge-m3", "Cobra", "FTS5"]
+  links:
+    github: "https://github.com/valpere/session-indexer"
+
 - slug: "chorus"
   title: "chorus"
   title_uk: "chorus"

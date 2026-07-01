@@ -48,3 +48,7 @@ tmp/
 
 # Skill telemetry (local only)
 .claude/skills/fix-review/telemetry.jsonl
+
+# Session recall — per-project, local-only context log/index
+.claude/session-log.md
+.claude/sessions.db
