@@ -140,7 +140,7 @@ now_ms() {
 ## STEP 1: Build the Review Prompt
 
 ```bash
-DIFF=$(git diff -U10 $(git merge-base HEAD origin/${BASE_BRANCH})...HEAD)
+DIFF=$(gh pr diff "${PR_NUMBER}")
 ```
 
 ### Detect diff type
@@ -150,7 +150,7 @@ Almost all PRs in this repo touch only Markdown, YAML, SVG, or images — detect
 ```bash
 is_docs_only_diff() {
   local files
-  files=$(git diff --name-only "$(git merge-base HEAD origin/${BASE_BRANCH})...HEAD")
+  files=$(gh pr diff "${PR_NUMBER}" --name-only)
   [ -z "$files" ] && return 1
   while IFS= read -r f; do
     case "$f" in
