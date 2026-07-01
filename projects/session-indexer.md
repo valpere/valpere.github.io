@@ -9,8 +9,6 @@ lang_alt: /uk/projects/session-indexer/
 
 # session-indexer — Per-Project Semantic Session Recall for Claude Code
 
-[Те саме Українською](../session-indexer-ua)
-
 **Links:**
 
 - [GitHub](https://github.com/valpere/session-indexer)
