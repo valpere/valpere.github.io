@@ -52,3 +52,6 @@ tmp/
 # Session recall — per-project, local-only context log/index
 .claude/session-log.md
 .claude/sessions.db
+
+# Claude Code local-only settings — never commit (per-machine hook wiring)
+.claude/settings.local.json
