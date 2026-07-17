@@ -54,6 +54,36 @@
   body_uk: "Одна модель пропускає те, що ловлять три. Налаштовую автоматизовані пайплайни рев'ю PR, що паралельно роздають кожен diff кільком AI-моделям, після чого єдиний арбітр консолідує знахідки — менше хибних спрацювань, вища повнота, кількість «голосів» як сигнал впевненості. Інтеграція з GitHub Actions і вашим CI, підсумок у PR, автомердж чистих прогонів. На базі реальної крос-агентної оркестрації та production-пайплайну мультимодельного рев'ю."
   tech: ["AI", "CI/CD", "Code Review", "OpenRouter"]
 
+- slug: "spec-precision-measurement"
+  featured: true
+  category_en: "AI Strategy"
+  category_uk: "AI-стратегія"
+  title_en: "Spec-Precision Measurement Before AI Agents Touch Your Codebase"
+  title_uk: "Вимірювання точності специфікації перед тим, як AI-агенти торкнуться коду"
+  body_en: "A specification isn't a source of truth for an AI agent — it's a source of a distribution over possible implementations. I measure that spread before code generation starts: constraint density, requirement traceability, and generation entropy (N samples from the same spec, clustered by AST similarity) — then gate agent access on a precision budget you set in advance. Validated on two live production requirements docs with two independent LLM instruments; a dosed increase in structural detail produced a reproducible +0.12 similarity gain on both. Stops the 'AI improvises the missing 20% and you find out in production' failure mode before it starts."
+  body_uk: "Специфікація для AI-агента — не джерело істини, а джерело розподілу можливих реалізацій. Вимірюю цей розкид ще до старту генерації коду: щільність обмежень, трасованість вимог і ентропію генерації (N семплів з одного спека, кластеризованих за AST-подібністю) — і блокую доступ агента до коду за заздалегідь заданим бюджетом точності. Перевірено на двох реальних production-документах вимог двома незалежними LLM-інструментами: дозоване підвищення структурної деталізації дало відтворюваний приріст схожості +0.12 на обох. Зупиняє відмову «AI сам додумав відсутні 20%, а ви дізнаєтесь про це в проді» ще на вході."
+  tech: ["Go", "AST Analysis", "LLM", "Metrics"]
+
+- slug: "cross-agent-orchestration"
+  featured: true
+  category_en: "AI Strategy"
+  category_uk: "AI-стратегія"
+  title_en: "Cross-Agent AI Orchestration — One Task, Five Independent Opinions"
+  title_uk: "Крос-агентна AI-оркестрація — одна задача, п'ять незалежних думок"
+  body_en: "Different AI coding models fail differently — one misses an edge case another catches. I built and open-sourced chorus, a full 6×6 delegation mesh between six AI coding CLIs (Claude Code, OpenCode, Gemini CLI, Codex, Cursor, Kilo): parallel review, council synthesis, and ranked root-cause debugging across all of them from a single command, without leaving your existing tool. Same principle available as a private setup for your team's stack — pick the agents you already use, wire the delegation, keep your existing workflow."
+  body_uk: "Різні AI-моделі кодування помиляються по-різному — одна пропускає edge case, який ловить інша. Побудував і опублікував у відкритому доступі chorus — повну 6×6-сітку делегування між шістьма AI coding CLI (Claude Code, OpenCode, Gemini CLI, Codex, Cursor, Kilo): паралельне рев'ю, синтез «ради» й ранжовані гіпотези причин бага — з однієї команди, не покидаючи звичний інструмент. Той самий принцип можу налаштувати приватно під стек вашої команди — обираєте вже наявні агенти, я вшиваю делегування в наявний workflow."
+  tech: ["Go", "AI Orchestration", "Multi-Agent", "Open Source"]
+
+- slug: "per-project-ai-memory"
+  featured: true
+  category_en: "AI Integration"
+  category_uk: "AI-інтеграція"
+  title_en: "Per-Project AI Memory — No Single Point of Failure"
+  title_uk: "Пам'ять AI на рівні проєкту — без єдиної точки відмови"
+  body_en: "Centralized AI memory tools share one architectural flaw: if the shared store dies, every project's memory dies with it. I build the opposite — per-project, append-only semantic memory (SQLite + local embeddings) that lives inside each project's own directory, self-heals by re-indexing what's already on disk, and needs zero shared infrastructure. Shipped open-source for Claude Code session recall; same architecture adapts to any agent workflow needing durable, isolated context."
+  body_uk: "Централізовані AI-інструменти пам'яті мають одну спільну архітектурну ваду: якщо падає спільне сховище — падає пам'ять усіх проєктів одразу. Роблю навпаки — пам'ять на рівні проєкту, append-only, семантична (SQLite + локальні embeddings), що живе всередині кожного проєкту, самовідновлюється переіндексацією наявних даних на диску і не потребує спільної інфраструктури. Реалізовано у відкритому коді для Claude Code session recall; та сама архітектура адаптується під будь-який agent-workflow, якому потрібен стійкий ізольований контекст."
+  tech: ["Go", "SQLite", "Embeddings", "Open Source"]
+
 # ─────────────────────────── FEATURED (strongest) ───────────────────────────
 
 - slug: "full-platform-redesign"
