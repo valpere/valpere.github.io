@@ -9,6 +9,7 @@ lang: en
 mathjax: true
 description: "A specification isn't a source of truth for AI agents — it's a source of a distribution over implementations. How to measure that spread and set a precision budget before letting agents near your codebase."
 excerpt: "For decades we worshipped the Single Source of Truth like a sacred artifact. Then autonomous AI agents arrived, and the sacred specification quietly became a source of the unknown."
+image: /assets/images/posts/source-of-the-unknown/1-en.png
 ---
 
 > **Thesis (one line):** In the age of autonomous AI agents, a specification is not a source of truth but a source of a distribution over possible implementations; it becomes an engineering artifact only once its tolerance is measured and written into a precision budget.
