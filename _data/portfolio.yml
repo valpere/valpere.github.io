@@ -1,3 +1,13 @@
+- slug: "sales-crm-platform"
+  client: "Sales CRM Platform (NDA)"
+  role: "Freelance Full-Stack Engineer / AI Integration"
+  period: "Mar — Jun 2026"
+  stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "TanStack Query", "React Router", "Google Gemini", "OpenRouter", "n8n"]
+  summary_en: "Built out a modular, conversation-first sales CRM across 1,366 commits in 3 months — AI-powered reporting through a provider-fallback gateway (Gemini → OpenRouter), a deterministic decision-billing ledger, lead ingestion/enrichment pipelines, and org-level access control. ~123K LOC across frontend and edge functions, 201 test files, 23 production cron jobs."
+  summary_uk: "Розробка модульної CRM-платформи на основі розмов — 1 366 комітів за 3 місяці. AI-звітність через провайдер-fallback gateway (Gemini → OpenRouter), детермінований білінг-леджер рішень, пайплайни збору/збагачення лідів, контроль доступу на рівні організації. ~123K рядків коду, 201 test-файл, 23 продакшн cron-джоби."
+  permalink: "/portfolio/sales-crm-platform/"
+  hero_image: "/portfolio/assets/images/sales-crm-platform/sales-crm-en.png"
+
 - slug: "gym-ops-platform"
   client: "Gym Operations SaaS (NDA)"
   role: "Freelance Full-Stack Engineer / AI Integration"
