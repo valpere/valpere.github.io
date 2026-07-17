@@ -218,7 +218,7 @@ PROMPT=$(printf '%s' "$PROMPT_TEMPLATE" | sed "s|{DIFF}|$(printf '%s' "$DIFF" | 
 RUN_DIR=$(mktemp -d -t fix-review-XXXX)
 WALL_START_MS=$(now_ms)
 
-REVIEW_SYSTEM_MSG="You are a senior code reviewer. Your entire response MUST be a raw JSON array — nothing else. Start with [ and end with ]. No prose, no markdown fences, no explanations before or after. If there are no issues output exactly: []"
+REVIEW_SYSTEM_MSG="You are a senior code reviewer. Your entire response MUST be a raw JSON array — nothing else. Start with [ and end with ]. No prose, no markdown fences, no explanations before or after. Report at most 8 findings, most severe first; each body under 30 words. Do not include informational or 'no action needed' entries — only real issues. If there are no issues output exactly: []"
 
 export PROVIDER REVIEWER_BLOCK API_URL API_KEY PROMPT RUN_DIR \
        MODEL_R1 MODEL_R2 MODEL_R3 REVIEW_SYSTEM_MSG
@@ -235,6 +235,23 @@ run_round() {
     '{model:$m,messages:[{role:"system",content:$sys},{role:"user",content:$user}],stream:false,think:$think}')
   response=$(rest_post "$API_URL" "$payload" "$API_KEY") \
     || response='{"_error":"rest_post_failed"}'
+
+  # Empty-content retry: a thinking-enabled model (round_1 here runs
+  # think:true — deepseek-v4-flash:cloud) can burn its whole budget on
+  # hidden thinking and return 200 + empty content on a large diff. Retry
+  # once with a tighter num_predict cap before accepting 0 findings.
+  if ! printf '%s' "$response" | jq -e '._error' >/dev/null 2>&1; then
+    local content; content=$(printf '%s' "$response" | jq -r '.message.content // empty')
+    if [ -z "$(printf '%s' "$content" | tr -d '[:space:]')" ]; then
+      echo "warn: round ${n} (${model}) returned empty content — retrying once with a tighter cap" >&2
+      payload=$(jq -n --arg m "$model" --arg sys "$REVIEW_SYSTEM_MSG" \
+        --arg user "$PROMPT" --argjson think "$think" \
+        '{model:$m,messages:[{role:"system",content:$sys},{role:"user",content:$user}],stream:false,think:$think,options:{num_predict:2000}}')
+      response=$(rest_post "$API_URL" "$payload" "$API_KEY") \
+        || response='{"_error":"rest_post_failed"}'
+    fi
+  fi
+
   r_end=$(now_ms)
   printf '%s' "$response" > "$RUN_DIR/round_${n}.raw.json"
   pt=$(printf '%s' "$response" | jq -r '.prompt_eval_count // empty')
