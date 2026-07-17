@@ -52,9 +52,14 @@ tmp/
 # Session recall — per-project, local-only context log/index
 .claude/session-log.md
 .claude/sessions.db
+.claude/sessions.db-shm
+.claude/sessions.db-wal
 
 # Claude Code local-only settings — never commit (per-machine hook wiring)
 .claude/settings.local.json
+
+# Claude Code worktree state — runtime per machine
+.worktrees/
 
 # Playwright MCP scratch artifacts (console logs, page snapshots)
 .playwright-mcp/
