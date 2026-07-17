@@ -14,11 +14,11 @@ Senior Software Engineer / Technical Lead / CTO
 
 ## Summary
 
-Seasoned **Senior Software Engineer / Technical Lead** with **20+ years of professional experience** designing and delivering enterprise-grade software systems and AI-driven products. Expert in **Go** (3+), **Java** (5+), **Groovy** (6+), and **Perl** (20+), with a strong focus on cloud-native development, scalable microservices, and data-intensive automation.
+Seasoned **Senior Software Engineer / Technical Lead** with **20+ years of professional experience** designing and delivering enterprise-grade software systems and AI-driven products. Expert in **Go** (3+), **Java** (5+), **Groovy** (6+), **Perl** (20+), and **TypeScript** (1+), with a strong focus on cloud-native development, scalable microservices, and data-intensive automation.
 
 Currently serving as **CTO**, directing technical strategy and AI workflow integration across multi-product SaaS development with a **20+ person engineering team**. Designs and implements AI-assisted engineering workflows — from spec-driven development and multi-model review pipelines to autonomous refactoring and context-engineered AI agents — that measurably accelerate delivery and reduce defect rates.
 
-Recently delivered, as a solo engineer, two production AI systems end-to-end: a conversational RAG platform that automates document generation (100% artefact validity, ~$7/user/month) and a voice AI agent handling ~20,000 support calls per month at ~80% automation. Combines deep technical expertise with hands-on leadership — from architecting scalable APIs and microservices to mentoring teams and driving modernization initiatives. Adept at transforming complex legacy platforms into efficient, cloud-native systems through automation, best practices, and strategic design.
+Recently delivered, hands-on, four production AI systems end-to-end: a conversational RAG platform that automates document generation (100% artefact validity, ~$7/user/month), a voice AI agent handling ~20,000 support calls per month at ~80% automation, a substantial solo rebuild of a field-services SaaS platform (991 commits in 3 months, 474 passing tests, zero vulnerabilities), and primary-contributor work on a modular sales-CRM platform with AI-powered reporting and decision billing (1,366 commits, ~123K LOC). Combines deep technical expertise with hands-on leadership — from architecting scalable APIs and microservices to mentoring teams and driving modernization initiatives. Adept at transforming complex legacy platforms into efficient, cloud-native systems through automation, best practices, and strategic design.
 
 Strong cross-functional communicator and problem-solver, passionate about system performance, software quality, and developer productivity.
 
@@ -116,6 +116,20 @@ Technical leadership and hands-on delivery of AI-driven backend systems. Serve a
   - Voice support pipeline: Binotel telephony webhooks → OpenAI Whisper (STT) → GPT-4o-mini function-calling → CRM actions → ElevenLabs / Azure TTS
   - Redis session state across stateless webhooks; per-scenario state machines; a strict structured action set as LLM guardrails; pre-recorded + real-time TTS hybrid to eliminate latency
   - **Outcomes:** handled ~20,000 calls/month at ~80% resolution without an operator; operating cost ~$400–700/month
+- **Gym Operations Platform — Field-services SaaS rebuild (2026).** Freelance full-stack engineer / AI integration; 3-month solo takeover.
+  - Took over a partially-built no-code MVP and substantially rebuilt it into a production system — React 19 + TypeScript frontend, Supabase/Deno backend, 991 commits solo
+  - Automated escalation triggers (staged no-check-in alerts, repeated photo-rejection detection, overdue-shift flagging) replacing manual shift monitoring
+  - Multi-provider LLM failover (5 providers) for AI photo validation and report generation — validation keeps working through provider outages instead of blocking the field workflow
+  - Three-Layer data model (Facts → Computation → Interpretation) enforced via row-level security at the schema level; AI-generated interpretation kept append-only, never overwriting source facts
+  - Development run through a structured multi-agent AI pipeline (planning → tech-lead → code generation/simplification → independent code review, security review, and test generation) to keep a fast solo rebuild from accumulating undocumented tribal knowledge
+  - **Outcomes:** ~42K LOC across 270+ files, 474 passing tests (30% test-to-source ratio), zero `npm audit` vulnerabilities, delivered in 3 months
+- **Sales CRM Platform — Conversation-first CRM with AI reporting & decision billing (2026).** Freelance full-stack engineer / AI integration; 3-month engagement, primary contributor.
+  - Became the primary contributor on a modular sales-CRM rebuild — 1,366 of 2,888 total commits — spanning a React 19 + TypeScript frontend and a Supabase edge-functions backend across 7 independently-versioned modules
+  - AI gateway with database-driven system prompts (5-minute TTL cache) and automatic provider fallback (Gemini → OpenRouter on rate-limit/provider errors) — AI-dependent features keep working through a provider outage instead of failing the whole pipeline
+  - Deterministic, append-only billing ledger for AI-assisted actions — no entry ever mutates a prior one; balance is always reconstructible by replaying the ledger
+  - 23 production cron jobs moved sync, monitoring, and email processing off the request path, keeping the conversation workspace responsive independent of background-sync volume
+  - Moved staging and production to trunk-based deployment from the same branch, eliminating a class of bugs caused by environment drift
+  - **Outcomes:** ~123K LOC across frontend and edge functions, 201 test files, delivered across 3 months
 - **AI Agent Cost Optimization (2026).** Cut AI subagent spend **70–85%** with a hybrid architecture — cheap OpenRouter models for analytical tasks, Claude Haiku as orchestrator, premium models reserved for high-blast-radius work — with multi-provider failover and pinned model IDs, holding quality on structured tasks.
 - **Open-source & client tooling.** Go-based web scraping framework with anti-detection and distributed processing (DataScrapexter); production Telegram bots (weather intelligence, CRM automation, e-commerce); cross-agent AI orchestration mesh (chorus); email validation and marketing automation CLIs.
 
