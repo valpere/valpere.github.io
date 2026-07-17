@@ -1,3 +1,13 @@
+- slug: "gym-ops-platform"
+  client: "Gym Operations SaaS (NDA)"
+  role: "Freelance Full-Stack Engineer / AI Integration"
+  period: "Mar — Jun 2026"
+  stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "Deno", "PostgreSQL", "Sentry", "Playwright"]
+  summary_en: "Took over and substantially rebuilt a gym-cleaning operations platform after its no-code MVP stage. Delivered mobile-first cleaner workflows with AI photo validation, automated escalation triggers, and multi-provider LLM failover across 991 commits in 3 months — 42K LOC, 474 passing tests, zero npm vulnerabilities."
+  summary_uk: "Перехопив і суттєво переписав платформу для управління клінінг-операціями в спортзалах після її no-code MVP-стадії. Мобільні воркфлоу для клінерів з AI-валідацією фото, автоматизовані тригери ескалації та мультипровайдерний LLM failover — 991 коміт за 3 місяці, 42K рядків коду, 474 тести, 0 вразливостей."
+  permalink: "/portfolio/gym-ops-platform/"
+  hero_image: "/portfolio/assets/images/gym-ops-platform/gym-ops-en.png"
+
 - slug: "application-assistant"
   client: "Ukrainian Consultancy (NDA)"
   role: "Solo Architect / Engineer / DevOps"
