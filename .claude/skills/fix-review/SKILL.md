@@ -265,7 +265,9 @@ run_external_agent_round() {
   local n="$1" tool="$2" model="$3" prompt_file="$4"
   local r_start r_end response
   r_start=$(now_ms)
-  response=$(timeout 300 run_external_agent "$tool" "$model" "$prompt_file" 2>/dev/null </dev/null) || response=""
+  # timeout execs its argument as an external binary — it can't invoke a
+  # bash function directly, so run_external_agent must go through `bash -c`.
+  response=$(timeout 300 bash -c 'run_external_agent "$1" "$2" "$3"' _ "$tool" "$model" "$prompt_file" 2>/dev/null </dev/null) || response=""
   r_end=$(now_ms)
   printf '%s' "$response" > "$RUN_DIR/round_${n}.raw.txt"
   printf '%s\n%s\nnull null\n' "$tool" "$((r_end - r_start))" > "$RUN_DIR/round_${n}.meta"
