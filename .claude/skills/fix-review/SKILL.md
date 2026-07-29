@@ -57,6 +57,7 @@ BASE_BRANCH=$(gh pr view "$PR_NUMBER" --json baseRefName --jq '.baseRefName')
 ```bash
 source .claude/skills/lib/env.sh
 source .claude/skills/lib/rest.sh
+source .claude/skills/lib/agents.sh
 
 REVIEWER_SET=$(grep '^reviewer_set:' .claude/skills/fix-review/config.yaml | awk '{print $2}')
 REVIEWER_SET="${REVIEWER_SET:-cloud}"
@@ -78,11 +79,11 @@ MODEL_R2=$(yq -r ".reviewers.${REVIEWER_BLOCK}.round_2.model // \"\"" .claude/sk
 MODEL_R3=$(yq -r ".reviewers.${REVIEWER_BLOCK}.round_3.model // \"\"" .claude/skills/fix-review/config.yaml)
 ```
 
-**Probe Ollama Cloud + CLI failover** (same pattern as lance-agent SKILL.md Step 0):
+**Probe Ollama Cloud + external-agent failover** (canonical pattern from `~/wrk/common/skills/fix-review/SKILL.md` Step 0, adapted to this project's whole-tier switch — see `lib/agents.sh` for the read-only tool adapters):
 
 ```bash
 ACTIVE_PROVIDER=ollama
-CLI_AGENTS=()
+EXTERNAL_AGENTS=()
 FAILOVER_TIER=""
 FAILOVER_REASON=""
 
@@ -108,16 +109,16 @@ probe_provider() {
 }
 
 if [ "$REVIEWER_SET" = "cloud" ] && ! probe_provider; then
-  echo "⚠️  FAILOVER: Ollama Cloud unavailable (${FAILOVER_REASON}) — engaging CLI tier" >&2
-  count=$(yq '.reviewers.cli | length' .claude/skills/fix-review/config.yaml 2>/dev/null)
+  echo "⚠️  FAILOVER: Ollama Cloud unavailable (${FAILOVER_REASON}) — engaging external-agent tier" >&2
+  count=$(yq '.reviewers.external_agents | length' .claude/skills/fix-review/config.yaml 2>/dev/null)
   for ((i=0; i<count; i++)); do
-    name=$(yq -r ".reviewers.cli[$i].name" .claude/skills/fix-review/config.yaml)
-    cmd=$(yq -r  ".reviewers.cli[$i].cmd"  .claude/skills/fix-review/config.yaml)
-    CLI_AGENTS+=("${name}|${cmd}")
+    tool=$(yq -r ".reviewers.external_agents[$i].tool" .claude/skills/fix-review/config.yaml)
+    model=$(yq -r ".reviewers.external_agents[$i].model // \"\"" .claude/skills/fix-review/config.yaml)
+    EXTERNAL_AGENTS+=("${tool}|${model}")
   done
-  [ "${#CLI_AGENTS[@]}" -eq 0 ] && { echo "✗ CLI tier empty. Aborting." >&2; exit 1; }
-  ACTIVE_PROVIDER=cli
-  FAILOVER_TIER=cli
+  [ "${#EXTERNAL_AGENTS[@]}" -eq 0 ] && { echo "✗ external-agent tier empty. Aborting." >&2; exit 1; }
+  ACTIVE_PROVIDER=external_agents
+  FAILOVER_TIER=external_agents
 fi
 ```
 
@@ -260,22 +261,27 @@ run_round() {
     "${pt:-null}" "${ct:-null}" > "$RUN_DIR/round_${n}.meta"
 }
 
-run_cli_round() {
-  local n="$1" name="$2" cmd="$3"
+run_external_agent_round() {
+  local n="$1" tool="$2" model="$3" prompt_file="$4"
   local r_start r_end response
   r_start=$(now_ms)
-  response=$(printf '%s' "$PROMPT" | timeout 300 sh -c "$cmd" 2>/dev/null) || response=""
+  # timeout execs its argument as an external binary — it can't invoke a
+  # bash function directly, so run_external_agent must go through `bash -c`.
+  response=$(timeout 300 bash -c 'run_external_agent "$1" "$2" "$3"' _ "$tool" "$model" "$prompt_file" 2>/dev/null </dev/null) || response=""
   r_end=$(now_ms)
   printf '%s' "$response" > "$RUN_DIR/round_${n}.raw.txt"
-  printf '%s\n%s\nnull null\n' "$name" "$((r_end - r_start))" > "$RUN_DIR/round_${n}.meta"
+  printf '%s\n%s\nnull null\n' "$tool" "$((r_end - r_start))" > "$RUN_DIR/round_${n}.meta"
 }
-export -f run_round run_cli_round
+export -f run_round run_external_agent_round
+export -f run_external_agent agent_cursor_agent agent_omp agent_codex agent_opencode agent_kilo
 
-if [ "$ACTIVE_PROVIDER" = "cli" ]; then
+if [ "$ACTIVE_PROVIDER" = "external_agents" ]; then
+  PROMPT_FILE="$RUN_DIR/prompt.txt"
+  printf '%s' "$PROMPT" > "$PROMPT_FILE"
   n=1
-  for entry in "${CLI_AGENTS[@]}"; do
-    name="${entry%%|*}"; cmd="${entry#*|}"
-    run_cli_round "$n" "$name" "$cmd" &
+  for entry in "${EXTERNAL_AGENTS[@]}"; do
+    tool="${entry%%|*}"; model="${entry#*|}"
+    run_external_agent_round "$n" "$tool" "$model" "$PROMPT_FILE" &
     n=$((n + 1))
   done
   wait
@@ -301,7 +307,7 @@ parse_round() {
   local n="$1"
   local model content
   model=$(head -1 "$RUN_DIR/round_${n}.meta")
-  if [ "$ACTIVE_PROVIDER" = "cli" ]; then
+  if [ "$ACTIVE_PROVIDER" = "external_agents" ]; then
     content=$(cat "$RUN_DIR/round_${n}.raw.txt")
   else
     content=$(jq -r '.message.content // empty' "$RUN_DIR/round_${n}.raw.json")
@@ -416,8 +422,8 @@ done
 SPEEDUP=$(awk -v s="$SEQ_SUM_MS" -v w="$WALL_TIME_MS" \
   'BEGIN{ if (w>0) printf "%.2f", s/w; else print "n/a" }')
 
-if [ "$ACTIVE_PROVIDER" = "cli" ]; then
-  MODELS_LIST=$(printf '%s | ' "${CLI_AGENTS[@]%%|*}" | sed 's/ | $//')
+if [ "$ACTIVE_PROVIDER" = "external_agents" ]; then
+  MODELS_LIST=$(printf '%s | ' "${EXTERNAL_AGENTS[@]%%|*}" | sed 's/ | $//')
 else
   MODELS_LIST="${MODEL_R1} | ${MODEL_R2} | ${MODEL_R3}"
 fi
@@ -435,7 +441,7 @@ done
 
 FAILOVER_SECTION=""
 if [ -n "$FAILOVER_TIER" ]; then
-  agents_csv=$(printf '%s, ' "${CLI_AGENTS[@]%%|*}" | sed 's/, $//')
+  agents_csv=$(printf '%s, ' "${EXTERNAL_AGENTS[@]%%|*}" | sed 's/, $//')
   FAILOVER_SECTION=$(cat <<EOF
 
 ### ⚠️ Provider failover
