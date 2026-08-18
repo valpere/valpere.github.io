@@ -273,7 +273,7 @@ run_external_agent_round() {
   printf '%s\n%s\nnull null\n' "$tool" "$((r_end - r_start))" > "$RUN_DIR/round_${n}.meta"
 }
 export -f run_round run_external_agent_round
-export -f run_external_agent agent_cursor_agent agent_omp agent_codex agent_opencode agent_kilo
+export -f run_external_agent agent_cursor_agent agent_agy agent_omp agent_codex agent_opencode agent_kilo
 
 if [ "$ACTIVE_PROVIDER" = "external_agents" ]; then
   PROMPT_FILE="$RUN_DIR/prompt.txt"
