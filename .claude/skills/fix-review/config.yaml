@@ -8,15 +8,21 @@
 provider: ollama
 
 reviewers:
+  # Matches the canonical fix-review recommendation in
+  # ~/wrk/common/common/ollama-cloud-coding-models.md (glm-5.1 → deepseek-v4-flash
+  # → kimi-k2.7-code) — this project had drifted to a different trio;
+  # realigned 2026-08-19 after observing deepseek-v4-flash produce noisy
+  # self-contradictory "no issue" findings when run as R1 with think:true
+  # on a docs-only diff (PR #103).
   ollama_cloud:
     round_1:
-      model: deepseek-v4-flash:cloud
+      model: glm-5.1:cloud
       think: true
     round_2:
-      model: qwen3.5:cloud
+      model: deepseek-v4-flash:cloud
       think: false
     round_3:
-      model: gemma4:31b-cloud
+      model: kimi-k2.7-code:cloud
       think: false
 
   ollama_local:
@@ -33,11 +39,13 @@ reviewers:
   # only (lib/agents.sh) — replaces the old `cli:` block, which ran `agy`
   # with --dangerously-skip-permissions and `codex` with
   # --dangerously-bypass-approvals-and-sandbox (full write/bypass access
-  # for a reviewer that only needs to read). `agy` and `gemini` dropped:
-  # agy was evaluated upstream and excluded (explores the filesystem
-  # instead of answering, not a prompt-wording issue — verified
-  # 2026-07-29 in ~/wrk/common); gemini was never evaluated for read-only
-  # invocation/output-format compatibility.
+  # for a reviewer that only needs to read). `agy` was initially excluded
+  # (looked like it explored the filesystem instead of answering) but
+  # that was a testing mistake, not a real limitation — root cause found
+  # 2026-07-30 (--prompt is an alias for the --print boolean flag, not a
+  # value-taking option) and re-added in PR #101 with the correct
+  # positional-argument invocation. `gemini` stays dropped — never
+  # evaluated for read-only invocation/output-format compatibility.
   external_agents:
     - { tool: cursor-agent, model: auto }
     - { tool: agy, model: "Gemini 3.5 Flash (Low)" }
