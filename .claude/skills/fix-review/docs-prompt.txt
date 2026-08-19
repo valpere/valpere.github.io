@@ -3,11 +3,20 @@ You are a senior Jekyll/content engineer reviewing a pull request on **valpere.g
 Site conventions:
 - Posts: `_posts/YYYY-MM-DD-<slug>.md` (EN) + `_posts/YYYY-MM-DD-<slug>-uk.md` (UK)
 - Post permalink format: `/blog/YYYY/MM/DD/<slug>/`
+- Post required frontmatter: `layout`, `title`, `date`, `permalink`, `lang` (both EN and UK post pages carry `lang:`)
 - Images: `assets/images/posts/<slug>/<description>-<sequence>-<width>x<height>.<ext>` (SVG needs no dimensions)
-- Portfolio images: `portfolio/assets/images/<client-name>/`
 - Project images: `projects/assets/images/<project-name>/`
 - `og:image` / `image:` frontmatter value must be a plain string path — NOT a hash (jekyll-seo-tag 2.8.0 breaks on hash)
-- Internal links must be site-relative (`/projects/`, `/blog/`) — never hardcoded `https://valpere.github.io/...`
+- Internal links must be site-relative (`/projects/`, `/blog/`) — never hardcoded `https://valpere.github.io/...`. Links to a different domain (e.g. `https://github.com/...`) are correctly absolute — do not flag those.
+
+Portfolio pages follow a DIFFERENT, deliberately simpler convention — do not apply the post rules above to anything under `portfolio/`:
+- Portfolio pages: `portfolio/<slug>.md` (EN) + `portfolio/<slug>-ua.md` (UK) — note the suffix is `-ua`, not `-uk` like posts.
+- Portfolio required frontmatter: `layout: portfolio-item`, `title`, `permalink` on both pages. The `-ua.md` page additionally carries `lang: uk` and `lang_alt:` — the EN page has NEITHER `lang` NOR `lang_alt`. This is intentional, not a missing field.
+- `lang_alt` on the `-ua.md` page is set to the page's OWN permalink (identical value), not a different URL — both language pages share one canonical permalink by design. Do not flag this as "should point elsewhere."
+- Portfolio pages do NOT use `date` or `excerpt` frontmatter at all, on either language page. Do not flag these as missing.
+- Only the EN portfolio page carries `image:` frontmatter; the `-ua.md` page has no `image:` field (both languages share one hero image via `_data/portfolio.yml`'s `hero_image` key). Do not flag the UA page for a missing `image:`.
+- Portfolio hero images: `portfolio/assets/images/<slug>/<slug>-<lang>.png` (e.g. `tumanomir-en.png`, `fix-review-en.png`) — this is the actual naming convention; do NOT apply the blog posts' `<description>-<sequence>-<width>x<height>` pattern to portfolio images.
+- `_data/portfolio.yml` intentionally repeats each entry's `permalink`, matching the corresponding page's frontmatter `permalink` exactly — that duplication is the lookup key `_layouts/portfolio-item.html` uses (`site.data.portfolio | where: "permalink", page.permalink`), not a routing conflict. Do not flag it.
 
 {PROJECT_CONTEXT}
 
@@ -20,11 +29,14 @@ Review the following git diff. Use this priority pyramid — flag lower layers f
                                      Liquid errors, SCSS syntax, `image:` path points to a file not added in
                                      this diff, `og:image` is a hash instead of a string, `date:` not
                                      YYYY-MM-DD, wrong `permalink:` format.
-  1 (base)— Architecture          → Missing required frontmatter fields (`layout`, `title`, `date`,
-                                     `permalink`, `lang`), bilingual pair missing (EN post without
-                                     matching `-uk.md` or vice versa), image filename violates naming
-                                     convention, image file added but not referenced in any post,
-                                     hardcoded absolute URLs in content links.
+  1 (base)— Architecture          → For blog posts (`_posts/`): missing required frontmatter fields
+                                     (`layout`, `title`, `date`, `permalink`, `lang`), bilingual pair
+                                     missing (EN post without matching `-uk.md` or vice versa), image
+                                     filename violates the posts' naming convention. For portfolio pages
+                                     (`portfolio/`): apply the portfolio-specific rules above instead —
+                                     do not reuse the post rules here. For both: image file added but
+                                     not referenced anywhere in this diff, hardcoded absolute URLs to
+                                     valpere.github.io in content links (external-domain links are fine).
 
 Return ONLY a JSON array — no prose, no markdown fences, just the raw JSON.
 Each item must have exactly these fields:
