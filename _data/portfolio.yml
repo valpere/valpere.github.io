@@ -1,3 +1,13 @@
+- slug: "fleet-crm"
+  client: "Personal Demo (Open Source)"
+  role: "Solo Creator / Architect"
+  period: "Aug 2026"
+  stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Docker Compose"]
+  summary_en: "Fleet/logistics CRM REST API — JWT auth, a checked work-order state machine (not a free-form status column), invoicing gated on completion, and a telematics webhook. Found and fixed a real cross-entity bug (a partial-update fix that prevents vehicle data loss on every status change) before the first commit — verified end-to-end via a live docker compose run, not just unit tests."
+  summary_uk: "REST API CRM для автопарку/логістики — JWT-авторизація, перевірена стейт-машина нарядів (не довільна колонка статусу), виставлення рахунків лише після завершення, telematics-webhook. Знайшов і виправив реальний cross-entity баг (частковий update, що запобігає втраті даних техніки при кожній зміні статусу) ще до першого коміту — перевірено наскрізно живим прогоном docker compose, не лише юніт-тестами."
+  permalink: "/portfolio/fleet-crm/"
+  hero_image: "/portfolio/assets/images/fleet-crm/fleet-crm-en.png"
+
 - slug: "tumanomir"
   client: "Personal R&D (Open Source)"
   role: "Solo Creator / Architect"
