@@ -1,3 +1,13 @@
+- slug: "geopulse"
+  client: "Personal Demo (Open Source)"
+  role: "Solo Creator / Architect"
+  period: "Aug 2026"
+  stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "PostGIS", "JWT", "Docker Compose"]
+  summary_en: "GPS fleet-tracking REST API with exactly-once geofence enter/exit detection from a position stream that duplicates and reorders — the real failure mode of GPS trackers. pg_advisory_xact_lock serializes concurrent pings per vehicle; PostGIS ST_DWithin handles containment. Proven against direct database state: a burst of concurrent/rapid pings produced zero spurious events across the full test session."
+  summary_uk: "REST API GPS fleet-tracking з точною, без дублів детекцією enter/exit геозон з потоку позицій, що дублюється й приходить не по порядку — реальний режим відмови GPS-трекерів. pg_advisory_xact_lock серіалізує конкурентні пінги per vehicle; PostGIS ST_DWithin — containment. Доведено проти прямого стану БД: сплеск конкурентних/швидких пінгів дав нуль зайвих подій за всю тестову сесію."
+  permalink: "/portfolio/geopulse/"
+  hero_image: "/portfolio/assets/images/geopulse/geopulse-en.png"
+
 - slug: "slotwise"
   client: "Personal Demo (Open Source)"
   role: "Solo Creator / Architect"
