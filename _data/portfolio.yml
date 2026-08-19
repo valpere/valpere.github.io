@@ -1,3 +1,23 @@
+- slug: "tumanomir"
+  client: "Personal R&D (Open Source)"
+  role: "Solo Creator / Architect"
+  period: "Jul 2026 (25 days)"
+  stack: ["Go", "Ollama", "AST Analysis", "Spearman Correlation", "YAML", "GitHub Actions CI"]
+  summary_en: "Go CLI implementing a published methodology for measuring AI-spec ambiguity as three metrics (K_drift, D_const, D_pair). 66 commits, zero reverts, gates its own specification in CI. Rewrote the K_drift scanner for a 233x allocation reduction; found and documented a naming-noise floor in the generation-spread metric."
+  summary_uk: "Go CLI, що реалізує опубліковану методологію вимірювання неоднозначності специфікацій для AI (K_drift, D_const, D_pair). 66 комітів, жодного відкату, гейтить власну специфікацію в CI. Переписав сканер K_drift для 233x скорочення алокацій; знайшов і задокументував шумову підлогу найменувань у метриці розкиду генерацій."
+  permalink: "/portfolio/tumanomir/"
+  hero_image: "/portfolio/assets/images/tumanomir/tumanomir-en.png"
+
+- slug: "fix-review"
+  client: "Personal Tooling (Own Workflow)"
+  role: "Solo Creator / Maintainer"
+  period: "Jun — Aug 2026 (ongoing)"
+  stack: ["Claude Code Skill", "Bash", "Ollama Cloud/Local", "5 External CLI Agents", "GitHub CLI"]
+  summary_en: "Multi-agent PR review pipeline: fans a diff out to 3 parallel models with a read-only 5-tool CLI fallback cascade, then a Claude arbiter verifies each finding against real repo state before acting. In production since June 2026: 22 PRs reviewed, 69 review rounds, 81 raw findings but only 2 confirmed fixes — replaced a permission-bypass CLI tier with a verified read-only cascade."
+  summary_uk: "Конвеєр мультиагентного рев'ю PR: розгортає diff на 3 паралельні моделі з read-only каскадом 5 CLI-інструментів як fallback, потім Claude-арбітр перевіряє кожну знахідку проти реального стану репозиторію перед дією. У продакшені з червня 2026: 22 PR перевірено, 69 раундів рецензування, 81 сира знахідка, але лише 2 підтверджені виправлення — замінено ярус з обходом дозволів на верифікований read-only каскад."
+  permalink: "/portfolio/fix-review/"
+  hero_image: "/portfolio/assets/images/fix-review/fix-review-en.png"
+
 - slug: "sales-crm-platform"
   client: "Sales CRM Platform (NDA)"
   role: "Freelance Full-Stack Engineer / AI Integration"
