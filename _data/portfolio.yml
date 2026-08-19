@@ -1,3 +1,13 @@
+- slug: "slotwise"
+  client: "Personal Demo (Open Source)"
+  role: "Solo Creator / Architect"
+  period: "Aug 2026"
+  stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose"]
+  summary_en: "Appointment-booking REST API where double-booking prevention is a Postgres EXCLUDE constraint (tstzrange + btree_gist), not an application-level check — no race window under concurrent requests. Proven live: two simultaneous overlapping booking requests against the running server return exactly one 201 and one 409. Booking state machine, Telegram reminders with a zero-credential fallback."
+  summary_uk: "REST API для бронювання прийомів, де захист від подвійного бронювання — це обмеження Postgres EXCLUDE (tstzrange + btree_gist), не app-level перевірка — без race window при конкурентних запитах. Доведено наживо: два одночасні перетинні запити на бронювання проти живого сервера повертають рівно один 201 і один 409. Стейт-машина бронювань, Telegram-нагадування з фолбеком без credentials."
+  permalink: "/portfolio/slotwise/"
+  hero_image: "/portfolio/assets/images/slotwise/slotwise-en.png"
+
 - slug: "fleet-crm"
   client: "Personal Demo (Open Source)"
   role: "Solo Creator / Architect"
