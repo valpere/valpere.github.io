@@ -1,3 +1,13 @@
+- slug: "subgate"
+  client: "Personal Demo (Open Source)"
+  role: "Solo Creator / Architect"
+  period: "Aug 2026"
+  stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose"]
+  summary_en: "Telegram paid-channel-access REST API: idempotent payment-webhook ingestion (gateway redeliveries absorbed via a UNIQUE constraint) and a membership state machine (active/grace/expired) that survives a concurrent expiry sweep. pg_advisory_xact_lock(subscriber_id, channel_id) serializes renewals against sweeps. Proven live: 10 concurrent identical webhook deliveries produced exactly 1 payment row; 5 concurrent renewals racing 5 concurrent sweeps landed deterministically active."
+  summary_uk: "REST API платного доступу до Telegram-каналу: ідемпотентний прийом платіжних вебхуків (повторні доставки шлюзу поглинаються UNIQUE-обмеженням) і стейт-машина членства (active/grace/expired), що переживає паралельний sweep закінчення терміну. pg_advisory_xact_lock(subscriber_id, channel_id) серіалізує поновлення проти sweep-ів. Доведено наживо: 10 одночасних однакових вебхук-доставок дали рівно 1 рядок платежу; 5 одночасних поновлень проти 5 одночасних sweep-ів приземлились детерміновано в active."
+  permalink: "/portfolio/subgate/"
+  hero_image: "/portfolio/assets/images/subgate/subgate-en.png"
+
 - slug: "geopulse"
   client: "Personal Demo (Open Source)"
   role: "Solo Creator / Architect"
