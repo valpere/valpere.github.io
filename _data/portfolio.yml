@@ -1,3 +1,13 @@
+- slug: "ragline"
+  client: "Personal Demo (Open Source)"
+  role: "Solo Creator / Architect"
+  period: "Aug 2026"
+  stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose", "Ollama (optional)"]
+  summary_en: "AI/RAG Telegram support-bot backend: Postgres full-text search retrieval, a pure escalate/generate/cache decision that never repeats a low-confidence guess (even from its own cache), and a version-gated answer cache that invalidates on document edits. Proven live: a real retrieval bug (stopword-driven false matches) found and fixed against seeded fixtures, then a document edit correctly forced regeneration instead of serving a stale cached answer."
+  summary_uk: "Бекенд AI/RAG Telegram-бота підтримки: повнотекстовий пошук Postgres, чисте рішення ескалація/генерація/кеш, що ніколи не повторює здогадку з низькою довірою (навіть із власного кешу), і кеш відповідей з інвалідацією за версією документа. Доведено наживо: знайдено й виправлено реальний баг пошуку (хибні збіги через стоп-слова), а редагування документа коректно змусило регенерувати замість видачі застарілого кешу."
+  permalink: "/portfolio/ragline/"
+  hero_image: "/portfolio/assets/images/ragline/ragline-en.png"
+
 - slug: "subgate"
   client: "Personal Demo (Open Source)"
   role: "Solo Creator / Architect"
