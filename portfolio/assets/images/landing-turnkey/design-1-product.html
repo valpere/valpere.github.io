@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; width:900px; background:#ffffff; color:#1a1a1a; }
+
+  header { display:flex; align-items:center; justify-content:space-between; padding:20px 48px; border-bottom:1px solid #eee; }
+  .logo { font-weight:800; font-size:20px; letter-spacing:-0.5px; color:#1a1a1a; }
+  .logo span { color:#ff6b35; }
+  nav { display:flex; gap:28px; font-size:14px; color:#555; }
+
+  .hero { position:relative; padding:64px 48px 56px; background: linear-gradient(135deg, #fff7f2 0%, #ffffff 60%); overflow:hidden; }
+  .badge { display:inline-block; background:#ff6b35; color:#fff; font-size:12px; font-weight:700; padding:6px 14px; border-radius:999px; letter-spacing:0.5px; margin-bottom:18px; }
+  .hero-grid { display:flex; align-items:center; gap:48px; }
+  .hero-text { flex:1; }
+  h1 { font-size:38px; line-height:1.15; font-weight:800; margin-bottom:16px; letter-spacing:-1px; }
+  .hero-text p { font-size:16px; color:#666; line-height:1.6; max-width:420px; margin-bottom:28px; }
+  .price-row { display:flex; align-items:baseline; gap:12px; margin-bottom:24px; }
+  .price-old { text-decoration:line-through; color:#aaa; font-size:20px; }
+  .price-new { font-size:34px; font-weight:800; color:#1a1a1a; }
+  .cta { display:inline-block; background:#1a1a1a; color:#fff; font-weight:700; font-size:15px; padding:16px 32px; border-radius:10px; }
+
+  .hero-visual { flex:0 0 320px; height:280px; border-radius:20px; background: linear-gradient(160deg,#ffd8c2,#ffb088); display:flex; align-items:center; justify-content:center; box-shadow: 0 24px 48px -12px rgba(255,107,53,0.35); }
+  .hero-visual .ph { width:64px; height:64px; border-radius:16px; background:rgba(255,255,255,0.6); }
+
+  .form-section { padding:44px 48px 56px; background:#f8f8f8; }
+  .form-card { max-width:520px; margin:0 auto; background:#fff; border-radius:16px; padding:32px; box-shadow: 0 12px 32px -12px rgba(0,0,0,0.12); }
+  .form-card h3 { font-size:19px; font-weight:800; margin-bottom:6px; }
+  .form-card .sub { font-size:13px; color:#888; margin-bottom:22px; }
+  .field { height:46px; border-radius:9px; background:#f1f1f1; margin-bottom:12px; }
+  .submit-btn { height:48px; border-radius:9px; background:#ff6b35; margin-top:6px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:14px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">товар<span>.name</span></div>
+    <nav><span>Про товар</span><span>Відгуки</span><span>Доставка</span></nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="badge">АКЦІЯ −25% · СЬОГОДНІ</span>
+        <h1>Назва товару, що вирішує вашу задачу</h1>
+        <p>Короткий опис переваги, зрозумілий з першого погляду. Один товар — один чіткий заклик до дії.</p>
+        <div class="price-row">
+          <span class="price-old">1 990 ₴</span>
+          <span class="price-new">1 490 ₴</span>
+        </div>
+        <div class="cta">Замовити зараз →</div>
+      </div>
+      <div class="hero-visual"><div class="ph"></div></div>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-card">
+      <h3>Оформити замовлення</h3>
+      <div class="sub">Дані одразу надходять на пошту або в Telegram</div>
+      <div class="field"></div>
+      <div class="field"></div>
+      <div class="submit-btn">Підтвердити замовлення</div>
+    </div>
+  </div>
+</body>
+</html>
