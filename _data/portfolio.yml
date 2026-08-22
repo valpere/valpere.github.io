@@ -1,3 +1,13 @@
+- slug: "landing-turnkey"
+  client: "landing-turnkey — Turnkey Landing Page Designs"
+  role: "Solo Designer / Developer"
+  period: "Aug 2026"
+  stack: ["HTML", "CSS", "Responsive Layout"]
+  summary_en: "Two original landing-page design directions for the common one-page-site request: a bright, discount-driven product page and a dark, portfolio-style business/services page, each built around a single call to action and a lead-capture form."
+  summary_uk: "Два оригінальні дизайн-напрямки лендингу для типового запиту: світла сторінка товару з акцентом на знижку та темна сторінка компанії/послуг у стилі портфоліо — кожен навколо одного заклику до дії та форми заявки."
+  permalink: "/portfolio/landing-turnkey/"
+  hero_image: "/portfolio/assets/images/landing-turnkey/landing-turnkey-en.png"
+
 - slug: "ragline"
   client: "ragline — AI/RAG Telegram Support-Bot Backend"
   role: "Solo Creator / Architect"
