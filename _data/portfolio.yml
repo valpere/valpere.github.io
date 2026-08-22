@@ -49,7 +49,7 @@
   hero_image: "/portfolio/assets/images/fleet-crm/fleet-crm-en.png"
 
 - slug: "tumanomir"
-  client: "Personal R&D (Open Source)"
+  client: "tumanomir — CLI for Measuring AI-Spec Ambiguity"
   role: "Solo Creator / Architect"
   period: "Jul 2026 (25 days)"
   stack: ["Go", "Ollama", "AST Analysis", "Spearman Correlation", "YAML", "GitHub Actions CI"]
@@ -59,7 +59,7 @@
   hero_image: "/portfolio/assets/images/tumanomir/tumanomir-en.png"
 
 - slug: "fix-review"
-  client: "Personal Tooling (Own Workflow)"
+  client: "fix-review — Multi-Agent PR Review Pipeline"
   role: "Solo Creator / Maintainer"
   period: "Jun — Aug 2026 (ongoing)"
   stack: ["Claude Code Skill", "Bash", "Ollama Cloud/Local", "5 External CLI Agents", "GitHub CLI"]
