@@ -69,7 +69,7 @@
   hero_image: "/portfolio/assets/images/fix-review/fix-review-en.png"
 
 - slug: "sales-crm-platform"
-  client: "Sales CRM Platform (NDA)"
+  client: "Sales CRM Platform"
   role: "Freelance Full-Stack Engineer / AI Integration"
   period: "Mar — Jun 2026"
   stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "TanStack Query", "React Router", "Google Gemini", "OpenRouter", "n8n"]
@@ -79,7 +79,7 @@
   hero_image: "/portfolio/assets/images/sales-crm-platform/sales-crm-en.png"
 
 - slug: "gym-ops-platform"
-  client: "Gym Operations SaaS (NDA)"
+  client: "Gym Operations SaaS"
   role: "Freelance Full-Stack Engineer / AI Integration"
   period: "Mar — Jun 2026"
   stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "Deno", "PostgreSQL", "Sentry", "Playwright"]
@@ -89,7 +89,7 @@
   hero_image: "/portfolio/assets/images/gym-ops-platform/gym-ops-en.png"
 
 - slug: "application-assistant"
-  client: "Ukrainian Consultancy (NDA)"
+  client: "Ukrainian Consultancy"
   role: "Solo Architect / Engineer / DevOps"
   period: "Apr — Jun 2026"
   stack: ["Go", "PostgreSQL", "pgvector", "Ollama bge-m3", "OpenRouter", "Telegram Bot API", "excelize", "Docker"]
@@ -99,7 +99,7 @@
   hero_image: "/portfolio/assets/images/application-assistant/ai-application-assistant-en.png"
 
 - slug: "ivr-elevenlabs"
-  client: "Micromobility Startup (NDA)"
+  client: "Micromobility Startup"
   role: "Freelance Backend Engineer / AI Integration"
   period: "May — Jun 2026"
   stack: ["Go", "Binotel", "OpenAI Whisper", "GPT-4o-mini", "ElevenLabs", "Azure TTS", "Redis", "PostgreSQL"]
