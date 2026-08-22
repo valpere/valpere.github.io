@@ -1,5 +1,5 @@
 - slug: "ragline"
-  client: "ragline — Personal Demo (Open Source)"
+  client: "ragline — AI/RAG Telegram Support-Bot Backend"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose", "Ollama (optional)"]
@@ -9,7 +9,7 @@
   hero_image: "/portfolio/assets/images/ragline/ragline-en.png"
 
 - slug: "subgate"
-  client: "subgate — Personal Demo (Open Source)"
+  client: "subgate — Telegram Paid-Channel-Access Backend"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose"]
@@ -19,7 +19,7 @@
   hero_image: "/portfolio/assets/images/subgate/subgate-en.png"
 
 - slug: "geopulse"
-  client: "geopulse — Personal Demo (Open Source)"
+  client: "geopulse — GPS Fleet-Tracking Backend"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "PostGIS", "JWT", "Docker Compose"]
@@ -29,7 +29,7 @@
   hero_image: "/portfolio/assets/images/geopulse/geopulse-en.png"
 
 - slug: "slotwise"
-  client: "slotwise — Personal Demo (Open Source)"
+  client: "slotwise — Appointment Booking Backend"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose"]
@@ -39,7 +39,7 @@
   hero_image: "/portfolio/assets/images/slotwise/slotwise-en.png"
 
 - slug: "fleet-crm"
-  client: "fleet-crm — Personal Demo (Open Source)"
+  client: "fleet-crm — Fleet/Logistics CRM Backend"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Docker Compose"]
