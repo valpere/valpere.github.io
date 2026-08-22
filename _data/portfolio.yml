@@ -1,5 +1,5 @@
 - slug: "ragline"
-  client: "Personal Demo (Open Source)"
+  client: "ragline — Personal Demo (Open Source)"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose", "Ollama (optional)"]
@@ -9,7 +9,7 @@
   hero_image: "/portfolio/assets/images/ragline/ragline-en.png"
 
 - slug: "subgate"
-  client: "Personal Demo (Open Source)"
+  client: "subgate — Personal Demo (Open Source)"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose"]
@@ -19,7 +19,7 @@
   hero_image: "/portfolio/assets/images/subgate/subgate-en.png"
 
 - slug: "geopulse"
-  client: "Personal Demo (Open Source)"
+  client: "geopulse — Personal Demo (Open Source)"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "PostGIS", "JWT", "Docker Compose"]
@@ -29,7 +29,7 @@
   hero_image: "/portfolio/assets/images/geopulse/geopulse-en.png"
 
 - slug: "slotwise"
-  client: "Personal Demo (Open Source)"
+  client: "slotwise — Personal Demo (Open Source)"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose"]
@@ -39,7 +39,7 @@
   hero_image: "/portfolio/assets/images/slotwise/slotwise-en.png"
 
 - slug: "fleet-crm"
-  client: "Personal Demo (Open Source)"
+  client: "fleet-crm — Personal Demo (Open Source)"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Docker Compose"]
