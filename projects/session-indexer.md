@@ -18,6 +18,8 @@ transcripts into a local SQLite store; retrieves via bge-m3 embeddings
 (Ollama) with FTS5 BM25 fallback. Automatically injects relevant past context
 at session start — no centralized server, no shared state between projects.
 
+![session-indexer architecture: mine, embed, and search over a per-project SQLite store](/projects/assets/images/session-indexer/infographic-0900x0530.png)
+
 ---
 
 ## The Problem
@@ -104,6 +106,6 @@ boring, per-project, append-only SQLite — the same architectural instinct
 that makes Git itself reliable. If it breaks, it breaks alone, and it heals
 itself by re-mining the transcripts that are already sitting on disk.
 
-Open source, MIT licensed, built to be forked and adapted.
+Open source, Apache 2.0 licensed, built to be forked and adapted.
 
 🔗 <https://github.com/valpere/session-indexer>
