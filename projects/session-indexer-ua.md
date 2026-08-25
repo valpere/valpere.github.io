@@ -12,6 +12,9 @@ lang_alt: /projects/session-indexer/
 **Посилання:**
 
 - [GitHub](https://github.com/valpere/session-indexer)
+- [Product Hunt](https://www.producthunt.com/products/session-indexer)
+
+[![session-indexer - Semantic search over your own Claude Code session history | Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1230655&theme=light)](https://www.producthunt.com/products/session-indexer)
 
 Семантичний пошук по історії сесій Claude Code, ізольований для кожного
 проєкту. Індексує JSONL-транскрипти в локальне сховище SQLite; пошук через
