@@ -4,7 +4,7 @@
   summary_en: "Specification-precision measurement tool for AI-driven software projects. Digitizes the 'fog' of a spec before AI agents turn it into architecture: deterministic requirement-traceability + constraint-density metrics, plus an LLM-instrument generation-spread metric, with a CI gate."
   summary_uk: "Інструмент вимірювання точності специфікацій для AI-проєктів. Оцифровує 'туман' специфікації до того, як AI-агенти перетворять його на архітектуру: детерміновані метрики трасованості вимог і щільності обмежень, плюс LLM-метрика розкиду генерацій, з гейтом для CI."
   permalink: "/projects/tumanomir/"
-  hero_image: "/projects/assets/images/tumanomir/command-flow-1-0784x0420.png"
+  hero_image: "/projects/assets/images/tumanomir/hero-0900x0530.png"
   featured: false
   tech: ["Go", "Ollama", "CLI"]
   links:
