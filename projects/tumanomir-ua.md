@@ -14,7 +14,7 @@ lang_alt: /projects/tumanomir/
 - [GitHub](https://github.com/valpere/tumanomir)
 - [Розгорнута стаття](/blog/2026/07/28/tumanomir/)
 
-![Туманомір — потік команд](/projects/assets/images/tumanomir/command-flow-1-0784x0405.png)
+![Туманомір — потік команд](/projects/assets/images/tumanomir/command-flow-uk-1-0960x0600.png)
 
 **Туманомір** — CLI на Go, що оцифровує "туман" специфікацій, перш ніж
 ви дасте AI-агентам перетворити цей туман на архітектуру. Це референсна
