@@ -14,7 +14,7 @@ lang_alt: /uk/projects/tumanomir/
 - [GitHub](https://github.com/valpere/tumanomir)
 - [Deep-dive article](/blog/2026/07/28/tumanomir/)
 
-![Tumanomir — command flow](/projects/assets/images/tumanomir/command-flow-en-1-0960x0600.png)
+![Tumanomir — command flow](/projects/assets/images/tumanomir/command-flow-1-en-0960x0600.png)
 
 **Туманомір** — a Go CLI that digitizes the "fog" of specifications before
 you let AI agents turn that fog into architecture. It's the reference
