@@ -1,3 +1,13 @@
+- slug: "v2v-demo"
+  client: "v2v-demo — Bilingual Voice AI Concierge for Telegram"
+  role: "Solo Creator / Architect"
+  period: "Aug–Sep 2026 (6 days)"
+  stack: ["Go", "Telegram Bot API", "OpenAI Whisper", "Ollama", "ElevenLabs", "Azure Speech", "lingua-go"]
+  summary_en: "A bilingual (UK/EN) Telegram voice concierge that grounds every answer in a fixed knowledge base and hands off to a human rather than guess. A real grounding-gate bug (correct answers wrongly escalating) found and fixed via a live Telegram smoke test, not just unit tests. 128 passing tests, one main dependency, built in 6 days."
+  summary_uk: "Двомовний (укр/англ) голосовий консьєрж для Telegram, що заземлює кожну відповідь у фіксованій базі знань і передає людині замість вигадки. Реальний баг гейта заземлення (правильні відповіді помилково ескалювались) знайдено й виправлено через живий Telegram-смоук-тест, а не лише юніт-тести. 128 тестів проходять, одна основна залежність, побудовано за 6 днів."
+  permalink: "/portfolio/v2v-demo/"
+  hero_image: "/portfolio/assets/images/v2v-demo/v2v-demo-en.png"
+
 - slug: "landing-turnkey"
   client: "landing-turnkey — Turnkey Landing Page Designs"
   role: "Solo Designer / Developer"
