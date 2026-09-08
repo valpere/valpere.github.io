@@ -1,10 +1,10 @@
 - slug: "v2v-demo"
-  client: "v2v-demo — Bilingual Voice AI Concierge for Telegram"
+  client: "v2v-demo — Multi-Vertical Voice AI Concierge for Telegram"
   role: "Solo Creator / Architect"
-  period: "Aug–Sep 2026 (6 days)"
+  period: "Aug–Sep 2026 (ongoing)"
   stack: ["Go", "Telegram Bot API", "OpenAI Whisper", "Ollama", "ElevenLabs", "Azure Speech", "lingua-go"]
-  summary_en: "A bilingual (UK/EN) Telegram voice concierge that grounds every answer in a fixed knowledge base and hands off to a human rather than guess. A real grounding-gate bug (correct answers wrongly escalating) found and fixed via a live Telegram smoke test, not just unit tests. 128 passing tests, one main dependency, built in 6 days."
-  summary_uk: "Двомовний (укр/англ) голосовий консьєрж для Telegram, що заземлює кожну відповідь у фіксованій базі знань і передає людині замість вигадки. Реальний баг гейта заземлення (правильні відповіді помилково ескалювались) знайдено й виправлено через живий Telegram-смоук-тест, а не лише юніт-тести. 128 тестів проходять, одна основна залежність, побудовано за 6 днів."
+  summary_en: "A bilingual (UK/EN) Telegram voice concierge framework running five independent business assistants (dental, auto, real estate, cleaning, translation) behind one inline picker, sharing a single grounding-gate core. An automated scenario-probe tool caught a real safety-relevant bug (a sedation request getting scheduled as a routine booking) before it reached a user. 124 passing tests, one main dependency."
+  summary_uk: "Двомовний (укр/англ) голосовий консьєрж-фреймворк для Telegram: п'ять незалежних бізнес-асистентів (стоматологія, автосервіс, нерухомість, клінінг, переклади) за одним inline-пікером на спільному ядрі гейта заземлення. Автоматизований probe-інструмент знайшов реальний баг, критичний для безпеки (запит на седацію потрапляв у звичайний запис), ще до користувача. 124 тести проходять, одна основна залежність."
   permalink: "/portfolio/v2v-demo/"
   hero_image: "/portfolio/assets/images/v2v-demo/v2v-demo-en.png"
 

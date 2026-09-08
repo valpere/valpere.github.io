@@ -1,21 +1,21 @@
 ---
 layout: portfolio-item
-title: "v2v-demo — Bilingual Voice AI Concierge for Telegram"
+title: "v2v-demo — Multi-Vertical Voice AI Concierge for Telegram"
 permalink: /portfolio/v2v-demo/
 image: /portfolio/assets/images/v2v-demo/v2v-demo-en.png
 ---
 
 ## Overview
 
-Independent demo project: a Go Telegram bot that holds a real bilingual (Ukrainian/English) voice-or-text conversation, answers only from a fixed knowledge base, and hands off to a human the moment it isn't sure — instead of the plausible-sounding guess that makes most support bots untrustworthy. Built in 6 days as a standalone, self-contained loop: no framework, one main dependency.
+Independent demo project: a Go Telegram bot that holds a real bilingual (Ukrainian/English) voice-or-text conversation, answers only from a fixed knowledge base, and hands off to a human the moment it isn't sure. What started as a single scenario grew into five genuinely independent assistants — dental clinic, car service, real estate agency, cleaning company, translation bureau — selectable from one inline picker on `/start`, each with its own knowledge base, system prompt, and lead-collection schema, all running the same grounding-gate core.
 
-**Result: a voice concierge that grounds every answer in its knowledge base and escalates rather than guesses — a real grounding-gate bug (correct on-topic answers getting escalated) found and fixed via a live Telegram smoke test, not just unit tests; 128 passing tests total.**
+**Result: one framework, five business verticals, no forked codebase — every assistant shares the same grounding gate, and a scripted scenario-probe tool caught a real safety-relevant bug (a dental sedation request getting scheduled as a routine booking) before it ever reached a user.**
 
 ---
 
 ## The actual hard problem
 
-A voice bot's fluency hides its accuracy. A natural-sounding voice reading a vague or subtly invented answer fails the one thing that matters — so the architecture is built around grounding, not eloquence: the whole knowledge base rides in every prompt, a keyword gate catches off-topic or liability questions *before* the LLM ever runs, and the model is instructed to hand off rather than invent.
+A voice bot's fluency hides its accuracy. A natural-sounding voice reading a vague or subtly invented answer fails the one thing that matters — so the architecture is built around grounding, not eloquence: the whole knowledge base rides in every prompt, a keyword gate catches off-topic or liability questions *before* the LLM ever runs, and the model is instructed to hand off rather than invent. Making that generalize to five unrelated businesses without forking the code is the second hard problem: each topic supplies its own knowledge base, prompt, greeting, office hours, and slot schema through one JSON manifest — the gate, the LLM orchestration, and the Telegram plumbing stay identical underneath.
 
 ---
 
@@ -23,7 +23,7 @@ A voice bot's fluency hides its accuracy. A natural-sounding voice reading a vag
 
 ![v2v-demo turn flow: grounding gate before the LLM, escalate or reply, lead record on a completed quote](/portfolio/assets/images/v2v-demo/v2v-demo-en.png)
 
-Every turn runs through one gate before any LLM call: a keyword-overlap score against the knowledge base, plus a hard-escalate keyword list for liability topics. Below the confidence floor, or on a liability hit, the bot hands off immediately — no LLM, no guess. Above it, the LLM answers from the full knowledge base and updates a structured quote (language pair, document type, volume, deadline, certification, delivery); a completed quote is written out as a lead record.
+Every turn runs through one gate before any LLM call: a keyword-overlap score against the active topic's knowledge base, plus a hard-escalate keyword list for liability topics. Below the confidence floor, or on a liability hit, the bot hands off immediately — no LLM, no guess. Above it, the LLM answers from that topic's full knowledge base and updates a structured lead record (the fields differ per topic — a dental booking collects a preferred time, a real-estate lead collects budget and district); a completed record is written out as a lead.
 
 ---
 
@@ -31,19 +31,19 @@ Every turn runs through one gate before any LLM call: a keyword-overlap score ag
 
 | Decision | Why |
 |---|---|
-| Whole knowledge base in every prompt, no retrieval-for-context | At this KB size (~19 KB), retrieval only adds a failure mode (missing the right chunk) for no benefit — the keyword gate still runs separately as a pre-LLM filter |
-| Bilingual KB — one English and one Ukrainian block under every heading | A single-language KB can't ground a Ukrainian question with the same coverage as an English one; per-language blocks fixed a real cross-language gate miss found while building |
-| Per-chat serial worker goroutine, not just a per-chat mutex | A mutex serializes access but not arrival order — a user's own messages could be answered out of sequence; a dedicated worker per chat, fed by a channel, fixed it |
-| LLM/STT/TTS each behind a small interface, selected by one env var | `DIALOG_BACKEND`/`STT_BACKEND`/`TTS_BACKEND` swap Ollama ↔ OpenAI ↔ Gemini, local Whisper ↔ Whisper API, and ElevenLabs ↔ Azure Neural — a cost/latency/quality tradeoff picked per deployment, zero code changes |
+| One JSON manifest (`topics.json`) drives the picker | Each topic supplies its own KB, prompt, greeting, office hours, and slot schema; adding a sixth business is a data change, not a code change — the picker itself only appears once two or more topics are declared |
+| Per-topic office hours gate the escalation copy, not just the KB | A dental clinic and a 24-day-a-week cleaning company have different "we're closed" behavior; the open/closed decision runs in Go against a fixed timezone, never left to the model to infer |
+| A scripted scenario-probe tool runs real dialogue turns through the live pipeline | `dialog-probe` replays scenario files against the actual grounding gate + LLM — no Telegram, no unit-test mocking — and is how the sedation-escalation bug below was actually found |
+| Whole knowledge base in every prompt, no retrieval-for-context | At this KB size per topic (~19–36 KB), retrieval only adds a failure mode (missing the right chunk) for no benefit — the keyword gate still runs separately as a pre-LLM filter |
 
 ---
 
 ## Results
 
-- **Full voice-and-text loop**: Telegram long-poll, voice download → local Whisper or Whisper API transcription, a grounding gate, an LLM call behind a pluggable backend, ElevenLabs/Azure text-to-speech, and an append-only JSONL turn/lead log
-- **Bilingual, mid-conversation language switch**: `lingua-go` detects the active language every turn and re-targets STT, the prompt, and the fixed handoff lines — a user can switch from Ukrainian to English mid-conversation and the bot follows
-- **Found live, not designed upfront**: a real grounding-gate bug where ordinary Ukrainian answers were wrongly escalating (an overly strict "is this a slot answer" check, plus a keyword-overlap miss on Ukrainian word inflection) — caught during a live, browser-driven Telegram Web smoke test and fixed with a targeted rule, not a rewrite
-- **128 passing tests** (`gofmt` + `go vet` + `go test -race`), one main third-party dependency (`go-telegram/bot`) plus a language-detection library — everything else is the Go standard library
+- **Five independent, bilingual assistants live behind one picker**: dental clinic, car service, real estate agency, cleaning company, translation bureau — each with its own knowledge base, greeting, and lead schema, sharing one grounding-gate core
+- **A real safety-relevant bug found by an automated probe sweep, not a user report**: a dental request phrased as "the child needs treatment under sedation" was landing as a routine bookable appointment — sedation needs an anaesthetist consult and case-by-case pricing, never a collected lead. Fixed with a dedicated hard-rule in the topic's own prompt, verified against three phrasings plus a control case that a normal cleaning booking still completes
+- **Two more grounding-gate fixes found the same way**: a bare phone number (the last thing every lead-collecting topic asks for) was hitting the "please clarify" line instead of completing the lead; and a caller asking for "an administrator" or "a specialist" (not "a manager") wasn't recognized as an explicit handoff request
+- **124 passing tests** (`gofmt` + `go vet` + `go test -race`), one main third-party dependency (`go-telegram/bot`) plus a language-detection library — everything else is the Go standard library
 
 Code: [github.com/valpere/v2v-demo](https://github.com/valpere/v2v-demo)
 
