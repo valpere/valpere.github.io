@@ -1,16 +1,18 @@
 {% assign i = include.item %}
 {% if site.active_lang == 'uk' %}
+  {% assign card_client = i.client_uk | default: i.client %}
   {% assign card_summary = i.summary_uk | default: i.summary_en %}
 {% else %}
+  {% assign card_client = i.client %}
   {% assign card_summary = i.summary_en %}
 {% endif %}
 <article class="card">
   {% if i.hero_image and i.hero_image != "" %}
-  <img src="{{ i.hero_image | relative_url }}" alt="{{ i.client }}" class="card__image" loading="lazy" width="384" height="216">
+  <img src="{{ i.hero_image | relative_url }}" alt="{{ card_client }}" class="card__image" loading="lazy" width="384" height="216">
   {% endif %}
   <div class="card__body">
     <h3 class="card__title" style="font-size:var(--text-lg);">
-      <a href="{{ i.permalink | relative_url }}">{{ i.client }}</a>
+      <a href="{{ i.permalink | relative_url }}">{{ card_client }}</a>
     </h3>
     <p class="card__summary">{{ i.role }} · {{ i.period }}</p>
     <p class="card__summary">{{ card_summary }}</p>

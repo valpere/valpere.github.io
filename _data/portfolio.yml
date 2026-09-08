@@ -1,5 +1,6 @@
 - slug: "v2v-demo"
   client: "v2v-demo — Multi-Vertical Voice AI Concierge for Telegram"
+  client_uk: "v2v-demo — мультигалузевий голосовий AI-консьєрж для Telegram"
   role: "Solo Creator / Architect"
   period: "Aug–Sep 2026 (ongoing)"
   stack: ["Go", "Telegram Bot API", "OpenAI Whisper", "Ollama", "ElevenLabs", "Azure Speech", "lingua-go"]
@@ -10,6 +11,7 @@
 
 - slug: "landing-turnkey"
   client: "landing-turnkey — Turnkey Landing Page Designs"
+  client_uk: "landing-turnkey — дизайни лендингу під ключ"
   role: "Solo Designer / Developer"
   period: "Aug 2026"
   stack: ["HTML", "CSS", "Responsive Layout"]
@@ -20,6 +22,7 @@
 
 - slug: "ragline"
   client: "ragline — AI/RAG Telegram Support-Bot Backend"
+  client_uk: "ragline — бекенд AI/RAG Telegram-бота підтримки"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose", "Ollama (optional)"]
@@ -30,6 +33,7 @@
 
 - slug: "subgate"
   client: "subgate — Telegram Paid-Channel-Access Backend"
+  client_uk: "subgate — бекенд платного доступу до Telegram-каналу"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose"]
@@ -40,6 +44,7 @@
 
 - slug: "geopulse"
   client: "geopulse — GPS Fleet-Tracking Backend"
+  client_uk: "geopulse — бекенд GPS fleet-tracking"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "PostGIS", "JWT", "Docker Compose"]
@@ -50,6 +55,7 @@
 
 - slug: "slotwise"
   client: "slotwise — Appointment Booking Backend"
+  client_uk: "slotwise — бекенд бронювання прийомів"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Telegram Bot API", "Docker Compose"]
@@ -60,6 +66,7 @@
 
 - slug: "fleet-crm"
   client: "fleet-crm — Fleet/Logistics CRM Backend"
+  client_uk: "fleet-crm — бекенд CRM для автопарку/логістики"
   role: "Solo Creator / Architect"
   period: "Aug 2026"
   stack: ["Go", "chi", "pgx/v5", "PostgreSQL", "JWT", "Docker Compose"]
@@ -70,6 +77,7 @@
 
 - slug: "tumanomir"
   client: "tumanomir — CLI for Measuring AI-Spec Ambiguity"
+  client_uk: "Туманомір — CLI для вимірювання неоднозначності специфікацій для AI"
   role: "Solo Creator / Architect"
   period: "Jul 2026 (25 days)"
   stack: ["Go", "Ollama", "AST Analysis", "Spearman Correlation", "YAML", "GitHub Actions CI"]
@@ -80,6 +88,7 @@
 
 - slug: "fix-review"
   client: "fix-review — Multi-Agent PR Review Pipeline"
+  client_uk: "fix-review — конвеєр мультиагентного рев'ю PR"
   role: "Solo Creator / Maintainer"
   period: "Jun — Aug 2026 (ongoing)"
   stack: ["Claude Code Skill", "Bash", "Ollama Cloud/Local", "5 External CLI Agents", "GitHub CLI"]
@@ -90,6 +99,7 @@
 
 - slug: "sales-crm-platform"
   client: "Sales CRM Platform"
+  client_uk: "Платформа продажного CRM — CRM на основі розмов з AI-звітністю та білінгом рішень"
   role: "Freelance Full-Stack Engineer / AI Integration"
   period: "Mar — Jun 2026"
   stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "TanStack Query", "React Router", "Google Gemini", "OpenRouter", "n8n"]
@@ -100,6 +110,7 @@
 
 - slug: "gym-ops-platform"
   client: "Gym Operations SaaS"
+  client_uk: "Платформа операцій спортзалу — Управління змінами й задачами з AI-валідацією фото"
   role: "Freelance Full-Stack Engineer / AI Integration"
   period: "Mar — Jun 2026"
   stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "Deno", "PostgreSQL", "Sentry", "Playwright"]
@@ -110,6 +121,7 @@
 
 - slug: "application-assistant"
   client: "Ukrainian Consultancy"
+  client_uk: "AI-помічник для заявок — Telegram-бот для GovTech"
   role: "Solo Architect / Engineer / DevOps"
   period: "Apr — Jun 2026"
   stack: ["Go", "PostgreSQL", "pgvector", "Ollama bge-m3", "OpenRouter", "Telegram Bot API", "excelize", "Docker"]
@@ -120,6 +132,7 @@
 
 - slug: "ivr-elevenlabs"
   client: "Micromobility Startup"
+  client_uk: "AI-голосовий агент — підтримка клієнтів мікромобільності"
   role: "Freelance Backend Engineer / AI Integration"
   period: "May — Jun 2026"
   stack: ["Go", "Binotel", "OpenAI Whisper", "GPT-4o-mini", "ElevenLabs", "Azure TTS", "Redis", "PostgreSQL"]
@@ -130,6 +143,7 @@
 
 - slug: "cbcdro"
   client: "CloudBees CD/RO"
+  client_uk: "CBC/DRO — Delivery & Release Orchestration"
   role: "Senior Software Engineer / Plugin Developer"
   period: "Nov 2018 — May 2019"
   stack: ["Java", "Groovy", "Go", "Perl", "Docker", "Kubernetes", "Helm", "Ansible", "Terraform", "Jenkins", "GitLab CI", "JFrog Artifactory"]
@@ -140,6 +154,7 @@
 
 - slug: "portaswitch"
   client: "PortaSwitch / PortaOne"
+  client_uk: "Portaswitch — Telecom BSS/OSS"
   role: "Team Lead / Senior Backend Developer"
   period: "Mar 2013 — Mar 2018"
   stack: ["Perl", "Linux", "MySQL", "PostgreSQL", "VoIP", "SIP", "BSS", "PortaSwitch", "Git", "Youtrack", "Confluence"]
@@ -150,6 +165,7 @@
 
 - slug: "mailua"
   client: "Mail.UA"
+  client_uk: "Mail.UA — Поштова платформа"
   role: "System Architect / Head of System Development Department"
   period: "Jun 2011 — Jun 2014"
   stack: ["Perl", "Shell Scripting", "MySQL", "PostgreSQL", "Linux", "Apache", "SMTP", "POP3", "IMAP", "Nagios", "SVN", "Redmine"]

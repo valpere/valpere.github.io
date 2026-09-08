@@ -149,9 +149,14 @@ layout: default
 
   <div class="ed-work-list">
     {% for item in site.data.portfolio %}
+    {% if site.active_lang == 'uk' %}
+      {% assign work_client = item.client_uk | default: item.client %}
+    {% else %}
+      {% assign work_client = item.client %}
+    {% endif %}
     <a href="{{ item.permalink | relative_url }}" class="ed-work-row">
       <span class="work-idx">0{{ forloop.index }}</span>
-      <span class="work-co">{{ item.client }}</span>
+      <span class="work-co">{{ work_client }}</span>
       <span class="work-role">{{ item.role }}</span>
       <span class="work-yr">{{ item.period }}</span>
     </a>
