@@ -7,9 +7,9 @@ layout: default
   <!-- Breadcrumb -->
   <nav aria-label="Breadcrumb">
     <div class="breadcrumb">
-      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/' | relative_url }}">{% if site.active_lang == 'uk' %}Головна{% else %}Home{% endif %}</a>
       <span class="sep" aria-hidden="true">›</span>
-      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/projects/' | relative_url }}">{% if site.active_lang == 'uk' %}Проєкти{% else %}Projects{% endif %}</a>
       <span class="sep" aria-hidden="true">›</span>
       <span aria-current="page">{{ page.title }}</span>
     </div>
