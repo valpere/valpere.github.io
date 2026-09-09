@@ -179,4 +179,4 @@ image: /assets/images/posts/cognitive-proof-of-work/1-uk.png
 
 Відкритий до співпраці та предметного обговорення технічних задач: [freelancehunt.com/freelancer/valpere.html](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
-Практичний приклад застосування цього підходу — фриланс-заявки: [bid-triage](/uk/portfolio/bid-triage/).
+Практичний приклад застосування цього підходу — фриланс-заявки: [bid-triage](/portfolio/bid-triage/).
