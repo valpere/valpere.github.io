@@ -177,6 +177,6 @@ If your team or company is drowning in synthetic inbound noise — whether that'
 * Design deterministic **inbound validation pipelines** (from canary-question architecture to response-structure analysis).
 * Optimize and protect your communication infrastructure, saving hundreds of hours of your senior team's expensive attention.
 
-Open to discussing the technical details of your specific case: [freelancehunt.com/freelancer/valpere.html](https://freelancehunt.com/freelancer/valpere.html#portfolio)
+Open to discussing the technical details of your specific case: [valpere.github.io/portfolio](https://valpere.github.io/portfolio/)
 
 A concrete application of this approach to freelance bid screening: [bid-triage](/portfolio/bid-triage/).
