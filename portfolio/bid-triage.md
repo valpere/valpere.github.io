@@ -39,6 +39,17 @@ Two gates, in order of cost. First, a deterministic pass strips ritual phrasing 
 
 ---
 
+## Where the pattern generalizes
+
+The mechanic isn't specific to freelance bids. It holds wherever four things are true together: generating a submission costs the sender close to nothing; evaluating it costs the recipient a real chunk of time; there's one narrow, domain-specific question that's cheap for a genuine expert and expensive — or simply revealing — for a generate-and-forget pipeline; and each interaction is valuable enough to justify a bespoke question. Two domains where all four hold, each with its own real caveat:
+
+- **B2B tenders and RFP responses.** A vendor claiming out-of-the-box protocol support can be asked for a link to the actual public endpoint documentation. A vague "we can build anything you need" self-selects out, the same way a hedged two-paragraph answer does for a bid.
+- **Security disclosure triage (bug bounty programs).** The same canary-question mechanic applies, but the error cost runs the *opposite* direction from a support-bid screen: a false rejection here means a real vulnerability got waved off because the reporter didn't produce a proof-of-concept fast enough. The honest version of this gate is de-prioritize, never auto-close — a human stays in the loop on every rejection.
+
+Where it's weakest: a single one-off marketplace listing (an apartment rental, one OLX ad). The value of any one interaction is too low to justify a bespoke question, and the platform itself tends to absorb the need as a built-in feature (pre-filled availability/criteria fields) rather than leaving it to a third party — the same reasoning that argues against building this as a generic product in the first place.
+
+---
+
 ## What a delivered engagement typically includes
 
 - The fluff-strip filter and canary-question logic tuned to the client's own job postings and hiring bar
