@@ -2,13 +2,15 @@
 {% if site.active_lang == 'uk' %}
   {% assign card_title = p.title_uk | default: p.title %}
   {% assign card_summary = p.summary_uk | default: p.summary_en %}
+  {% assign card_hero = p.hero_image_uk | default: p.hero_image %}
 {% else %}
   {% assign card_title = p.title %}
   {% assign card_summary = p.summary_en %}
+  {% assign card_hero = p.hero_image %}
 {% endif %}
 <article class="card">
-  {% if p.hero_image and p.hero_image != "" %}
-  <img src="{{ p.hero_image | relative_url }}" alt="{{ card_title }}" class="card__image" loading="lazy" width="384" height="216">
+  {% if card_hero and card_hero != "" %}
+  <img src="{{ card_hero | relative_url }}" alt="{{ card_title }}" class="card__image" loading="lazy" width="384" height="216">
   {% endif %}
   <div class="card__body">
     <h3 class="card__title" style="font-size:var(--text-lg);">

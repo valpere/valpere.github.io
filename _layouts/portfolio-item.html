@@ -4,8 +4,10 @@ layout: default
 {% assign item = site.data.portfolio | where: "permalink", page.permalink | first %}
 {% if site.active_lang == 'uk' %}
   {% assign item_client = item.client_uk | default: item.client %}
+  {% assign item_hero = item.hero_image_uk | default: item.hero_image %}
 {% else %}
   {% assign item_client = item.client %}
+  {% assign item_hero = item.hero_image %}
 {% endif %}
 
 <div class="container" style="padding-block: var(--sp-7);">
@@ -46,8 +48,8 @@ layout: default
     </div>
     {% endif %}
   </div>
-  {% if item.hero_image and item.hero_image != "" %}
-  <img src="{{ item.hero_image | relative_url }}" alt="{{ page.title }} preview" class="page-hero" loading="lazy">
+  {% if item_hero and item_hero != "" %}
+  <img src="{{ item_hero | relative_url }}" alt="{{ page.title }} preview" class="page-hero" loading="lazy">
   {% endif %}
   {% endif %}
 

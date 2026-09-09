@@ -104,10 +104,15 @@ layout: default
   <div class="ed-proj-grid">
     {% assign featured = site.data.projects | where: "featured", true %}
     {% for project in featured %}
+    {% if site.active_lang == 'uk' %}
+      {% assign proj_hero = project.hero_image_uk | default: project.hero_image %}
+    {% else %}
+      {% assign proj_hero = project.hero_image %}
+    {% endif %}
     <article class="ed-proj{% if forloop.first %} ed-proj--hero{% endif %}">
-      {% if project.hero_image %}
+      {% if proj_hero %}
       <div class="proj-thumb">
-        <img src="{{ project.hero_image | relative_url }}" alt="{{ project.title }}" width="1600" height="900" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
+        <img src="{{ proj_hero | relative_url }}" alt="{{ project.title }}" width="1600" height="900" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
       </div>
       {% endif %}
       <div class="proj-body">
