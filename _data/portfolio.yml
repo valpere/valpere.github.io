@@ -1,3 +1,14 @@
+- slug: "bid-triage"
+  client: "bid-triage — AI Bid-Noise Filter, Built to Order"
+  client_uk: "bid-triage — фільтр AI-шуму в заявках, під замовлення"
+  role: "Solo Architect (Bespoke Engagement)"
+  period: "Sep 2026 (concept, available to build)"
+  stack: ["Go", "LLM Structured Output", "Deterministic Pre-Filtering", "Session-Based Browser Automation"]
+  summary_en: "A bespoke bid-screening engagement for freelance-platform clients drowning in AI-generated proposals: instead of detecting authorship (an arms race that favors the generator), it prices the interaction — a deterministic fluff-strip filter, then one deadline-gated canary question a real practitioner answers in a line and a generic pipeline can't. Scoped conservatively per client, not sold as a shared SaaS product."
+  summary_uk: "Індивідуальний engagement з відбору заявок для клієнтів на фриланс-платформах, яких заливає AI-згенерованими ставками: замість детекції авторства (перегони на користь генерації) — призначення ціни взаємодії: детермінований фільтр очищення від шаблонних фраз, потім одне обмежене дедлайном канаркове питання, на яке практик відповідає рядком, а генеричний пайплайн — ні. Стримано під кожного клієнта, не спільний SaaS-продукт."
+  permalink: "/portfolio/bid-triage/"
+  hero_image: "/portfolio/assets/images/bid-triage/bid-triage-en.png"
+
 - slug: "v2v-demo"
   client: "v2v-demo — Multi-Vertical Voice AI Concierge for Telegram"
   client_uk: "v2v-demo — мультигалузевий голосовий AI-консьєрж для Telegram"
