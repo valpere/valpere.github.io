@@ -7,7 +7,7 @@
   summary_en: "A bespoke bid-screening engagement for freelance-platform clients drowning in AI-generated proposals: instead of detecting authorship (an arms race that favors the generator), it prices the interaction — a deterministic fluff-strip filter, then one deadline-gated canary question a real practitioner answers in a line and a generic pipeline can't. The same mechanic generalizes to any high-value, low-volume screening decision (B2B tenders, security-disclosure triage) — scoped conservatively per client, not sold as a shared SaaS product."
   summary_uk: "Індивідуальний engagement з відбору заявок для клієнтів на фриланс-платформах, яких заливає AI-згенерованими ставками: замість детекції авторства (перегони на користь генерації) — призначення ціни взаємодії: детермінований фільтр очищення від шаблонних фраз, потім одне обмежене дедлайном канаркове питання, на яке практик відповідає рядком, а генеричний пайплайн — ні. Та сама механіка узагальнюється на будь-яке рішення відбору з високою цінністю й низьким обсягом (B2B-тендери, тріаж розкриття вразливостей) — стримано під кожного клієнта, не спільний SaaS-продукт."
   permalink: "/portfolio/bid-triage/"
-  hero_image: "/portfolio/assets/images/bid-triage/bid-triage-en.png"
+  hero_image: "/portfolio/assets/images/bid-triage/hero-0900x0530.png"
 
 - slug: "v2v-demo"
   client: "v2v-demo — Multi-Vertical Voice AI Concierge for Telegram"
@@ -18,7 +18,7 @@
   summary_en: "A bilingual (UK/EN) Telegram voice concierge framework running five independent business assistants (dental, auto, real estate, cleaning, translation) behind one inline picker, sharing a single grounding-gate core. An automated scenario-probe tool caught a real safety-relevant bug (a sedation request getting scheduled as a routine booking) before it reached a user. 124 passing tests, one main dependency."
   summary_uk: "Двомовний (укр/англ) голосовий консьєрж-фреймворк для Telegram: п'ять незалежних бізнес-асистентів (стоматологія, автосервіс, нерухомість, клінінг, переклади) за одним inline-пікером на спільному ядрі гейта заземлення. Автоматизований probe-інструмент знайшов реальний баг, критичний для безпеки (запит на седацію потрапляв у звичайний запис), ще до користувача. 124 тести проходять, одна основна залежність."
   permalink: "/portfolio/v2v-demo/"
-  hero_image: "/portfolio/assets/images/v2v-demo/v2v-demo-en.png"
+  hero_image: "/portfolio/assets/images/v2v-demo/hero-0900x0530.png"
 
 - slug: "landing-turnkey"
   client: "landing-turnkey — Turnkey Landing Page Designs"
