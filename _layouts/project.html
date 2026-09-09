@@ -2,6 +2,11 @@
 layout: default
 ---
 {% assign project = site.data.projects | where: "permalink", page.permalink | first %}
+{% if site.active_lang == 'uk' %}
+  {% assign project_hero = project.hero_image_uk | default: project.hero_image %}
+{% else %}
+  {% assign project_hero = project.hero_image %}
+{% endif %}
 
 <div class="container" style="padding-block: var(--sp-7);">
   <!-- Breadcrumb -->
@@ -33,8 +38,8 @@ layout: default
           {% if project.links.github %}<a href="{{ project.links.github }}" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
         </div>
         {% endif %}
-        {% if project.hero_image and project.hero_image != "" %}
-        <img src="{{ project.hero_image | relative_url }}" alt="{{ page.title }} preview" class="page-hero" loading="lazy">
+        {% if project_hero and project_hero != "" %}
+        <img src="{{ project_hero | relative_url }}" alt="{{ page.title }} preview" class="page-hero" loading="lazy">
         {% endif %}
       </header>
 

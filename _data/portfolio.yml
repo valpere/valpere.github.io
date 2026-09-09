@@ -8,6 +8,7 @@
   summary_uk: "Індивідуальний engagement з відбору заявок для клієнтів на фриланс-платформах, яких заливає AI-згенерованими ставками: замість детекції авторства (перегони на користь генерації) — призначення ціни взаємодії: детермінований фільтр очищення від шаблонних фраз, потім одне обмежене дедлайном канаркове питання, на яке практик відповідає рядком, а генеричний пайплайн — ні. Та сама механіка узагальнюється на будь-яке рішення відбору з високою цінністю й низьким обсягом (B2B-тендери, тріаж розкриття вразливостей) — стримано під кожного клієнта, не спільний SaaS-продукт."
   permalink: "/portfolio/bid-triage/"
   hero_image: "/portfolio/assets/images/bid-triage/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/bid-triage/hero-uk-0900x0530.png"
 
 - slug: "v2v-demo"
   client: "v2v-demo — Multi-Vertical Voice AI Concierge for Telegram"
@@ -19,6 +20,7 @@
   summary_uk: "Двомовний (укр/англ) голосовий консьєрж-фреймворк для Telegram: п'ять незалежних бізнес-асистентів (стоматологія, автосервіс, нерухомість, клінінг, переклади) за одним inline-пікером на спільному ядрі гейта заземлення. Автоматизований probe-інструмент знайшов реальний баг, критичний для безпеки (запит на седацію потрапляв у звичайний запис), ще до користувача. 124 тести проходять, одна основна залежність."
   permalink: "/portfolio/v2v-demo/"
   hero_image: "/portfolio/assets/images/v2v-demo/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/v2v-demo/hero-uk-0900x0530.png"
 
 - slug: "landing-turnkey"
   client: "landing-turnkey — Turnkey Landing Page Designs"
@@ -41,6 +43,7 @@
   summary_uk: "Бекенд AI/RAG Telegram-бота підтримки: повнотекстовий пошук Postgres, чисте рішення ескалація/генерація/кеш, що ніколи не повторює здогадку з низькою довірою (навіть із власного кешу), і кеш відповідей з інвалідацією за версією документа. Доведено наживо: знайдено й виправлено реальний баг пошуку (хибні збіги через стоп-слова), а редагування документа коректно змусило регенерувати замість видачі застарілого кешу."
   permalink: "/portfolio/ragline/"
   hero_image: "/portfolio/assets/images/ragline/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/ragline/hero-uk-0900x0530.png"
 
 - slug: "subgate"
   client: "subgate — Telegram Paid-Channel-Access Backend"
@@ -52,6 +55,7 @@
   summary_uk: "REST API платного доступу до Telegram-каналу: ідемпотентний прийом платіжних вебхуків (повторні доставки шлюзу поглинаються UNIQUE-обмеженням) і стейт-машина членства (active/grace/expired), що переживає паралельний sweep закінчення терміну. pg_advisory_xact_lock(subscriber_id, channel_id) серіалізує поновлення проти sweep-ів. Доведено наживо: 10 одночасних однакових вебхук-доставок дали рівно 1 рядок платежу; 5 одночасних поновлень проти 5 одночасних sweep-ів приземлились детерміновано в active."
   permalink: "/portfolio/subgate/"
   hero_image: "/portfolio/assets/images/subgate/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/subgate/hero-uk-0900x0530.png"
 
 - slug: "geopulse"
   client: "geopulse — GPS Fleet-Tracking Backend"
@@ -63,6 +67,7 @@
   summary_uk: "REST API GPS fleet-tracking з точною, без дублів детекцією enter/exit геозон з потоку позицій, що дублюється й приходить не по порядку — реальний режим відмови GPS-трекерів. pg_advisory_xact_lock серіалізує конкурентні пінги per vehicle; PostGIS ST_DWithin — containment. Доведено проти прямого стану БД: сплеск конкурентних/швидких пінгів дав нуль зайвих подій за всю тестову сесію."
   permalink: "/portfolio/geopulse/"
   hero_image: "/portfolio/assets/images/geopulse/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/geopulse/hero-uk-0900x0530.png"
 
 - slug: "slotwise"
   client: "slotwise — Appointment Booking Backend"
@@ -74,6 +79,7 @@
   summary_uk: "REST API для бронювання прийомів, де захист від подвійного бронювання — це обмеження Postgres EXCLUDE (tstzrange + btree_gist), не app-level перевірка — без race window при конкурентних запитах. Доведено наживо: два одночасні перетинні запити на бронювання проти живого сервера повертають рівно один 201 і один 409. Стейт-машина бронювань, Telegram-нагадування з фолбеком без credentials."
   permalink: "/portfolio/slotwise/"
   hero_image: "/portfolio/assets/images/slotwise/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/slotwise/hero-uk-0900x0530.png"
 
 - slug: "fleet-crm"
   client: "fleet-crm — Fleet/Logistics CRM Backend"
@@ -85,6 +91,7 @@
   summary_uk: "REST API CRM для автопарку/логістики — JWT-авторизація, перевірена стейт-машина нарядів (не довільна колонка статусу), виставлення рахунків лише після завершення, telematics-webhook. Знайшов і виправив реальний cross-entity баг (частковий update, що запобігає втраті даних техніки при кожній зміні статусу) ще до першого коміту — перевірено наскрізно живим прогоном docker compose, не лише юніт-тестами."
   permalink: "/portfolio/fleet-crm/"
   hero_image: "/portfolio/assets/images/fleet-crm/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/fleet-crm/hero-uk-0900x0530.png"
 
 - slug: "tumanomir"
   client: "tumanomir — CLI for Measuring AI-Spec Ambiguity"
@@ -107,6 +114,7 @@
   summary_uk: "Конвеєр мультиагентного рев'ю PR: розгортає diff на 3 паралельні моделі з read-only каскадом 5 CLI-інструментів як fallback, потім Claude-арбітр перевіряє кожну знахідку проти реального стану репозиторію перед дією. У продакшені з червня 2026: 22 PR перевірено, 69 раундів рецензування, 81 сира знахідка, але лише 2 підтверджені виправлення — замінено ярус з обходом дозволів на верифікований read-only каскад."
   permalink: "/portfolio/fix-review/"
   hero_image: "/portfolio/assets/images/fix-review/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/fix-review/hero-uk-0900x0530.png"
 
 - slug: "sales-crm-platform"
   client: "Sales CRM Platform"
