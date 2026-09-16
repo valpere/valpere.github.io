@@ -14,9 +14,9 @@ permalink: /about/
 
 ## Overview
 
-Senior Software Engineer and CTO with 20+ years of experience. Currently directing engineering and AI workflow integration for a 20+ person product team, while taking on select freelance engagements. Specialized in backend development, rapid MVP launch, AI-assisted development, data extraction, and bot automation.
+Senior Software Engineer and CTO with 20+ years of experience. Currently directing engineering and AI workflow integration for a 20+ person product team, while taking on select freelance engagements. Specialized in backend development, rapid MVP launch, AI-assisted development, and bot automation.
 
-**Skills:** Go · Java · TypeScript · React 19 · Supabase · Supabase Edge Functions · PostgreSQL · Docker · GORM · Gin · gRPC · Spring Boot · Automation · Google Cloud Platform (GCP) · MySQL · MongoDB · Web Scraping · Terraform · Data Mining · AI-Assisted Development · Claude Code · Langfuse · LevelDB · Custom Software · Software Infrastructure · Engineering
+**Skills:** Go · Java · TypeScript · React 19 · Supabase · Supabase Edge Functions · PostgreSQL · Docker · GORM · Gin · gRPC · Spring Boot · Automation · Google Cloud Platform (GCP) · MySQL · MongoDB · Terraform · AI-Assisted Development · Claude Code · Langfuse · LevelDB · Custom Software · Software Infrastructure · Engineering
 
 * **Backend Development & Architecture:**
 
@@ -46,13 +46,6 @@ Senior Software Engineer and CTO with 20+ years of experience. Currently directi
   * Build specialized bots: E-commerce, Crypto/DeFi, Healthcare, Real estate, etc
   * Implement security features, including encryption, user verification, and anti-spam measures
   * Deploy bots with Docker containerization on GCP with comprehensive monitoring
-
-* **Data Extraction & Web Scraping Solutions:**
-
-  * Develop advanced web scraping tools with anti-detection and captcha-solving capabilities
-  * Create automated data extraction pipelines with YAML/JSON configurations
-  * Build distributed processing systems for large-scale data collection projects
-  * Implement proxy rotation and bypass mechanisms for unrestricted data access
 
 * **Email & Communication Tools:**
 
