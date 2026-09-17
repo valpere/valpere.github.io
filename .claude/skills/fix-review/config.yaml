@@ -14,12 +14,16 @@ reviewers:
   # realigned 2026-08-19 after observing deepseek-v4-flash produce noisy
   # self-contradictory "no issue" findings when run as R1 with think:true
   # on a docs-only diff (PR #103).
+  #
+  # 2026-09-17: glm-5.1 and deepseek-v4-flash:0731 retire on Ollama Cloud
+  # 2026-09-25 (forced). Swapped to Ollama's named 1:1 replacements:
+  # glm-5.3, deepseek-v4.1-flash. think flags kept as-is.
   ollama_cloud:
     round_1:
-      model: glm-5.1:cloud
+      model: glm-5.3:cloud
       think: true
     round_2:
-      model: deepseek-v4-flash:cloud
+      model: deepseek-v4.1-flash:cloud
       think: false
     round_3:
       model: kimi-k2.7-code:cloud
