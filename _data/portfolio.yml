@@ -1,3 +1,15 @@
+- slug: "shopify-ad-testing"
+  client: "Luxury Fashion E-commerce (Shopify)"
+  client_uk: "Дизайнерський одяг на Shopify (NDA)"
+  role: "Freelance Backend Engineer / AI Integration"
+  period: "Sep 2026 — ongoing (Stage 1 of 3)"
+  stack: ["Go", "PostgreSQL", "Shopify GraphQL Admin API", "Claude API", "Higgsfield", "Meta Marketing API", "robfig/cron", "Docker Compose", "Caddy"]
+  summary_en: "Building an AI ad-testing loop for a Shopify luxury-fashion store: Claude turns live product and order data into offer/angle/hook hypotheses, Higgsfield renders the creatives, and the system assembles Meta campaigns — created paused, with hard spend caps — then scores winners by reconciling against real Shopify orders, not the ad platform's own pixel. Stage 1 of a 3-stage engagement, in progress."
+  summary_uk: "AI-система тестування реклами для Shopify-магазину дизайнерського одягу: Claude перетворює живі дані про товари й замовлення на гіпотези офферів/кутів/гачків, Higgsfield рендерить креативи, а система збирає Meta-кампанії — створені на паузі, з жорсткими лімітами витрат — і визначає переможців, звіряючи результати з реальними замовленнями Shopify, а не з піксельною аналітикою рекламної платформи. Stage 1 з 3-етапного контракту, у процесі."
+  permalink: "/portfolio/shopify-ad-testing/"
+  hero_image: "/portfolio/assets/images/shopify-ad-testing/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/shopify-ad-testing/hero-uk-0900x0530.png"
+
 - slug: "bid-triage"
   client: "bid-triage — AI Bid-Noise Filter, Built to Order"
   client_uk: "bid-triage — фільтр AI-шуму в заявках, під замовлення"
