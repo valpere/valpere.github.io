@@ -11,6 +11,8 @@ Independent demo project: a Go Telegram bot that holds a real bilingual (Ukraini
 
 **Result: one framework, five business verticals, no forked codebase — every assistant shares the same grounding gate, and a scripted scenario-probe tool caught a real safety-relevant bug (a dental sedation request getting scheduled as a routine booking) before it ever reached a user.**
 
+**This is a live demo, not a screenshot — try it yourself:** message [@v2v_demo_bot](https://t.me/v2v_demo_bot) on Telegram, pick a vertical from `/start`, and have the actual conversation.
+
 ---
 
 ## The actual hard problem
@@ -45,7 +47,7 @@ Every turn runs through one gate before any LLM call: a keyword-overlap score ag
 - **Two more grounding-gate fixes found the same way**: a bare phone number (the last thing every lead-collecting topic asks for) was hitting the "please clarify" line instead of completing the lead; and a caller asking for "an administrator" or "a specialist" (not "a manager") wasn't recognized as an explicit handoff request
 - **124 passing tests** (`gofmt` + `go vet` + `go test -race`), one main third-party dependency (`go-telegram/bot`) plus a language-detection library — everything else is the Go standard library
 
-Code: [github.com/valpere/v2v-demo](https://github.com/valpere/v2v-demo)
+Live demo: [@v2v_demo_bot](https://t.me/v2v_demo_bot) on Telegram · Code: [github.com/valpere/v2v-demo](https://github.com/valpere/v2v-demo)
 
 ---
 

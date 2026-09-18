@@ -28,8 +28,8 @@
   role: "Solo Creator / Architect"
   period: "Aug–Sep 2026 (ongoing)"
   stack: ["Go", "Telegram Bot API", "OpenAI Whisper", "Ollama", "ElevenLabs", "Azure Speech", "lingua-go"]
-  summary_en: "A bilingual (UK/EN) Telegram voice concierge framework running five independent business assistants (dental, auto, real estate, cleaning, translation) behind one inline picker, sharing a single grounding-gate core. An automated scenario-probe tool caught a real safety-relevant bug (a sedation request getting scheduled as a routine booking) before it reached a user. 124 passing tests, one main dependency."
-  summary_uk: "Двомовний (укр/англ) голосовий консьєрж-фреймворк для Telegram: п'ять незалежних бізнес-асистентів (стоматологія, автосервіс, нерухомість, клінінг, переклади) за одним inline-пікером на спільному ядрі гейта заземлення. Автоматизований probe-інструмент знайшов реальний баг, критичний для безпеки (запит на седацію потрапляв у звичайний запис), ще до користувача. 124 тести проходять, одна основна залежність."
+  summary_en: "A bilingual (UK/EN) Telegram voice concierge framework running five independent business assistants (dental, auto, real estate, cleaning, translation) behind one inline picker, sharing a single grounding-gate core. An automated scenario-probe tool caught a real safety-relevant bug (a sedation request getting scheduled as a routine booking) before it reached a user. 124 passing tests, one main dependency. Live demo: message @v2v_demo_bot on Telegram."
+  summary_uk: "Двомовний (укр/англ) голосовий консьєрж-фреймворк для Telegram: п'ять незалежних бізнес-асистентів (стоматологія, автосервіс, нерухомість, клінінг, переклади) за одним inline-пікером на спільному ядрі гейта заземлення. Автоматизований probe-інструмент знайшов реальний баг, критичний для безпеки (запит на седацію потрапляв у звичайний запис), ще до користувача. 124 тести проходять, одна основна залежність. Живе демо: напишіть @v2v_demo_bot у Telegram."
   permalink: "/portfolio/v2v-demo/"
   hero_image: "/portfolio/assets/images/v2v-demo/hero-0900x0530.png"
   hero_image_uk: "/portfolio/assets/images/v2v-demo/hero-uk-0900x0530.png"
