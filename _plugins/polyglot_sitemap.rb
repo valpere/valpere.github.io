@@ -17,6 +17,7 @@
 # GH Pages safe: no external gem requires.
 
 require "pathname"
+require "cgi"
 
 module Jekyll
   class PolyglotSitemap
@@ -31,21 +32,30 @@ module Jekyll
       )
     }x
 
-    # Run after polyglot has finished writing all per-language pages.
-    # :post_write fires once per write pass; in polyglot mode there is
-    # one pass for default-lang pages, then another for non-default-lang
-    # pages. We do the same: walk whichever subset of files exists in
-    # _site/ right now and accumulate. The single global pair map ensures
-    # hreflang siblings resolve correctly across both passes.
-    @state = { pairs: {}, processed: 0 }
+    # polyglot re-renders some preview HTML files at deterministic
+    # paths inside portfolio/assets/images/. They're not real pages,
+    # just static design previews — exclude them from the sitemap.
+    EXCLUDE_SUBPATH_RE = %r{/portfolio/assets/images/}
+
+    @state = nil
     @mutex = Mutex.new
 
     def self.write(site)
-      # polyglot mutates site.dest between passes (to "_site/uk" during the
-      # UK pass). Use a stable base derived from site.source + "/_site"
-      # instead so we always walk the full output tree.
+      # polyglot mutates site.dest between passes (to "_site/uk" during
+      # the UK pass). site.dest has the wrong value on the UK pass, so
+      # derive a stable base from site.source + "/_site" — site.source
+      # doesn't change. We do NOT respect a custom `destination:` config
+      # here, because this project doesn't use one.
       base = File.expand_path("_site", site.source)
       site_url = site.config["url"].to_s.sub(%r{/$}, "")
+
+      # Reset state at the start of each :post_write pass. Pass 1 = EN
+      # writes a partial sitemap, pass 2 = UK accumulates pairs on top
+      # and rewrites the full one. The final pass (which polyglot runs
+      # last) wins because we accumulate into @state.pairs across passes.
+      @mutex.synchronize do
+        @state = { pairs: {}, processed: 0 } if @state.nil?
+      end
 
       html_files = Dir.glob(File.join(base, "**", "index.html"))
 
@@ -55,6 +65,7 @@ module Jekyll
         url = "/" if url == "//"
 
         next if url =~ EXCLUDE_PATH_RE
+        next if url =~ EXCLUDE_SUBPATH_RE
 
         lang = url.start_with?("/uk/") ? "uk" : "en"
         loc = "#{site_url}#{url}"
@@ -91,6 +102,15 @@ module Jekyll
       nil
     end
 
+    # Escape XML-reserved characters in attribute and text values.
+    # All interpolated values are site-relative paths or site URLs in
+    # this project, but defense-in-depth is cheap and prevents a future
+    # config value (e.g. a project title with `&`) from breaking the
+    # XML.
+    def self.x(value)
+      CGI.escapeHTML(value.to_s)
+    end
+
     def self.build_xml(pairs, site_url)
       xml = +""
       xml << %(<?xml version="1.0" encoding="UTF-8"?>\n)
@@ -100,18 +120,18 @@ module Jekyll
       pairs.each do |_canonical, langs|
         langs.each do |lang, info|
           xml << "  <url>\n"
-          xml << "    <loc>#{info[:loc]}</loc>\n"
-          xml << "    <lastmod>#{info[:lastmod]}</lastmod>\n" if info[:lastmod]
+          xml << "    <loc>#{x(info[:loc])}</loc>\n"
+          xml << "    <lastmod>#{x(info[:lastmod])}</lastmod>\n" if info[:lastmod]
           # self-reference
-          xml << %(    <xhtml:link rel="alternate" hreflang="#{lang}" href="#{info[:loc]}"/>\n)
+          xml << %(    <xhtml:link rel="alternate" hreflang="#{x(lang)}" href="#{x(info[:loc])}"/>\n)
           # sibling
           if langs.size == 2
             other_lang = lang == "en" ? "uk" : "en"
             other = langs[other_lang]
-            xml << %(    <xhtml:link rel="alternate" hreflang="#{other_lang}" href="#{other[:loc]}"/>\n)
+            xml << %(    <xhtml:link rel="alternate" hreflang="#{x(other_lang)}" href="#{x(other[:loc])}"/>\n)
             # x-default always points to EN
             en = langs["en"] || info
-            xml << %(    <xhtml:link rel="alternate" hreflang="x-default" href="#{en[:loc]}"/>\n)
+            xml << %(    <xhtml:link rel="alternate" hreflang="x-default" href="#{x(en[:loc])}"/>\n)
           end
           xml << "  </url>\n"
         end
