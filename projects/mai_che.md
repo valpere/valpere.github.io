@@ -8,7 +8,6 @@ lang: en
 
 # Email Validation Tool
 
-* [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ## Brief Overview
@@ -62,7 +61,6 @@ lang: en
 - Custom reporting dashboards
 - Dedicated support
 
-*Note: Pricing details for premium packages and custom features are available at "[I will build an enterprisegrade email validation cli tool](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)".*
 
 ![Verify your email list](../assets/images/maiche/verify_your_email_list-0384x0256.png)
 

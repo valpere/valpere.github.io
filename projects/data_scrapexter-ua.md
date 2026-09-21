@@ -9,7 +9,6 @@ lang_alt: /projects/datascrapexter/
 
 # Професійний веб-скрейпер
 
-* [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 
@@ -28,7 +27,6 @@ lang_alt: /projects/datascrapexter/
 
 Додаткові опції включають розробку кастомних функцій, консалтинг та преміум підтримку.
 
-*Примітка: Деталі щодо вартості преміум пакетів та кастомних функцій доступні за посиланням "[I will develop web scraping solutions for data extraction](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)".*
 
 ---
 

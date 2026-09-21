@@ -12,7 +12,6 @@ lang_alt: /projects/rule-based_telegram_chatbot/
 
 **Посилання:**
 
-- [Fiverr](https://www.fiverr.com/pere_val/build-a-custom-telegram-bot-to-automate-your-business)
 - [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ![Огляд порівняння рішень для ботів Telegram](../assets/images/rule-based_telegram_chatbot/telegram_bot_solutions-comparison-overview-0768x0512.png)

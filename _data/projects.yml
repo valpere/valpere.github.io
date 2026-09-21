@@ -47,7 +47,6 @@
   featured: false
   tech: ["Go", "Java", "Claude", "Supabase", "Replit", "Cursor", "n8n"]
   links:
-    fiverr: "https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding"
     freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
 
 - slug: "rule-based_telegram_chatbot"
@@ -60,7 +59,6 @@
   featured: true
   tech: ["Go", "JavaScript", "Java", "Telegram API"]
   links:
-    fiverr: "https://www.fiverr.com/pere_val/build-a-custom-telegram-bot-to-automate-your-business"
     freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
 
 - slug: "shopogoda"
@@ -97,7 +95,6 @@
   featured: true
   tech: ["Go", "YAML", "JSON", "Proxy Rotation", "Anti-Detection"]
   links:
-    fiverr: "https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction"
     freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
 
 - slug: "maiche"
@@ -110,7 +107,6 @@
   featured: false
   tech: ["Go", "CLI", "Email Validation", "DNS"]
   links:
-    fiverr: "https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool"
     freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
 
 - slug: "web_page_investigator"
@@ -123,7 +119,6 @@
   featured: true
   tech: ["Go", "Headless Browser", "CSS Selectors", "JSON", "CSV"]
   links:
-    fiverr: "https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro"
     freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
 
 - slug: "gootrago"

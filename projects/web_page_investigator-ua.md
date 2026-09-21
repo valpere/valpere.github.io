@@ -9,7 +9,6 @@ lang_alt: /projects/web_page_investigator/
 
 # Інструменти аналізу веб-сторінок: Ваше комплексне рішення для веб-контент-аналітики
 
-* [Fiverr](https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 

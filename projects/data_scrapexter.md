@@ -8,7 +8,6 @@ lang: en
 
 # Professional Data Scraper
 
-* [Fiverr](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ## Brief Overview
@@ -24,7 +23,6 @@ lang: en
 
 Additional options include custom feature development, consulting, and premium support for tailored solutions.
 
-*Note: Pricing details for premium packages and custom features are available at "[I will develop web scraping solutions for data extraction](https://www.fiverr.com/pere_val/develop-custom-web-scraping-solutions-for-data-extraction)".*
 
 ---
 

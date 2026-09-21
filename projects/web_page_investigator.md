@@ -8,7 +8,6 @@ lang: en
 
 # Web Page Analysis Tools: Your Complete Solution for Web Content Intelligence
 
-* [Fiverr](https://www.fiverr.com/pere_val/help-you-extract-analyze-and-transform-web-content-like-a-pro)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ## Transform How You Handle Web Data - Extract, Analyze, and Automate Like a Pro
