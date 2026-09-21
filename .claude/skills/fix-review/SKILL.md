@@ -229,16 +229,21 @@ run_round() {
   local n="$1" model="$2"
   local r_start r_end payload response think pt ct
   r_start=$(now_ms)
-  think=$(yq -r ".reviewers.${REVIEWER_BLOCK}.round_${n}.think // true" \
+  # `-c` prints the JSON value (true / false / "low"), so string reasoning
+  # levels work with --argjson. Do NOT use `// true` here: yq's alternative
+  # operator turns an explicit `false` into `true`. Missing key → null → true.
+  think=$(yq -c ".reviewers.${REVIEWER_BLOCK}.round_${n}.think" \
     .claude/skills/fix-review/config.yaml 2>/dev/null)
+  [ -z "$think" ] || [ "$think" = "null" ] && think=true
   payload=$(jq -n --arg m "$model" --arg sys "$REVIEW_SYSTEM_MSG" \
     --arg user "$PROMPT" --argjson think "$think" \
     '{model:$m,messages:[{role:"system",content:$sys},{role:"user",content:$user}],stream:false,think:$think}')
   response=$(rest_post "$API_URL" "$payload" "$API_KEY") \
     || response='{"_error":"rest_post_failed"}'
 
-  # Empty-content retry: a thinking-enabled model (round_1 here runs
-  # think:true — deepseek-v4-flash:cloud) can burn its whole budget on
+  # Empty-content retry: a thinking-enabled model (round_1 runs glm-5.3 with
+  # think:"low" — think:true means max reasoning effort, which used to burn
+  # 90-180 s and return empty content) can burn its whole budget on
   # hidden thinking and return 200 + empty content on a large diff. Retry
   # once with a tighter num_predict cap before accepting 0 findings.
   if ! printf '%s' "$response" | jq -e '._error' >/dev/null 2>&1; then
