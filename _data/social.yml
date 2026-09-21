@@ -10,3 +10,10 @@ fiverr:
 freelancehunt:
   url: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
   label: "FreelanceHunt"
+telegram:
+  url: "https://t.me/pere_val"
+  label: "Telegram"
+  handle: "@pere_val"
+signal:
+  label: "Signal"
+  username: "pereval.13"
