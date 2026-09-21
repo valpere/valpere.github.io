@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 530" width="900" height="530" font-family="DejaVu Sans, Verdana, sans-serif">
+  <rect width="900" height="530" fill="#F7F4EC"/>
+  <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E6E1D2" stroke-width="0.5"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2A2A2A"/></marker></defs>
+  <rect width="900" height="530" fill="url(#grid)"/>
+  <rect x="0" y="0" width="900" height="46" fill="#168A53"/>
+  <text x="22" y="30" fill="#FFFFFF" font-size="17" font-weight="700" letter-spacing="0.4">FISCALGATE — ОПЛАТИ В ЧЕКИ CHECKBOX</text>
+  <text x="878" y="30" fill="#FFFFFF" font-size="12" text-anchor="end">Go · Checkbox · Monobank · LiqPay · SQLite</text>
+  <g font-size="12">
+    <rect x="24" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="24" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="99.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">ВЕБХУК</text>
+    <text x="99.0" y="140" text-anchor="middle" font-weight="700" font-size="12">Monobank ·</text>
+    <text x="99.0" y="156" text-anchor="middle" font-weight="700" font-size="12">LiqPay</text>
+    <line x1="38" y1="168" x2="160" y2="168" stroke="#DDD"/>
+    <text x="99.0" y="186" text-anchor="middle" fill="#666" font-size="10">підпис перевірено,</text>
+    <text x="99.0" y="200" text-anchor="middle" fill="#666" font-size="10">дублікати — no-op</text>
+    <line x1="174" y1="155" x2="212" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="212" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#E67E22" stroke-width="2.5"/>
+    <rect x="212" y="90" width="150" height="28" rx="6" fill="#E67E22"/>
+    <text x="287.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">РОЗРАХУНОК</text>
+    <text x="287.0" y="140" text-anchor="middle" font-weight="700" font-size="12">унікальний платіж</text>
+    <text x="287.0" y="156" text-anchor="middle" font-weight="700" font-size="12">оплачено повністю?</text>
+    <line x1="226" y1="168" x2="348" y2="168" stroke="#DDD"/>
+    <text x="287.0" y="186" text-anchor="middle" fill="#666" font-size="10">одне завдання-чек</text>
+    <text x="287.0" y="200" text-anchor="middle" fill="#666" font-size="10">на замовлення</text>
+    <line x1="362" y1="155" x2="400" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="400" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="400" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="475.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">ЧЕРГА</text>
+    <text x="475.0" y="140" text-anchor="middle" font-weight="700" font-size="12">повтор + backoff</text>
+    <text x="475.0" y="156" text-anchor="middle" font-weight="700" font-size="12">пошук, не дубль</text>
+    <line x1="414" y1="168" x2="536" y2="168" stroke="#DDD"/>
+    <text x="475.0" y="186" text-anchor="middle" fill="#666" font-size="10">загублена відповідь</text>
+    <text x="475.0" y="200" text-anchor="middle" fill="#666" font-size="10">не подвоїть чек</text>
+    <line x1="550" y1="155" x2="588" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="588" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="588" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="663.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">CHECKBOX</text>
+    <text x="663.0" y="140" text-anchor="middle" font-weight="700" font-size="12">зміна на вимогу</text>
+    <text x="663.0" y="156" text-anchor="middle" font-weight="700" font-size="12">продаж · повернення</text>
+    <line x1="602" y1="168" x2="724" y2="168" stroke="#DDD"/>
+    <text x="663.0" y="186" text-anchor="middle" fill="#666" font-size="10">Z-звіт за</text>
+    <text x="663.0" y="200" text-anchor="middle" fill="#666" font-size="10">розкладом</text>
+    <line x1="738" y1="155" x2="776" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="776" y="90" width="102" height="130" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2.5"/>
+    <rect x="776" y="90" width="102" height="28" rx="6" fill="#168A53"/>
+    <text x="827.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10">КЛІЄНТ</text>
+    <text x="827.0" y="140" text-anchor="middle" font-weight="700" font-size="11">посилання</text>
+    <text x="827.0" y="156" text-anchor="middle" font-weight="700" font-size="11">на чек</text>
+    <line x1="790" y1="168" x2="864" y2="168" stroke="#DDD"/>
+    <text x="827.0" y="186" text-anchor="middle" fill="#666" font-size="9">Telegram</text>
+    <text x="827.0" y="200" text-anchor="middle" fill="#666" font-size="9"></text>
+  </g>
+  <rect x="24" y="270" width="852" height="112" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+  <rect x="24" y="270" width="852" height="26" rx="6" fill="#2A2A2A"/>
+  <text x="450" y="288" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="12" letter-spacing="0.6">РІВНО ОДИН ЧЕК — ПІДТВЕРДЖЕНО ТЕСТАМИ</text>
+  <text x="44" y="322" font-weight="700" font-size="12.5">300 замовлень × 4 копії</text>
+  <text x="44" y="342" fill="#666" font-size="10.5">кожного вебхука =</text>
+  <text x="44" y="358" fill="#666" font-size="10.5">рівно 300 чеків</text>
+  <text x="328" y="322" font-weight="700" font-size="12.5">передоплата + накладений</text>
+  <text x="328" y="342" fill="#666" font-size="10.5">= один чек</text>
+  <text x="328" y="358" fill="#666" font-size="10.5">з двома формами оплати</text>
+  <text x="612" y="322" font-weight="700" font-size="12.5">повернення обмежені продажем</text>
+  <text x="612" y="342" fill="#666" font-size="10.5">спершу картка, потім готівка,</text>
+  <text x="612" y="358" fill="#666" font-size="10.5">той самий ключ не поверне двічі</text>
+  <rect x="0" y="404" width="900" height="72" fill="#E4E7DA"/>
+  <rect x="24" y="416" width="852" height="46" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2"/>
+  <text x="44" y="444" fill="#168A53" font-weight="700" font-size="13">Оплата на вході, чек на виході — один раз, що б не робили банк, мережа чи реєстратор.</text>
+  <rect x="24" y="497" width="14" height="14" fill="#168A53"/>
+  <text x="46" y="509" font-size="11" fill="#333">контроль системи</text>
+  <rect x="404" y="497" width="14" height="14" fill="#E67E22"/>
+  <text x="426" y="509" font-size="11" fill="#333">шлюз — без перевірки нічого не проходить</text>
+</svg>
