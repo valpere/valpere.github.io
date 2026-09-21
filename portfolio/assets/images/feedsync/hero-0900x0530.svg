@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 530" width="900" height="530" font-family="DejaVu Sans, Verdana, sans-serif">
+  <rect width="900" height="530" fill="#F7F4EC"/>
+  <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E6E1D2" stroke-width="0.5"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2A2A2A"/></marker></defs>
+  <rect width="900" height="530" fill="url(#grid)"/>
+  <rect x="0" y="0" width="900" height="46" fill="#168A53"/>
+  <text x="22" y="30" fill="#FFFFFF" font-size="17" font-weight="700" letter-spacing="0.4">FEEDSYNC — SUPPLIER FEEDS TO PRICE LISTS</text>
+  <text x="878" y="30" fill="#FFFFFF" font-size="12" text-anchor="end">Go · YML/CSV/JSON · Rozetka · Prom.ua · OpenCart</text>
+  <g font-size="12">
+    <rect x="24" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="24" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="99.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">SUPPLIER FEED</text>
+    <text x="99.0" y="140" text-anchor="middle" font-weight="700" font-size="12">YML/XML · CSV</text>
+    <text x="99.0" y="156" text-anchor="middle" font-weight="700" font-size="12">JSON</text>
+    <line x1="38" y1="168" x2="160" y2="168" stroke="#DDD"/>
+    <text x="99.0" y="186" text-anchor="middle" fill="#666" font-size="10">file or URL,</text>
+    <text x="99.0" y="200" text-anchor="middle" fill="#666" font-size="10">streamed</text>
+    <line x1="174" y1="155" x2="212" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="212" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="212" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="287.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">TRANSFORM</text>
+    <text x="287.0" y="140" text-anchor="middle" font-weight="700" font-size="12">categories · FX</text>
+    <text x="287.0" y="156" text-anchor="middle" font-weight="700" font-size="12">markup · IDs</text>
+    <line x1="226" y1="168" x2="348" y2="168" stroke="#DDD"/>
+    <text x="287.0" y="186" text-anchor="middle" fill="#666" font-size="10">zero-stock drop,</text>
+    <text x="287.0" y="200" text-anchor="middle" fill="#666" font-size="10">stable offer ids</text>
+    <line x1="362" y1="155" x2="400" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="400" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#E67E22" stroke-width="2.5"/>
+    <rect x="400" y="90" width="150" height="28" rx="6" fill="#E67E22"/>
+    <text x="475.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">VALIDATE</text>
+    <text x="475.0" y="140" text-anchor="middle" font-weight="700" font-size="12">every offer,</text>
+    <text x="475.0" y="156" text-anchor="middle" font-weight="700" font-size="12">every file</text>
+    <line x1="414" y1="168" x2="536" y2="168" stroke="#DDD"/>
+    <text x="475.0" y="186" text-anchor="middle" fill="#666" font-size="10">same rule set</text>
+    <text x="475.0" y="200" text-anchor="middle" fill="#666" font-size="10">before and after</text>
+    <line x1="550" y1="155" x2="588" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="588" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="588" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="663.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">PUBLISH</text>
+    <text x="663.0" y="140" text-anchor="middle" font-weight="700" font-size="12">Rozetka · Prom.ua</text>
+    <text x="663.0" y="156" text-anchor="middle" font-weight="700" font-size="12">price lists</text>
+    <line x1="602" y1="168" x2="724" y2="168" stroke="#DDD"/>
+    <text x="663.0" y="186" text-anchor="middle" fill="#666" font-size="10">temp file, then</text>
+    <text x="663.0" y="200" text-anchor="middle" fill="#666" font-size="10">atomic rename</text>
+    <line x1="738" y1="155" x2="776" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="776" y="90" width="102" height="130" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2.5"/>
+    <rect x="776" y="90" width="102" height="28" rx="6" fill="#168A53"/>
+    <text x="827.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10">OPENCART</text>
+    <text x="827.0" y="140" text-anchor="middle" font-weight="700" font-size="11">price ·</text>
+    <text x="827.0" y="156" text-anchor="middle" font-weight="700" font-size="11">stock</text>
+    <line x1="790" y1="168" x2="864" y2="168" stroke="#DDD"/>
+    <text x="827.0" y="186" text-anchor="middle" fill="#666" font-size="9">batched SQL</text>
+    <text x="827.0" y="200" text-anchor="middle" fill="#666" font-size="9"></text>
+  </g>
+  <rect x="24" y="270" width="852" height="112" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+  <rect x="24" y="270" width="852" height="26" rx="6" fill="#2A2A2A"/>
+  <text x="450" y="288" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="12" letter-spacing="0.6">MEASURED ON A 25,000-OFFER FEED</text>
+  <text x="44" y="322" font-weight="700" font-size="12.5">≈ 1.5 s, ≈ 36 MB</text>
+  <text x="44" y="342" fill="#666" font-size="10.5">full run into both</text>
+  <text x="44" y="358" fill="#666" font-size="10.5">price lists</text>
+  <text x="328" y="322" font-weight="700" font-size="12.5">100,000 offers: 6–7 s</text>
+  <text x="328" y="342" fill="#666" font-size="10.5">≈ 91 MB peak memory:</text>
+  <text x="328" y="358" fill="#666" font-size="10.5">streaming, not loading</text>
+  <text x="612" y="322" font-weight="700" font-size="12.5">sync: 19,119 rows ≈ 0.7 s</text>
+  <text x="612" y="342" fill="#666" font-size="10.5">repeat run changes</text>
+  <text x="612" y="358" fill="#666" font-size="10.5">nothing (≈ 25 ms)</text>
+  <rect x="0" y="404" width="900" height="72" fill="#E4E7DA"/>
+  <rect x="24" y="416" width="852" height="46" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2"/>
+  <text x="44" y="444" fill="#168A53" font-weight="700" font-size="13">A bad offer is rejected with a reason — it never poisons the file the marketplace reads.</text>
+  <rect x="24" y="497" width="14" height="14" fill="#168A53"/>
+  <text x="46" y="509" font-size="11" fill="#333">system-controlled</text>
+  <rect x="404" y="497" width="14" height="14" fill="#E67E22"/>
+  <text x="426" y="509" font-size="11" fill="#333">gate — nothing passes unchecked</text>
+</svg>

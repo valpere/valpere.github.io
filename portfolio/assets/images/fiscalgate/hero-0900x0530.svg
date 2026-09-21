@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 530" width="900" height="530" font-family="DejaVu Sans, Verdana, sans-serif">
+  <rect width="900" height="530" fill="#F7F4EC"/>
+  <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E6E1D2" stroke-width="0.5"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2A2A2A"/></marker></defs>
+  <rect width="900" height="530" fill="url(#grid)"/>
+  <rect x="0" y="0" width="900" height="46" fill="#168A53"/>
+  <text x="22" y="30" fill="#FFFFFF" font-size="17" font-weight="700" letter-spacing="0.4">FISCALGATE — PAYMENTS TO CHECKBOX FISCAL RECEIPTS</text>
+  <text x="878" y="30" fill="#FFFFFF" font-size="12" text-anchor="end">Go · Checkbox · Monobank · LiqPay · SQLite</text>
+  <g font-size="12">
+    <rect x="24" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="24" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="99.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">WEBHOOK</text>
+    <text x="99.0" y="140" text-anchor="middle" font-weight="700" font-size="12">Monobank ·</text>
+    <text x="99.0" y="156" text-anchor="middle" font-weight="700" font-size="12">LiqPay</text>
+    <line x1="38" y1="168" x2="160" y2="168" stroke="#DDD"/>
+    <text x="99.0" y="186" text-anchor="middle" fill="#666" font-size="10">signature verified,</text>
+    <text x="99.0" y="200" text-anchor="middle" fill="#666" font-size="10">duplicates are no-ops</text>
+    <line x1="174" y1="155" x2="212" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="212" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#E67E22" stroke-width="2.5"/>
+    <rect x="212" y="90" width="150" height="28" rx="6" fill="#E67E22"/>
+    <text x="287.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">SETTLE</text>
+    <text x="287.0" y="140" text-anchor="middle" font-weight="700" font-size="12">unique payment id</text>
+    <text x="287.0" y="156" text-anchor="middle" font-weight="700" font-size="12">paid in full?</text>
+    <line x1="226" y1="168" x2="348" y2="168" stroke="#DDD"/>
+    <text x="287.0" y="186" text-anchor="middle" fill="#666" font-size="10">one receipt job</text>
+    <text x="287.0" y="200" text-anchor="middle" fill="#666" font-size="10">per order</text>
+    <line x1="362" y1="155" x2="400" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="400" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="400" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="475.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">OUTBOX</text>
+    <text x="475.0" y="140" text-anchor="middle" font-weight="700" font-size="12">retry + backoff</text>
+    <text x="475.0" y="156" text-anchor="middle" font-weight="700" font-size="12">lookup, no repost</text>
+    <line x1="414" y1="168" x2="536" y2="168" stroke="#DDD"/>
+    <text x="475.0" y="186" text-anchor="middle" fill="#666" font-size="10">a lost reply never</text>
+    <text x="475.0" y="200" text-anchor="middle" fill="#666" font-size="10">doubles a receipt</text>
+    <line x1="550" y1="155" x2="588" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="588" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="588" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="663.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">CHECKBOX</text>
+    <text x="663.0" y="140" text-anchor="middle" font-weight="700" font-size="12">shift on demand</text>
+    <text x="663.0" y="156" text-anchor="middle" font-weight="700" font-size="12">sell · return</text>
+    <line x1="602" y1="168" x2="724" y2="168" stroke="#DDD"/>
+    <text x="663.0" y="186" text-anchor="middle" fill="#666" font-size="10">Z-report on</text>
+    <text x="663.0" y="200" text-anchor="middle" fill="#666" font-size="10">schedule</text>
+    <line x1="738" y1="155" x2="776" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="776" y="90" width="102" height="130" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2.5"/>
+    <rect x="776" y="90" width="102" height="28" rx="6" fill="#168A53"/>
+    <text x="827.0" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10">CUSTOMER</text>
+    <text x="827.0" y="140" text-anchor="middle" font-weight="700" font-size="11">receipt</text>
+    <text x="827.0" y="156" text-anchor="middle" font-weight="700" font-size="11">link</text>
+    <line x1="790" y1="168" x2="864" y2="168" stroke="#DDD"/>
+    <text x="827.0" y="186" text-anchor="middle" fill="#666" font-size="9">Telegram</text>
+    <text x="827.0" y="200" text-anchor="middle" fill="#666" font-size="9"></text>
+  </g>
+  <rect x="24" y="270" width="852" height="112" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+  <rect x="24" y="270" width="852" height="26" rx="6" fill="#2A2A2A"/>
+  <text x="450" y="288" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="12" letter-spacing="0.6">EXACTLY ONCE, PROVEN</text>
+  <text x="44" y="322" font-weight="700" font-size="12.5">300 orders × 4 copies</text>
+  <text x="44" y="342" fill="#666" font-size="10.5">of every webhook =</text>
+  <text x="44" y="358" fill="#666" font-size="10.5">exactly 300 receipts</text>
+  <text x="328" y="322" font-weight="700" font-size="12.5">prepay + cash on delivery</text>
+  <text x="328" y="342" fill="#666" font-size="10.5">= one receipt,</text>
+  <text x="328" y="358" fill="#666" font-size="10.5">two tenders</text>
+  <text x="612" y="322" font-weight="700" font-size="12.5">refunds bounded by the sale</text>
+  <text x="612" y="342" fill="#666" font-size="10.5">card first, then cash,</text>
+  <text x="612" y="358" fill="#666" font-size="10.5">same key never refunds twice</text>
+  <rect x="0" y="404" width="900" height="72" fill="#E4E7DA"/>
+  <rect x="24" y="416" width="852" height="46" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2"/>
+  <text x="44" y="444" fill="#168A53" font-weight="700" font-size="13">Payment in, receipt out — once, whatever the bank, the network or the register does.</text>
+  <rect x="24" y="497" width="14" height="14" fill="#168A53"/>
+  <text x="46" y="509" font-size="11" fill="#333">system-controlled</text>
+  <rect x="404" y="497" width="14" height="14" fill="#E67E22"/>
+  <text x="426" y="509" font-size="11" fill="#333">gate — nothing passes unchecked</text>
+</svg>
