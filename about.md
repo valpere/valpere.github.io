@@ -56,3 +56,9 @@ Senior Software Engineer and CTO with 20+ years of experience. Currently directi
   * Build communication systems and telephony solutions
   * Implement data processing workflows for marketing campaigns
 
+* **E-commerce & Integrations:**
+
+  * Supplier-feed sync into Rozetka and Prom.ua price lists with OpenCart price/stock sync: [feedsync](/portfolio/feedsync/)
+  * Payments turned into Checkbox fiscal receipts, exactly once (Monobank, LiqPay, refunds, shift management): [fiscalgate](/portfolio/fiscalgate/)
+  * Shop, Binotel telephony and Nova Poshta parcels connected to a SalesDrive CRM: [crmbridge](/portfolio/crmbridge/)
+  * Fast mobile-first OpenCart store with faceted filters and a one-page checkout: [fastshop](/portfolio/fastshop/)
