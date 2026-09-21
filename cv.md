@@ -32,7 +32,7 @@ Strong cross-functional communicator and problem-solver, passionate about system
 
 - **Languages:** Go, Java, Groovy, Perl, TypeScript, PL/pgSQL, Bash
 - **Frameworks:**
-  - **Go:** Gin, Cobra + Viper, uber-zap, GORM, sqlc + pgx, gRPC, protobuf, Colly, Goquery, chromedp, river, testing + mockery
+  - **Go:** Gin, Cobra + Viper, uber-zap, GORM, sqlc + pgx, gRPC, protobuf, river, testing + mockery
   - **Java:** Lombok, Spring Boot, Spring Security, Spring Data
   - **TypeScript / Node:** React 19, Deno, Supabase Edge Functions, Vitest, Playwright
   - **Perl:** perlcritic, perltidy
@@ -79,7 +79,6 @@ Strong cross-functional communicator and problem-solver, passionate about system
 - **VCS:** Git (GitHub, GitLab, Bitbucket), SVN, CVS
 - **Project Tools:** Jira, ClickUp, Confluence, Gradle, Postman, UML, GraphViz, yEd, VSCode, IntelliJ IDEA, Geany
 - **Bot Development:** Telegram, Discord, WhatsApp, SMS/Voice (autoresponders, crypto bots, e-commerce)
-- **Web Scraping:** Anti-detection, captcha-solving, proxy rotation, distributed processing, information retrieval, intelligent ETL pipelines
 
 **Leadership & Collaboration**
 
@@ -88,6 +87,10 @@ Strong cross-functional communicator and problem-solver, passionate about system
 - **Project Delivery:** Requirements analysis, architecture documentation, cross-functional collaboration
 - **Strengths:** Team enablement, code quality governance, stakeholder communication, delivery excellence
 - **Impact:** Led 20+ person engineering teams; improved developer efficiency through AI-assisted workflows; delivered multi-product SaaS platforms with measurable reliability gains
+
+**Other**
+
+- Data-extraction and ETL utilities, web automation
 
 ---
 
@@ -131,7 +134,7 @@ Technical leadership and hands-on delivery of AI-driven backend systems. Serve a
   - Moved staging and production to trunk-based deployment from the same branch, eliminating a class of bugs caused by environment drift
   - **Outcomes:** ~123K LOC across frontend and edge functions, 201 test files, delivered across 3 months
 - **AI Agent Cost Optimization (2026).** Cut AI subagent spend **70–85%** with a hybrid architecture — cheap OpenRouter models for analytical tasks, Claude Haiku as orchestrator, premium models reserved for high-blast-radius work — with multi-provider failover and pinned model IDs, holding quality on structured tasks.
-- **Open-source & client tooling.** Go-based web scraping framework with anti-detection and distributed processing (DataScrapexter); production Telegram bots (weather intelligence, CRM automation, e-commerce); cross-agent AI orchestration mesh (chorus); email validation and marketing automation CLIs.
+- **Open-source & client tooling.** Production Telegram bots (weather intelligence, CRM automation, e-commerce); cross-agent AI orchestration mesh (chorus); plus smaller data-processing and marketing-automation utilities.
 
 **Backend Development & Architecture**
 
