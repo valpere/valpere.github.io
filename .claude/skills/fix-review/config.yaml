@@ -18,10 +18,18 @@ reviewers:
   # 2026-09-17: glm-5.1 and deepseek-v4-flash:0731 retire on Ollama Cloud
   # 2026-09-25 (forced). Swapped to Ollama's named 1:1 replacements:
   # glm-5.3, deepseek-v4.1-flash. think flags kept as-is.
+  #
+  # 2026-09-21: round_1 think: true -> "low". glm-5.3's default reasoning
+  # effort is max: on PRs #139/#140/#143 round 1 timed out or came back empty
+  # (90-180 s). With "low" it answers in ~1-10 s with a valid array and the
+  # best recall on a 6-defect seeded diff. think:false is worse for glm-5.3
+  # (rambling prose, not JSON). This project's `think` knob does not exist in
+  # the canonical ~/wrk/common/skills/fix-review/ (always no-think); the copy
+  # here intentionally differs. String values need `yq -c` in SKILL.md run_round.
   ollama_cloud:
     round_1:
       model: glm-5.3:cloud
-      think: true
+      think: "low"
     round_2:
       model: deepseek-v4.1-flash:cloud
       think: false
