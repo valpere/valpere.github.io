@@ -8,7 +8,6 @@ lang: en
 
 # Vibe Coding: AI-Powered Development Solutions
 
-- [Fiverr](https://www.fiverr.com/pere_val/review-fix-your-code-or-make-an-mvp-with-vibe-coding)
 - [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ## Transform Your Ideas Into Reality - Fast, Smart, and Scalable

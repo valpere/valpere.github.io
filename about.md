@@ -11,7 +11,6 @@ permalink: /about/
 * [LinkedIn](https://www.linkedin.com/in/valentynsolomko/)
 * [Telegram](https://t.me/pere_val) — @pere_val
 * Signal — pereval.13
-* [Fiverr](https://www.fiverr.com/users/pere_val)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 ## Overview

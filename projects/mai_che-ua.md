@@ -9,7 +9,6 @@ lang_alt: /projects/maiche/
 
 # Інструмент перевірки електронної пошти
 
-* [Fiverr](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)
 * [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
 
@@ -66,7 +65,6 @@ lang_alt: /projects/maiche/
 - Кастомні панелі звітності
 - Виділена підтримка
 
-*Примітка: Деталі щодо вартості преміум пакетів та кастомних функцій доступні за посиланням "[I will build an enterprisegrade email validation cli tool](https://www.fiverr.com/pere_val/build-an-enterprisegrade-email-validation-cli-tool)".*
 
 ![Перевірте свій список електронної пошти](../assets/images/maiche/verify_your_email_list-0384x0256.png)
 
