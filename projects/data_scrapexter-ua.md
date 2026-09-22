@@ -14,7 +14,7 @@ lang_alt: /projects/datascrapexter/
 
 ## Короткий огляд
 
-![Професійне рішення для веб-скрейпінгу](../assets/images/data_scrapexter/professional_web_scraping_solution-1-0384x0256.png)
+![Професійне рішення для веб-скрейпінгу](/projects/assets/images/data_scrapexter/professional_web_scraping_solution-1-0384x0256.png)
 
 Професійний фреймворк для веб-скрейпінгу на Go із захистом від виявлення, розпізнаванням капчі, ротацією проксі та розподіленою обробкою. Вивід структурованих даних у JSON, CSV або базу даних через гнучкі конфігурації YAML/JSON.
 
@@ -32,7 +32,7 @@ lang_alt: /projects/datascrapexter/
 
 ## Детальний огляд
 
-![Візуалізація виводу даних](../assets/images/data_scrapexter/data_output_visualization-1-0384x0256.png)
+![Візуалізація виводу даних](/projects/assets/images/data_scrapexter/data_output_visualization-1-0384x0256.png)
 
 ### Опис продукту
 
@@ -155,7 +155,7 @@ datascrapexter scrape --config configs/reviews.yaml --output bigquery://project:
 - **Консалтингові послуги**: Конфігурація за участі експертів, оптимізація продуктивності та навчання персоналу.
 - **Приватні розгортання**: Локальне або VPC-розгортання з архітектурою нульової довіри.
 
-![Банер — представлення продукту](../assets/images/data_scrapexter/hero_banner-product_introduction-1-0480x0276.png)
+![Банер — представлення продукту](/projects/assets/images/data_scrapexter/hero_banner-product_introduction-1-0480x0276.png)
 
 ### Додаткові опції
 

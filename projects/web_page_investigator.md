@@ -12,7 +12,7 @@ lang: en
 
 ## Transform How You Handle Web Data - Extract, Analyze, and Automate Like a Pro
 
-![Overview feature highlight](../assets/images/web_page_investigator/overview-feature_highlight-0-0400x0300.png)
+![Overview feature highlight](/projects/assets/images/web_page_investigator/overview-feature_highlight-0-0400x0300.png)
 
 **Struggling with manual web content tasks that consume valuable time and resources?**
 
@@ -111,7 +111,7 @@ Web Page Analysis Tools are sophisticated command-line applications built to han
 
 ## Service Tiers & Capabilities
 
-![Real-world use cases](../assets/images/web_page_investigator/real_world-use_cases-portrait-0256x0384.png)
+![Real-world use cases](/projects/assets/images/web_page_investigator/real_world-use_cases-portrait-0256x0384.png)
 
 ### **🚀 Starter Solutions**
 Perfect for small-scale projects and proof-of-concept work:
@@ -245,7 +245,7 @@ Tailored tools designed for specific requirements:
 
 ## Technical Foundation & Reliability
 
-![Before after output formats](../assets/images/web_page_investigator/before-after-output_formats-0384x0256.png)
+![Before after output formats](/projects/assets/images/web_page_investigator/before-after-output_formats-0384x0256.png)
 
 ### **🏗️ Robust Architecture**
 - **Cross-Platform Compatibility** - Works on Windows, macOS, and Linux
