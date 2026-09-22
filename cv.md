@@ -8,7 +8,7 @@ permalink: /cv/
 
 Senior Software Engineer / Technical Lead / CTO
 
-**Links:** [LinkedIn](https://www.linkedin.com/in/valentynsolomko/) · [GitHub](https://github.com/valpere) · [Portfolio](https://valpere.github.io/)
+**Links:** [LinkedIn](https://www.linkedin.com/in/valentynsolomko/) · [GitHub](https://github.com/valpere) · [Telegram](https://t.me/pere_val) · [Signal](https://signal.me/#eu/pereval.13) · [Portfolio](https://valpere.github.io/)
 
 ---
 
