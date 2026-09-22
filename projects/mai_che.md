@@ -12,7 +12,7 @@ lang: en
 
 ## Brief Overview
 
-![Applications_and_benefits](../assets/images/maiche/applications_and_benefits-0256x0256.png)
+![Applications_and_benefits](/projects/assets/images/maiche/applications_and_benefits-0256x0256.png)
 
 **MaiChe** is a professional-grade command-line email validation tool built with Go for exceptional performance and accuracy. It validates email addresses through multiple verification stages—syntax checking, domain/MX record verification, and SMTP mailbox validation—without sending actual emails. Perfect for businesses needing to maintain clean email lists, reduce bounce rates, and protect sender reputation.
 
@@ -62,7 +62,7 @@ lang: en
 - Dedicated support
 
 
-![Verify your email list](../assets/images/maiche/verify_your_email_list-0384x0256.png)
+![Verify your email list](/projects/assets/images/maiche/verify_your_email_list-0384x0256.png)
 
 ---
 
@@ -131,7 +131,7 @@ MaiChe's architecture prioritizes speed without sacrificing accuracy:
 
 ### Real-World Use Cases
 
-![Bulk email verifier](../assets/images/maiche/bulk_email_verifier-1-0384x0256.png)
+![Bulk email verifier](/projects/assets/images/maiche/bulk_email_verifier-1-0384x0256.png)
 
 #### E-commerce Email List Cleaning
 
@@ -171,7 +171,7 @@ A B2B data provider validates all email lists before delivery:
 
 ### Package Details and Features
 
-![MaiChe is a rock email validation cli tool](../assets/images/maiche/maiche_is_a_rock_email_validation_cli_tool-0400x0300.png)
+![MaiChe is a rock email validation cli tool](/projects/assets/images/maiche/maiche_is_a_rock_email_validation_cli_tool-0400x0300.png)
 
 #### Basic Package - Essential Validation
 

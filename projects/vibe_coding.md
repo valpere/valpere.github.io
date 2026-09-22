@@ -12,7 +12,7 @@ lang: en
 
 ## Transform Your Ideas Into Reality - Fast, Smart, and Scalable
 
-![Vibe Coding -- clean, scalable, lovable solutions](../assets/images/vibe_coding/ai+low-code_fusion-1-0384x0256.png)
+![Vibe Coding -- clean, scalable, lovable solutions](/projects/assets/images/vibe_coding/ai+low-code_fusion-1-0384x0256.png)
 
 **Stuck with a brilliant concept but need a way to build it quickly and efficiently?**
 
@@ -81,7 +81,7 @@ Vibe Coding blends the intelligence of AI with smart development practices to pr
 
 ## Service Offerings
 
-![MVP Development with AI Tools](../assets/images/vibe_coding/mvp_development_with_ai_tools-1-0384x0256.png)
+![MVP Development with AI Tools](/projects/assets/images/vibe_coding/mvp_development_with_ai_tools-1-0384x0256.png)
 
 ### **🚀 Quick MVP Development**
 
@@ -122,7 +122,7 @@ Scalable systems designed for complex requirements:
 
 ## Technology Capabilities
 
-![Full Stack Microservices](../assets/images/vibe_coding/full-stack-microservices-1-0384x0256.png)
+![Full Stack Microservices](/projects/assets/images/vibe_coding/full-stack-microservices-1-0384x0256.png)
 
 ### **AI & Automation Tools**
 
@@ -163,7 +163,7 @@ Scalable systems designed for complex requirements:
 
 ## Development Process
 
-![Lovable AI Vibe Coding](../assets/images/vibe_coding/lovable_ai_vibe_coding-2-0384x0256.png)
+![Lovable AI Vibe Coding](/projects/assets/images/vibe_coding/lovable_ai_vibe_coding-2-0384x0256.png)
 
 ### **1. Strategy & Planning**
 

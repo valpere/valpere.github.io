@@ -15,13 +15,13 @@ lang_alt: /uk/projects/rule-based_telegram_chatbot/
 
 - [FreelanceHunt](https://freelancehunt.com/freelancer/valpere.html#portfolio)
 
-![Telegram bot solutions comparison overview](../assets/images/rule-based_telegram_chatbot/telegram_bot_solutions-comparison-overview-0768x0512.png)
+![Telegram bot solutions comparison overview](/projects/assets/images/rule-based_telegram_chatbot/telegram_bot_solutions-comparison-overview-0768x0512.png)
 
 ---
 
 ## Brief Overview
 
-![How the bot works](../assets/images/rule-based_telegram_chatbot/how_the_bot_works-1-0768x0512.png)
+![How the bot works](/projects/assets/images/rule-based_telegram_chatbot/how_the_bot_works-1-0768x0512.png)
 
 The Rule-Based Telegram ChatBot project is a powerful, AI-driven Telegram bot designed to transform customer interactions by automating responses and tasks within the Telegram messaging platform. By leveraging natural language processing (NLP) and rule-based logic, the bot provides instant, accurate, and personalized replies to user queries 24/7, eliminating the need for customers to wait for human agents. This solution is particularly valuable for businesses seeking to enhance customer satisfaction, reduce operational costs, and improve efficiency. The bot handles a wide range of interactions—from answering frequently asked questions to processing orders and gathering customer insights—enabling businesses to focus their human resources on more complex tasks. With its ability to integrate seamlessly into existing workflows and its strong emphasis on data security, the Rule-Based Telegram ChatBot project offers a scalable, reliable, and user-friendly solution to meet the growing demand for instant, accessible customer service.
 
@@ -29,7 +29,7 @@ The Rule-Based Telegram ChatBot project is a powerful, AI-driven Telegram bot de
 
 ## Details
 
-![Key features wheel](../assets/images/rule-based_telegram_chatbot/key_features_wheel-1-0768x0512.png)
+![Key features wheel](/projects/assets/images/rule-based_telegram_chatbot/key_features_wheel-1-0768x0512.png)
 
 ### Problem & Solution Fit
 
@@ -99,13 +99,13 @@ In today’s fast-paced digital environment, customers expect immediate response
 
 ### Differentiators
 
-![Small business vs mid-sized vs enterprise](../assets/images/rule-based_telegram_chatbot/small_business_vs_mid-sized_vs_enterprise-2-0768x0512.png)
+![Small business vs mid-sized vs enterprise](/projects/assets/images/rule-based_telegram_chatbot/small_business_vs_mid-sized_vs_enterprise-2-0768x0512.png)
 
 Unlike many chatbot solutions, the Rule-Based Telegram ChatBot project combines the flexibility of rule-based logic with advanced AI-driven natural language understanding, enabling it to handle both complex and straightforward interactions effectively. The bot is designed for easy integration with existing business systems, requiring no additional hardware and minimal coding knowledge, which reduces upfront costs and deployment time. Its robust encryption ensures that all user data is secure, addressing critical privacy concerns in industries such as healthcare and finance. Additionally, the bot’s ability to learn from interactions and adapt over time sets it apart from static, rule-only bots, providing a more natural and engaging user experience.
 
 ### Implementation & Support
 
-![Telegram bot benefits 24/7 automation](../assets/images/rule-based_telegram_chatbot/telegram_bot_benefits-24_7_automation-1-0768x0512.png)
+![Telegram bot benefits 24/7 automation](/projects/assets/images/rule-based_telegram_chatbot/telegram_bot_benefits-24_7_automation-1-0768x0512.png)
 
 The Rule-Based Telegram ChatBot project is deployed via a straightforward process that includes setting up a Telegram bot account, configuring the bot’s logic using a user-friendly interface, and integrating it with relevant business systems. The project team provides comprehensive onboarding, training, and ongoing support to ensure smooth operation and continuous improvement. Customers can expect minimal disruption during deployment and can track performance metrics such as response time, resolution rate, and user satisfaction to measure the bot’s impact on their operations.
 

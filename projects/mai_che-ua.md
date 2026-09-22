@@ -14,7 +14,7 @@ lang_alt: /projects/maiche/
 
 ## Короткий огляд
 
-![Застосування та переваги](../assets/images/maiche/applications_and_benefits-0256x0256.png)
+![Застосування та переваги](/projects/assets/images/maiche/applications_and_benefits-0256x0256.png)
 
 Інструмент CLI корпоративного рівня для перевірки електронної пошти: валідація синтаксису, домену та стану поштової скриньки. Видаляє недійсні, одноразові та рольові адреси, зменшує кількість відмов та захищає репутацію відправника.
 
@@ -66,7 +66,7 @@ lang_alt: /projects/maiche/
 - Виділена підтримка
 
 
-![Перевірте свій список електронної пошти](../assets/images/maiche/verify_your_email_list-0384x0256.png)
+![Перевірте свій список електронної пошти](/projects/assets/images/maiche/verify_your_email_list-0384x0256.png)
 
 ---
 
@@ -133,7 +133,7 @@ MaiChe обробляє кожну електронну адресу через 
 
 ### Реальні приклади використання
 
-![Верифікатор масових електронних листів](../assets/images/maiche/bulk_email_verifier-1-0384x0256.png)
+![Верифікатор масових електронних листів](/projects/assets/images/maiche/bulk_email_verifier-1-0384x0256.png)
 
 #### Очищення списку електронної пошти e-commerce
 
@@ -164,7 +164,7 @@ MaiChe обробляє кожну електронну адресу через 
 
 ### Деталі пакетів та функцій
 
-![MaiChe — надійний CLI-інструмент перевірки електронної пошти](../assets/images/maiche/maiche_is_a_rock_email_validation_cli_tool-0400x0300.png)
+![MaiChe — надійний CLI-інструмент перевірки електронної пошти](/projects/assets/images/maiche/maiche_is_a_rock_email_validation_cli_tool-0400x0300.png)
 
 #### Базовий пакет — Основна перевірка
 

@@ -14,7 +14,7 @@ lang_alt: /projects/web_page_investigator/
 
 ## Змініть підхід до веб-даних — вилучайте, аналізуйте та автоматизуйте як профі
 
-![Огляд функцій](../assets/images/web_page_investigator/overview-feature_highlight-0-0400x0300.png)
+![Огляд функцій](/projects/assets/images/web_page_investigator/overview-feature_highlight-0-0400x0300.png)
 
 Універсальний інструмент аналізу веб-сторінок для автоматизованого вилучення даних, трансформації, порівняння та SEO-аналізу. Обробляє динамічний контент за допомогою headless-браузерів та виводить результати у форматах JSON, CSV або кастомних форматах.
 
@@ -115,7 +115,7 @@ lang_alt: /projects/web_page_investigator/
 
 ## Рівні послуг та можливості
 
-![Реальні приклади використання](../assets/images/web_page_investigator/real_world-use_cases-portrait-0256x0384.png)
+![Реальні приклади використання](/projects/assets/images/web_page_investigator/real_world-use_cases-portrait-0256x0384.png)
 
 ### Стартові рішення
 Ідеальні для невеликих проєктів та доказів концепції:
@@ -236,7 +236,7 @@ lang_alt: /projects/web_page_investigator/
 
 ## Технічна основа та надійність
 
-![Формати виводу до та після](../assets/images/web_page_investigator/before-after-output_formats-0384x0256.png)
+![Формати виводу до та після](/projects/assets/images/web_page_investigator/before-after-output_formats-0384x0256.png)
 
 ### Надійна архітектура
 - **Кросплатформна сумісність** — Працює на Windows, macOS та Linux

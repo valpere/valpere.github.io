@@ -14,7 +14,7 @@ lang_alt: /projects/vibe_coding/
 
 ## Перетворіть свої ідеї на реальність — швидко, розумно та масштабовано
 
-![Vibe Coding — чисті, масштабовані рішення](../assets/images/vibe_coding/ai+low-code_fusion-1-0384x0256.png)
+![Vibe Coding — чисті, масштабовані рішення](/projects/assets/images/vibe_coding/ai+low-code_fusion-1-0384x0256.png)
 
 Розробка на основі ШІ, що поєднує автоматизацію Claude/Cursor та інструменти low-code (Supabase/Replit) для масштабованих рішень за лічені дні. Запуск MVP, модернізація застарілих систем та автоматизація процесів швидше.
 
@@ -84,7 +84,7 @@ Vibe Coding поєднує інтелект ШІ з розумними прак�
 
 ## Пропоновані послуги
 
-![Розробка MVP з інструментами ШІ](../assets/images/vibe_coding/mvp_development_with_ai_tools-1-0384x0256.png)
+![Розробка MVP з інструментами ШІ](/projects/assets/images/vibe_coding/mvp_development_with_ai_tools-1-0384x0256.png)
 
 ### Швидка розробка MVP
 
@@ -125,7 +125,7 @@ Vibe Coding поєднує інтелект ШІ з розумними прак�
 
 ## Технологічні можливості
 
-![Мікросервіси повного стеку](../assets/images/vibe_coding/full-stack-microservices-1-0384x0256.png)
+![Мікросервіси повного стеку](/projects/assets/images/vibe_coding/full-stack-microservices-1-0384x0256.png)
 
 ### Інструменти ШІ та автоматизації
 
@@ -166,7 +166,7 @@ Vibe Coding поєднує інтелект ШІ з розумними прак�
 
 ## Процес розробки
 
-![Lovable AI Vibe Coding](../assets/images/vibe_coding/lovable_ai_vibe_coding-2-0384x0256.png)
+![Lovable AI Vibe Coding](/projects/assets/images/vibe_coding/lovable_ai_vibe_coding-2-0384x0256.png)
 
 ### 1. Стратегія та планування
 
