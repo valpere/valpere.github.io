@@ -57,7 +57,7 @@
   permalink: "/projects/rule-based_telegram_chatbot/"
   hero_image: "/projects/assets/images/rule-based_telegram_chatbot/professional-infographic-of-bot-features-1-0768x0512.jpg"
   featured: true
-  tech: ["Go", "JavaScript", "Java", "Telegram API"]
+  tech: ["Go", "JavaScript", "Java", "Telegram API", "SendPulse", "BotHelp", "Чат-боти Instagram", "Багатомовні боти"]
   links:
     freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
 
@@ -93,7 +93,7 @@
   permalink: "/projects/datascrapexter/"
   hero_image: "/projects/assets/images/data_scrapexter/unleash_the_power_of_web_scraping-1-0768x0512.png"
   featured: true
-  tech: ["Go", "YAML", "JSON", "Proxy Rotation", "Anti-Detection"]
+  tech: ["Go", "YAML", "JSON", "Proxy Rotation", "Anti-Detection", "Web Scraping", "Парсинг сайтів", "Парсери даних", "Puppeteer", "Playwright", "Python"]
   links:
     freelancehunt: "https://freelancehunt.com/freelancer/valpere.html#portfolio"
 

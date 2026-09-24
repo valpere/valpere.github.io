@@ -1,9 +1,29 @@
+- slug: "vending-esp32-monobank"
+  client: "vending-esp32-monobank — IoT Coffee Machine Monobank Acquiring Controller"
+  client_uk: "vending-esp32-monobank — IoT-контролер безконтактної оплати кавового автомата через Monobank"
+  role: "Solo Embedded & Cloud IoT Architect"
+  period: "Sep 2026"
+  stack: ["ESP32", "C++", "Cloudflare Workers", "Serverless", "Monobank Acquiring", "MQTT", "HiveMQ", "IoT", "Гальванічна розв'язка", "Rheavendors", "Вендинг"]
+  summary_en: "Zero-monthly-fee IoT telemetry and payment bridge for commercial Rheavendors coffee machines: customer scans a dynamic Monobank QR on the machine, Cloudflare Worker receives the payment webhook, and dispatches a TLS-encrypted MQTT pulse to an ESP32 microcontroller with optocoupler isolation, triggering the exact beverage dispense without touching the internal logic voltage. Zero subscription fees, direct FOP settlement."
+  summary_uk: "Автономний IoT-контролер безконтактної оплати для кавових автоматів Rheavendors без абонплат: покупець сканує QR-код Monobank на автоматі, безсерверний шлюз Cloudflare Workers обробляє платіжний вебхук і передає команду через MQTT з TLS на мікроконтролер ESP32. Гальванічна розв'язка через оптопари HY-M158 забезпечує безпечну комутацію шини CoinParallel без ризику для материнської плати. Гроші напряму зараховуються на ФОП під 1.3% банку."
+  permalink: "/portfolio/vending-esp32-monobank/"
+
+- slug: "site-security-cleanup"
+  client: "site-security-cleanup — Malware Remediation and CMS Hardening"
+  client_uk: "site-security-cleanup — видалення вірусів, лікування та комплексний захист CMS"
+  role: "Solo Security Engineer / Webmaster"
+  period: "Sep 2026"
+  stack: ["WordPress", "Joomla", "OpenCart", "PHP 8.2+", "MySQL", "Malware Cleanup", "Лікування вірусів", "Безпека сайтів", "WAF", "Apache .htaccess", "Linux", "ClamAV"]
+  summary_en: "Emergency malware cleanup and hardening for compromised WordPress, Joomla, and OpenCart stores: isolated staging triage, heuristic backdoor and web shell removal, hidden SEO redirect cleanup, database sanitization, PHP 8.2+ compatibility migration, WAF deployment, upload folder execution locking, and Google Safe Browsing blacklist removal with 100% data preservation."
+  summary_uk: "Екстрене лікування та захист зламаних сайтів на WordPress, Joomla та OpenCart: розгортання в ізольованому staging-середовищі, евристичний пошук і видалення бекдорів, веб-шелів та прихованих спам-редиректів, очищення бази даних, переведення на PHP 8.2+, налаштування WAF, блокування виконання PHP у папках завантажень та зняття санкцій Google Safe Browsing зі збереженням 100% контенту."
+  permalink: "/portfolio/site-security-cleanup/"
+
 - slug: "fastshop"
   client: "fastshop — Fast Mobile-First OpenCart Store"
   client_uk: "fastshop — швидкий mobile-first магазин на OpenCart"
   role: "Solo Creator / Architect"
   period: "Sep 2026"
-  stack: ["OpenCart 3", "PHP 8.3", "MySQL", "Redis", "WebP", "Docker"]
+  stack: ["OpenCart 3", "OpenCart", "PHP 8.3", "MySQL", "Redis", "WebP", "Docker", "WordPress", "WooCommerce", "Хорошоп", "SEO 301", "Каталоги товарів"]
   summary_en: "A 30,000-product OpenCart store built as an overlay on stock OpenCart: faceted filters with counts and one canonical SEO URL per filter state, a one-page checkout with a Nova Poshta city/branch picker, Redis cache, WebP and a lean theme. Against stock OpenCart on the same data: catalog page 34 ms to 10 ms, search 267 ms to 5 ms, Lighthouse mobile 100 with a 19–28 KB page. 37 end-to-end checks."
   summary_uk: "Магазин на OpenCart із 30 000 товарів у вигляді надбудови над стандартним OpenCart: фільтри з лічильниками й однією канонічною ЧПУ-адресою на стан фільтра, чекаут на одній сторінці з вибором міста й відділення Нової Пошти, Redis-кеш, WebP і легка тема. Проти стандартного OpenCart на тих самих даних: каталог 34 мс → 10 мс, пошук 267 мс → 5 мс, Lighthouse mobile 100 зі сторінкою 19–28 КБ. 37 наскрізних перевірок."
   permalink: "/portfolio/fastshop/"
@@ -15,7 +35,7 @@
   client_uk: "crmbridge — магазин, телефонія і посилки в одній CRM"
   role: "Solo Creator / Architect"
   period: "Sep 2026"
-  stack: ["Go", "SalesDrive API", "Binotel", "Nova Poshta API", "Telegram", "SQLite", "Docker"]
+  stack: ["Go", "SalesDrive API", "KeyCRM", "KeepinCRM", "Binotel", "Nova Poshta API", "Telegram", "Webhooks", "CRM-інтеграції", "Воронки продажів", "SQLite", "Docker"]
   summary_en: "Connects a shop or Telegram bot, Binotel telephony and Nova Poshta to a SalesDrive CRM: one deal per order even when the site retries or the CRM loses a reply, caller cards for managers, missed calls as leads, and parcel statuses that move the funnel forward only. 250 tracked parcels take 3 Nova Poshta requests. 25 tests under the race detector."
   summary_uk: "Зʼєднує магазин або Telegram-бота, телефонію Binotel і Нову Пошту з CRM SalesDrive: одна угода на замовлення навіть коли сайт повторює запит чи CRM губить відповідь, картки клієнтів для менеджерів, пропущені дзвінки як ліди та статуси посилок, що рухають воронку лише вперед. 250 відстежуваних посилок — 3 запити до Нової Пошти. 25 тестів під детектором гонок."
   permalink: "/portfolio/crmbridge/"
@@ -27,7 +47,7 @@
   client_uk: "fiscalgate — оплати у фіскальні чеки Checkbox, рівно один раз"
   role: "Solo Creator / Architect"
   period: "Sep 2026"
-  stack: ["Go", "Checkbox API", "Monobank", "LiqPay", "SQLite", "Docker"]
+  stack: ["Go", "Checkbox API", "ПРРО", "Фіскалізація", "Checkbox", "Monobank", "LiqPay", "WayForPay", "Еквайринг", "Платіжні шлюзи", "SQLite", "Docker"]
   summary_en: "Turns confirmed Monobank and LiqPay payments (and cash on delivery) into Checkbox PRRO fiscal receipts exactly once: 300 orders × 4 concurrent webhook copies give exactly 300 receipts, a lost register reply never doubles a receipt, prepayment plus cash on delivery becomes one receipt with two tenders, and refunds become return receipts. Shift and Z-report on schedule. 26 tests under the race detector."
   summary_uk: "Перетворює підтверджені оплати Monobank і LiqPay (та накладений платіж) на фіскальні чеки ПРРО Checkbox рівно один раз: 300 замовлень × 4 одночасні копії вебхука дають рівно 300 чеків, загублена відповідь реєстратора не подвоює чек, передоплата плюс накладений платіж — один чек з двома формами оплати, повернення — чеки повернення. Зміна й Z-звіт за розкладом. 26 тестів під детектором гонок."
   permalink: "/portfolio/fiscalgate/"
@@ -39,7 +59,7 @@
   client_uk: "feedsync — фіди постачальників у прайс-листи маркетплейсів"
   role: "Solo Creator / Architect"
   period: "Sep 2026"
-  stack: ["Go", "encoding/xml streaming", "MySQL", "SQLite", "Docker"]
+  stack: ["Go", "encoding/xml streaming", "XML/YML", "Prom.ua", "Rozetka", "Прайс-листи", "Синхронізація цін і залишків", "Імпорт/Експорт товарів", "MySQL", "SQLite", "Docker"]
   summary_en: "Turns supplier price feeds (YML/XML, CSV, JSON) into Rozetka and Prom.ua price lists and syncs an OpenCart product table: streaming read, every published file re-validated independently, atomic publish. 25,000 offers in about 1.5 s and 36 MB; 100,000 in 6–7 s; a repeat OpenCart sync changes nothing (≈25 ms)."
   summary_uk: "Перетворює прайси постачальників (YML/XML, CSV, JSON) на прайс-листи Rozetka і Prom.ua та синхронізує таблицю товарів OpenCart: потокове читання, незалежна повторна перевірка кожного опублікованого файлу, атомарна публікація. 25 000 позицій приблизно за 1,5 с і 36 МБ; 100 000 — за 6–7 с; повторна синхронізація OpenCart нічого не міняє (≈25 мс)."
   permalink: "/portfolio/feedsync/"
@@ -51,7 +71,7 @@
   client_uk: "Дизайнерський одяг на Shopify (NDA)"
   role: "Freelance Backend Engineer / AI Integration"
   period: "Sep 2026 — ongoing (Stage 1 of 3)"
-  stack: ["Go", "PostgreSQL", "Shopify GraphQL Admin API", "Claude API", "Higgsfield", "Meta Marketing API", "robfig/cron", "Docker Compose", "Caddy"]
+  stack: ["Go", "Shopify", "Shopify GraphQL Admin API", "PostgreSQL", "Meta Marketing API", "Meta Ads", "Claude API", "Higgsfield", "E-commerce AI", "robfig/cron", "Docker Compose", "Caddy"]
   summary_en: "Building an AI ad-testing loop for a Shopify luxury-fashion store: Claude turns live product and order data into offer/angle/hook hypotheses, Higgsfield renders the creatives, and the system assembles Meta campaigns — created paused, with hard spend caps — then scores winners by reconciling against real Shopify orders, not the ad platform's own pixel. Stage 1 of a 3-stage engagement, in progress."
   summary_uk: "AI-система тестування реклами для Shopify-магазину дизайнерського одягу: Claude перетворює живі дані про товари й замовлення на гіпотези офферів/кутів/гачків, Higgsfield рендерить креативи, а система збирає Meta-кампанії — створені на паузі, з жорсткими лімітами витрат — і визначає переможців, звіряючи результати з реальними замовленнями Shopify, а не з піксельною аналітикою рекламної платформи. Stage 1 з 3-етапного контракту, у процесі."
   permalink: "/portfolio/shopify-ad-testing/"
