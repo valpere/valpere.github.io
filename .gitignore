@@ -45,7 +45,7 @@ _site
 vendor
 
 tmp/
-bin/
+minions/
 
 # Skill telemetry (local only)
 .claude/skills/fix-review/telemetry.jsonl
