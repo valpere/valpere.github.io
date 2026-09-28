@@ -6,7 +6,17 @@ permalink: /cv/
 
 # Valentyn Solomko
 
-Senior Software Engineer / Technical Lead / CTO
+**Senior Software Engineer / Technical Lead / CTO**
+
+## Contacts
+
+- **LinkedIn:** [valentynsolomko](https://www.linkedin.com/in/valentynsolomko/)
+- **Email:** <valentyn.solomko@gmail.com>
+- **GitHub:** <https://github.com/valpere>
+- **Portfolio:** <https://valpere.github.io/>
+- **Phone:** +380 63 617 4701
+- **WhatsApp:** [380636174701](https://wa.me/380636174701)
+- **Signal:** pereval.13
 
 **Links:** [LinkedIn](https://www.linkedin.com/in/valentynsolomko/) · [GitHub](https://github.com/valpere) · [Telegram](https://t.me/pere_val) · [Signal](https://signal.me/#eu/pereval.13) · [Portfolio](https://valpere.github.io/)
 
@@ -159,6 +169,7 @@ Technical leadership and hands-on delivery of AI-driven backend systems. Serve a
 - Optimized code performance and implemented automated testing frameworks
 - Established Agile Scrum practices, improving team delivery efficiency
 - Conducted technical interviews for engineering candidates
+- Rotated through Level 2 "Rapid Response Team" on-call coverage, typically a full sprint at a time
 - Maintained effective communication with cross-functional teams and stakeholders
 
 **Technical Environment:** Groovy, Java, Perl, Go · Docker, Kubernetes, Helm, Ansible, Terraform · CloudBees CI (Jenkins), CloudBees SDA (ElectricFlow), GitLab CI · JFrog Artifactory, Nexus · BigIP, OctopusDeploy · Git (GitHub, GitLab, Bitbucket) · Agile Scrum, Feature Management
@@ -185,6 +196,7 @@ Technical leadership and hands-on delivery of AI-driven backend systems. Serve a
 - Facilitated cross-departmental collaboration, streamlining development workflows
 - Managed integration of VoIP, IoT, and broadband service components
 - Directed technical initiatives for Communication Service Provider solutions
+- Participated in on-call rotation for the PortaSwitch BSS/Billing platform's high-availability requirements
 
 **Technical Environment:** Perl, Linux, PortaSwitch · MySQL, PostgreSQL · VoIP, SIP, BSS · High-availability systems · Git · YouTrack, Confluence · Agile, After Action Review
 
