@@ -66,3 +66,10 @@ The current nav entries (as of last edit): Home, About, Portfolio, Projects, Bri
 - `portfolio/assets/images/<client-name>/` — Per-portfolio images
 
 Image filenames follow the pattern: `<description>-<sequence>-<width>x<height>.<ext>`
+
+- `hero_image` / `hero_image_uk` in `_data/projects.yml` and `_data/portfolio.yml` are **optional** — `project-card.html`, `portfolio-card.html` and `portfolio-item.html` guard on an empty value, so omitting one is supported, not a missing-asset bug.
+- A `-ua.md` page may carry its own `image:` frontmatter (e.g. `gym-ops-platform-ua`, `sales-crm-platform-ua`) that differs from its English sibling — intentional.
+
+### Reviewer guidance
+
+Image binaries are tracked in git but invisible in a text diff. When reviewing a PR (`/fix-review`, `/code-review`), assume referenced images exist on disk — do not raise "PNG missing from diff" as a finding; verify with `ls`/`git ls-files` if in doubt.
