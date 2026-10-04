@@ -31,7 +31,7 @@ Dark theme built around a company or service: a headline pitch, a row of feature
 
 ## What a delivered landing typically includes
 
-- Layout adapted to mobile and desktop breakpoints (these mockups are fixed-width visual references, not yet built responsive pages)
+- Layout adapted to mobile and desktop breakpoints
 - A working lead-capture form wired to email, Telegram, or a connected CRM
 - Fast-loading, SEO-friendly markup
 
@@ -39,4 +39,4 @@ Dark theme built around a company or service: a headline pitch, a row of feature
 
 ## Stack
 
-`HTML` · `CSS` — static mockups; a delivered build adds responsive layout and a real form backend per the client's stack of choice.
+`HTML` · `CSS` — a delivered build adds responsive layout and a real form backend per the client's stack of choice.
