@@ -35,7 +35,6 @@ Two gates, in order of cost. First, a deterministic pass strips ritual phrasing 
 | Deterministic filter before any LLM call | Most of the noise is boilerplate; stripping it and scoring the remainder needs no model call at all, so the expensive step only runs on bids that already cleared a cheap bar. |
 | One surgical question, not an interrogation | A multi-round questionnaire drives away over-committed senior candidates who'd rather just talk to a human. One sharp, job-specific tradeoff question filters just as well without the friction. |
 | Runs inside the client's own account, deliberately lean | Every message sent carries the client's own platform-account risk, not a vendor's — so the engagement is scoped to stay conservative: few iterations, starting from the highest-signal bids first, no aggressive automation posture. |
-| Bespoke per client, not a shared SaaS | Validated against one real account and one real hiring problem before any thought of generalizing — the platform-risk profile and the shape of "signal" both depend on the specific job, so a one-size-fits-all product would either be too aggressive for some clients or too weak for others. |
 
 ---
 
