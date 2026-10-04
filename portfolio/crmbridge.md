@@ -7,7 +7,7 @@ image: /portfolio/assets/images/crmbridge/hero-0900x0530.png
 
 ## Overview
 
-Independent project: a Go service that connects a **shop or Telegram bot**, **Binotel** telephony and **Nova Poshta** to a **SalesDrive** CRM. Orders become one deal each, a ringing call shows the caller's card to the responsible manager, a missed call becomes a lead, and a parcel's status moves the deal along the funnel and messages the customer.
+A Go service that connects a **shop or Telegram bot**, **Binotel** telephony and **Nova Poshta** to a **SalesDrive** CRM. Orders become one deal each, a ringing call shows the caller's card to the responsible manager, a missed call becomes a lead, and a parcel's status moves the deal along the funnel and messages the customer.
 
 **Result: one deal per order even when the site retries or the CRM loses a reply (one create call, one deal); 250 tracked parcels take exactly 3 Nova Poshta requests; statuses 5 → 7 → 5 → 7 → 9 produce one message per stage and never move a deal back.**
 

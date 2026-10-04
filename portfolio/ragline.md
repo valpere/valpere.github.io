@@ -7,7 +7,7 @@ image: /portfolio/assets/images/ragline/ragline-en.png
 
 ## Overview
 
-Independent demo project: a Go REST API for AI support bots — a knowledge base, Postgres full-text search retrieval, and an explicit confidence gate that hands off to a human instead of guessing. Models the pattern behind AI support bots: a client's own documentation gets searched, and the bot has to know the difference between "I found the answer" and "I found nothing relevant" — the case a naive bot papers over with a plausible-sounding guess.
+A Go REST API for AI support bots — a knowledge base, Postgres full-text search retrieval, and an explicit confidence gate that hands off to a human instead of guessing. Models the pattern behind AI support bots: a client's own documentation gets searched, and the bot has to know the difference between "I found the answer" and "I found nothing relevant" — the case a naive bot papers over with a plausible-sounding guess.
 
 **Result: a bot that never repeats a low-confidence guess even from its own cache, and never serves a cached answer after the source document it was grounded in has been edited — proven live against 4 real scenarios, not asserted.**
 

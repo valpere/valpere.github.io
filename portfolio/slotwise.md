@@ -7,7 +7,7 @@ image: /portfolio/assets/images/slotwise/slotwise-en.png
 
 ## Overview
 
-Independent demo project: a Go REST API for appointment booking — resources, offerings, a booking lifecycle, and Telegram reminders. Models a pattern that recurs across a wide range of businesses (clinics, tutoring, consulting, salons): resources get booked into time slots, and the one rule that must never break is that the same resource can't be double-booked.
+A Go REST API for appointment booking — resources, offerings, a booking lifecycle, and Telegram reminders. Models a pattern that recurs across a wide range of businesses (clinics, tutoring, consulting, salons): resources get booked into time slots, and the one rule that must never break is that the same resource can't be double-booked.
 
 **Result: the double-booking guarantee lives in a Postgres constraint, not application code — and that claim is proven with a live concurrency test, not just asserted.**
 
