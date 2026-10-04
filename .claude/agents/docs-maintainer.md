@@ -97,7 +97,6 @@ Never commit directly to `main`.
 - **Never** invent a `CHANGELOG.md` — this project doesn't keep one
 - **Never** commit meta-files that contradict the current repo state
 - **Never** add TODOs or FIXMEs to documentation files
-- **Never** commit directly to `main` — always branch + PR
 
 ---
 

@@ -152,14 +152,10 @@ Next steps: review + merge each PR once /fix-review + CI are green.
 - **ALWAYS cite report-section** (`§<id>`) in commit messages and PR bodies.
 - **Confirm before destructive ops** (deleting an orphaned page) even
   at high confidence.
-
-## Anti-patterns
-
-- ❌ Commit or push to `main` directly.
-- ❌ Skip `/fix-review` on the PR.
-- ❌ Modify the report's original suggestions (annotate only).
-- ❌ Apply a finding without verifying it against the actual repo
-  state first — the dreaming pass is a heuristic read, it can be wrong.
+- **ALWAYS run `/fix-review` on the PR** before merging.
+- **Annotate the report only** — never modify its original suggestions.
+- **ALWAYS verify a finding against the actual repo state first** — the
+  dreaming pass is a heuristic read, it can be wrong.
 
 ## Companion skills
 
