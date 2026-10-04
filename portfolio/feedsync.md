@@ -7,7 +7,7 @@ image: /portfolio/assets/images/feedsync/hero-0900x0530.png
 
 ## Overview
 
-Independent project: a Go service that turns a supplier's price feed (YML/XML, CSV or JSON) into **Rozetka** and **Prom.ua** price lists and keeps an OpenCart-style product table in sync. Category mapping, currency conversion, markup rules (fixed, percentage, by price range or category, with rounding) and stock filtering are configuration, not code; every rejected offer is reported with the rule it broke.
+A Go service that turns a supplier's price feed (YML/XML, CSV or JSON) into **Rozetka** and **Prom.ua** price lists and keeps an OpenCart-style product table in sync. Category mapping, currency conversion, markup rules (fixed, percentage, by price range or category, with rounding) and stock filtering are configuration, not code; every rejected offer is reported with the rule it broke.
 
 **Result: 25,000 offers become both price lists in about 1.5 s using about 36 MB of memory, every published file passes an independent re-validation with 0 errors, and a repeat OpenCart sync changes nothing (≈25 ms).**
 

@@ -7,7 +7,7 @@ image: /portfolio/assets/images/subgate/subgate-en.png
 
 ## Overview
 
-Independent demo project: a Go REST API for Telegram paid-channel access — subscribers, gated channels, idempotent payment-webhook ingestion, and a membership state machine (`active → grace → expired`). Models the pattern behind paid-access Telegram bots: a payment gateway calls back on success, and the backend has to turn that callback into "grant/extend channel access" exactly once, even when the gateway retries and a scheduled expiry check fires at the same moment.
+A Go REST API for Telegram paid-channel access — subscribers, gated channels, idempotent payment-webhook ingestion, and a membership state machine (`active → grace → expired`). Models the pattern behind paid-access Telegram bots: a payment gateway calls back on success, and the backend has to turn that callback into "grant/extend channel access" exactly once, even when the gateway retries and a scheduled expiry check fires at the same moment.
 
 **Result: exactly-once payment processing under both a redelivered webhook and a concurrent expiry sweep — the real failure modes of gateway callbacks and cron-driven downgrades, not hypothetical ones — proven live against 10 concurrent identical webhook deliveries and 5 concurrent renewals racing 5 concurrent sweeps.**
 

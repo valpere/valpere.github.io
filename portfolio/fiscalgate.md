@@ -7,7 +7,7 @@ image: /portfolio/assets/images/fiscalgate/hero-0900x0530.png
 
 ## Overview
 
-Independent project: a Go service that turns confirmed **Monobank** and **LiqPay** payments (and cash on delivery) into **Checkbox** PRRO fiscal receipts, handles refunds as return receipts, and opens and closes the shift (Z-report) on schedule.
+A Go service that turns confirmed **Monobank** and **LiqPay** payments (and cash on delivery) into **Checkbox** PRRO fiscal receipts, handles refunds as return receipts, and opens and closes the shift (Z-report) on schedule.
 
 **Result: 300 orders × 4 concurrent copies of every webhook produce exactly 300 receipts; a lost reply from the register never doubles a receipt; prepayment plus cash on delivery becomes one receipt with two tenders.**
 

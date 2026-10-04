@@ -7,7 +7,7 @@ image: /portfolio/assets/images/tumanomir/tumanomir-en.png
 
 ## Overview
 
-Independent R&D project: a Go CLI that turns "the spec is unclear" from a vague complaint into three measurable metrics an AI coding agent's context can be gated on before it writes a line of code.
+A Go CLI that turns "the spec is unclear" from a vague complaint into three measurable metrics an AI coding agent's context can be gated on before it writes a line of code.
 
 The methodology was published first — [Source of the Unknown](/blog/2026/07/04/source-of-the-unknown/) proposed $K_{drift}$ (untraced requirements), $D_{const}$ (constraint density), and $D_{pair}$ (generation spread across N samples) as a way to price ambiguity like an engineering tolerance, not a feeling. Tumanomir is the reference implementation: **25 days, 66 commits, zero reverts**, gating its own specification in CI from day one.
 

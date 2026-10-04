@@ -7,7 +7,7 @@ image: /portfolio/assets/images/fleet-crm/fleet-crm-en.png
 
 ## Overview
 
-Independent demo project: a Go REST API for a fleet-dispatch CRM — clients, vehicles, drivers, a work-order lifecycle, invoicing, and a telematics webhook for ingesting live GPS/odometer pings from external hardware.
+A Go REST API for a fleet-dispatch CRM — clients, vehicles, drivers, a work-order lifecycle, invoicing, and a telematics webhook for ingesting live GPS/odometer pings from external hardware.
 
 Built to demonstrate a pattern that keeps recurring in freelance requests — a dispatch company needing a CRM that ties clients, fleet, and billing together, fed by an external telematics/GPS provider — with the same engineering discipline as client-delivered work: interface-based repositories, a state machine instead of a free-form status column, and every claim below verified against a live binary, not just unit tests.
 

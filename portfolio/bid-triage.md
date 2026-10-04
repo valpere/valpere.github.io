@@ -7,7 +7,7 @@ image: /portfolio/assets/images/bid-triage/bid-triage-en.png
 
 ## Overview
 
-A bespoke engagement, not a packaged product: a bid-screening system for a freelance-platform client drowning in AI-generated proposals. Instead of trying to classify "AI-written" text — an arms race that structurally favors the generator over the detector — it inverts the cost asymmetry that makes bid spam cheap in the first place, and shortlists the small number of bidders who can actually engage with the specific job.
+A bid-screening system for a freelance-platform client drowning in AI-generated proposals. Instead of trying to classify "AI-written" text — an arms race that structurally favors the generator over the detector — it inverts the cost asymmetry that makes bid spam cheap in the first place, and shortlists the small number of bidders who can actually engage with the specific job.
 
 **Approach: don't detect authorship, price it. A one-line, deadline-gated technical question costs a generic pipeline nothing to fail and costs a real practitioner ten seconds to pass — that gap is the filter.**
 

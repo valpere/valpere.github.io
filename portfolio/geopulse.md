@@ -7,7 +7,7 @@ image: /portfolio/assets/images/geopulse/geopulse-en.png
 
 ## Overview
 
-Independent demo project: a Go REST API for GPS fleet tracking — vehicles, circular geofences, position ingestion, and PostGIS-backed enter/exit event detection. Models the pattern behind fleet telematics integrations: a tracker (or a platform like Traccar relaying from one) pings positions, and the backend has to turn that raw stream into trustworthy "vehicle entered/left zone X" events.
+A Go REST API for GPS fleet tracking — vehicles, circular geofences, position ingestion, and PostGIS-backed enter/exit event detection. Models the pattern behind fleet telematics integrations: a tracker (or a platform like Traccar relaying from one) pings positions, and the backend has to turn that raw stream into trustworthy "vehicle entered/left zone X" events.
 
 **Result: exactly-once geofence events from a position stream that duplicates and reorders — the real failure mode of GPS trackers, not a hypothetical one — proven against direct database state, not just asserted.**
 

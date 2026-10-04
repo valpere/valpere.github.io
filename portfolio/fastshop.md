@@ -7,7 +7,7 @@ image: /portfolio/assets/images/fastshop/hero-0900x0530.png
 
 ## Overview
 
-Independent project: a fast, mobile-first online store on **OpenCart 3.0.5 / PHP 8.3**, built as an overlay on stock OpenCart — a lean storefront theme, faceted filtering with SEO URLs, a one-page checkout with a Nova Poshta city/branch picker, Redis caching, WebP images and DB indexes — running a **30,000-product** catalog and measured against stock OpenCart on the same data.
+A fast, mobile-first online store on **OpenCart 3.0.5 / PHP 8.3**, built as an overlay on stock OpenCart — a lean storefront theme, faceted filtering with SEO URLs, a one-page checkout with a Nova Poshta city/branch picker, Redis caching, WebP images and DB indexes — running a **30,000-product** catalog and measured against stock OpenCart on the same data.
 
 **Result: catalog pages answer in 10 ms instead of 34 ms and search in 5 ms instead of 267 ms; Lighthouse mobile scores 100 with a 19–28 KB page (stock: 272–336 KB, first paint 2.1–2.4 s → 0.6–0.8 s).**
 

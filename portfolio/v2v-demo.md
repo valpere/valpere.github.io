@@ -7,7 +7,7 @@ image: /portfolio/assets/images/v2v-demo/v2v-demo-en.png
 
 ## Overview
 
-Independent demo project: a Go Telegram bot that holds a real bilingual (Ukrainian/English) voice-or-text conversation, answers only from a fixed knowledge base, and hands off to a human the moment it isn't sure. What started as a single scenario grew into five genuinely independent assistants — dental clinic, car service, real estate agency, cleaning company, translation bureau — selectable from one inline picker on `/start`, each with its own knowledge base, system prompt, and lead-collection schema, all running the same grounding-gate core.
+A Go Telegram bot that holds a real bilingual (Ukrainian/English) voice-or-text conversation, answers only from a fixed knowledge base, and hands off to a human the moment it isn't sure. What started as a single scenario grew into five genuinely independent assistants — dental clinic, car service, real estate agency, cleaning company, translation bureau — selectable from one inline picker on `/start`, each with its own knowledge base, system prompt, and lead-collection schema, all running the same grounding-gate core.
 
 **Result: one framework, five business verticals, no forked codebase — every assistant shares the same grounding gate, and a scripted scenario-probe tool caught a real safety-relevant bug (a dental sedation request getting scheduled as a routine booking) before it ever reached a user.**
 
