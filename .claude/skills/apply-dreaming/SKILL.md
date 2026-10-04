@@ -24,7 +24,7 @@ report).
 ## Inputs
 
 - Optional argument: `latest` (default) or `YYYY-W##`.
-- Project root: `~/wrk/projects/github_pages/valpere.github.io/`.
+- Project root: `~/wrk/projects/github_pages/github_pages/`.
 
 ## Steps
 
