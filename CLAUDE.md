@@ -33,6 +33,8 @@ The site uses Jekyll's standard content model:
 
 To add a new project: add an entry to `_data/projects.yml` (with `slug`, `title`, `title_uk`, `permalink`, `hero_image`, etc.) AND create the matching `projects/<slug>.md` and `projects/<slug>-ua.md` files. The index page is driven by the yml entry, but the detail pages are still required as separate `.md` files.
 
+`slug:` in the yml does **not** drive the filename or URL — the `permalink:` front matter of the matching `.md` does. Four historical mismatches are accepted legacy: `datascrapexter` → `data_scrapexter.md`, `maiche` → `mai_che.md`, `gootrago` → `cli_google_translator.md`, `testwigr` → `twitter_like_api.md`. Don't rename them without an explicit ask (a rename changes both the filename and the `permalink:`).
+
 ### Bilingual Content Pattern
 
 Each project has two versions:
