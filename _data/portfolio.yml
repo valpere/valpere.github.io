@@ -70,10 +70,10 @@
   client: "Luxury Fashion E-commerce (Shopify)"
   client_uk: "Дизайнерський одяг на Shopify (NDA)"
   role: "Freelance Backend Engineer / AI Integration"
-  period: "Sep 2026 — ongoing (Stage 1 of 3)"
-  stack: ["Go", "Shopify", "Shopify GraphQL Admin API", "PostgreSQL", "Meta Marketing API", "Meta Ads", "Claude API", "Higgsfield", "E-commerce AI", "robfig/cron", "Docker Compose", "Caddy"]
-  summary_en: "Building an AI ad-testing loop for a Shopify luxury-fashion store: Claude turns live product and order data into offer/angle/hook hypotheses, Higgsfield renders the creatives, and the system assembles Meta campaigns — created paused, with hard spend caps — then scores winners by reconciling against real Shopify orders, not the ad platform's own pixel. Stage 1 of a 3-stage engagement, in progress."
-  summary_uk: "AI-система тестування реклами для Shopify-магазину дизайнерського одягу: Claude перетворює живі дані про товари й замовлення на гіпотези офферів/кутів/гачків, Higgsfield рендерить креативи, а система збирає Meta-кампанії — створені на паузі, з жорсткими лімітами витрат — і визначає переможців, звіряючи результати з реальними замовленнями Shopify, а не з піксельною аналітикою рекламної платформи. Stage 1 з 3-етапного контракту, у процесі."
+  period: "Sep 2026 — ongoing (Stage 2 of 6)"
+  stack: ["Go", "Shopify", "Shopify GraphQL Admin API", "PostgreSQL", "Meta Marketing API", "Meta Ads", "Claude API", "Higgsfield", "ffmpeg", "whisper.cpp", "E-commerce AI", "robfig/cron", "Docker Compose", "Caddy"]
+  summary_en: "An AI system that creates, tests and runs ad campaigns for a Shopify luxury-fashion store, end to end: Claude turns live store data into hypotheses, a chat agrees the creative brief and produces preview and final videos (ffmpeg montage, captions checked against the approved script), Meta campaigns are assembled — always paused — and every ad gets a verdict by reconciling against real Shopify orders, not the ad pixel. Anything that moves money is a proposal the client confirms. Six stages: the first accepted, the second built."
+  summary_uk: "AI-система, що створює, тестує й проводить рекламні кампанії для Shopify-магазину дизайнерського одягу — наскрізно: Claude перетворює живі дані магазину на гіпотези, чат узгоджує бриф на креатив і робить прев'ю та фінальні відео (монтаж у ffmpeg, субтитри звірені із затвердженим текстом), кампанії в Meta збираються завжди на паузі, а кожне оголошення отримує вердикт за звіркою з реальними замовленнями Shopify, а не з піксельом. Усе, що рухає гроші, — пропозиція, яку підтверджує клієнт. Шість етапів: перший прийнято, другий збудовано."
   permalink: "/portfolio/shopify-ad-testing/"
   hero_image: "/portfolio/assets/images/shopify-ad-testing/hero-0900x0530.png"
   hero_image_uk: "/portfolio/assets/images/shopify-ad-testing/hero-uk-0900x0530.png"
