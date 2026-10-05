@@ -22,7 +22,7 @@ The store itself stays untouched: no theme or app code inside it. The system rea
 | 1. Foundation | Shopify sync, hypothesis generation, creative rendering, spend guards, a review sheet | Accepted |
 | 2. Product | The chat; briefs, preview and final renders with montage; Meta assembly and Insights; reconciliation and scoring; guards on live ads; a client guide | Built, all gates passed; in acceptance |
 | 3. Full automation | Auto-pause of losers, scaling of winners, variations generated from winners, hypothesis analytics | Planned |
-| 4. Voice and mobile | A voice and mobile interface | Planned |
+| 4. Voice and mobile | Voice control and a mobile app | Planned |
 | 5–6 | Scoped when the preceding stage is accepted | Planned |
 
 ---
