@@ -1,11 +1,11 @@
 - slug: "vending-esp32-monobank"
-  client: "vending-esp32-monobank — IoT Coffee Machine Monobank Acquiring Controller"
-  client_uk: "vending-esp32-monobank — IoT-контролер безконтактної оплати кавового автомата через Monobank"
+  client: "vending-esp32-monobank — Monobank QR Payments for a Coffee Machine on ESP32"
+  client_uk: "vending-esp32-monobank — оплата Monobank QR для кавового автомата на ESP32"
   role: "Solo Embedded & Cloud IoT Architect"
   period: "Sep 2026"
-  stack: ["ESP32", "C++", "Cloudflare Workers", "Serverless", "Monobank Acquiring", "MQTT", "HiveMQ", "IoT", "Гальванічна розв'язка", "Rheavendors", "Вендинг"]
-  summary_en: "Zero-monthly-fee IoT telemetry and payment bridge for commercial Rheavendors coffee machines: customer scans a dynamic Monobank QR on the machine, Cloudflare Worker receives the payment webhook, and dispatches a TLS-encrypted MQTT pulse to an ESP32 microcontroller with optocoupler isolation, triggering the exact beverage dispense without touching the internal logic voltage. Zero subscription fees, direct FOP settlement."
-  summary_uk: "Автономний IoT-контролер безконтактної оплати для кавових автоматів Rheavendors без абонплат: покупець сканує QR-код Monobank на автоматі, безсерверний шлюз Cloudflare Workers обробляє платіжний вебхук і передає команду через MQTT з TLS на мікроконтролер ESP32. Гальванічна розв'язка через оптопари HY-M158 забезпечує безпечну комутацію шини CoinParallel без ризику для материнської плати. Гроші напряму зараховуються на ФОП під 1.3% банку."
+  stack: ["ESP32", "C++", "Cloudflare Workers", "Durable Objects", "Monobank Acquiring", "HY-M158", "Node.js", "IoT", "Гальванічна розв'язка", "Rheavendors", "Вендинг"]
+  summary_en: "Lets a commercial Rheavendors coffee machine take Monobank QR payments directly, with no payment intermediary and no monthly fee: a Cloudflare Worker verifies each payment against the Monobank API and queues it in a per-machine Durable Object, and an ESP32 polls it and credits the machine through an optocoupler-isolated board on the coin connector. Acknowledged queue, no double payouts, the machine's own Ready state respected. Verified end to end on the customer's machine with real payments."
+  summary_uk: "Дає комерційному кавовому автомату Rheavendors приймати оплату Monobank QR напряму, без платіжного посередника й абонплати: Cloudflare Worker перевіряє кожен платіж в API Monobank і ставить його в чергу Durable Object окремого автомата, а ESP32 її опитує й нараховує кредит через плату з оптопарами на монетному роз'ємі. Черга з підтвердженням, жодних подвійних зарахувань, повага до власного стану Ready автомата. Перевірено наскрізно на автоматі замовника реальними платежами."
   permalink: "/portfolio/vending-esp32-monobank/"
 
 - slug: "site-security-cleanup"
