@@ -13,10 +13,50 @@
   client_uk: "site-security-cleanup — видалення вірусів, лікування та комплексний захист CMS"
   role: "Solo Security Engineer / Webmaster"
   period: "Sep 2026"
-  stack: ["WordPress", "Joomla", "OpenCart", "PHP 8.2+", "MySQL", "Malware Cleanup", "Лікування вірусів", "Безпека сайтів", "WAF", "Apache .htaccess", "Linux", "ClamAV"]
-  summary_en: "Emergency malware cleanup and hardening for compromised WordPress, Joomla, and OpenCart stores: isolated staging triage, heuristic backdoor and web shell removal, hidden SEO redirect cleanup, database sanitization, PHP 8.2+ compatibility migration, WAF deployment, upload folder execution locking, and Google Safe Browsing blacklist removal with 100% data preservation."
-  summary_uk: "Екстрене лікування та захист зламаних сайтів на WordPress, Joomla та OpenCart: розгортання в ізольованому staging-середовищі, евристичний пошук і видалення бекдорів, веб-шелів та прихованих спам-редиректів, очищення бази даних, переведення на PHP 8.2+, налаштування WAF, блокування виконання PHP у папках завантажень та зняття санкцій Google Safe Browsing зі збереженням 100% контенту."
+  stack: ["WordPress", "Joomla", "OpenCart", "PHP 8.2+", "MySQL", "Malware Cleanup", "Лікування вірусів", "Безпека сайтів", "WAF", "Cloudflare WAF", "ModSecurity", "ClamAV", "Linux"]
+  summary_en: "Full recovery of hacked WordPress, Joomla and OpenCart sites: hidden mobile redirects, web shells and backdoors, spam injected into the database, Google Safe Browsing and hosting blocks. Isolated staging, diff against clean CMS cores, database sanitization, PHP 8.2+, no PHP execution in upload folders, 2FA, WAF and a Search Console review, with 100% data preservation."
+  summary_uk: "Повне відновлення зламаних сайтів на WordPress, Joomla та OpenCart: приховані мобільні редиректи, веб-шели й бекдори, спам в базі даних, блокування Google Safe Browsing та хостингу. Ізольований staging, порівняння з чистими ядрами CMS, санітизація бази, PHP 8.2+, заборона виконання PHP у завантаженнях, 2FA, WAF і перевірка в Search Console зі збереженням 100% даних."
   permalink: "/portfolio/site-security-cleanup/"
+
+- slug: "tilda-migration"
+  client: "tilda-migration — Turnkey Move from Tilda to Horoshop, Weblium, WooCommerce or Shopify"
+  client_uk: "tilda-migration — міграція з Tilda на Хорошоп, Weblium, WooCommerce чи Shopify під ключ"
+  role: "Solo Engineer / Webmaster"
+  period: "2026"
+  stack: ["Horoshop", "Weblium", "WooCommerce", "Shopify", "301 redirects", "SEO migration", "Monobank API", "LiqPay", "Nova Poshta API", "Screaming Frog", "Google Search Console", "GA4", "Telegram"]
+  summary_en: "A turnkey move of a business site or online store off Tilda onto Horoshop, Weblium, WooCommerce or Shopify: the design and structure kept, a 301 redirect map for every URL, meta data carried over, Ukrainian payments and Nova Poshta connected, orders pushed to Telegram and the CRM, and the main domain switched with no downtime."
+  summary_uk: "Міграція бізнес-сайту чи інтернет-магазину з Tilda на Хорошоп, Weblium, WooCommerce або Shopify під ключ: дизайн і структура збережені, карта 301-редиректів для кожного URL, перенесені мета-дані, підключені українські платежі й Нова Пошта, замовлення в Telegram і CRM, а основний домен перемикається без простою."
+  permalink: "/portfolio/tilda-migration/"
+
+- slug: "opencart-catalog-migration"
+  client: "opencart-catalog-migration — Large Store Migration to OpenCart 3/4 or Horoshop"
+  client_uk: "opencart-catalog-migration — міграція великого магазину на OpenCart 3/4 або Хорошоп"
+  role: "Solo Engineer / ETL Architect"
+  period: "2026"
+  stack: ["OpenCart 3/4", "Horoshop", "PrestaShop", "PHP 8.2+", "Go", "ETL", "MySQL", "Redis", "Nginx", "WebP", "Checkbox PRRO", "Monobank API", "Nova Poshta API"]
+  summary_en: "Migration of a live online store with 10,000+ SKU from OpenCart 1.5/2.x, PrestaShop 1.6, VirtueMart or a custom CMS to OpenCart 3/4 on PHP 8.2+ or Horoshop: attributes, options, customers with password hashes and order history carried over, content cleaned, MySQL and caching tuned, images in WebP, old SEO URLs mapped to 301 rules."
+  summary_uk: "Міграція діючого інтернет-магазину від 10 000 SKU з OpenCart 1.5/2.x, PrestaShop 1.6, VirtueMart чи самописної CMS на OpenCart 3/4 на PHP 8.2+ або Хорошоп: перенесені атрибути, опції, клієнти з хешами паролів та історія замовлень, очищений контент, налаштовані MySQL і кешування, зображення у WebP, старі SEO-URL зіставлені з 301-правилами."
+  permalink: "/portfolio/opencart-catalog-migration/"
+
+- slug: "marketplace-catalog-sync"
+  client: "marketplace-catalog-sync — Catalog Bridge Between Prom.ua, Rozetka and Horoshop"
+  client_uk: "marketplace-catalog-sync — міст між каталогами Prom.ua, Rozetka та Хорошоп"
+  role: "Solo Engineer / Architect"
+  period: "2026"
+  stack: ["Go", "Node.js", "Docker", "Rozetka XML", "YML", "Prom.ua API", "Rozetka Marketplace API", "Horoshop", "OpenCart", "SalesDrive", "MySQL", "Redis"]
+  summary_en: "Automated export, normalization, mapping and import of large catalogs between Prom.ua, Rozetka, Horoshop, OpenCart, Zakupka and Epicentr, built on the Go core of feedsync: category correspondence matrix, a pre-validator against Rozetka's moderation rules, cleaned descriptions and photo checks, and feeds refreshed every 30-60 minutes."
+  summary_uk: "Автоматизоване вивантаження, нормалізація, маппінг та імпорт великих каталогів між Prom.ua, Rozetka, Хорошоп, OpenCart, Zakupka та Епіцентр на Go-ядрі feedsync: матриця відповідності категорій, пре-валідатор за правилами модерації Rozetka, очищені описи й перевірка фото, фіди з оновленням кожні 30-60 хвилин."
+  permalink: "/portfolio/marketplace-catalog-sync/"
+
+- slug: "zero-downtime-migration"
+  client: "zero-downtime-migration — Server and Domain Migration Without Losing Traffic"
+  client_uk: "zero-downtime-migration — міграція сервера й домену без втрати трафіку"
+  role: "Solo DevOps / Sysadmin"
+  period: "2026"
+  stack: ["Linux", "Nginx", "Apache", "PHP 8.2+", "MySQL", "MariaDB", "WP-CLI", "rsync", "Let's Encrypt", "Cloudflare", "SPF/DKIM/DMARC", "WordPress", "OpenCart", "Laravel"]
+  summary_en: "A seamless move of WordPress, OpenCart, Laravel and custom sites to a new server or a new domain with zero downtime: staging tested through a hosts entry, TTL lowered ahead of release, a final delta sync, serialization-safe URL replacement, one verified redirect setup with a 301 map, and corporate mail kept intact (MX, SPF, DKIM, DMARC)."
+  summary_uk: "Безшовне перенесення сайтів на WordPress, OpenCart, Laravel та самописних на новий сервер чи домен без простою: тестування на staging через запис у hosts, зниження TTL до релізу, фінальна дельта-синхронізація, заміна URL із урахуванням серіалізації, одна перевірена конфігурація редиректів із картою 301 і збережена корпоративна пошта (MX, SPF, DKIM, DMARC)."
+  permalink: "/portfolio/zero-downtime-migration/"
 
 - slug: "fastshop"
   client: "fastshop — Fast Mobile-First OpenCart Store"
