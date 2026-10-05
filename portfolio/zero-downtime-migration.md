@@ -23,19 +23,7 @@ A seamless move of busy sites, online stores and company web services — **Word
 
 ## How it goes
 
-```
-Current production (A)
-        │  rsync / SCP + mysqldump
-        ▼
-New server / staging (B)
-  ├─ Nginx + PHP-FPM (OPcache) + MySQL / MariaDB
-  ├─ safe domain replacement via WP-CLI / Search-Replace-DB
-  ├─ SSL (Let's Encrypt / Cloudflare)
-  └─ full test through a hosts-file entry
-        │  TTL to 300 s + delta sync
-        ▼
-Smooth DNS switch — zero downtime
-```
+![Server move flow: production A, rsync and dump, staging B, domain replacement, hosts test, TTL, delta, DNS switch](/assets/images/servermove-flow-en-1-1259x524.png)
 
 1. **Target environment and backups.** A full cold backup of the source (file system and MySQL dump). The new server is tuned: Ubuntu 22.04 / 24.04, Nginx, PHP 8.2+, MariaDB / MySQL 8, memory limits, timeouts and OPcache.
 2. **Database and URL replacement.** The database moves with tools that respect serialization, and configuration files (`wp-config.php`, `config.php`, `.env`) get their paths corrected.

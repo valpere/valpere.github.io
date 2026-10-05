@@ -25,19 +25,7 @@ lang_alt: /portfolio/zero-downtime-migration/
 
 ## Як це відбувається
 
-```
-Поточний production (A)
-        │  rsync / SCP + mysqldump
-        ▼
-Новий сервер / staging (B)
-  ├─ Nginx + PHP-FPM (OPcache) + MySQL / MariaDB
-  ├─ безпечна заміна доменів через WP-CLI / Search-Replace-DB
-  ├─ SSL (Let's Encrypt / Cloudflare)
-  └─ повне тестування через запис у hosts
-        │  TTL до 300 с + дельта-синхронізація
-        ▼
-Плавне перемикання DNS — нуль простою
-```
+![Потік перенесення: production A, rsync і дамп, staging B, заміна доменів, тест через hosts, TTL, дельта, перемикання DNS](/assets/images/servermove-flow-uk-1-1259x524.png)
 
 1. **Цільове середовище й бекапи.** Повний «холодний» бекап джерела (файлова система й дамп MySQL). Новий сервер налаштовується: Ubuntu 22.04 / 24.04, Nginx, PHP 8.2+, MariaDB / MySQL 8, ліміти пам'яті, тайм-аути й OPcache.
 2. **База даних і заміна URL.** База переноситься інструментами, що враховують серіалізацію, а в конфігураційних файлах (`wp-config.php`, `config.php`, `.env`) виправляються шляхи.
