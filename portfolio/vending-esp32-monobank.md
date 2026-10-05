@@ -30,19 +30,7 @@ It replaces third-party payment terminals, which typically charge a per-machine 
 
 ## Architecture
 
-```
-  Customer's phone ──▶ Monobank Pay ──▶ webhook
-                                           │  verified against the Monobank API
-                                           ▼
-                   Cloudflare Worker + Durable Object (one per machine)
-                   queue · dedup · telemetry · phone dashboard
-                                           │  HTTPS poll every 3 s / ack
-                                           ▼
-       4G USB Wi-Fi router ──▶ ESP32 ──▶ Ready input · transaction ID in NVS
-                                           │  500 ms pulse
-                                           ▼
-        HY-M158 optocoupler board (5000 V isolation) ──▶ J4 coin connector ──▶ machine credit
-```
+![Payment flow: customer scans a QR code and pays in Monobank; a Cloudflare Worker verifies the invoice with the bank and queues it in a per-machine Durable Object; an ESP32 polls it over a 4G router and pulses an HY-M158 optocoupler board wired to the machine's J4 coin connector](/assets/images/vending-flow-en-1-1259x524.png)
 
 Hardware per machine is an ESP32 DevKit, a 4G USB Wi-Fi router, an 8-channel HY-M158 board and a dedicated 5 V power supply — about 750–800 UAH in total.
 
