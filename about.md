@@ -17,6 +17,8 @@ permalink: /about/
 
 Senior Software Engineer and CTO with 20+ years of experience. Currently directing engineering and AI workflow integration for a 20+ person product team, while taking on select freelance engagements. Specialized in backend development, rapid MVP launch, AI-assisted development, and bot automation.
 
+![What I do: backend automation, AI systems, Telegram bots, IoT and payments, website security](/assets/images/what-i-do-en-1-1230x590.png)
+
 **Skills:** Go · Java · TypeScript · React 19 · Supabase · Supabase Edge Functions · PostgreSQL · Docker · GORM · Gin · gRPC · Spring Boot · Automation · Google Cloud Platform (GCP) · MySQL · MongoDB · Terraform · AI-Assisted Development · Claude Code · Langfuse · LevelDB · Custom Software · Software Infrastructure · Engineering
 
 * **Backend Development & Architecture:**
