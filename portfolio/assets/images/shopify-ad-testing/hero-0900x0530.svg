@@ -10,113 +10,99 @@
     </marker>
   </defs>
   <rect width="900" height="530" fill="url(#grid)"/>
-
   <!-- header -->
   <rect x="0" y="0" width="900" height="46" fill="#168A53"/>
-  <text x="22" y="30" fill="#FFFFFF" font-size="17" font-weight="700" letter-spacing="0.4">AI AD-TESTING LOOP — SHOPIFY LUXURY FASHION</text>
-  <text x="878" y="30" fill="#FFFFFF" font-size="12" text-anchor="end">Go · PostgreSQL · Claude · Higgsfield · Meta</text>
-
+  <text x="22" y="30" fill="#FFFFFF" font-size="16" font-weight="700" letter-spacing="0.3">AI AD CAMPAIGNS — SHOPIFY LUXURY FASHION</text>
+  <text x="878" y="30" fill="#FFFFFF" font-size="11" text-anchor="end">Go · PostgreSQL · Claude · Higgsfield · Meta</text>
   <!-- pipeline row -->
-  <g font-size="12">
-    <!-- 1 Shopify -->
-    <rect x="24" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
-    <rect x="24" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
-    <text x="99" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">SHOPIFY</text>
-    <text x="99" y="140" text-anchor="middle" font-weight="700">products · orders</text>
-    <text x="99" y="156" text-anchor="middle" font-weight="700">inventory · photos</text>
-    <line x1="38" y1="168" x2="160" y2="168" stroke="#DDD"/>
-    <text x="99" y="186" text-anchor="middle" fill="#666" font-size="10">GraphQL Admin API</text>
-    <text x="99" y="200" text-anchor="middle" fill="#666" font-size="10">+ live webhooks</text>
-
-    <!-- arrow 1 -->
-    <line x1="174" y1="155" x2="212" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
-
-    <!-- 2 Claude -->
-    <rect x="212" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
-    <rect x="212" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
-    <text x="287" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">CLAUDE</text>
-    <text x="287" y="140" text-anchor="middle" font-weight="700">offer · angle</text>
-    <text x="287" y="156" text-anchor="middle" font-weight="700">hook hypotheses</text>
-    <line x1="226" y1="168" x2="348" y2="168" stroke="#DDD"/>
-    <text x="287" y="186" text-anchor="middle" fill="#666" font-size="10">schema-validated</text>
-    <text x="287" y="200" text-anchor="middle" fill="#666" font-size="10">structured output</text>
-
-    <!-- arrow 2 -->
-    <line x1="362" y1="155" x2="400" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
-
-    <!-- 3 Higgsfield -->
-    <rect x="400" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
-    <rect x="400" y="90" width="150" height="28" rx="6" fill="#2A2A2A"/>
-    <text x="475" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">HIGGSFIELD</text>
-    <text x="475" y="140" text-anchor="middle" font-weight="700">image / video</text>
-    <text x="475" y="156" text-anchor="middle" font-weight="700">UGC creatives</text>
-    <line x1="414" y1="168" x2="536" y2="168" stroke="#DDD"/>
-    <text x="475" y="186" text-anchor="middle" fill="#666" font-size="10">async submit/poll,</text>
-    <text x="475" y="200" text-anchor="middle" fill="#666" font-size="10">vendor-neutral</text>
-
-    <!-- arrow 3 -->
-    <line x1="550" y1="155" x2="588" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
-
-    <!-- 4 Meta (paused) -->
-    <rect x="588" y="90" width="150" height="130" rx="6" fill="#FFFFFF" stroke="#E67E22" stroke-width="2.5"/>
-    <rect x="588" y="90" width="150" height="28" rx="6" fill="#E67E22"/>
-    <text x="663" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11">META ADS</text>
-    <text x="663" y="140" text-anchor="middle" font-weight="700">campaign · adset</text>
-    <text x="663" y="156" text-anchor="middle" font-weight="700">ad — always PAUSED</text>
-    <line x1="602" y1="168" x2="724" y2="168" stroke="#DDD"/>
-    <text x="663" y="186" text-anchor="middle" fill="#666" font-size="10">daily cap set</text>
-    <text x="663" y="200" text-anchor="middle" fill="#666" font-size="10">before it can spend</text>
-
-    <!-- arrow 4 -->
-    <line x1="738" y1="155" x2="776" y2="155" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
-
-    <!-- 5 Reconcile -->
-    <rect x="776" y="90" width="102" height="130" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2.5"/>
-    <rect x="776" y="90" width="102" height="28" rx="6" fill="#168A53"/>
-    <text x="827" y="109" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10">RECONCILE</text>
-    <text x="827" y="140" text-anchor="middle" font-weight="700" font-size="11">real Shopify</text>
-    <text x="827" y="156" text-anchor="middle" font-weight="700" font-size="11">orders</text>
-    <line x1="790" y1="168" x2="864" y2="168" stroke="#DDD"/>
-    <text x="827" y="186" text-anchor="middle" fill="#666" font-size="9">not the</text>
-    <text x="827" y="200" text-anchor="middle" fill="#666" font-size="9">ad pixel</text>
+  <g font-size="11">
+    <rect x="24" y="84" width="118" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="24" y="84" width="118" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="83.0" y="103" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10.5">SHOPIFY</text>
+    <text x="83.0" y="140" text-anchor="middle" font-weight="700" font-size="10.5">products · orders</text>
+    <text x="83.0" y="156" text-anchor="middle" font-weight="700" font-size="10.5">stock · photos</text>
+    <line x1="36" y1="162" x2="130" y2="162" stroke="#DDD"/>
+    <text x="83.0" y="180" text-anchor="middle" fill="#666" font-size="9.5">GraphQL Admin API</text>
+    <text x="83.0" y="194" text-anchor="middle" fill="#666" font-size="9.5">+ live webhooks</text>
+    <line x1="142" y1="149" x2="171" y2="149" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="171" y="84" width="118" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="171" y="84" width="118" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="230.0" y="103" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10.5">CLAUDE</text>
+    <text x="230.0" y="140" text-anchor="middle" font-weight="700" font-size="10.5">offer · angle</text>
+    <text x="230.0" y="156" text-anchor="middle" font-weight="700" font-size="10.5">hook hypotheses</text>
+    <line x1="183" y1="162" x2="277" y2="162" stroke="#DDD"/>
+    <text x="230.0" y="180" text-anchor="middle" fill="#666" font-size="9.5">schema-validated</text>
+    <text x="230.0" y="194" text-anchor="middle" fill="#666" font-size="9.5">structured output</text>
+    <line x1="289" y1="149" x2="318" y2="149" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="318" y="84" width="118" height="130" rx="6" fill="#FFFFFF" stroke="#E67E22" stroke-width="2.5"/>
+    <rect x="318" y="84" width="118" height="28" rx="6" fill="#E67E22"/>
+    <text x="377.0" y="103" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10.5">CHAT · BRIEF</text>
+    <text x="377.0" y="140" text-anchor="middle" font-weight="700" font-size="10.5">agree the brief</text>
+    <text x="377.0" y="156" text-anchor="middle" font-weight="700" font-size="10.5">approve · confirm</text>
+    <line x1="330" y1="162" x2="424" y2="162" stroke="#DDD"/>
+    <text x="377.0" y="180" text-anchor="middle" fill="#666" font-size="9.5">proposals only —</text>
+    <text x="377.0" y="194" text-anchor="middle" fill="#666" font-size="9.5">the client confirms</text>
+    <line x1="436" y1="149" x2="465" y2="149" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="465" y="84" width="118" height="130" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="465" y="84" width="118" height="28" rx="6" fill="#2A2A2A"/>
+    <text x="524.0" y="103" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10.5">VIDEO</text>
+    <text x="524.0" y="140" text-anchor="middle" font-weight="700" font-size="10.5">preview 720p →</text>
+    <text x="524.0" y="156" text-anchor="middle" font-weight="700" font-size="10.5">final 1080p</text>
+    <line x1="477" y1="162" x2="571" y2="162" stroke="#DDD"/>
+    <text x="524.0" y="180" text-anchor="middle" fill="#666" font-size="9.5">ffmpeg montage,</text>
+    <text x="524.0" y="194" text-anchor="middle" fill="#666" font-size="9.5">script check</text>
+    <line x1="583" y1="149" x2="612" y2="149" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="612" y="84" width="118" height="130" rx="6" fill="#FFFFFF" stroke="#E67E22" stroke-width="2.5"/>
+    <rect x="612" y="84" width="118" height="28" rx="6" fill="#E67E22"/>
+    <text x="671.0" y="103" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10.5">META ADS</text>
+    <text x="671.0" y="140" text-anchor="middle" font-weight="700" font-size="10.5">campaign · ad set</text>
+    <text x="671.0" y="156" text-anchor="middle" font-weight="700" font-size="10.5">ad — PAUSED</text>
+    <line x1="624" y1="162" x2="718" y2="162" stroke="#DDD"/>
+    <text x="671.0" y="180" text-anchor="middle" fill="#666" font-size="9.5">caps set before</text>
+    <text x="671.0" y="194" text-anchor="middle" fill="#666" font-size="9.5">it can spend</text>
+    <line x1="730" y1="149" x2="759" y2="149" stroke="#2A2A2A" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="759" y="84" width="118" height="130" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2.5"/>
+    <rect x="759" y="84" width="118" height="28" rx="6" fill="#168A53"/>
+    <text x="818.0" y="103" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="10.5">RECONCILE</text>
+    <text x="818.0" y="140" text-anchor="middle" font-weight="700" font-size="10.5">real Shopify</text>
+    <text x="818.0" y="156" text-anchor="middle" font-weight="700" font-size="10.5">orders · ROAS</text>
+    <line x1="771" y1="162" x2="865" y2="162" stroke="#DDD"/>
+    <text x="818.0" y="180" text-anchor="middle" fill="#666" font-size="9.5">not the</text>
+    <text x="818.0" y="194" text-anchor="middle" fill="#666" font-size="9.5">ad pixel</text>
   </g>
-
-  <!-- feedback loop: winners -> spawn new variations, back to Claude -->
-  <path d="M 827 220 C 827 285, 287 285, 287 220" fill="none" stroke="#168A53" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
-  <rect x="382" y="252" width="350" height="18" fill="#F7F4EC"/>
-  <text x="557" y="265" text-anchor="middle" font-size="11" fill="#168A53" font-weight="700">winners score early (hold rate, CTR, cost/ATC) → new variations</text>
-
-  <!-- guard row -->
+  <!-- feedback loop -->
+  <path d="M 818.0 214 C 818.0 282, 230.0 282, 230.0 214" fill="none" stroke="#168A53" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <rect x="285" y="248" width="400" height="18" fill="#F7F4EC"/>
+  <text x="485" y="261" text-anchor="middle" font-size="11" fill="#168A53" font-weight="700">winners and losers → context for the next round</text>
+  <!-- spend control -->
   <g>
-    <rect x="24" y="300" width="854" height="96" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
-    <rect x="24" y="300" width="854" height="26" rx="6" fill="#2A2A2A"/>
-    <text x="451" y="318" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700" letter-spacing="0.5">SPEND CONTROL — BUILT IN, NOT BOLTED ON</text>
-
-    <text x="45" y="348" font-size="11" fill="#2A2A2A" font-weight="700">1. Every new ad created PAUSED</text>
-    <text x="45" y="364" font-size="10" fill="#666">nothing spends until the client</text>
-    <text x="45" y="378" font-size="10" fill="#666">activates it manually</text>
-
-    <text x="330" y="348" font-size="11" fill="#2A2A2A" font-weight="700">2. Per-ad daily cap + monthly ceiling</text>
-    <text x="330" y="364" font-size="10" fill="#666">enforced in-system; past the ceiling,</text>
-    <text x="330" y="378" font-size="10" fill="#666">no new campaigns are created</text>
-
-    <text x="640" y="348" font-size="11" fill="#2A2A2A" font-weight="700">3. Client's own Meta account limit</text>
-    <text x="640" y="364" font-size="10" fill="#666">a hard stop Meta enforces</text>
-    <text x="640" y="378" font-size="10" fill="#666">regardless of this system</text>
+    <rect x="24" y="298" width="854" height="100" rx="6" fill="#FFFFFF" stroke="#2A2A2A" stroke-width="1.5"/>
+    <rect x="24" y="298" width="854" height="26" rx="6" fill="#2A2A2A"/>
+    <text x="451" y="316" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700" letter-spacing="0.5">SPEND CONTROL — FOUR INDEPENDENT LAYERS</text>
+    <text x="40" y="346" font-size="10.5" fill="#2A2A2A" font-weight="700">1. Every new ad created PAUSED</text>
+    <text x="40" y="364" font-size="9.5" fill="#666">nothing spends until the</text>
+    <text x="40" y="378" font-size="9.5" fill="#666">client activates it</text>
+    <text x="253" y="346" font-size="10.5" fill="#2A2A2A" font-weight="700">2. Per-ad cap + monthly ceiling</text>
+    <text x="253" y="364" font-size="9.5" fill="#666">enforced on live ads; past</text>
+    <text x="253" y="378" font-size="9.5" fill="#666">the ceiling, no new campaigns</text>
+    <text x="466" y="346" font-size="10.5" fill="#2A2A2A" font-weight="700">3. Estimate before every render</text>
+    <text x="466" y="364" font-size="9.5" fill="#666">iterations capped; the price</text>
+    <text x="466" y="378" font-size="9.5" fill="#666">is on the confirm card</text>
+    <text x="679" y="346" font-size="10.5" fill="#2A2A2A" font-weight="700">4. Client's own Meta limit</text>
+    <text x="679" y="364" font-size="9.5" fill="#666">a hard stop Meta enforces</text>
+    <text x="679" y="378" font-size="9.5" fill="#666">regardless of this system</text>
   </g>
-
   <!-- footer -->
   <g>
     <rect x="0" y="420" width="900" height="58" fill="#168A53" opacity="0.08"/>
     <rect x="24" y="432" width="854" height="34" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2"/>
-    <text x="44" y="453" font-size="12" fill="#168A53" font-weight="700">Per-integration queue: bounded, leased, idempotent retries — one API outage never stalls another.</text>
+    <text x="44" y="453" font-size="12" fill="#168A53" font-weight="700">Everything that moves money is a proposal the client confirms — the model never acts alone.</text>
   </g>
-
   <!-- legend -->
   <g transform="translate(24, 490)">
     <rect x="0" y="0" width="14" height="14" fill="#168A53"/>
     <text x="20" y="12" font-size="11" fill="#2A2A2A">system-controlled / verified against real orders</text>
-    <rect x="360" y="0" width="14" height="14" fill="#E67E22"/>
-    <text x="380" y="12" font-size="11" fill="#2A2A2A">spend gate — paused until human approval</text>
+    <rect x="440" y="0" width="14" height="14" fill="#E67E22"/>
+    <text x="460" y="12" font-size="11" fill="#2A2A2A">human gate — paused until the client approves</text>
   </g>
 </svg>
