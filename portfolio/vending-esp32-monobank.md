@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "vending-esp32-monobank — Monobank QR Payments for a Coffee Machine, Built on ESP32"
 permalink: /portfolio/vending-esp32-monobank/
+image: /assets/images/vending-flow-en-1-1259x524.png
 ---
 
 ## Overview
