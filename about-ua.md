@@ -20,7 +20,7 @@ lang_alt: /about/
 
 Senior Software Engineer та CTO з 20+ роками досвіду. Наразі керую інженерією та впровадженням ШІ-робочих процесів для команди 20+ осіб, паралельно беручи вибіркові фріланс-проєкти. Спеціалізація: бекенд-розробка, швидкий запуск MVP, AI-assisted розробка та автоматизація ботів.
 
-![Що я роблю: Go / backend-автоматизація, AI-системи та агенти, Telegram-боти, IoT і платежі, захист сайтів — з прикладами робіт з портфоліо](/assets/images/what-i-do-uk-1-2050x667.png)
+![Що я роблю: backend-автоматизація, AI-системи, Telegram-боти, IoT і платежі, захист сайтів](/assets/images/what-i-do-uk-1-1230x590.png)
 
 **Навички:** Go · Java · TypeScript · React 19 · Supabase · Supabase Edge Functions · PostgreSQL · Docker · GORM · Gin · gRPC · Spring Boot · Автоматизація · Google Cloud Platform (GCP) · MySQL · MongoDB · Terraform · AI-Assisted Development · Claude Code · Langfuse · LevelDB · Спеціальне програмне забезпечення · Програмна інфраструктура · Інженерія
 
