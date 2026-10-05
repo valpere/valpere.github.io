@@ -23,20 +23,7 @@ Automated export, normalization, mapping and import of large product catalogs be
 
 ## How it works
 
-```
-Sources (Prom, suppliers, XML / CSV)
-        │
-        ▼
-Processing pipeline
-  1. load and parse XML / YML / CSV / JSON
-  2. drop dead stock, normalize prices (markups)
-  3. map categories by correspondence templates
-  4. sanitize descriptions, validate photos (resolution)
-  5. generate target XML feeds to each specification
-        │
-        ▼
-Rozetka XML  ·  Horoshop  ·  Prom YML
-```
+![Sync flow: sources, parsing, category mapping, pre-validator, feed generation, schedule, marketplaces](/assets/images/marketplace-flow-en-1-1259x524.png)
 
 1. **Parsing and standardization.** A universal reader for non-standard supplier XML/YML feeds, Excel and Google Sheets tables and the Prom.ua API, pulling the full attribute set, barcodes (EAN/UPC), article numbers and photos.
 2. **Mapping and cleanup.** Categories are matched to the Rozetka, Prom and Horoshop classifiers. Product names follow Rozetka's pattern — `[Type] [Brand] [Model] [Key specs] [Article]` — and photos are checked for resolution (anything under 500 px is flagged) and a white background.

@@ -24,22 +24,7 @@ A migration of a live, high-traffic online store from an outdated engine — **O
 
 ## How it goes
 
-```
-Source CMS (OpenCart 1.5 / PrestaShop)
-        │  SQL dump / ETL
-        ▼
-Extractor (Go and Node.js scripts)
-  ├─ attribute and option normalization
-  ├─ product-description cleanup
-  ├─ category hierarchy mapping
-  └─ 301 map for the old URLs
-        │  import and validation
-        ▼
-Target: OpenCart 3/4 (PHP 8.2) or Horoshop
-  ├─ one-page checkout
-  ├─ AJAX attribute filter
-  └─ Checkbox fiscalization + Monobank + Nova Poshta
-```
+![Migration flow: source CMS, ETL extractor, normalization, content cleanup, import, new CMS, speed, SEO](/assets/images/catalog-flow-en-1-1259x524.png)
 
 1. **Extract and transform.** Direct MySQL reads of the `product`, `product_description`, `product_option`, `product_attribute`, `category`, `customer` and `order` tables, reshaped for the target model.
 2. **Database and hosting.** PHP 8.1 / 8.2 with tuned OPcache, Nginx FastCGI cache and Redis for filter results, batch WebP conversion with the preview sizes the theme needs.

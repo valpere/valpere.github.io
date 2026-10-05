@@ -23,23 +23,7 @@ Full recovery of sites and online stores after a hack, a malware infection, hidd
 
 ## How it goes
 
-```
-Infected server / blocked site
-        │  isolation and a full snapshot
-        ▼
-Clean staging (security sandbox)
-  ├─ 1. signature and heuristic audit (ClamAV, Maldet, YARA)
-  ├─ 2. diff against clean CMS cores (checksums)
-  ├─ 3. manual deobfuscation and database sanitization
-  └─ 4. core, theme and module updates, PHP 8.2+
-        │  layered protection
-        ▼
-Hardening and WAF
-  ├─ no PHP execution in upload folders
-  ├─ 2FA for the admin panel, new secret salts
-  ├─ WAF (Cloudflare WAF / ModSecurity)
-  └─ review and sanction removal in Google Search Console
-```
+![Cleanup flow: infected site, isolation, audit, cleanup, hardening, WAF, Search Console, monitoring](/assets/images/security-flow-en-1-1259x524.png)
 
 1. **Isolation, backup, sandbox.** A full isolated archive of the infected site and the database dump, deployed to a closed test stand so visitors are not affected and the infection stops spreading.
 2. **Deep scan and backdoor removal.** File-system scanning with server tools (`maldet`, `clamav`, custom regex rules), a replacement of the CMS core and plugins with verified originals, and an audit of active themes and custom modules for SQL injection, XSS and arbitrary file upload.

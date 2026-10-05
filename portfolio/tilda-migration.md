@@ -23,6 +23,8 @@ A turnkey move of a business site or online store off **Tilda** onto an independ
 
 ## How it goes
 
+![Migration flow: audit, staging build, integrations, SEO migration, DNS switch, indexing, new site](/assets/images/tilda-flow-en-1-1259x524.png)
+
 1. **Audit and export.** The Tilda site is crawled with Screaming Frog to capture the full URL map, meta data, hierarchy and media. The product base (CSV/YML), categories, attributes, original-quality photos and contact forms are exported.
 2. **Rebuild on the target platform.** For stores: catalog, product variants (colour, size), filters, search and a one-page checkout. For company sites and landing pages: pages assembled from responsive blocks, with typography, animations and feedback forms.
 3. **Integrations.** Payment gateways with success-payment webhooks; Nova Poshta (waybill generation, branch and parcel-locker choice); instant order and lead notifications to an admin Telegram chat and to a CRM (KeyCRM, SalesDrive, KeepinCRM).
