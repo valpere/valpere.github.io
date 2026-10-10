@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "tilda-migration — Turnkey Move from Tilda to Horoshop, Weblium, WooCommerce or Shopify"
 permalink: /portfolio/tilda-migration/
+image: /assets/images/tilda-flow-en-1-1259x524.png
 ---
 
 ## Overview

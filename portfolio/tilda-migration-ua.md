@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "tilda-migration — міграція з Tilda на Хорошоп, Weblium, WooCommerce чи Shopify під ключ"
 permalink: /portfolio/tilda-migration/
+image: /assets/images/tilda-flow-uk-1-1259x524.png
 lang: uk
 lang_alt: /portfolio/tilda-migration/
 ---

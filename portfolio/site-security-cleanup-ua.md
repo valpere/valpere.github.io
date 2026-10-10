@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "site-security-cleanup — видалення вірусів, лікування та комплексний захист CMS"
 permalink: /portfolio/site-security-cleanup/
+image: /assets/images/security-flow-uk-1-1259x524.png
 lang: uk
 lang_alt: /portfolio/site-security-cleanup/
 ---

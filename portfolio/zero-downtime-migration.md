@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "zero-downtime-migration — Server and Domain Migration Without Losing Traffic"
 permalink: /portfolio/zero-downtime-migration/
+image: /assets/images/servermove-flow-en-1-1259x524.png
 ---
 
 ## Overview

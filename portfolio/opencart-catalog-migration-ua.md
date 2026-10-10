@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "opencart-catalog-migration — міграція великого магазину на OpenCart 3/4 або Хорошоп"
 permalink: /portfolio/opencart-catalog-migration/
+image: /assets/images/catalog-flow-uk-1-1259x524.png
 lang: uk
 lang_alt: /portfolio/opencart-catalog-migration/
 ---
