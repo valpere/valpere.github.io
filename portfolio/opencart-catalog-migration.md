@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "opencart-catalog-migration — Large Store Migration to OpenCart 3/4 or Horoshop"
 permalink: /portfolio/opencart-catalog-migration/
+image: /assets/images/catalog-flow-en-1-1259x524.png
 ---
 
 ## Overview

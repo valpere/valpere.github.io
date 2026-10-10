@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "site-security-cleanup — Malware Remediation and CMS Hardening"
 permalink: /portfolio/site-security-cleanup/
+image: /assets/images/security-flow-en-1-1259x524.png
 ---
 
 ## Overview

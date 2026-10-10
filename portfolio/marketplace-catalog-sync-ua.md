@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "marketplace-catalog-sync — міст між каталогами Prom.ua, Rozetka та Хорошоп"
 permalink: /portfolio/marketplace-catalog-sync/
+image: /assets/images/marketplace-flow-uk-1-1259x524.png
 lang: uk
 lang_alt: /portfolio/marketplace-catalog-sync/
 ---

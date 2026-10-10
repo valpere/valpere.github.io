@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "marketplace-catalog-sync — Catalog Bridge Between Prom.ua, Rozetka and Horoshop"
 permalink: /portfolio/marketplace-catalog-sync/
+image: /assets/images/marketplace-flow-en-1-1259x524.png
 ---
 
 ## Overview
