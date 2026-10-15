@@ -35,6 +35,8 @@ To add a new project: add an entry to `_data/projects.yml` (with `slug`, `title`
 
 `slug:` in the yml does **not** drive the filename or URL — the `permalink:` front matter of the matching `.md` does. Four historical mismatches are accepted legacy: `datascrapexter` → `data_scrapexter.md`, `maiche` → `mai_che.md`, `gootrago` → `cli_google_translator.md`, `testwigr` → `twitter_like_api.md`. Don't rename them without an explicit ask (a rename changes both the filename and the `permalink:`).
 
+- **`demos/endorphin-motion/`** — source of the Next.js static-export demo published at `/endorphin-demo/` (excluded from Jekyll in `_config.yml`). The Pages workflow builds it with `NEXT_PUBLIC_BASE_PATH=/endorphin-demo` and copies `out/` into `_site/endorphin-demo/` after the Jekyll build (Jekyll would drop `_next`). It is noindex and not linked from the site.
+
 ### Bilingual Content Pattern
 
 Each project has two versions:
