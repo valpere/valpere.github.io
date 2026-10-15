@@ -142,6 +142,16 @@
   hero_image: "/portfolio/assets/images/v2v-demo/hero-0900x0530.png"
   hero_image_uk: "/portfolio/assets/images/v2v-demo/hero-uk-0900x0530.png"
 
+- slug: "v2v-tma"
+  client: "v2v-tma — Voice and Text AI Concierge as a Telegram Mini App"
+  client_uk: "v2v-tma — голосовий і текстовий AI-консьєрж у Telegram Mini App"
+  role: "Solo Creator / Architect"
+  period: "Oct 2026 (ongoing)"
+  stack: ["Go", "Telegram Mini Apps", "Telegram Stars", "Web Speech API", "REST API"]
+  summary_en: "A Telegram Mini App client for the v2v-demo AI concierge: four business topics in one app, Voice-to-UI where a spoken or typed command highlights products and fills the cart live, and payment in Telegram Stars. The server owns the cart and prices and verifies Telegram initData; the same /v1 contract serves the bot, the Mini App and plain web. 24 tests, open source."
+  summary_uk: "Клієнт Telegram Mini App для AI-консьєржа v2v-demo: чотири бізнес-теми в одному застосунку, Voice-to-UI, де голосова чи текстова команда живцем підсвічує товари й наповнює кошик, та оплата в Telegram Stars. Кошик і ціни рахує сервер, initData Telegram перевіряється; той самий контракт /v1 обслуговує бота, Mini App і чистий веб. 24 тести, відкритий код."
+  permalink: "/portfolio/v2v-tma/"
+
 - slug: "landing-turnkey"
   client: "landing-turnkey — Turnkey Landing Page Designs"
   client_uk: "landing-turnkey — дизайни лендингу під ключ"
