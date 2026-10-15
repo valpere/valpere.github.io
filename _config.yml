@@ -49,5 +49,6 @@ exclude:
   - "freelancehunt-*.txt"
   - "assets/images/brand/README.md"
   - "docs/"
+  - "demos/"
   - tmp/
   - "tmp/**"

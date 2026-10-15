@@ -33,6 +33,27 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: demos/endorphin-motion/package-lock.json
+
+      # Next.js demo is built separately and copied into the finished Jekyll
+      # output (after the Jekyll build: Jekyll skips underscore dirs like _next).
+      - name: Build Endorphin demo
+        working-directory: demos/endorphin-motion
+        run: |
+          npm ci
+          npm run typecheck
+          NEXT_PUBLIC_BASE_PATH=/endorphin-demo npm run build
+
+      - name: Add Endorphin demo to site
+        run: |
+          mkdir -p _site/endorphin-demo
+          cp -r demos/endorphin-motion/out/. _site/endorphin-demo/
+          test -d _site/endorphin-demo/_next
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
