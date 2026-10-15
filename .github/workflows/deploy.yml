@@ -45,8 +45,8 @@ jobs:
         working-directory: demos/endorphin-motion
         run: |
           npm ci
-          npm run typecheck
           NEXT_PUBLIC_BASE_PATH=/endorphin-demo npm run build
+          npm run typecheck  # after build: next-env.d.ts imports generated .next/types
 
       - name: Add Endorphin demo to site
         run: |
