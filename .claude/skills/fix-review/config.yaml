@@ -60,7 +60,7 @@ reviewers:
   # evaluated for read-only invocation/output-format compatibility.
   external_agents:
     - { tool: cursor-agent, model: auto }
-    - { tool: agy, model: "Gemini 3.5 Flash (Low)" }
+    - { tool: agy, model: "Gemini 3.8 Flash (Low)" }
     - { tool: omp }
     - { tool: codex }
     - { tool: opencode, model: "opencode/nemotron-3-ultra-free" }
