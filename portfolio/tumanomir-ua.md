@@ -38,12 +38,7 @@ $ tumanomir check docs/requirements.md
 
 ## Архітектура
 
-```
-spec.md ──► check (K_drift, D_const)  ─┐
-        └─► measure (D_pair, instrument) ─┴─► gate ──► exit 0/1 (CI)
-                                                │
-corpus.jsonl ──► calibrate (Spearman) ◄────────┘
-```
+![Конвеєр Туманоміра: Markdown-специфікація через check і measure до gate, з опційним циклом corpus, calibrate і label](/portfolio/assets/images/tumanomir/tumanomir-flow-uk-1-1220x675.png)
 
 Детерміновані пакети (`internal/metrics`, `internal/spec`, `internal/config`, `internal/calibrate`) не мають права торкатися мережі — це перевіряється тестом, який парсить їхні транзитивні залежності й падає, якщо десь з'явиться `net/*`, а не конвенцією в коментарі, яку легко забути під тиском дедлайну.
 

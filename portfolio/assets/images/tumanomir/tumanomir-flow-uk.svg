@@ -1,48 +1,130 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="680" viewBox="0 0 1280 680" font-family="'Noto Sans','DejaVu Sans',Dialog,sans-serif">
-<defs><marker id="a" markerWidth="5" markerHeight="5" refX="4.2" refY="2.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L5,2.5 L0,5 L1.2,2.5 Z" fill="#1F1F1F"/></marker></defs>
-<rect width="1280" height="680" fill="#FFFFFF"/>
-<path d="M510,55 L240,55 L240,180" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
-<path d="M770,55 L1040,55 L1040,180" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
-<path d="M240,290 L240,330 L440,330 L440,360" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
-<path d="M970,290 L970,330 L440,330 L440,360" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
-<path d="M910,235 L740,235" fill="none" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="9,7" marker-end="url(#a)"/>
-<path d="M1110,290 L1110,360" fill="none" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="9,7" marker-end="url(#a)"/>
-<path d="M440,470 L440,512 L200,512 L200,555" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
-<path d="M440,470 L440,512 L540,512 L540,555" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
-<path d="M970,470 L970,512 L860,512 L860,555" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
-<path d="M1100,470 L1100,555" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
-<path d="M1160,555 L1160,470" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
-<rect x="510.0" y="10.0" width="260" height="90" rx="6" fill="#FED74F" stroke="#1F1F1F" stroke-width="2"/>
-<text x="640" y="60.0" text-anchor="middle" font-size="15" font-weight="700" fill="#1F1F1F">Markdown-специфікація</text>
-<rect x="110.0" y="180.0" width="260" height="110" rx="6" fill="#168A53" stroke="#168A53" stroke-width="2"/>
-<text x="240" y="219.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">check</text>
-<text x="240" y="240.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">K_drift + D_const</text>
-<text x="240" y="261.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">без мережі</text>
-<rect x="540.0" y="180.0" width="200" height="110" rx="6" fill="#2A2A2A" stroke="#2A2A2A" stroke-width="2"/>
-<text x="640" y="240.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Ollama</text>
-<rect x="910.0" y="180.0" width="260" height="110" rx="6" fill="#168A53" stroke="#168A53" stroke-width="2"/>
-<text x="1040" y="219.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">measure</text>
-<text x="1040" y="240.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">D_pair + H_norm</text>
-<text x="1040" y="261.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">через internal/instrument</text>
-<rect x="310.0" y="360.0" width="260" height="110" rx="6" fill="#168A53" stroke="#168A53" stroke-width="2"/>
-<text x="440" y="409.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">gate</text>
-<text x="440" y="430.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">обидва шари, один код виходу</text>
-<rect x="930.0" y="360.0" width="260" height="110" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2.5"/>
-<text x="1060" y="420.0" text-anchor="middle" font-size="15" font-weight="700" fill="#168A53">corpus.jsonl</text>
-<rect x="75.0" y="555.0" width="250" height="100" rx="6" fill="#168A53" stroke="#168A53" stroke-width="2"/>
-<text x="200" y="610.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">агентів допущено</text>
-<rect x="415.0" y="555.0" width="250" height="100" rx="6" fill="#2A2A2A" stroke="#2A2A2A" stroke-width="2"/>
-<text x="540" y="599.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">специфікацію повернуто</text>
-<text x="540" y="620.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">на уточнення</text>
-<rect x="735.0" y="555.0" width="250" height="100" rx="6" fill="#2A2A2A" stroke="#2A2A2A" stroke-width="2"/>
-<text x="860" y="599.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">calibrate</text>
-<text x="860" y="620.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Spearman проти результату</text>
-<rect x="1015.0" y="555.0" width="250" height="100" rx="6" fill="#2A2A2A" stroke="#2A2A2A" stroke-width="2"/>
-<text x="1140" y="599.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">label</text>
-<text x="1140" y="620.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">єдиний автор результату</text>
-<text x="825" y="202" text-anchor="middle" font-size="13" fill="#1F1F1F">лише цей пакет</text>
-<text x="825" y="218" text-anchor="middle" font-size="13" fill="#1F1F1F">звертається до мережі</text>
-<text x="1190" y="327" text-anchor="middle" font-size="13" fill="#1F1F1F">opt-in накопичення</text>
-<text x="320" y="503" text-anchor="middle" font-size="13" fill="#1F1F1F">пропуск</text>
-<text x="490" y="503" text-anchor="middle" font-size="13" fill="#1F1F1F">блок</text>
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-opacity="1" color-rendering="auto" color-interpolation="auto" text-rendering="auto" stroke="black" stroke-linecap="square" width="1220" stroke-miterlimit="10" shape-rendering="auto" stroke-opacity="1" fill="black" stroke-dasharray="none" font-weight="normal" stroke-width="1" height="675" font-family="'Dialog'" font-style="normal" stroke-linejoin="miter" font-size="12px" stroke-dashoffset="0" image-rendering="auto">
+  <!--Generated by ySVG 2.6-->
+  <defs id="genericDefs"/>
+  <g>
+    <defs id="defs1">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1">
+        <path d="M0 0 L1220 0 L1220 675 L0 675 L0 0 Z"/>
+      </clipPath>
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath2">
+        <path d="M60 -5 L1280 -5 L1280 670 L60 670 L60 -5 Z"/>
+      </clipPath>
+    </defs>
+    <g fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="translate(-60,5)" stroke="white">
+      <rect x="60" width="1220" height="675" y="-5" clip-path="url(#clipPath2)" stroke="none"/>
+    </g>
+    <g fill="rgb(254,215,79)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="rgb(254,215,79)">
+      <rect x="510" y="10" clip-path="url(#clipPath2)" width="260" rx="4" ry="4" height="90" stroke="none"/>
+    </g>
+    <g stroke-linecap="butt" transform="matrix(1,0,0,1,-60,5)" fill="rgb(31,31,31)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="rgb(31,31,31)" stroke-width="2" stroke-miterlimit="1.45">
+      <rect x="510" y="10" clip-path="url(#clipPath2)" fill="none" width="260" rx="4" ry="4" height="90"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="rgb(31,31,31)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="rgb(31,31,31)" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="543.9918" xml:space="preserve" y="60.82" clip-path="url(#clipPath2)" stroke="none">Markdown-специфікація</text>
+    </g>
+    <g fill="rgb(22,138,83)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="rgb(22,138,83)">
+      <rect x="110" y="180" clip-path="url(#clipPath2)" width="260" rx="4" ry="4" height="110" stroke="none"/>
+      <rect stroke-linecap="butt" x="110" y="180" clip-path="url(#clipPath2)" fill="none" width="260" rx="4" ry="4" height="110" stroke-width="2" stroke-miterlimit="1.45"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="white" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="white" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="218.2798" xml:space="preserve" y="220.3899" clip-path="url(#clipPath2)" stroke="none">check</text>
+      <text x="178.1096" xml:space="preserve" y="240.82" clip-path="url(#clipPath2)" stroke="none">K_drift + D_const</text>
+      <text x="196.0122" xml:space="preserve" y="261.2502" clip-path="url(#clipPath2)" stroke="none">без мережі</text>
+    </g>
+    <g fill="rgb(42,42,42)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="rgb(42,42,42)">
+      <rect x="540" y="180" clip-path="url(#clipPath2)" width="200" rx="4" ry="4" height="110" stroke="none"/>
+      <rect stroke-linecap="butt" x="540" y="180" clip-path="url(#clipPath2)" fill="none" width="200" rx="4" ry="4" height="110" stroke-width="2" stroke-miterlimit="1.45"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="white" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="white" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="613.0298" xml:space="preserve" y="240.82" clip-path="url(#clipPath2)" stroke="none">Ollama</text>
+    </g>
+    <g fill="rgb(22,138,83)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="rgb(22,138,83)">
+      <rect x="910" y="180" clip-path="url(#clipPath2)" width="260" rx="4" ry="4" height="110" stroke="none"/>
+      <rect stroke-linecap="butt" x="910" y="180" clip-path="url(#clipPath2)" fill="none" width="260" rx="4" ry="4" height="110" stroke-width="2" stroke-miterlimit="1.45"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="white" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="white" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="1007.1797" xml:space="preserve" y="220.3899" clip-path="url(#clipPath2)" stroke="none">measure</text>
+      <text x="979.0471" xml:space="preserve" y="240.82" clip-path="url(#clipPath2)" stroke="none">D_pair + H_norm</text>
+      <text x="939.6943" xml:space="preserve" y="261.2502" clip-path="url(#clipPath2)" stroke="none">через internal/instrument</text>
+    </g>
+    <g fill="rgb(22,138,83)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="rgb(22,138,83)">
+      <rect x="310" y="360" clip-path="url(#clipPath2)" width="260" rx="4" ry="4" height="110" stroke="none"/>
+      <rect stroke-linecap="butt" x="310" y="360" clip-path="url(#clipPath2)" fill="none" width="260" rx="4" ry="4" height="110" stroke-width="2" stroke-miterlimit="1.45"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="white" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="white" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="423.0349" xml:space="preserve" y="410.605" clip-path="url(#clipPath2)" stroke="none">gate</text>
+      <text x="316.5867" xml:space="preserve" y="431.0351" clip-path="url(#clipPath2)" stroke="none">обидва шари, один код виходу</text>
+    </g>
+    <g fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="white">
+      <rect x="930" y="360" clip-path="url(#clipPath2)" width="260" rx="4" ry="4" height="110" stroke="none"/>
+    </g>
+    <g stroke-linecap="butt" transform="matrix(1,0,0,1,-60,5)" fill="rgb(22,138,83)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="rgb(22,138,83)" stroke-width="2" stroke-miterlimit="1.45">
+      <rect x="930" y="360" clip-path="url(#clipPath2)" fill="none" width="260" rx="4" ry="4" height="110"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="rgb(22,138,83)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="rgb(22,138,83)" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="1014.6847" xml:space="preserve" y="420.82" clip-path="url(#clipPath2)" stroke="none">corpus.jsonl</text>
+    </g>
+    <g fill="rgb(22,138,83)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="rgb(22,138,83)">
+      <rect x="75" y="555" clip-path="url(#clipPath2)" width="250" rx="4" ry="4" height="100" stroke="none"/>
+      <rect stroke-linecap="butt" x="75" y="555" clip-path="url(#clipPath2)" fill="none" width="250" rx="4" ry="4" height="100" stroke-width="2" stroke-miterlimit="1.45"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="white" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="white" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="129.177" xml:space="preserve" y="610.8201" clip-path="url(#clipPath2)" stroke="none">агентів допущено</text>
+    </g>
+    <g fill="rgb(42,42,42)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="rgb(42,42,42)">
+      <rect x="415" y="555" clip-path="url(#clipPath2)" width="250" rx="4" ry="4" height="100" stroke="none"/>
+      <rect stroke-linecap="butt" x="415" y="555" clip-path="url(#clipPath2)" fill="none" width="250" rx="4" ry="4" height="100" stroke-width="2" stroke-miterlimit="1.45"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="white" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="white" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="441.2693" xml:space="preserve" y="600.605" clip-path="url(#clipPath2)" stroke="none">специфікацію повернуто</text>
+      <text x="486.8021" xml:space="preserve" y="621.0351" clip-path="url(#clipPath2)" stroke="none">на уточнення</text>
+    </g>
+    <g fill="rgb(42,42,42)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="rgb(42,42,42)">
+      <rect x="735" y="555" clip-path="url(#clipPath2)" width="250" rx="4" ry="4" height="100" stroke="none"/>
+      <rect stroke-linecap="butt" x="735" y="555" clip-path="url(#clipPath2)" fill="none" width="250" rx="4" ry="4" height="100" stroke-width="2" stroke-miterlimit="1.45"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="white" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="white" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="826.6698" xml:space="preserve" y="600.605" clip-path="url(#clipPath2)" stroke="none">calibrate</text>
+      <text x="750.0567" xml:space="preserve" y="621.0351" clip-path="url(#clipPath2)" stroke="none">Spearman проти результату</text>
+    </g>
+    <g fill="rgb(42,42,42)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,-60,5)" stroke="rgb(42,42,42)">
+      <rect x="1015" y="555" clip-path="url(#clipPath2)" width="250" rx="4" ry="4" height="100" stroke="none"/>
+      <rect stroke-linecap="butt" x="1015" y="555" clip-path="url(#clipPath2)" fill="none" width="250" rx="4" ry="4" height="100" stroke-width="2" stroke-miterlimit="1.45"/>
+    </g>
+    <g stroke-linecap="butt" font-size="15px" transform="matrix(1,0,0,1,-60,5)" fill="white" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="white" font-weight="bold" stroke-miterlimit="1.45">
+      <text x="1121.7148" xml:space="preserve" y="600.605" clip-path="url(#clipPath2)" stroke="none">label</text>
+      <text x="1039.0942" xml:space="preserve" y="621.0351" clip-path="url(#clipPath2)" stroke="none">єдиний автор результату</text>
+    </g>
+    <g stroke-linecap="butt" font-size="13px" transform="matrix(1,0,0,1,-60,5)" fill="rgb(31,31,31)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="rgb(31,31,31)" stroke-miterlimit="1.45">
+      <text x="774.326" xml:space="preserve" y="201.191" clip-path="url(#clipPath2)" stroke="none">лише цей пакет</text>
+      <text x="752.9214" xml:space="preserve" y="218.897" clip-path="url(#clipPath2)" stroke="none">звертається до мережі</text>
+      <text x="1127.288" xml:space="preserve" y="327.044" clip-path="url(#clipPath2)" stroke="none">opt-in накопичення</text>
+      <text x="294.0845" xml:space="preserve" y="503.044" clip-path="url(#clipPath2)" stroke="none">пропуск</text>
+      <text x="474.9785" xml:space="preserve" y="503.044" clip-path="url(#clipPath2)" stroke="none">блок</text>
+      <path fill="none" d="M509.967 55 L240 55 L240 169.9695" stroke-width="3" clip-path="url(#clipPath2)"/>
+      <path d="M240 179.9695 L246.25 164.9695 L240 168.7195 L233.75 164.9695 Z" stroke-width="3" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" d="M770 55 L1040 55 L1040 169.9695" stroke-width="3" clip-path="url(#clipPath2)"/>
+      <path d="M1040 179.9695 L1046.25 164.9695 L1040 168.7195 L1033.75 164.9695 Z" stroke-width="3" clip-path="url(#clipPath2)" stroke="none"/>
+    </g>
+    <g stroke-linecap="butt" transform="matrix(1,0,0,1,-60,5)" fill="rgb(31,31,31)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke-dasharray="12,4" stroke="rgb(31,31,31)" stroke-width="2" stroke-miterlimit="1.45">
+      <path fill="none" d="M909.9585 235 L749 235" clip-path="url(#clipPath2)"/>
+      <path d="M740 235 L753.5 240.625 L750.125 235 L753.5 229.375 Z" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" stroke-dasharray="none" d="M240 290 L240 330 L440 330 L440 349.9707" stroke-width="3" clip-path="url(#clipPath2)"/>
+      <path stroke-dasharray="none" d="M440 359.9707 L446.25 344.9707 L440 348.7207 L433.75 344.9707 Z" stroke-width="3" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" stroke-dasharray="none" d="M970 290 L970 330 L440 330 L440 349.9707" stroke-width="3" clip-path="url(#clipPath2)"/>
+      <path stroke-dasharray="none" d="M440 359.9707 L446.25 344.9707 L440 348.7207 L433.75 344.9707 Z" stroke-width="3" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" d="M1110 290 L1110 350.9658" clip-path="url(#clipPath2)"/>
+      <path d="M1110 359.9658 L1115.625 346.4658 L1110 349.8408 L1104.375 346.4658 Z" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" stroke-dasharray="none" d="M440 470 L440 512 L200 512 L200 544.958" stroke-width="3" clip-path="url(#clipPath2)"/>
+      <path stroke-dasharray="none" d="M200 554.958 L206.25 539.958 L200 543.708 L193.75 539.958 Z" stroke-width="3" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" stroke-dasharray="none" d="M440 470 L440 512 L540 512 L540 544.958" stroke-width="3" clip-path="url(#clipPath2)"/>
+      <path stroke-dasharray="none" d="M540 554.958 L546.25 539.958 L540 543.708 L533.75 539.958 Z" stroke-width="3" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" stroke-dasharray="none" d="M970 470 L970 512 L860 512 L860 544.958" stroke-width="3" clip-path="url(#clipPath2)"/>
+      <path stroke-dasharray="none" d="M860 554.958 L866.25 539.958 L860 543.708 L853.75 539.958 Z" stroke-width="3" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" stroke-dasharray="none" d="M1100 470 L1100 544.9585" stroke-width="3" clip-path="url(#clipPath2)"/>
+      <path stroke-dasharray="none" d="M1100 554.9585 L1106.25 539.9585 L1100 543.7085 L1093.75 539.9585 Z" stroke-width="3" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" stroke-dasharray="none" d="M1160 554.9585 L1160 480" stroke-width="3" clip-path="url(#clipPath2)"/>
+      <path stroke-dasharray="none" d="M1160 470 L1153.75 485 L1160 481.25 L1166.25 485 Z" stroke-width="3" clip-path="url(#clipPath2)" stroke="none"/>
+    </g>
+  </g>
 </svg>
