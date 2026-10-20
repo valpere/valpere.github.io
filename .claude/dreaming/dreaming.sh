@@ -28,6 +28,11 @@ PROMPT_FILE="$SCRIPT_DIR/dreaming-prompt.md"
 WEEK="$(date +%Y-W%V)"
 REPORT="$REPORTS_DIR/$WEEK.md"
 LOG="$REPORTS_DIR/.dreaming.log"
+# Write to a hidden temp file and mv on success: `> "$REPORT"` would create an
+# empty report before the agent starts (it sees its own 0-byte stub) and a
+# failed run would clobber an existing report for the week.
+TMP_REPORT="$(mktemp "$REPORTS_DIR/.$WEEK.XXXXXX.tmp")"
+trap 'rm -f "$TMP_REPORT"' EXIT
 
 mkdir -p "$REPORTS_DIR"
 
@@ -60,7 +65,7 @@ if echo "$PROMPT" | claude \
   --model minimax-m3:cloud \
   --fallback-model kimi-k2.7-code:cloud \
   --allowed-tools "Read,Glob,Grep,Bash(ls:*),Bash(cat:*),Bash(wc:*),Bash(stat:*),Bash(find:*),Bash(git log:*),Bash(git diff:*),Bash(git show:*),Bash(git rev-parse:*),Bash(gh pr list:*),Bash(gh pr view:*),Bash(gh issue list:*),Bash(awk:*),Bash(sort:*),Bash(uniq:*)" \
-  > "$REPORT" 2>> "$LOG"; then
+  > "$TMP_REPORT" 2>> "$LOG"; then
   EXIT=0
 else
   EXIT=$?
@@ -72,6 +77,7 @@ if [[ $EXIT -ne 0 ]]; then
   exit "$EXIT"
 fi
 
+mv "$TMP_REPORT" "$REPORT"
 SIZE=$(wc -c < "$REPORT")
 if [[ "$SIZE" -lt 500 ]]; then
   echo "[dreaming] WARNING: report suspiciously small ($SIZE bytes); check $REPORT" >&2
