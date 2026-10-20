@@ -36,12 +36,7 @@ Five commands, each demonstrated against the tool's own live spec:
 
 ## Architecture
 
-```
-spec.md ──► check (K_drift, D_const)  ─┐
-        └─► measure (D_pair, instrument) ─┴─► gate ──► exit 0/1 (CI)
-                                                │
-corpus.jsonl ──► calibrate (Spearman) ◄────────┘
-```
+![Tumanomir pipeline: Markdown spec through check and measure to the gate, with the opt-in corpus, calibrate and label loop](/portfolio/assets/images/tumanomir/tumanomir-flow-en-1-1220x675.png)
 
 The deterministic packages (`internal/metrics`, `internal/spec`, `internal/config`, `internal/calibrate`) have no right to touch the network — enforced by a test that parses their transitive dependencies and fails if `net/*` shows up, not by a comment someone can forget under deadline pressure.
 
