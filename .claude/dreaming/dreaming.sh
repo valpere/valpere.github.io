@@ -28,13 +28,14 @@ PROMPT_FILE="$SCRIPT_DIR/dreaming-prompt.md"
 WEEK="$(date +%Y-W%V)"
 REPORT="$REPORTS_DIR/$WEEK.md"
 LOG="$REPORTS_DIR/.dreaming.log"
+mkdir -p "$REPORTS_DIR"
+
 # Write to a hidden temp file and mv on success: `> "$REPORT"` would create an
 # empty report before the agent starts (it sees its own 0-byte stub) and a
 # failed run would clobber an existing report for the week.
 TMP_REPORT="$(mktemp "$REPORTS_DIR/.$WEEK.XXXXXX.tmp")"
 trap 'rm -f "$TMP_REPORT"' EXIT
 
-mkdir -p "$REPORTS_DIR"
 
 if [[ ! -f "$PROMPT_FILE" ]]; then
   echo "[dreaming] missing prompt file: $PROMPT_FILE" >&2
