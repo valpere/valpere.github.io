@@ -1,3 +1,15 @@
+- slug: "v2v-demo"
+  client: "v2v-demo — Multi-Vertical AI Concierge: Telegram Bot, Mini App and Web"
+  client_uk: "v2v-demo — мультигалузевий AI-консьєрж: Telegram-бот, Mini App і веб"
+  role: "Solo Creator / Architect"
+  period: "Aug 2026 – ongoing"
+  stack: ["Go", "Telegram Bot API", "Telegram Mini Apps", "Telegram Stars", "OpenAI Whisper", "Ollama", "ElevenLabs", "Azure Speech", "lingua-go"]
+  summary_en: "A bilingual (UK/EN) voice-and-text AI concierge engine with three interfaces on one API — Telegram bot, Telegram Mini App (Voice-to-UI, server-owned cart, Telegram Stars) and web — running ten independent business assistants (dental, auto, real estate, cleaning, translation, beauty salon, barbershop, restaurant, pizzeria, acupressure shop) behind one inline picker, sharing a single grounding-gate core. An automated scenario-probe tool caught a real safety-relevant bug (a sedation request getting scheduled as a routine booking) before it reached a user. One main dependency. Live demo: @v2v_demo_bot on Telegram (Open Concierge opens the Mini App) and web.pere.org.ua."
+  summary_uk: "Двомовний (укр/англ) рушій голосового й текстового AI-консьєржа з трьома інтерфейсами на одному API — Telegram-бот, Telegram Mini App (Voice-to-UI, кошик на сервері, Telegram Stars) і веб: десять незалежних бізнес-асистентів (стоматологія, автосервіс, нерухомість, клінінг, переклади, салон краси, барбершоп, ресторан, піцерія, акупресурний магазин) за одним inline-пікером на спільному ядрі гейта заземлення. Автоматизований probe-інструмент знайшов реальний баг, критичний для безпеки (запит на седацію потрапляв у звичайний запис), ще до користувача. Одна основна залежність. Живе демо: @v2v_demo_bot у Telegram (Open Concierge відкриває Mini App) і web.pere.org.ua."
+  permalink: "/portfolio/v2v-demo/"
+  hero_image: "/portfolio/assets/images/v2v-demo/hero-0900x0530.png"
+  hero_image_uk: "/portfolio/assets/images/v2v-demo/hero-uk-0900x0530.png"
+
 - slug: "vending-esp32-monobank"
   client: "vending-esp32-monobank — Monobank QR Payments for a Coffee Machine on ESP32"
   client_uk: "vending-esp32-monobank — оплата Monobank QR для кавового автомата на ESP32"
@@ -129,18 +141,6 @@
   permalink: "/portfolio/bid-triage/"
   hero_image: "/portfolio/assets/images/bid-triage/hero-0900x0530.png"
   hero_image_uk: "/portfolio/assets/images/bid-triage/hero-uk-0900x0530.png"
-
-- slug: "v2v-demo"
-  client: "v2v-demo — Multi-Vertical AI Concierge: Telegram Bot, Mini App and Web"
-  client_uk: "v2v-demo — мультигалузевий AI-консьєрж: Telegram-бот, Mini App і веб"
-  role: "Solo Creator / Architect"
-  period: "Aug 2026 – ongoing"
-  stack: ["Go", "Telegram Bot API", "Telegram Mini Apps", "Telegram Stars", "OpenAI Whisper", "Ollama", "ElevenLabs", "Azure Speech", "lingua-go"]
-  summary_en: "A bilingual (UK/EN) voice-and-text AI concierge engine with three interfaces on one API — Telegram bot, Telegram Mini App (Voice-to-UI, server-owned cart, Telegram Stars) and web — running ten independent business assistants (dental, auto, real estate, cleaning, translation, beauty salon, barbershop, restaurant, pizzeria, acupressure shop) behind one inline picker, sharing a single grounding-gate core. An automated scenario-probe tool caught a real safety-relevant bug (a sedation request getting scheduled as a routine booking) before it reached a user. One main dependency. Live demo: @v2v_demo_bot on Telegram (Open Concierge opens the Mini App) and web.pere.org.ua."
-  summary_uk: "Двомовний (укр/англ) рушій голосового й текстового AI-консьєржа з трьома інтерфейсами на одному API — Telegram-бот, Telegram Mini App (Voice-to-UI, кошик на сервері, Telegram Stars) і веб: десять незалежних бізнес-асистентів (стоматологія, автосервіс, нерухомість, клінінг, переклади, салон краси, барбершоп, ресторан, піцерія, акупресурний магазин) за одним inline-пікером на спільному ядрі гейта заземлення. Автоматизований probe-інструмент знайшов реальний баг, критичний для безпеки (запит на седацію потрапляв у звичайний запис), ще до користувача. Одна основна залежність. Живе демо: @v2v_demo_bot у Telegram (Open Concierge відкриває Mini App) і web.pere.org.ua."
-  permalink: "/portfolio/v2v-demo/"
-  hero_image: "/portfolio/assets/images/v2v-demo/hero-0900x0530.png"
-  hero_image_uk: "/portfolio/assets/images/v2v-demo/hero-uk-0900x0530.png"
 
 - slug: "landing-turnkey"
   client: "landing-turnkey — Turnkey Landing Page Designs"
