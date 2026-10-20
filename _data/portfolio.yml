@@ -235,8 +235,8 @@
   summary_en: "Go CLI implementing a published methodology for measuring AI-spec ambiguity as three metrics (K_drift, D_const, D_pair). 66 commits, zero reverts, gates its own specification in CI. Rewrote the K_drift scanner for a 233x allocation reduction; found and documented a naming-noise floor in the generation-spread metric."
   summary_uk: "Go CLI, що реалізує опубліковану методологію вимірювання неоднозначності специфікацій для AI (K_drift, D_const, D_pair). 66 комітів, жодного відкату, гейтить власну специфікацію в CI. Переписав сканер K_drift для 233x скорочення алокацій; знайшов і задокументував шумову підлогу найменувань у метриці розкиду генерацій."
   permalink: "/portfolio/tumanomir/"
-  hero_image_uk: "/portfolio/assets/images/tumanomir/tumanomir-uk.png"
-  hero_image: "/portfolio/assets/images/tumanomir/tumanomir-en.png"
+  hero_image_uk: "/portfolio/assets/images/tumanomir/hero-uk-0900x0530.png"
+  hero_image: "/portfolio/assets/images/tumanomir/hero-0900x0530.png"
 
 - slug: "fix-review"
   client: "fix-review — Multi-Agent PR Review Pipeline"

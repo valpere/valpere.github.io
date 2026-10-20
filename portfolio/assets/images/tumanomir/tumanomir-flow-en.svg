@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="680" viewBox="0 0 1280 680" font-family="'Noto Sans','DejaVu Sans',Dialog,sans-serif">
+<defs><marker id="a" markerWidth="5" markerHeight="5" refX="4.2" refY="2.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L5,2.5 L0,5 L1.2,2.5 Z" fill="#1F1F1F"/></marker></defs>
+<rect width="1280" height="680" fill="#FFFFFF"/>
+<path d="M510,55 L240,55 L240,180" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
+<path d="M770,55 L1040,55 L1040,180" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
+<path d="M240,290 L240,330 L440,330 L440,360" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
+<path d="M970,290 L970,330 L440,330 L440,360" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
+<path d="M910,235 L740,235" fill="none" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="9,7" marker-end="url(#a)"/>
+<path d="M1110,290 L1110,360" fill="none" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="9,7" marker-end="url(#a)"/>
+<path d="M440,470 L440,512 L200,512 L200,555" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
+<path d="M440,470 L440,512 L540,512 L540,555" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
+<path d="M970,470 L970,512 L860,512 L860,555" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
+<path d="M1100,470 L1100,555" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
+<path d="M1160,555 L1160,470" fill="none" stroke="#1F1F1F" stroke-width="3.5" marker-end="url(#a)"/>
+<rect x="510.0" y="10.0" width="260" height="90" rx="6" fill="#FED74F" stroke="#1F1F1F" stroke-width="2"/>
+<text x="640" y="60.0" text-anchor="middle" font-size="15" font-weight="700" fill="#1F1F1F">Markdown spec</text>
+<rect x="110.0" y="180.0" width="260" height="110" rx="6" fill="#168A53" stroke="#168A53" stroke-width="2"/>
+<text x="240" y="219.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">check</text>
+<text x="240" y="240.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">K_drift + D_const</text>
+<text x="240" y="261.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">no network</text>
+<rect x="540.0" y="180.0" width="200" height="110" rx="6" fill="#2A2A2A" stroke="#2A2A2A" stroke-width="2"/>
+<text x="640" y="240.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Ollama</text>
+<rect x="910.0" y="180.0" width="260" height="110" rx="6" fill="#168A53" stroke="#168A53" stroke-width="2"/>
+<text x="1040" y="219.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">measure</text>
+<text x="1040" y="240.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">D_pair + H_norm</text>
+<text x="1040" y="261.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">via internal/instrument</text>
+<rect x="310.0" y="360.0" width="260" height="110" rx="6" fill="#168A53" stroke="#168A53" stroke-width="2"/>
+<text x="440" y="409.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">gate</text>
+<text x="440" y="430.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">both layers, one exit code</text>
+<rect x="930.0" y="360.0" width="260" height="110" rx="6" fill="#FFFFFF" stroke="#168A53" stroke-width="2.5"/>
+<text x="1060" y="420.0" text-anchor="middle" font-size="15" font-weight="700" fill="#168A53">corpus.jsonl</text>
+<rect x="75.0" y="555.0" width="250" height="100" rx="6" fill="#168A53" stroke="#168A53" stroke-width="2"/>
+<text x="200" y="610.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">agents allowed in</text>
+<rect x="415.0" y="555.0" width="250" height="100" rx="6" fill="#2A2A2A" stroke="#2A2A2A" stroke-width="2"/>
+<text x="540" y="599.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">spec sent back</text>
+<text x="540" y="620.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">for clarification</text>
+<rect x="735.0" y="555.0" width="250" height="100" rx="6" fill="#2A2A2A" stroke="#2A2A2A" stroke-width="2"/>
+<text x="860" y="599.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">calibrate</text>
+<text x="860" y="620.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Spearman vs outcome</text>
+<rect x="1015.0" y="555.0" width="250" height="100" rx="6" fill="#2A2A2A" stroke="#2A2A2A" stroke-width="2"/>
+<text x="1140" y="599.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">label</text>
+<text x="1140" y="620.5" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">sole outcome writer</text>
+<text x="825" y="202" text-anchor="middle" font-size="13" fill="#1F1F1F">only this package</text>
+<text x="825" y="218" text-anchor="middle" font-size="13" fill="#1F1F1F">touches the network</text>
+<text x="1190" y="327" text-anchor="middle" font-size="13" fill="#1F1F1F">opt-in accretion</text>
+<text x="320" y="503" text-anchor="middle" font-size="13" fill="#1F1F1F">pass</text>
+<text x="490" y="503" text-anchor="middle" font-size="13" fill="#1F1F1F">block</text>
+</svg>

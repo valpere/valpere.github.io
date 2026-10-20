@@ -2,7 +2,7 @@
 layout: portfolio-item
 title: "Tumanomir — CLI for Measuring AI-Spec Ambiguity"
 permalink: /portfolio/tumanomir/
-image: /portfolio/assets/images/tumanomir/tumanomir-en.png
+image: /portfolio/assets/images/tumanomir/og-card.png
 ---
 
 ## Overview
