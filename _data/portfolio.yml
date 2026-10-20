@@ -19,6 +19,8 @@
   summary_en: "Lets a commercial Rheavendors coffee machine take Monobank QR payments directly, with no payment intermediary and no monthly fee: a Cloudflare Worker verifies each payment against the Monobank API and queues it in a per-machine Durable Object, and an ESP32 polls it and credits the machine through an optocoupler-isolated board on the coin connector. Acknowledged queue, no double payouts, the machine's own Ready state respected. Verified end to end on the customer's machine with real payments."
   summary_uk: "Дає комерційному кавовому автомату Rheavendors приймати оплату Monobank QR напряму, без платіжного посередника й абонплати: Cloudflare Worker перевіряє кожен платіж в API Monobank і ставить його в чергу Durable Object окремого автомата, а ESP32 її опитує й нараховує кредит через плату з оптопарами на монетному роз'ємі. Черга з підтвердженням, жодних подвійних зарахувань, повага до власного стану Ready автомата. Перевірено наскрізно на автоматі замовника реальними платежами."
   permalink: "/portfolio/vending-esp32-monobank/"
+  hero_image_uk: "/portfolio/assets/images/vending-esp32-monobank/hero-uk-0900x0530.png"
+  hero_image: "/portfolio/assets/images/vending-esp32-monobank/hero-0900x0530.png"
 
 - slug: "site-security-cleanup"
   client: "site-security-cleanup — Malware Remediation and CMS Hardening"
@@ -29,6 +31,8 @@
   summary_en: "Full recovery of hacked WordPress, Joomla and OpenCart sites: hidden mobile redirects, web shells and backdoors, spam injected into the database, Google Safe Browsing and hosting blocks. Isolated staging, diff against clean CMS cores, database sanitization, PHP 8.2+, no PHP execution in upload folders, 2FA, WAF and a Search Console review, with 100% data preservation."
   summary_uk: "Повне відновлення зламаних сайтів на WordPress, Joomla та OpenCart: приховані мобільні редиректи, веб-шели й бекдори, спам в базі даних, блокування Google Safe Browsing та хостингу. Ізольований staging, порівняння з чистими ядрами CMS, санітизація бази, PHP 8.2+, заборона виконання PHP у завантаженнях, 2FA, WAF і перевірка в Search Console зі збереженням 100% даних."
   permalink: "/portfolio/site-security-cleanup/"
+  hero_image_uk: "/portfolio/assets/images/site-security-cleanup/hero-uk-0900x0530.png"
+  hero_image: "/portfolio/assets/images/site-security-cleanup/hero-0900x0530.png"
 
 - slug: "tilda-migration"
   client: "tilda-migration — Turnkey Move from Tilda to Horoshop, Weblium, WooCommerce or Shopify"
@@ -39,6 +43,8 @@
   summary_en: "A turnkey move of a business site or online store off Tilda onto Horoshop, Weblium, WooCommerce or Shopify: the design and structure kept, a 301 redirect map for every URL, meta data carried over, Ukrainian payments and Nova Poshta connected, orders pushed to Telegram and the CRM, and the main domain switched with no downtime."
   summary_uk: "Міграція бізнес-сайту чи інтернет-магазину з Tilda на Хорошоп, Weblium, WooCommerce або Shopify під ключ: дизайн і структура збережені, карта 301-редиректів для кожного URL, перенесені мета-дані, підключені українські платежі й Нова Пошта, замовлення в Telegram і CRM, а основний домен перемикається без простою."
   permalink: "/portfolio/tilda-migration/"
+  hero_image_uk: "/portfolio/assets/images/tilda-migration/hero-uk-0900x0530.png"
+  hero_image: "/portfolio/assets/images/tilda-migration/hero-0900x0530.png"
 
 - slug: "opencart-catalog-migration"
   client: "opencart-catalog-migration — Large Store Migration to OpenCart 3/4 or Horoshop"
@@ -49,6 +55,8 @@
   summary_en: "Migration of a live online store with 10,000+ SKU from OpenCart 1.5/2.x, PrestaShop 1.6, VirtueMart or a custom CMS to OpenCart 3/4 on PHP 8.2+ or Horoshop: attributes, options, customers with password hashes and order history carried over, content cleaned, MySQL and caching tuned, images in WebP, old SEO URLs mapped to 301 rules."
   summary_uk: "Міграція діючого інтернет-магазину від 10 000 SKU з OpenCart 1.5/2.x, PrestaShop 1.6, VirtueMart чи самописної CMS на OpenCart 3/4 на PHP 8.2+ або Хорошоп: перенесені атрибути, опції, клієнти з хешами паролів та історія замовлень, очищений контент, налаштовані MySQL і кешування, зображення у WebP, старі SEO-URL зіставлені з 301-правилами."
   permalink: "/portfolio/opencart-catalog-migration/"
+  hero_image_uk: "/portfolio/assets/images/opencart-catalog-migration/hero-uk-0900x0530.png"
+  hero_image: "/portfolio/assets/images/opencart-catalog-migration/hero-0900x0530.png"
 
 - slug: "marketplace-catalog-sync"
   client: "marketplace-catalog-sync — Catalog Bridge Between Prom.ua, Rozetka and Horoshop"
@@ -59,6 +67,8 @@
   summary_en: "Automated export, normalization, mapping and import of large catalogs between Prom.ua, Rozetka, Horoshop, OpenCart, Zakupka and Epicentr, built on the Go core of feedsync: category correspondence matrix, a pre-validator against Rozetka's moderation rules, cleaned descriptions and photo checks, and feeds refreshed every 30-60 minutes."
   summary_uk: "Автоматизоване вивантаження, нормалізація, маппінг та імпорт великих каталогів між Prom.ua, Rozetka, Хорошоп, OpenCart, Zakupka та Епіцентр на Go-ядрі feedsync: матриця відповідності категорій, пре-валідатор за правилами модерації Rozetka, очищені описи й перевірка фото, фіди з оновленням кожні 30-60 хвилин."
   permalink: "/portfolio/marketplace-catalog-sync/"
+  hero_image_uk: "/portfolio/assets/images/marketplace-catalog-sync/hero-uk-0900x0530.png"
+  hero_image: "/portfolio/assets/images/marketplace-catalog-sync/hero-0900x0530.png"
 
 - slug: "zero-downtime-migration"
   client: "zero-downtime-migration — Server and Domain Migration Without Losing Traffic"
@@ -69,6 +79,8 @@
   summary_en: "A seamless move of WordPress, OpenCart, Laravel and custom sites to a new server or a new domain with zero downtime: staging tested through a hosts entry, TTL lowered ahead of release, a final delta sync, serialization-safe URL replacement, one verified redirect setup with a 301 map, and corporate mail kept intact (MX, SPF, DKIM, DMARC)."
   summary_uk: "Безшовне перенесення сайтів на WordPress, OpenCart, Laravel та самописних на новий сервер чи домен без простою: тестування на staging через запис у hosts, зниження TTL до релізу, фінальна дельта-синхронізація, заміна URL із урахуванням серіалізації, одна перевірена конфігурація редиректів із картою 301 і збережена корпоративна пошта (MX, SPF, DKIM, DMARC)."
   permalink: "/portfolio/zero-downtime-migration/"
+  hero_image_uk: "/portfolio/assets/images/zero-downtime-migration/hero-uk-0900x0530.png"
+  hero_image: "/portfolio/assets/images/zero-downtime-migration/hero-0900x0530.png"
 
 - slug: "fastshop"
   client: "fastshop — Fast Mobile-First OpenCart Store"
@@ -151,6 +163,7 @@
   summary_en: "Two original landing-page design directions for the common one-page-site request: a bright, discount-driven product page and a dark, portfolio-style business/services page, each built around a single call to action and a lead-capture form."
   summary_uk: "Два оригінальні дизайн-напрямки лендингу для типового запиту: світла сторінка товару з акцентом на знижку та темна сторінка компанії/послуг у стилі портфоліо — кожен навколо одного заклику до дії та форми заявки."
   permalink: "/portfolio/landing-turnkey/"
+  hero_image_uk: "/portfolio/assets/images/landing-turnkey/landing-turnkey-combined-1832x920.png"
   hero_image: "/portfolio/assets/images/landing-turnkey/landing-turnkey-en.png"
 
 - slug: "ragline"
@@ -222,6 +235,7 @@
   summary_en: "Go CLI implementing a published methodology for measuring AI-spec ambiguity as three metrics (K_drift, D_const, D_pair). 66 commits, zero reverts, gates its own specification in CI. Rewrote the K_drift scanner for a 233x allocation reduction; found and documented a naming-noise floor in the generation-spread metric."
   summary_uk: "Go CLI, що реалізує опубліковану методологію вимірювання неоднозначності специфікацій для AI (K_drift, D_const, D_pair). 66 комітів, жодного відкату, гейтить власну специфікацію в CI. Переписав сканер K_drift для 233x скорочення алокацій; знайшов і задокументував шумову підлогу найменувань у метриці розкиду генерацій."
   permalink: "/portfolio/tumanomir/"
+  hero_image_uk: "/portfolio/assets/images/tumanomir/tumanomir-uk.png"
   hero_image: "/portfolio/assets/images/tumanomir/tumanomir-en.png"
 
 - slug: "fix-review"
@@ -245,6 +259,7 @@
   summary_en: "Built out a modular, conversation-first sales CRM across 1,366 commits in 3 months — AI-powered reporting through a provider-fallback gateway (Gemini → OpenRouter), a deterministic decision-billing ledger, lead ingestion/enrichment pipelines, and org-level access control. ~123K LOC across frontend and edge functions, 201 test files, 23 production cron jobs."
   summary_uk: "Розробка модульної CRM-платформи на основі розмов — 1 366 комітів за 3 місяці. AI-звітність через провайдер-fallback gateway (Gemini → OpenRouter), детермінований білінг-леджер рішень, пайплайни збору/збагачення лідів, контроль доступу на рівні організації. ~123K рядків коду, 201 test-файл, 23 продакшн cron-джоби."
   permalink: "/portfolio/sales-crm-platform/"
+  hero_image_uk: "/portfolio/assets/images/sales-crm-platform/sales-crm-uk.png"
   hero_image: "/portfolio/assets/images/sales-crm-platform/sales-crm-en.png"
 
 - slug: "gym-ops-platform"
@@ -256,6 +271,7 @@
   summary_en: "Took over and substantially rebuilt a gym-cleaning operations platform after its no-code MVP stage. Delivered mobile-first cleaner workflows with AI photo validation, automated escalation triggers, and multi-provider LLM failover across 991 commits in 3 months — 42K LOC, 474 passing tests, zero npm vulnerabilities."
   summary_uk: "Перехопив і суттєво переписав платформу для управління клінінг-операціями в спортзалах після її no-code MVP-стадії. Мобільні воркфлоу для клінерів з AI-валідацією фото, автоматизовані тригери ескалації та мультипровайдерний LLM failover — 991 коміт за 3 місяці, 42K рядків коду, 474 тести, 0 вразливостей."
   permalink: "/portfolio/gym-ops-platform/"
+  hero_image_uk: "/portfolio/assets/images/gym-ops-platform/gym-ops-uk.png"
   hero_image: "/portfolio/assets/images/gym-ops-platform/gym-ops-en.png"
 
 - slug: "application-assistant"
@@ -267,7 +283,8 @@
   summary_en: "Conversational AI assistant (Telegram bot) for a Ukrainian application-writing consultancy. RAG + LLM fills Excel templates while preserving formula chains. 8-week solo delivery: 65 sessions completed, 100% Excel artefact validity, 22% escalation rate."
   summary_uk: "Conversational AI-помічник (Telegram-бот) для українського консультаційного сервісу із подання заявок. RAG + LLM заповнює Excel-шаблони зі збереженням формул. Соло, 8 тижнів: 65 сесій, 100% валідність артефактів, 22% ескалацій."
   permalink: "/portfolio/application-assistant/"
-  hero_image: "/portfolio/assets/images/application-assistant/ai-application-assistant-en.png"
+  hero_image_uk: "/portfolio/assets/images/application-assistant/hero-uk-0900x0502.png"
+  hero_image: "/portfolio/assets/images/application-assistant/hero-0900x0502.png"
 
 - slug: "ivr-elevenlabs"
   client: "Micromobility Startup"
@@ -278,7 +295,8 @@
   summary_en: "Built a voice AI agent automating 80% of 20,000 monthly support calls for a micromobility company. Delivered in 24 days: Go backend, Binotel webhooks, Whisper STT, GPT-4o-mini function calling, ElevenLabs/Azure TTS, Redis session state."
   summary_uk: "Голосовий AI-агент, що автоматизує 80% із 20 000 щомісячних дзвінків підтримки для компанії мікромобільності. Доставка за 24 дні: Go-бекенд, Binotel webhook, Whisper STT, GPT-4o-mini function calling, ElevenLabs/Azure TTS, Redis."
   permalink: "/portfolio/ivr-elevenlabs/"
-  hero_image: "/portfolio/assets/images/ivr-elevenlabs/ai_voice_agent-en.png"
+  hero_image_uk: "/portfolio/assets/images/ivr-elevenlabs/hero-uk-0900x0502.png"
+  hero_image: "/portfolio/assets/images/ivr-elevenlabs/hero-0900x0502.png"
 
 - slug: "cbcdro"
   client: "CloudBees CD/RO"
