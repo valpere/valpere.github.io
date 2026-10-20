@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "geopulse — бекенд GPS fleet-tracking"
 permalink: /portfolio/geopulse/
+image: /portfolio/assets/images/geopulse/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/geopulse/
 ---

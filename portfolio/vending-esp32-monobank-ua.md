@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "vending-esp32-monobank — оплата Monobank QR для кавового автомата на ESP32"
 permalink: /portfolio/vending-esp32-monobank/
+image: /assets/images/vending-flow-uk-1-1259x524.png
 lang: uk
 lang_alt: /portfolio/vending-esp32-monobank/
 ---

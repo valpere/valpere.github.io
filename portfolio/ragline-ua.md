@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "ragline — бекенд AI/RAG Telegram-бота підтримки"
 permalink: /portfolio/ragline/
+image: /portfolio/assets/images/ragline/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/ragline/
 ---

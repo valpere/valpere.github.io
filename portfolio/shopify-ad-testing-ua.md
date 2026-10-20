@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "AI-система рекламних кампаній — дизайнерський одяг на Shopify"
 permalink: /portfolio/shopify-ad-testing/
+image: /portfolio/assets/images/shopify-ad-testing/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/shopify-ad-testing/
 ---

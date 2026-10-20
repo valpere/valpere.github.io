@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "fleet-crm — бекенд CRM для автопарку/логістики"
 permalink: /portfolio/fleet-crm/
+image: /portfolio/assets/images/fleet-crm/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/fleet-crm/
 ---

@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "bid-triage — фільтр AI-шуму в заявках, під замовлення"
 permalink: /portfolio/bid-triage/
+image: /portfolio/assets/images/bid-triage/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/bid-triage/
 ---

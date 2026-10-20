@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "subgate — бекенд платного доступу до Telegram-каналу"
 permalink: /portfolio/subgate/
+image: /portfolio/assets/images/subgate/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/subgate/
 ---
