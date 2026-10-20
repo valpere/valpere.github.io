@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "Туманомір — CLI для вимірювання неоднозначності специфікацій для AI"
 permalink: /portfolio/tumanomir/
+image: /portfolio/assets/images/tumanomir/og-card-uk.png
 lang: uk
 lang_alt: /portfolio/tumanomir/
 ---

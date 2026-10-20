@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "landing-turnkey — дизайни лендингу під ключ"
 permalink: /portfolio/landing-turnkey/
+image: /portfolio/assets/images/landing-turnkey/og-card-uk.png
 lang: uk
 lang_alt: /portfolio/landing-turnkey/
 ---
