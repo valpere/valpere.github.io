@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "fix-review — конвеєр мультиагентного рев'ю PR"
 permalink: /portfolio/fix-review/
+image: /portfolio/assets/images/fix-review/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/fix-review/
 ---

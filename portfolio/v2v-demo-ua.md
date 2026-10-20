@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "v2v-demo — мультигалузевий голосовий AI-консьєрж для Telegram"
 permalink: /portfolio/v2v-demo/
+image: /portfolio/assets/images/v2v-demo/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/v2v-demo/
 ---

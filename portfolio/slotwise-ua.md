@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "slotwise — бекенд бронювання прийомів"
 permalink: /portfolio/slotwise/
+image: /portfolio/assets/images/slotwise/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/slotwise/
 ---
