@@ -1,17 +1,31 @@
 ---
 layout: portfolio-item
-title: "v2v-demo — Multi-Vertical Voice AI Concierge for Telegram"
+title: "v2v-demo — Multi-Vertical AI Concierge: Telegram Bot, Mini App and Web"
 permalink: /portfolio/v2v-demo/
 image: /portfolio/assets/images/v2v-demo/v2v-demo-en.png
 ---
 
 ## Overview
 
-A Go Telegram bot that holds a real bilingual (Ukrainian/English) voice-or-text conversation, answers only from a fixed knowledge base, and hands off to a human the moment it isn't sure. What started as a single scenario grew into ten genuinely independent assistants — dental clinic, car service, real estate agency, cleaning company, translation bureau, beauty salon, barbershop, restaurant, pizzeria and an acupressure-products shop — selectable from one inline picker on `/start` (which also links to the portfolio, projects, briefs and about pages), each with its own knowledge base, system prompt, and lead-collection schema, all running the same grounding-gate core.
+A Go engine for a voice-and-text AI concierge, served through three interfaces on one API — a Telegram bot, a Telegram Mini App and a web page. It holds a real bilingual (Ukrainian/English) voice-or-text conversation in each of them, answers only from a fixed knowledge base, and hands off to a human the moment it isn't sure. What started as a single scenario grew into ten genuinely independent assistants — dental clinic, car service, real estate agency, cleaning company, translation bureau, beauty salon, barbershop, restaurant, pizzeria and an acupressure-products shop — selectable from one inline picker on `/start` (which also links to the portfolio, projects, briefs and about pages), each with its own knowledge base, system prompt, and lead-collection schema, all running the same grounding-gate core.
 
 **Result: one framework, ten business verticals, no forked codebase — every assistant shares the same grounding gate, and a scripted scenario-probe tool caught a real safety-relevant bug (a dental sedation request getting scheduled as a routine booking) before it ever reached a user.**
 
-**This is a live demo, not a screenshot — try it yourself:** message [@v2v_demo_bot](https://t.me/v2v_demo_bot) on Telegram, pick a vertical from `/start`, and have the actual conversation.
+**This is a live demo, not a screenshot — try it yourself:** message [@v2v_demo_bot](https://t.me/v2v_demo_bot) on Telegram and pick a vertical from `/start`; tap **Open Concierge** in the bot for the Mini App; or open the web version at [web.pere.org.ua](https://web.pere.org.ua/). Same engine, same assistants, three ways in.
+
+---
+
+## One engine, three interfaces
+
+The conversation logic — sessions, topics, limits, speech-to-text, grounded dialogue, text-to-speech, leads — lives in the engine and is exposed through one `/v1` API. Each interface is a thin client on top of it:
+
+| Interface | What it adds |
+|---|---|
+| **Telegram bot** ([v2v-bot](https://github.com/valpere/v2v-bot)) | Long-poll adapter: voice or text in the chat, the topic picker, voice replies |
+| **Telegram Mini App** ([v2v-tma](https://github.com/valpere/v2v-tma)) | Opens from the **Open Concierge** button in the bot: a full mobile screen with Voice-to-UI (a spoken or typed command highlights a product and adds it to the cart), a cart and prices owned by the server, Telegram `initData` verified with HMAC-SHA256, and payment through a Telegram Stars invoice |
+| **Web** ([v2v-web](https://github.com/valpere/v2v-web)) | A plain page with the topic picker, chat and cart; a small Go server serves it and proxies `/v1`, vouching for each visitor with an anonymous cookie id and per-visitor and per-IP rate limits |
+
+![The bot description in Telegram with the Open Concierge button that launches the Mini App](/portfolio/assets/images/v2v-demo/bot-open-concierge-1-0620x0610.png)
 
 ---
 
@@ -45,14 +59,13 @@ Every turn runs through one gate before any LLM call: a keyword-overlap score ag
 - **Ten independent, bilingual assistants live behind one picker**: dental clinic, car service, real estate agency, cleaning company, translation bureau, beauty salon, barbershop, restaurant, pizzeria, acupressure shop — each with its own knowledge base, greeting, and lead schema, sharing one grounding-gate core
 - **A real safety-relevant bug found by an automated probe sweep, not a user report**: a dental request phrased as "the child needs treatment under sedation" was landing as a routine bookable appointment — sedation needs an anaesthetist consult and case-by-case pricing, never a collected lead. Fixed with a dedicated hard-rule in the topic's own prompt, verified against three phrasings plus a control case that a normal cleaning booking still completes
 - **Two more grounding-gate fixes found the same way**: a bare phone number (the last thing every lead-collecting topic asks for) was hitting the "please clarify" line instead of completing the lead; and a caller asking for "an administrator" or "a specialist" (not "a manager") wasn't recognized as an explicit handoff request
+- **One engine behind three interfaces**: the Telegram bot, the Mini App and the web page share the same assistants, limits and grounding gate — a new front end is a thin client, not a new product
 - **Checked on every push** (`gofmt` + `go vet` + `go test -race`), one main third-party dependency (`go-telegram/bot`) plus a language-detection library — everything else is the Go standard library
 
-The v2v family: one engine and three front ends on the same `/v1` API — the Telegram bot ([v2v-bot](https://github.com/valpere/v2v-bot)), a Telegram Mini App ([v2v-tma](/portfolio/v2v-tma/)) and a plain web page ([v2v-web](https://github.com/valpere/v2v-web)).
-
-Live demo: [@v2v_demo_bot](https://t.me/v2v_demo_bot) on Telegram · Code: [github.com/valpere/v2v-demo](https://github.com/valpere/v2v-demo)
+Live demo: [@v2v_demo_bot](https://t.me/v2v_demo_bot) on Telegram (the **Open Concierge** button opens the Mini App) · [web.pere.org.ua](https://web.pere.org.ua/) · Code: [github.com/valpere/v2v-demo](https://github.com/valpere/v2v-demo)
 
 ---
 
 ## Stack
 
-`Go` · `go-telegram/bot` · `lingua-go` (language detection) · OpenAI Whisper (local CLI + API) · Ollama / OpenAI / Gemini (pluggable dialogue LLM) · ElevenLabs / Azure Neural TTS (pluggable)
+`Go` · `go-telegram/bot` · `Telegram Mini Apps` · `Telegram Stars` · `Web Speech API` · `lingua-go` (language detection) · OpenAI Whisper (local CLI + API) · Ollama / OpenAI / Gemini (pluggable dialogue LLM) · ElevenLabs / Azure Neural TTS (pluggable)
