@@ -56,7 +56,7 @@ The TMA is a thin client. The `/v1` contract is documented separately (`docs/API
 - **A clear path to production**: connecting the real engine through `ENGINE_URL`, HTTPS for the Mini App, and payment confirmation are laid out step by step in `docs/HANDOFF.md`.
 - **Open source**: Apache-2.0; catalogs and brand names in the demo data are not licensed.
 
-See also: [v2v-demo](/portfolio/v2v-demo/) — the same engine as a Telegram bot.
+Part of the v2v family: the [v2v-demo](/portfolio/v2v-demo/) engine and three front ends on the same `/v1` API — the Telegram bot ([v2v-bot](https://github.com/valpere/v2v-bot)), this Mini App and a plain web page ([v2v-web](https://github.com/valpere/v2v-web)).
 
 ---
 

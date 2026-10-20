@@ -134,7 +134,7 @@
   client: "v2v-demo — Multi-Vertical Voice AI Concierge for Telegram"
   client_uk: "v2v-demo — мультигалузевий голосовий AI-консьєрж для Telegram"
   role: "Solo Creator / Architect"
-  period: "Aug–Oct 2026 (ongoing)"
+  period: "Aug 2026 – ongoing"
   stack: ["Go", "Telegram Bot API", "OpenAI Whisper", "Ollama", "ElevenLabs", "Azure Speech", "lingua-go"]
   summary_en: "A bilingual (UK/EN) Telegram voice concierge framework running ten independent business assistants (dental, auto, real estate, cleaning, translation, beauty salon, barbershop, restaurant, pizzeria, acupressure shop) behind one inline picker, sharing a single grounding-gate core. An automated scenario-probe tool caught a real safety-relevant bug (a sedation request getting scheduled as a routine booking) before it reached a user. One main dependency. Live demo: message @v2v_demo_bot on Telegram."
   summary_uk: "Двомовний (укр/англ) голосовий консьєрж-фреймворк для Telegram: десять незалежних бізнес-асистентів (стоматологія, автосервіс, нерухомість, клінінг, переклади, салон краси, барбершоп, ресторан, піцерія, акупресурний магазин) за одним inline-пікером на спільному ядрі гейта заземлення. Автоматизований probe-інструмент знайшов реальний баг, критичний для безпеки (запит на седацію потрапляв у звичайний запис), ще до користувача. Одна основна залежність. Живе демо: напишіть @v2v_demo_bot у Telegram."
@@ -146,7 +146,7 @@
   client: "v2v-tma — Voice and Text AI Concierge as a Telegram Mini App"
   client_uk: "v2v-tma — голосовий і текстовий AI-консьєрж у Telegram Mini App"
   role: "Solo Creator / Architect"
-  period: "Oct 2026 (ongoing)"
+  period: "Oct 2026 – ongoing"
   stack: ["Go", "Telegram Mini Apps", "Telegram Stars", "Web Speech API", "REST API"]
   summary_en: "A Telegram Mini App client for the v2v-demo AI concierge: four business topics in one app, Voice-to-UI where a spoken or typed command highlights products and fills the cart live, and payment in Telegram Stars. The server owns the cart and prices and verifies Telegram initData; the same /v1 contract serves the bot, the Mini App and plain web. 24 tests, open source."
   summary_uk: "Клієнт Telegram Mini App для AI-консьєржа v2v-demo: чотири бізнес-теми в одному застосунку, Voice-to-UI, де голосова чи текстова команда живцем підсвічує товари й наповнює кошик, та оплата в Telegram Stars. Кошик і ціни рахує сервер, initData Telegram перевіряється; той самий контракт /v1 обслуговує бота, Mini App і чистий веб. 24 тести, відкритий код."

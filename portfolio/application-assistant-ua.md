@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "AI-помічник для заявок — Telegram-бот для GovTech"
 permalink: /portfolio/application-assistant/
+image: /portfolio/assets/images/application-assistant/og-card-uk.png
 lang: uk
 lang_alt: /portfolio/application-assistant/
 ---
