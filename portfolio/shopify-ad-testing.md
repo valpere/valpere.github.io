@@ -21,7 +21,7 @@ The store itself stays untouched: no theme or app code inside it. The system rea
 |---|---|---|
 | 1. Foundation | Shopify sync, hypothesis generation, creative rendering, spend guards, a review sheet | Accepted |
 | 2. Product | The chat; briefs, preview and final renders with montage; Meta assembly and Insights; reconciliation and scoring; guards on live ads; a client guide | Accepted |
-| 3. Full automation | Launching ads by confirmation and Purchase optimisation on the client's Pixel are live; auto-pause of losers, scaling of winners and variations from winners wait for live data | Partly built |
+| 3. Full automation | Launching ads by confirmation and Purchase optimisation on the client's Pixel are live; auto-pause of losers, scaling of winners and variations from winners wait for live data | In acceptance |
 
 ---
 
