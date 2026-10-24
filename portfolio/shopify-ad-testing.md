@@ -15,15 +15,13 @@ The store itself stays untouched: no theme or app code inside it. The system rea
 
 ---
 
-## Six stages, accepted one at a time
+## Three stages, accepted one at a time
 
 | Stage | Scope | Status |
 |---|---|---|
 | 1. Foundation | Shopify sync, hypothesis generation, creative rendering, spend guards, a review sheet | Accepted |
 | 2. Product | The chat; briefs, preview and final renders with montage; Meta assembly and Insights; reconciliation and scoring; guards on live ads; a client guide | Built, all gates passed; in acceptance |
-| 3. Full automation | Auto-pause of losers, scaling of winners, variations generated from winners, hypothesis analytics | Planned |
-| 4. Voice and mobile | Voice control and a mobile app | Planned |
-| 5–6 | Scoped when the preceding stage is accepted | Planned |
+| 3. Full automation | Launching ads by confirmation and Purchase optimisation on the client's Pixel are live; auto-pause of losers, scaling of winners and variations from winners wait for live data | Partly built |
 
 ---
 
@@ -64,7 +62,7 @@ Meta Insights     ──▶ internal/insights    metric snapshots
   guardrails            Meta's claims       ROAS verdict      sync
 ```
 
-One Go binary, one PostgreSQL database (18 migrations), one in-process scheduler (`robfig/cron`). No message broker, no Kubernetes, no microservices — the real load is low-rate API orchestration (dozens of Shopify orders a month, a handful of creatives per cycle), and the heavy compute runs remotely (Claude, Higgsfield). The one exception is the montage, which runs on the 2-vCPU server itself: a 12-second video composes in about 30 seconds. Every external call goes through its own bounded queue with a leased claim and exponential-backoff retry, so one API having a bad day never stalls the others.
+One Go binary, one PostgreSQL database (31 migrations), one in-process scheduler (`robfig/cron`). No message broker, no Kubernetes, no microservices — the real load is low-rate API orchestration (dozens of Shopify orders a month, a handful of creatives per cycle), and the heavy compute runs remotely (Claude, Higgsfield). The one exception is the montage, which runs on the 2-vCPU server itself: a 12-second video composes in about 30 seconds. Every external call goes through its own bounded queue with a leased claim and exponential-backoff retry, so one API having a bad day never stalls the others.
 
 ---
 
@@ -98,10 +96,11 @@ A client-facing guarantee, enforced at four independent layers:
 
 ## Built to be verified
 
-- **Spec first.** 85 requirements, each traced to a functional, logic or physical requirement and measured with [Tumanomir](/portfolio/tumanomir/) — `K_drift` 0.00, nothing untraced.
-- **Tests outweigh the code.** About 21,500 lines of production Go against about 25,700 lines of tests in 139 test files, run with `-race`; `golangci-lint` reports 0 issues.
+- **Spec first.** 102 requirements, each traced to a functional, logic or physical requirement and measured with [Tumanomir](/portfolio/tumanomir/) — `K_drift` 0.00, nothing untraced.
+- **Tests outweigh the code.** About 26,900 lines of production Go against about 30,900 lines of tests in 164 test files, run with `-race`; `golangci-lint` reports 0 issues.
 - **Every milestone ends with a review of its diff** by [fix-review](/portfolio/fix-review/). A multi-agent review of the Stage 2 specification found issues that were checked against the code and fixed; findings that did not hold up were rejected.
-- **303 commits in the first month**, from the first scaffold to the Stage 2 gates.
+- **460+ commits in seven weeks**, from the first scaffold to the Stage 2 gates.
+- **Built with Claude Code.** The code was written by one engineer in pairing sessions with Claude Code; every milestone's diff then goes through the multi-model [fix-review](/portfolio/fix-review/), and the requirements are measured with [Tumanomir](/portfolio/tumanomir/).
 
 ---
 
