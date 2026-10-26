@@ -65,6 +65,5 @@ minions/
 # Playwright MCP scratch artifacts (console logs, page snapshots)
 .playwright-mcp/
 
-# dreaming run log (per machine) — reports/ itself IS tracked so the
-# [applied YYYY-MM-DD] annotation trail survives across machines
-.claude/dreaming/reports/.dreaming.log
+# dreaming reports and run log are per machine, not committed (Val, 2026-10-27)
+.claude/dreaming/reports/
