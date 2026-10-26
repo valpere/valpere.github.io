@@ -3,6 +3,7 @@ layout: project
 title: "chorus — крос-агентна plugin mesh"
 permalink: /projects/chorus/
 lang: uk
+lang_alt: /projects/chorus/
 ---
 
 Більшість AI coding tools зроблені як острови.
