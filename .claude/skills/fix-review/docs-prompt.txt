@@ -14,8 +14,9 @@ Portfolio pages follow a DIFFERENT, deliberately simpler convention — do not a
 - Portfolio required frontmatter: `layout: portfolio-item`, `title`, `permalink` on both pages. The `-ua.md` page additionally carries `lang: uk` and `lang_alt:` — the EN page has NEITHER `lang` NOR `lang_alt`. This is intentional, not a missing field.
 - `lang_alt` on the `-ua.md` page is set to the page's OWN permalink (identical value), not a different URL — both language pages share one canonical permalink by design. Do not flag this as "should point elsewhere."
 - Portfolio pages do NOT use `date` or `excerpt` frontmatter at all, on either language page. Do not flag these as missing.
-- Only the EN portfolio page carries `image:` frontmatter; the `-ua.md` page has no `image:` field (both languages share one hero image via `_data/portfolio.yml`'s `hero_image` key). Do not flag the UA page for a missing `image:`.
-- Portfolio hero images: `portfolio/assets/images/<slug>/<slug>-<lang>.png` (e.g. `tumanomir-en.png`, `fix-review-en.png`) — this is the actual naming convention; do NOT apply the blog posts' `<description>-<sequence>-<width>x<height>` pattern to portfolio images.
+- The `-ua.md` page MAY carry its own `image:` frontmatter (a localized og-card or hero, e.g. `og-card-uk.png`); this is intentional and common. Do not flag a `-ua.md` page for having `image:` or for lacking it.
+- Portfolio images live in `portfolio/assets/images/<slug>/`. Heroes are named `hero-<width>x<height>.png` / `hero-uk-<width>x<height>.png`; OG cards `og-card.png` / `og-card-uk.png` (1200x630, no dimensions in the name); in-page diagrams `<desc>-<lang>-<seq>-<width>x<height>.<ext>`; older entries use `<slug>-<lang>.png`. All are accepted — do NOT flag these names and do NOT apply the blog posts' naming pattern to portfolio images.
+- The current date is in 2026, so 2026 dates in `period:` and elsewhere are present-tense, not future-dated. Do not flag them as typos.
 - `_data/portfolio.yml` intentionally repeats each entry's `permalink`, matching the corresponding page's frontmatter `permalink` exactly — that duplication is the lookup key `_layouts/portfolio-item.html` uses (`site.data.portfolio | where: "permalink", page.permalink`), not a routing conflict. Do not flag it.
 
 {PROJECT_CONTEXT}
@@ -26,8 +27,9 @@ Review the following git diff. Use this priority pyramid — flag lower layers f
   4       — Content completeness  → Missing `excerpt:`, missing `description:`, stub sections.
   3       — Frontmatter docs      → Undocumented custom frontmatter keys.
   2       — Implementation        → Broken markdown (unclosed backticks, malformed link syntax `[text](url)`),
-                                     Liquid errors, SCSS syntax, `image:` path points to a file not added in
-                                     this diff, `og:image` is a hash instead of a string, `date:` not
+                                     Liquid errors, SCSS syntax, `image:` path in a blog post points to a
+                                     file that does not exist (binaries are invisible in a text diff — assume
+                                     referenced images exist; never flag "image not added in this diff"), `og:image` is a hash instead of a string, `date:` not
                                      YYYY-MM-DD, wrong `permalink:` format.
   1 (base)— Architecture          → For blog posts (`_posts/`): missing required frontmatter fields
                                      (`layout`, `title`, `date`, `permalink`, `lang`), bilingual pair
