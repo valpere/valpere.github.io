@@ -290,7 +290,7 @@
   client: "fix-review — Multi-Agent PR Review Pipeline"
   client_uk: "fix-review — конвеєр мультиагентного рев'ю PR"
   role: "Solo Creator / Maintainer"
-  period: "Jun — Aug 2026 (ongoing)"
+  period: "Jun 2026 — ongoing"
   stack: ["Claude Code Skill", "Bash", "Ollama Cloud/Local", "5 External CLI Agents", "GitHub CLI"]
   summary_en: "Multi-agent PR review pipeline: fans a diff out to 3 parallel models with a read-only 5-tool CLI fallback cascade, then a Claude arbiter verifies each finding against real repo state before acting. In production since June 2026: 22 PRs reviewed, 69 review rounds, 81 raw findings but only 2 confirmed fixes — replaced a permission-bypass CLI tier with a verified read-only cascade."
   summary_uk: "Конвеєр мультиагентного рев'ю PR: розгортає diff на 3 паралельні моделі з read-only каскадом 5 CLI-інструментів як fallback, потім Claude-арбітр перевіряє кожну знахідку проти реального стану репозиторію перед дією. У продакшені з червня 2026: 22 PR перевірено, 69 раундів рецензування, 81 сира знахідка, але лише 2 підтверджені виправлення — замінено ярус з обходом дозволів на верифікований read-only каскад."
