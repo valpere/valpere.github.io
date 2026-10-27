@@ -47,6 +47,21 @@ if [[ ! -d "$PROJECT_DIR/.git" ]]; then
   exit 1
 fi
 
+# Change gate: an agentic pass is hundreds of Ollama requests (2026-10-25: all
+# weekly passes together exhausted the 5-hour limit). Skip when neither commits
+# nor memory/CLAUDE.md changed since the newest report. DREAMING_FORCE=1 overrides.
+# (lib-gate.sh is a copy of ~/wrk/common_claude/dreaming/lib-gate.sh without
+# dreaming_allowed_memdirs, which needs the canonical hook-common.sh.)
+source "$SCRIPT_DIR/lib-gate.sh"
+SLUG="$(printf '%s' "$PROJECT_DIR" | sed 's#[^A-Za-z0-9]#-#g')"   # ~/.claude/projects/<slug>
+if [[ "${DREAMING_FORCE:-0}" != "1" ]] \
+   && ! dreaming_repo_changed_since "$REPORTS_DIR" "$PROJECT_DIR" \
+   && ! dreaming_changed_since "$REPORTS_DIR" "$HOME/.claude/projects/$SLUG/memory" "$PROJECT_DIR/CLAUDE.md" "$PROJECT_DIR/AGENTS.md"; then
+  echo "[$(date -Iseconds)] dreaming skipped: no commits/memory change since last report" >> "$LOG"
+  echo "[dreaming] skipped: nothing changed since the last report (DREAMING_FORCE=1 to run anyway)"
+  exit 0
+fi
+
 echo "[$(date -Iseconds)] valpere.github.io dreaming pass started" >> "$LOG"
 
 cd "$PROJECT_DIR"
@@ -65,6 +80,7 @@ if echo "$PROMPT" | claude \
   --print \
   --model minimax-m3:cloud \
   --fallback-model kimi-k2.7-code:cloud \
+  --strict-mcp-config \
   --allowed-tools "Read,Glob,Grep,Bash(ls:*),Bash(cat:*),Bash(wc:*),Bash(stat:*),Bash(find:*),Bash(git log:*),Bash(git diff:*),Bash(git show:*),Bash(git rev-parse:*),Bash(gh pr list:*),Bash(gh pr view:*),Bash(gh issue list:*),Bash(awk:*),Bash(sort:*),Bash(uniq:*)" \
   > "$TMP_REPORT" 2>> "$LOG"; then
   EXIT=0
@@ -78,10 +94,17 @@ if [[ $EXIT -ne 0 ]]; then
   exit "$EXIT"
 fi
 
-mv "$TMP_REPORT" "$REPORT"
-SIZE=$(wc -c < "$REPORT")
-if [[ "$SIZE" -lt 500 ]]; then
-  echo "[dreaming] WARNING: report suspiciously small ($SIZE bytes); check $REPORT" >&2
+# Publish only a real report: a failed run (e.g. 429 "usage limit" left a
+# 238-byte error text as 2026-W43.md on 2026-10-25) must not look like a
+# report — the gate and /apply-dreaming treat the newest *.md as the last one.
+SIZE=$(wc -c < "$TMP_REPORT")
+if [[ "$SIZE" -lt 500 || "$(head -c 9 "$TMP_REPORT")" == "API Error" ]]; then
+  FAILED="$REPORTS_DIR/.failed-$WEEK.txt"
+  mv -f "$TMP_REPORT" "$FAILED"
+  echo "[$(date -Iseconds)] dreaming FAILED ($SIZE bytes) — output kept in $FAILED" >> "$LOG"
+  echo "[dreaming] failed ($SIZE bytes); no report published; output in $FAILED, log $LOG" >&2
+  exit 1
 fi
+mv "$TMP_REPORT" "$REPORT"
 
 echo "[dreaming] OK: $REPORT ($SIZE bytes)"
