@@ -24,6 +24,11 @@ if ! command -v session-indexer >/dev/null 2>&1; then
 fi
 
 PROJECT_ROOT=$(git rev-parse --show-toplevel 2>/dev/null || echo "$PWD")
+if hook_project_excluded "$PROJECT_ROOT"; then
+    echo "[$(date -Iseconds)] session-index: project not in the indexing whitelist (~/wrk/projects, ~/wrk/demo, ~/wrk/common_claude), skipping" >> "$LOG_FILE"
+    exit 0
+fi
+
 DB="$PROJECT_ROOT/.claude/sessions.db"
 
 echo "[$(date -Iseconds)] session-index: mining $(basename "$TRANSCRIPT") → $DB" >> "$LOG_FILE"
