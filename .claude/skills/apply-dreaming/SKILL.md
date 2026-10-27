@@ -51,7 +51,7 @@ Read REPORT. For each numbered sub-item under a section, extract:
 - `suggestion`
 - `category` — infer from the suggestion:
   - "add missing `-ua.md`" / "fix bilingual pairing" → `content-fix`
-  - "add to `_config.yml`" / "add to index.md" → `nav-fix`
+  - "add to `_data/nav.yml`" / "add to the index listing" → `nav-fix`
   - "fix broken image reference" → `asset-fix`
   - "new `CLAUDE.md` convention" → `update-tooling`
   - else → `other`
@@ -99,8 +99,9 @@ is a normal branch + commit + push + PR + `/fix-review`:
    - `content-fix`: create/edit the missing bilingual counterpart.
      Match the existing sibling's structure and tone — don't
      machine-translate blindly, read the sibling file first.
-   - `nav-fix`: add/remove the entry in `_config.yml`'s `header_pages`
-     or the relevant `index.md` listing.
+   - `nav-fix`: add/remove the entry in `_data/nav.yml`
+     or the relevant `_data/projects.yml` / `_data/portfolio.yml` entry
+     (the index pages are data-driven).
    - `asset-fix`: fix the broken path, or flag for the user to supply
      the missing image (don't fabricate an image).
    - `update-tooling`: edit `CLAUDE.md` directly — this file documents
