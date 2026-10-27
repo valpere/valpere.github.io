@@ -135,7 +135,7 @@ except FileNotFoundError:
 Session ends (exit / /exit)
   └─ Stop hook: .claude/hooks/session-end.sh
        ├─ Skip if /session-end ran within 2h (file mtime check)
-       ├─ Try agy -p            (Gemini 3.8 Flash → 3.1 Pro, cheapest first)
+       ├─ Try agy -p            (Gemini 3.8 Flash, cheapest first)
        ├─ Try opencode run --format json  (ollama/*:cloud models)
        ├─ Fallback: raw transcript excerpt
        └─ Rotates session-log.md to last 10 entries (count-based, no age filtering)
@@ -147,7 +147,7 @@ Next session opens
 ```
 
 LLM fallback chain (Stop hook), both discovered in this project:
-1. `agy -p` — Gemini 3.8 Flash (Low/Medium/High) → Gemini 3.1 Pro (Low/High)
+1. `agy -p` — Gemini 3.8 Flash (Low/Medium/High)
 2. `opencode run --format json` — `ollama/glm-5.2:cloud`, `ollama/kimi-k2.7-code:cloud`, `ollama/minimax-m3:cloud`, `ollama/deepseek-v4.1-flash:cloud`
 3. Raw transcript excerpt (fallback if both fail)
 
