@@ -150,13 +150,13 @@ remaining_budget() { echo $(( ${SESSION_END_BUDGET_S:-57} - SECONDS )); }
 try_agy() {
   # Refreshed 2026-09-04 — the 3.5 series is retired (live "invalid model
   # selection" error, confirmed against agy's own --model error listing,
-  # which starts at 3.6). Cheap-to-capable ordering preserved.
+  # which starts at 3.6). 2026-10-14: "Gemini 3.1 Pro" dropped — `agy models`
+  # no longer lists any Pro tier (only 3.8 Flash, Claude 5.5, GPT-OSS).
+  # Cheap-to-capable ordering preserved.
   local models=(
     "Gemini 3.8 Flash (Low)"
     "Gemini 3.8 Flash (Medium)"
     "Gemini 3.8 Flash (High)"
-    "Gemini 3.1 Pro (Low)"
-    "Gemini 3.1 Pro (High)"
   )
   command -v agy &>/dev/null || return 1
   for model in "${models[@]}"; do
