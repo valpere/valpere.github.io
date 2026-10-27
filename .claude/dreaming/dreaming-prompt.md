@@ -10,7 +10,7 @@ modify anything.
   Jekyll + Minima theme (solarized-light skin).
 - Bilingual content pattern: every `projects/<name>.md` (English) should
   have a matching `projects/<name>-ua.md` (Ukrainian).
-- Navigation is controlled centrally in `_config.yml`'s `header_pages`.
+- Navigation is controlled centrally in `_data/nav.yml` (entries with `label`, `label_uk`, `url`); `_config.yml` has no `header_pages`.
 - No `/backlog`/`/ship` pipeline here — changes go through a branch +
   PR + `/fix-review`, reviewed and merged directly.
 
@@ -20,7 +20,7 @@ modify anything.
 |------|-------------------|
 | `projects/*.md` vs `projects/*-ua.md` | English entries with no Ukrainian counterpart (or vice versa) — broken bilingual pairing |
 | `portfolio/*.md` vs `portfolio/*-ua.md` | Same bilingual-pairing check for portfolio entries |
-| `_config.yml` `header_pages` | Pages that exist but aren't linked in nav, or nav entries pointing at deleted files |
+| `_data/nav.yml` | Pages that exist but aren't linked in nav, or nav entries (`url`) pointing at deleted pages |
 | `projects/index.md` / `portfolio/index.md` | Listing pages missing an entry that exists as a standalone `.md` file (added but never linked from the index) |
 | Image references (`assets/images/`, `projects/assets/images/<project>/`, `portfolio/assets/images/<client>/`) | `.md` files referencing an image path that doesn't exist on disk |
 | Recent PR review comments | Recurring `/fix-review` themes across merged PRs (`gh pr list --state merged --limit 20`) |
