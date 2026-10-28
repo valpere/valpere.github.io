@@ -22,6 +22,18 @@
   hero_image_uk: "/portfolio/assets/images/vending-esp32-monobank/hero-uk-0900x0530.png"
   hero_image: "/portfolio/assets/images/vending-esp32-monobank/hero-0900x0530.png"
 
+- slug: "php-vulnerability-audit"
+  client: "php-vulnerability-audit — PHP2Shell Audit, Patching and Hardening"
+  client_uk: "php-vulnerability-audit — аудит, оновлення й захист від PHP2Shell"
+  role: "Solo Security Engineer / DevOps"
+  period: "Oct 2026"
+  stack: ["PHP 5.4–8.5", "mod_php", "PHP-FPM", "Apache", "Nginx", "Linux", "Docker", "WordPress", "OpenCart", "Joomla", "Laravel", "Cloudflare WAF", "ModSecurity"]
+  summary_en: "Audit and patching for the critical PHP interpreter flaws CVE-2026-109618 and CVE-2026-109619 (PHP2Shell, fixed 21 Oct 2026): an inventory of every host and the PHP version its web server really serves, an upgrade to 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12, a vendor backport or a migration for end-of-life branches, temporary mitigations from the PHP advisory where the patch must wait, worker restarts, a check from the web side, a log review for exploitation signs and rotation of secrets that may have been exposed."
+  summary_uk: "Аудит та оновлення під критичні вразливості інтерпретатора PHP CVE-2026-109618 і CVE-2026-109619 (PHP2Shell, виправлено 21 жовтня 2026): інвентаризація всіх хостів і версії PHP, яку реально віддає веб-сервер, оновлення до 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12, бекпорт вендора чи міграція для гілок за межами підтримки, тимчасові заходи з advisory PHP, якщо оновлення треба відкласти, перезапуск воркерів, перевірка з боку вебу, огляд логів на ознаки експлуатації та ротація секретів, які могли бути розкриті."
+  permalink: "/portfolio/php-vulnerability-audit/"
+  hero_image_uk: "/portfolio/assets/images/php-vulnerability-audit/hero-uk-0900x0530.png"
+  hero_image: "/portfolio/assets/images/php-vulnerability-audit/hero-0900x0530.png"
+
 - slug: "site-security-cleanup"
   client: "site-security-cleanup — Malware Remediation and CMS Hardening"
   client_uk: "site-security-cleanup — видалення вірусів, лікування та комплексний захист CMS"
