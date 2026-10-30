@@ -69,6 +69,7 @@ The current nav entries (as of last edit): Home, About, Portfolio, Projects, Bri
 - Detail pages (`portfolio-item`, `project`, `post`, `blog-category`) still use the older light styles in `_sass/_components.scss` / `_pages.scss` with the new header/footer; restyling them is a follow-up PR.
 - Home copy lives in `_data/home.yml`; Ukrainian role/period strings for portfolio cards come from `_data/i18n.yml` (`localized-role.html`, `localized-period.html`), so `portfolio.yml` needs no `role_uk` / `period_uk`.
 - Cards and rows: `_includes/town-card.html` (portfolio), `town-row.html` (projects), `town-brief.html` (briefs).
+- Portfolio cards: `client` is "slug — descriptor"; `town-card.html` splits on ` — ` (slug label + title; no separator keeps the whole string as title). The title link is stretched over the card. Each `portfolio.yml` entry needs a `category:` from `_data/portfolio-categories.yml`; the filter chips on `/portfolio/` are hidden until JS runs.
 - Custom SCSS goes in `_sass/`; custom HTML partials go in `_includes/`
 
 ### Assets
