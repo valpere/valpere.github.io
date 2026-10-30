@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+description: "About Valentyn Solomko: 20+ years in backend engineering, CTO and freelancer; Go, Java, Groovy, Perl, AI-assisted development, bots and automation."
 permalink: /about/
 ---
 

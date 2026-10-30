@@ -45,6 +45,12 @@ Each project has two versions:
 
 The `projects/index.md` listing renders summaries from `_data/projects.yml` (the `summary_en` / `summary_uk` fields) and links to the detailed pages via `[More detailed](/projects/<name>/)`.
 
+### Language metadata (SEO)
+
+- `<html lang>` comes from `site.active_lang`; `_plugins/localized_front_matter.rb` runs before each page renders and, for the language being built, applies `title_uk` / `description_uk` front matter over `title` / `description`, sets `locale` (og:locale), `canonical_url` and `i18n_urls` (hreflang pairs, emitted in `_layouts/default.html` with `static_href` so jekyll-polyglot does not rewrite them).
+- Pages that share one source file between languages (home, portfolio, projects, blog, mvb) need `title_uk`, `description` and `description_uk` in front matter; pages with a `-ua.md` twin carry their own `title` / `description` in each file.
+- `{% seo %}` (jekyll-seo-tag) is the only emitter of `<title>`, description, canonical and og tags; do not add a second `<title>` or `{% I18n_Headers %}` (duplicate canonical, wrong x-default).
+
 ### Navigation
 
 Controlled in **`_data/nav.yml`** (not in `_config.yml`). Each entry has `label`, `label_uk`, and `url`:
