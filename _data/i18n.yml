@@ -1,11 +1,11 @@
 # Ukrainian renderings of portfolio.yml role / period strings, so cards need no *_uk fields.
 # roles: matched per part of a " / "-separated role. periods: plain substring replacements.
 roles:
-  "Solo Creator": "Автор (соло)"
-  "Solo Engineer": "Інженер (соло)"
-  "Solo Architect": "Архітектор (соло)"
-  "Solo Designer": "Дизайнер (соло)"
-  "Solo DevOps": "DevOps (соло)"
+  "Solo Creator": "Соло-Автор"
+  "Solo Engineer": "Соло-інженер"
+  "Solo Architect": "Соло-Архітектор"
+  "Solo Designer": "Соло-Дизайнер"
+  "Solo DevOps": "Соло-DevOps"
   "Solo Security Engineer": "Інженер безпеки (соло)"
   "Solo Embedded & Cloud IoT Architect": "Архітектор embedded та хмарного IoT (соло)"
   "Freelance Full-Stack Engineer": "Фріланс full-stack інженер"
