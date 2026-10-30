@@ -2,7 +2,7 @@
 layout: portfolio-item
 title: "reference-web-development — сайти за референсом"
 permalink: /portfolio/reference-web-development/
-image: /assets/images/brand/logo-mark.png
+image: /portfolio/assets/images/reference-web-development/hero-uk-0900x0530.png
 lang: uk
 lang_alt: /portfolio/reference-web-development/
 ---
