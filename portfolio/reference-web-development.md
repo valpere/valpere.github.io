@@ -2,7 +2,7 @@
 layout: portfolio-item
 title: "reference-web-development — Sites Built from a Reference"
 permalink: /portfolio/reference-web-development/
-image: /assets/images/brand/logo-mark.png
+image: /portfolio/assets/images/reference-web-development/hero-0900x0530.png
 ---
 
 ## Overview

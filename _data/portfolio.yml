@@ -8,6 +8,8 @@
   summary_en: "You show a site whose look and structure you like; I build a new one in the same spirit with your content and brand. First a written brief of the reference (layout, colour, type, spacing, breakpoints, motion), then the build, then a measured check against the reference at desktop and phone widths. Nothing of the reference's text, photos, logos or fonts is copied."
   summary_uk: "Ви показуєте сайт, чий вигляд і структура вам подобаються; я будую новий у тому ж дусі з вашим контентом і брендом. Спершу письмовий бриф референсу (розкладка, колір, шрифти, відступи, брейкпоінти, рух), потім верстка, потім виміряна звірка з референсом на десктопі й телефоні. Тексти, фото, логотипи й шрифти референсу не копіюються."
   permalink: "/portfolio/reference-web-development/"
+  hero_image_uk: "/portfolio/assets/images/reference-web-development/hero-uk-0900x0530.png"
+  hero_image: "/portfolio/assets/images/reference-web-development/hero-0900x0530.png"
 
 - slug: "v2v-demo"
   category: "ai"
