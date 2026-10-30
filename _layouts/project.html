@@ -1,91 +1,64 @@
 ---
 layout: default
 ---
+{% assign uk = false %}{% if site.active_lang == 'uk' %}{% assign uk = true %}{% endif %}
 {% assign project = site.data.projects | where: "permalink", page.permalink | first %}
-{% if site.active_lang == 'uk' %}
+{% if uk %}
   {% assign project_hero = project.hero_image_uk | default: project.hero_image %}
 {% else %}
   {% assign project_hero = project.hero_image %}
 {% endif %}
-
-<div class="container" style="padding-block: var(--sp-7);">
-  <!-- Breadcrumb -->
-  <nav aria-label="Breadcrumb">
-    <div class="breadcrumb">
-      <a href="{{ '/' | relative_url }}">{% if site.active_lang == 'uk' %}Головна{% else %}Home{% endif %}</a>
-      <span class="sep" aria-hidden="true">›</span>
-      <a href="{{ '/projects/' | relative_url }}">{% if site.active_lang == 'uk' %}Проєкти{% else %}Projects{% endif %}</a>
-      <span class="sep" aria-hidden="true">›</span>
-      <span aria-current="page">{{ page.title }}</span>
-    </div>
+<section class="t-wrap t-page-head">
+  <nav class="t-crumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">{% if uk %}Головна{% else %}Home{% endif %}</a><span aria-hidden="true">›</span>
+    <a href="{{ '/projects/' | relative_url }}">{% if uk %}Проєкти{% else %}Projects{% endif %}</a><span aria-hidden="true">›</span>
+    <span aria-current="page">{{ page.title }}</span>
   </nav>
-
-  <div class="two-col">
-    <!-- Main content -->
-    <div>
-      <header class="project-header">
-        <h1>{{ page.title }}</h1>
-        {% if project %}
-        <div class="tag-list" style="margin-bottom: var(--sp-4);">
-          {% for t in project.tech %}
-          <span class="tag tag--green">{{ t }}</span>
-          {% endfor %}
-        </div>
-        <!-- CTA row -->
-        <div class="cta-row">
-          {% if project.links.freelancehunt %}<a href="{{ project.links.freelancehunt }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">FreelanceHunt</a>{% endif %}
-          {% if project.links.github %}<a href="{{ project.links.github }}" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
-        </div>
-        {% endif %}
-        {% if project_hero and project_hero != "" %}
-        <img src="{{ project_hero | relative_url }}" alt="{{ page.title }} preview" class="page-hero" loading="lazy">
-        {% endif %}
-      </header>
-
-      <div class="page-content">
-        {{ content }}
-      </div>
-    </div>
-
-    <!-- Sidebar TOC (desktop only) -->
-    <aside class="page-toc" aria-label="Table of contents" id="page-toc">
-      <h3>Contents</h3>
-      <ul id="toc-list"></ul>
-    </aside>
+  <h1 class="t-slab">{{ page.title }}</h1>
+  {% if project %}
+  {% if project.tech %}<ul class="t-tags t-stack">{% for t in project.tech %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+  {% if project.links.freelancehunt or project.links.github %}
+  <p class="t-links-row">
+    {% if project.links.freelancehunt %}<a href="{{ project.links.freelancehunt }}" class="t-pill t-pill--ghost" target="_blank" rel="noopener noreferrer">FreelanceHunt</a>{% endif %}
+    {% if project.links.github %}<a href="{{ project.links.github }}" class="t-pill t-pill--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
+  </p>
+  {% endif %}
+  {% endif %}
+</section>
+<section class="t-wrap t-detail">
+  <div>
+    {% if project_hero and project_hero != "" %}<img src="{{ project_hero | relative_url }}" alt="{{ page.title }}" class="t-hero-img" loading="lazy">{% endif %}
+    <article class="t-prose" id="page-content">
+      {{ content }}
+    </article>
   </div>
-</div>
-
+  <aside class="t-toc" aria-label="{% if uk %}Зміст{% else %}Contents{% endif %}" id="page-toc">
+    <p class="t-eyebrow">{% if uk %}Зміст{% else %}Contents{% endif %}</p>
+    <ul id="toc-list"></ul>
+  </aside>
+</section>
 <script>
-  // Generate TOC from h2/h3 headings in page-content
-  (function() {
-    const content = document.querySelector('.page-content');
-    const tocList = document.getElementById('toc-list');
+  (function () {
+    var content = document.getElementById('page-content'), tocList = document.getElementById('toc-list'), toc = document.getElementById('page-toc');
     if (!content || !tocList) return;
-    const headings = content.querySelectorAll('h2, h3');
-    if (headings.length < 3) {
-      const toc = document.getElementById('page-toc');
-      if (toc) toc.style.display = 'none';
-      return;
-    }
-    headings.forEach(function(h) {
-      if (!h.id) h.id = h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-      const li = document.createElement('li');
-      li.style.paddingLeft = h.tagName === 'H3' ? '1rem' : '0';
-      const a = document.createElement('a');
+    var headings = content.querySelectorAll('h2, h3');
+    if (headings.length < 3) { toc.hidden = true; return; }
+    headings.forEach(function (h, i) {
+      if (!h.id) h.id = 's-' + (i + 1);
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.className = 't-toc-sub';
+      var a = document.createElement('a');
       a.href = '#' + h.id;
       a.textContent = h.textContent;
       li.appendChild(a);
       tocList.appendChild(li);
     });
-
-    // Highlight active heading on scroll
-    const observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        const id = entry.target.getAttribute('id');
-        const link = tocList.querySelector('a[href="#' + id + '"]');
-        if (link) link.classList.toggle('active', entry.isIntersecting);
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var link = tocList.querySelector('a[href="#' + e.target.id + '"]');
+        if (link) link.classList.toggle('active', e.isIntersecting);
       });
     }, { rootMargin: '-20% 0px -70% 0px' });
-    headings.forEach(function(h) { observer.observe(h); });
+    headings.forEach(function (h) { observer.observe(h); });
   })();
 </script>
