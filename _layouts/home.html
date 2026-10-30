@@ -6,7 +6,7 @@ layout: default
 <section class="t-hero t-wrap" aria-labelledby="hero-heading">
   <div class="t-hero-text">
     <p class="t-eyebrow">{% if uk %}{{ hm.role_uk }}{% else %}{{ hm.role_en }}{% endif %}</p>
-    <h1 class="t-slab{% if uk %} t-nobreak{% endif %}" id="hero-heading">{% if uk %}{{ hm.h1a_uk }}<br><span class="t-accent">{{ hm.h1b_uk }}</span>{% else %}{{ hm.h1a_en }}<br><span class="t-accent">{{ hm.h1b_en }}</span>{% endif %}</h1>
+    <h1 class="t-slab" id="hero-heading">{% if uk %}{{ hm.h1a_uk }}<br><span class="t-accent">{{ hm.h1b_uk }}</span>{% else %}{{ hm.h1a_en }}<br><span class="t-accent">{{ hm.h1b_en }}</span>{% endif %}</h1>
     <p class="t-lede">{% if uk %}{{ hm.lede_uk }}{% else %}{{ hm.lede_en }}{% endif %}</p>
     <div class="t-cta">
       <a class="t-pill t-pill--solid t-pill--big" href="{{ '/portfolio/' | relative_url }}">{% if uk %}Дивитись портфоліо{% else %}See the portfolio{% endif %} →</a>
@@ -39,7 +39,7 @@ layout: default
 <section class="t-wrap t-block">
   <div class="t-sec-head"><h2 class="t-slab t-sec">{% if uk %}Обрані роботи{% else %}Selected work{% endif %}</h2><a class="t-more" href="{{ '/portfolio/' | relative_url }}">{% if uk %}Усі{% else %}All{% endif %} →</a></div>
   <div class="t-grid">
-    {% for item in site.data.portfolio limit: 6 %}{% include town-card.html item=item %}{% endfor %}
+    {% for item in site.data.portfolio limit: 8 %}{% include town-card.html item=item %}{% endfor %}
   </div>
 </section>
 
