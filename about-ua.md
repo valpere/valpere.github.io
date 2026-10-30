@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Про мене
+description: "Про Валентина Соломка: 20+ років у бекенд-розробці, CTO та фрілансер; Go, Java, Groovy, Perl, розробка з ШІ, боти й автоматизація."
 permalink: /about/
 lang: uk
 lang_alt: /about/

@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="{{ site.active_lang | default: 'en' }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.description }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16.png' | relative_url }}">
@@ -22,7 +19,11 @@
   <!-- Mobile browser chrome color -->
   <meta name="theme-color" content="#fdfdfc">
 
-  <!-- SEO -->
+  <!-- SEO: hreflang pairs come from _plugins/localized_front_matter.rb; static_href stops jekyll-polyglot from prefixing them with /uk/ -->
+  {% if page.i18n_urls %}
+  {% for u in page.i18n_urls %}<link rel="alternate" hreflang="{{ u[0] }}" {% static_href %}href="{{ u[1] }}"{% endstatic_href %}>
+  {% endfor %}<link rel="alternate" hreflang="x-default" {% static_href %}href="{{ page.x_default_url }}"{% endstatic_href %}>
+  {% endif %}
   {% seo %}
   {% feed_meta %}
 
