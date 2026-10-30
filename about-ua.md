@@ -6,8 +6,6 @@ lang: uk
 lang_alt: /about/
 ---
 
-# Про мене
-
 
 ## Контакти
 
