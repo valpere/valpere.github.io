@@ -183,6 +183,7 @@ h1.t-slab { font-size: clamp(44px, 7.4vw, 104px); line-height: 1.02; font-weight
 .t-links-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .t-hero-img { display: block; width: 100%; max-height: 420px; object-fit: cover; border: 1px solid var(--t-line); border-radius: var(--t-r-m); margin-top: 32px; }
 .t-prose img { max-width: 100%; height: auto; border: 1px solid var(--t-line); border-radius: var(--t-r-m); margin-block: 20px; }
+.t-prose .t-chips a { text-decoration: none; }
 .t-prose blockquote { margin: 0 0 16px; padding-left: 16px; border-left: 3px solid var(--t-accent); color: var(--t-ink-2); }
 .t-prose pre { overflow-x: auto; background: var(--t-panel); border: 1px solid var(--t-line); border-radius: var(--t-r-m); padding: 14px 16px; margin: 0 0 16px; font-size: 14px; line-height: 1.5; }
 .t-prose pre code { background: none; border: 0; padding: 0; }
