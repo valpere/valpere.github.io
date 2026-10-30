@@ -1,0 +1,8 @@
+{%- assign role_parts = include.role | split: " / " -%}
+{%- capture role_out -%}
+{%- for part in role_parts -%}
+{%- if site.active_lang == 'uk' -%}{{ site.data.i18n.roles[part] | default: part }}{%- else -%}{{ part }}{%- endif -%}
+{%- unless forloop.last %} / {% endunless -%}
+{%- endfor -%}
+{%- endcapture -%}
+{{- role_out -}}

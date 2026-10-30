@@ -1,0 +1,16 @@
+{%- assign p = include.project -%}
+{%- if site.active_lang == 'uk' -%}
+  {%- assign row_title = p.title_uk | default: p.title -%}
+  {%- assign row_summary = p.summary_uk | default: p.summary_en -%}
+{%- else -%}
+  {%- assign row_title = p.title -%}
+  {%- assign row_summary = p.summary_en -%}
+{%- endif -%}
+<article class="t-row">
+  <div>
+    <h3><a href="{{ p.permalink | relative_url }}">{{ row_title }}</a></h3>
+    <p class="t-sum">{{ row_summary }}</p>
+  </div>
+  {% if p.tech %}<ul class="t-tags">{% for t in p.tech limit: 6 %}<li>{{ t }}</li>{% endfor %}</ul>{% else %}<span></span>{% endif %}
+  {% if p.links.github %}<a class="t-gh" href="{{ p.links.github }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>{% else %}<span></span>{% endif %}
+</article>

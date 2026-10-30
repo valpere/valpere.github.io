@@ -4,8 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-# About Me
-
 ## Contacts
 
 * [LinkedIn](https://www.linkedin.com/in/valentynsolomko/)

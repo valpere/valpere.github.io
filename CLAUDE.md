@@ -59,9 +59,11 @@ The current nav entries (as of last edit): Home, About, Portfolio, Projects, Bri
 
 ### Theme / Styling
 
-- Theme: `minima` with `skin: solarized-light`
-- Custom SCSS goes in `_sass/`
-- Custom HTML partials go in `_includes/`
+- Site shell, home and list pages (home, about/`page`, portfolio, projects, briefs, blog index) use the town.com-style design in `_sass/_town.scss` (`--t-*` tokens, `t-*` classes; Roboto Slab + Onest from Google Fonts; dark mode follows the OS and applies only under `body.town`).
+- Detail pages (`portfolio-item`, `project`, `post`, `blog-category`) still use the older light styles in `_sass/_components.scss` / `_pages.scss` with the new header/footer; restyling them is a follow-up PR.
+- Home copy lives in `_data/home.yml`; Ukrainian role/period strings for portfolio cards come from `_data/i18n.yml` (`localized-role.html`, `localized-period.html`), so `portfolio.yml` needs no `role_uk` / `period_uk`.
+- Cards and rows: `_includes/town-card.html` (portfolio), `town-row.html` (projects), `town-brief.html` (briefs).
+- Custom SCSS goes in `_sass/`; custom HTML partials go in `_includes/`
 
 ### Assets
 

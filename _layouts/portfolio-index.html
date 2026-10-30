@@ -1,28 +1,15 @@
 ---
 layout: default
 ---
-<!-- Page band -->
-<div style="background: var(--brand-green); color: white; padding-block: var(--sp-8); text-align: center;">
-  <div class="container">
-    {% if site.active_lang == 'uk' %}
-    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Портфоліо</h1>
-    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
-      Професійні контракти та довгострокові замовлення — корпоративні системи, телекомунікаційні платформи та поштова інфраструктура.
-    </p>
-    {% else %}
-    <h1 style="color:white; margin:0 0 var(--sp-3) 0;">Portfolio</h1>
-    <p style="color:rgba(255,255,255,0.85); max-width:55ch; margin-inline:auto; margin-bottom:0;">
-      Professional contracts and long-term engagements — enterprise systems, telecom platforms, and email infrastructure.
-    </p>
-    {% endif %}
-  </div>
-</div>
-
-<div class="container section">
+{% assign uk = false %}{% if site.active_lang == 'uk' %}{% assign uk = true %}{% endif %}
+<section class="t-wrap t-page-head">
+  <p class="t-eyebrow">{% if uk %}Бекенд-розробник та фрілансер{% else %}Backend developer &amp; freelancer{% endif %}</p>
+  <h1 class="t-slab">{% if uk %}Портфоліо{% else %}Portfolio{% endif %}</h1>
+  <p class="t-lede">{% if uk %}Професійні контракти та довгострокові замовлення — корпоративні системи, телекомунікаційні платформи та поштова інфраструктура.{% else %}Professional contracts and long-term engagements — enterprise systems, telecom platforms, and email infrastructure.{% endif %}</p>
+</section>
+<section class="t-wrap t-block t-end">
   {{ content }}
-  <div class="card-grid">
-    {% for item in site.data.portfolio %}
-    {% include portfolio-card.html item=item %}
-    {% endfor %}
+  <div class="t-grid">
+    {% for item in site.data.portfolio %}{% include town-card.html item=item %}{% endfor %}
   </div>
-</div>
+</section>

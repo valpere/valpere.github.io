@@ -1,0 +1,16 @@
+{%- assign i = include.item -%}
+{%- if site.active_lang == 'uk' -%}
+  {%- assign card_client = i.client_uk | default: i.client -%}
+  {%- assign card_summary = i.summary_uk | default: i.summary_en -%}
+{%- else -%}
+  {%- assign card_client = i.client -%}
+  {%- assign card_summary = i.summary_en -%}
+{%- endif -%}
+{%- capture card_role %}{% include localized-role.html role=i.role %}{% endcapture -%}
+{%- capture card_period %}{% include localized-period.html period=i.period %}{% endcapture -%}
+<article class="t-card">
+  <p class="t-meta">{{ card_period }}{% if card_role != "" %} · {{ card_role }}{% endif %}</p>
+  <h3><a href="{{ i.permalink | relative_url }}">{{ card_client }}</a></h3>
+  <p class="t-sum">{{ card_summary }}</p>
+  {% if i.stack %}<ul class="t-tags">{% for t in i.stack limit: 5 %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+</article>
