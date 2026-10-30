@@ -2,4 +2,5 @@
 {%- if site.active_lang == 'uk' -%}
 {%- for pair in site.data.i18n.periods -%}{%- assign period_out = period_out | replace: pair[0], pair[1] -%}{%- endfor -%}
 {%- endif -%}
-{{- period_out -}}
+{%- comment -%} data mixes en and em dashes; render one style {%- endcomment -%}
+{{- period_out | replace: ' – ', ' — ' -}}

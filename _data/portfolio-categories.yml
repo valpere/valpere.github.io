@@ -1,0 +1,28 @@
+# Portfolio filter chips: slug matches `category:` in portfolio.yml; chips with no entries are not rendered.
+- slug: bots
+  label: "Bots"
+  label_uk: "Боти"
+- slug: ai
+  label: "AI"
+  label_uk: "AI"
+- slug: integration
+  label: "Integrations"
+  label_uk: "Інтеграції"
+- slug: scraping
+  label: "Scraping & data"
+  label_uk: "Парсинг і дані"
+- slug: migration
+  label: "Migrations"
+  label_uk: "Міграції"
+- slug: security
+  label: "Security"
+  label_uk: "Безпека"
+- slug: iot
+  label: "IoT"
+  label_uk: "IoT"
+- slug: web
+  label: "Web & SaaS"
+  label_uk: "Web і SaaS"
+- slug: enterprise
+  label: "Enterprise"
+  label_uk: "Enterprise"

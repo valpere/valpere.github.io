@@ -5,11 +5,39 @@ layout: default
 <section class="t-wrap t-page-head">
   <p class="t-eyebrow">{% if uk %}Бекенд-розробник та фрілансер{% else %}Backend developer &amp; freelancer{% endif %}</p>
   <h1 class="t-slab">{% if uk %}Портфоліо{% else %}Portfolio{% endif %}</h1>
-  <p class="t-lede">{% if uk %}Професійні контракти та довгострокові замовлення — корпоративні системи, телекомунікаційні платформи та поштова інфраструктура.{% else %}Professional contracts and long-term engagements — enterprise systems, telecom platforms, and email infrastructure.{% endif %}</p>
+  <p class="t-lede">{% if uk %}Клієнтські та власні проєкти: Telegram-боти й AI-інтеграції, міграції та захист сайтів, парсери й синхронізація каталогів, IoT-платежі.{% else %}Client and own projects: Telegram bots and AI integrations, site migrations and security, scrapers and catalog sync, IoT payments.{% endif %}</p>
 </section>
 <section class="t-wrap t-block t-end">
   {{ content }}
-  <div class="t-grid">
+  {%- assign total = site.data.portfolio.size -%}
+  <div class="t-chips" id="pf-filters" role="group" aria-label="{% if uk %}Фільтр за напрямом{% else %}Filter by kind{% endif %}" hidden>
+    <button type="button" aria-pressed="true" data-cat="all">{% if uk %}Усі{% else %}All{% endif %} ({{ total }})</button>
+    {% for c in site.data.portfolio-categories %}{% assign n = site.data.portfolio | where: "category", c.slug | size %}{% if n > 0 %}
+    <button type="button" aria-pressed="false" data-cat="{{ c.slug }}">{% if uk %}{{ c.label_uk }}{% else %}{{ c.label }}{% endif %} ({{ n }})</button>{% endif %}{% endfor %}
+  </div>
+  <p class="t-muted t-small" id="pf-status" role="status" aria-live="polite"></p>
+  <div class="t-grid" id="pf-grid">
     {% for item in site.data.portfolio %}{% include town-card.html item=item %}{% endfor %}
   </div>
+  <script>
+    (function () {
+      var bar = document.getElementById('pf-filters'), grid = document.getElementById('pf-grid'), status = document.getElementById('pf-status');
+      if (!bar || !grid) return;
+      var cards = grid.querySelectorAll('.t-card'), total = cards.length;
+      var msg = '{% if uk %}Показано {n} із {total}{% else %}Showing {n} of {total}{% endif %}';
+      bar.hidden = false;
+      bar.addEventListener('click', function (e) {
+        var btn = e.target.closest('button[data-cat]');
+        if (!btn) return;
+        var cat = btn.getAttribute('data-cat'), shown = 0;
+        bar.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+        cards.forEach(function (c) {
+          var show = cat === 'all' || c.getAttribute('data-category') === cat;
+          c.hidden = !show;
+          if (show) shown++;
+        });
+        status.textContent = cat === 'all' ? '' : msg.replace('{n}', shown).replace('{total}', total);
+      });
+    })();
+  </script>
 </section>

@@ -6,11 +6,21 @@
   {%- assign card_client = i.client -%}
   {%- assign card_summary = i.summary_en -%}
 {%- endif -%}
+{%- comment -%} "slug — descriptor": slug becomes a small label, descriptor the title; no separator keeps the whole string as title. {%- endcomment -%}
+{%- assign title_parts = card_client | split: ' — ' -%}
+{%- assign card_slug = "" -%}
+{%- assign card_title = card_client -%}
+{%- if title_parts.size > 1 -%}
+  {%- assign card_slug = title_parts[0] -%}
+  {%- assign card_title = card_client | remove_first: card_slug | remove_first: ' — ' -%}
+{%- endif -%}
 {%- capture card_role %}{% include localized-role.html role=i.role %}{% endcapture -%}
 {%- capture card_period %}{% include localized-period.html period=i.period %}{% endcapture -%}
-<article class="t-card">
+<article class="t-card"{% if i.category %} data-category="{{ i.category }}"{% endif %}>
+  {% if card_slug != "" %}<p class="t-slug">{{ card_slug }}</p>{% endif %}
+  <h3><a href="{{ i.permalink | relative_url }}">{{ card_title }}</a></h3>
   <p class="t-meta">{{ card_period }}{% if card_role != "" %} · {{ card_role }}{% endif %}</p>
-  <h3><a href="{{ i.permalink | relative_url }}">{{ card_client }}</a></h3>
   <p class="t-sum">{{ card_summary }}</p>
   {% if i.stack %}<ul class="t-tags">{% for t in i.stack limit: 5 %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+  <p class="t-go" aria-hidden="true">{% if site.active_lang == 'uk' %}Детальніше{% else %}Details{% endif %} →</p>
 </article>
