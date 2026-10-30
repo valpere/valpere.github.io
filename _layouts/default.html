@@ -41,7 +41,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   {% endif %}
 </head>
-{% assign town_layouts = "home,page,portfolio-index,projects-index,blog-index,mvb-index" | split: "," %}
+{% assign town_layouts = "home,page,portfolio-index,projects-index,blog-index,mvb-index,portfolio-item,project,post,blog-category" | split: "," %}
 {% assign is_town = false %}{% if town_layouts contains page.layout %}{% assign is_town = true %}{% endif %}
 <body{% if is_town %} class="town"{% endif %}>
   <a href="#main" class="t-skip">{% if site.active_lang == 'uk' %}До змісту{% else %}Skip to content{% endif %}</a>
