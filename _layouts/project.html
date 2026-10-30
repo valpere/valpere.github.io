@@ -42,7 +42,7 @@ layout: default
     var content = document.getElementById('page-content'), tocList = document.getElementById('toc-list'), toc = document.getElementById('page-toc');
     if (!content || !tocList) return;
     var headings = content.querySelectorAll('h2, h3');
-    if (headings.length < 3) { toc.hidden = true; return; }
+    if (headings.length < 3) { toc.hidden = true; toc.parentElement.classList.add('t-detail--solo'); return; }
     headings.forEach(function (h, i) {
       if (!h.id) h.id = 's-' + (i + 1);
       var li = document.createElement('li');

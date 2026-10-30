@@ -175,6 +175,7 @@ h1.t-slab { font-size: clamp(44px, 7.4vw, 104px); line-height: 1.02; font-weight
 .t-prose pre { overflow-x: auto; background: var(--t-panel); border: 1px solid var(--t-line); border-radius: var(--t-r-m); padding: 14px 16px; margin: 0 0 16px; font-size: 14px; line-height: 1.5; }
 .t-prose pre code { background: none; border: 0; padding: 0; }
 .t-detail { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 48px; align-items: start; }
+.t-detail--solo { grid-template-columns: minmax(0, 1fr); }
 .t-detail .t-prose { max-width: 72ch; }
 .t-toc { position: sticky; top: 96px; max-height: calc(100vh - 120px); overflow-y: auto; padding-top: 48px; font-size: 14px; }
 .t-toc[hidden] { display: none; }
@@ -185,7 +186,6 @@ h1.t-slab { font-size: clamp(44px, 7.4vw, 104px); line-height: 1.02; font-weight
 .t-postnav { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 72ch; padding: 24px 0 clamp(56px, 8vw, 104px); border-top: 1px solid var(--t-line); }
 .t-postnav a { display: block; margin-top: 4px; color: var(--t-ink); &:hover { color: var(--t-accent); } }
 .t-postnav-next { text-align: right; }
-.t-stack + .t-postnav, .t-prose + .t-stack { margin-top: 0; }
 @media (max-width: 1023px) { .t-detail { grid-template-columns: 1fr; } .t-toc { display: none; } }
 @media (max-width: 767px) { .t-postnav { grid-template-columns: 1fr; } .t-postnav-next { text-align: left; } }
 
