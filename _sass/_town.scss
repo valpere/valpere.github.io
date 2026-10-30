@@ -113,7 +113,7 @@ h1.t-slab { font-size: clamp(44px, 7.4vw, 104px); line-height: 1.02; font-weight
 /* stretched link: the title link covers the whole card, one interactive element per card */
 .t-card h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
 .t-card:has(h3 a:focus-visible) { outline: 2px solid var(--t-accent); outline-offset: 2px; }
-.t-card h3 a:focus-visible { outline: none; }
+@supports selector(:has(*)) { .t-card h3 a:focus-visible { outline: none; } }
 .t-slug { color: var(--t-accent); font-size: 13px; font-weight: 500; letter-spacing: 0.01em; }
 .t-go { margin-top: 4px; color: var(--t-accent); font-weight: 450; font-size: 14px; transition: transform 0.3s var(--t-ease); }
 .t-card:hover .t-go { transform: translateX(4px); }

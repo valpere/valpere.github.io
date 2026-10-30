@@ -15,7 +15,7 @@ layout: default
     {% for c in site.data.portfolio-categories %}{% assign n = site.data.portfolio | where: "category", c.slug | size %}{% if n > 0 %}
     <button type="button" aria-pressed="false" data-cat="{{ c.slug }}">{% if uk %}{{ c.label_uk }}{% else %}{{ c.label }}{% endif %} ({{ n }})</button>{% endif %}{% endfor %}
   </div>
-  <p class="t-muted t-small" id="pf-status" role="status" aria-live="polite" hidden></p>
+  <p class="t-muted t-small" id="pf-status" role="status" aria-live="polite"></p>
   <div class="t-grid" id="pf-grid">
     {% for item in site.data.portfolio %}{% include town-card.html item=item %}{% endfor %}
   </div>
@@ -36,8 +36,7 @@ layout: default
           c.hidden = !show;
           if (show) shown++;
         });
-        status.hidden = cat === 'all';
-        status.textContent = msg.replace('{n}', shown).replace('{total}', total);
+        status.textContent = cat === 'all' ? '' : msg.replace('{n}', shown).replace('{total}', total);
       });
     })();
   </script>
