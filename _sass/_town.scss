@@ -190,4 +190,7 @@ h1.t-slab { font-size: clamp(44px, 7.4vw, 104px); line-height: 1.02; font-weight
   .t-foot-grid { grid-template-columns: 1fr; }
   .t-posts li { grid-template-columns: 1fr; gap: 4px; }
   .t-tools .t-pill--solid { display: none; }
+  .t-nav { flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none; margin-bottom: 4px; padding-inline: 12px; }
+  .t-nav::-webkit-scrollbar { display: none; }
+  .t-nav a { flex: none; scroll-snap-align: start; padding: 6px 10px; white-space: nowrap; }
 }
