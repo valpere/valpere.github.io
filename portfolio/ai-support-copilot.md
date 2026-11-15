@@ -24,7 +24,7 @@ An operator copilot only survives in production if it is faster and more accurat
 1. **Pre-computation on message arrival.** As soon as a customer message hits the webhook, the backend runs two parallel lookups before the operator even opens the ticket: vector + keyword search across your internal knowledge base (policies, specs, resolved tickets) and a live CRM lookup for the customer's active orders or account state.
 2. **Grounded reply draft with source citations.** The copilot places a ready-to-send draft right above the reply box, alongside clickable badges pointing to the exact KB paragraphs and CRM fields used. If the KB has no answer, the copilot explicitly says *"No matching policy found"* instead of guessing.
 3. **One-click tone polish and translation.** An operator can type a rough 5-word shorthand note (e.g. *"tell him warranty covers motor, send to branch 14, we pay shipping"*) and expand it into a polite, brand-compliant reply in Ukrainian, English, Polish or German in 1 second.
-4. **Live anomaly andspike detector.** A background stream aggregator watches incoming ticket topics across the whole shift. When the same failure pattern spikes (e.g. 6 complaints about a broken payment method or a specific SKU batch within 20 minutes), it alerts the team lead in Telegram/Slack before a flood builds up.
+4. **Live anomaly and spike detector.** A background stream aggregator watches incoming ticket topics across the whole shift. When the same failure pattern spikes (e.g. 6 complaints about a broken payment method or a specific SKU batch within 20 minutes), it alerts the team lead in Telegram/Slack before a flood builds up.
 
 ---
 

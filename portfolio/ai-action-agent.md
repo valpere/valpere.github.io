@@ -23,7 +23,7 @@ Giving an LLM read-write access to an inventory database or CRM is risky if done
 
 1. **Intent and entity extraction.** The customer writes in natural language (Telegram, Viber, Instagram Direct, WhatsApp or web chat) asking for a product variant, order status or appointment window.
 2. **Read-only tool calls against live state.** Before quoting any price, availability or time slot, the agent calls typed read tools (`search_catalog`, `check_stock`, `get_free_slots`, `lookup_order`) against your store API, DB replica or CRM. It never guesses prices or stock from static prompt text.
-3. **Deterministic validation gate.** When the buyer confirms an order or booking, a Go/Python middleware layer validates the payload (SKU existence, current price, phone E.164 format, delivery branch ID, idempotency key) before executing the write tool (`create_order`, `reserve_slot`, `generate_payment_link`).
+3. **Deterministic validation gate.** When the buyer confirms an order or booking, a Go/Python middleware layer validates the payload (SKU existence, current price, phone E.164 format, delivery branch ID, idempotency key) before executing the write tool (`create_order`, `book_slot`, `generate_payment_link`).
 4. **Confirmation and CRM sync.** The customer receives the order number, payment link or calendar invite right in the chat, while the full deal card and conversation log appear in your CRM (KeyCRM, SalesDrive, KeepinCRM, HubSpot or custom backend).
 
 ---
@@ -32,8 +32,8 @@ Giving an LLM read-write access to an inventory database or CRM is risky if done
 
 | Decision | Why |
 |---|---|
-| Strict JSON Schema tool calling, never free-text SQL/API | The model can only invoke a fixed whitelist of typed functions (`check_stock`, `create_order`, `book_slot`). Any parameter outside the schema is rejected before touching your backend. |
-| Server-owned cart and price calculation | The LLM selects SKUs and quantities, but totals, discounts and taxes are computed exclusivamente by deterministic backend code — zero risk of "prompt-injected" discounts. |
+| Strict JSON Schema tool calling, never free-text SQL/API | The model can only invoke a fixed whitelist of typed functions (`check_stock`, `create_order`, `book_slot`, `generate_payment_link`). Any parameter outside the schema is rejected before touching your backend. |
+| Server-owned cart and price calculation | The LLM selects SKUs and quantities, but totals, discounts and taxes are computed exclusively by deterministic backend code — zero risk of "prompt-injected" discounts. |
 | Idempotency keys on every write action | If a user taps twice or a webhook retries, the middleware deduplicates the call by `(session_id, action_hash)` so duplicate orders or double bookings never happen. |
 | Sub-5-second response budget | Catalog and slot queries run against indexed local caches (Redis / PostgreSQL) synced with your store, keeping end-to-end turn latency under 2–4 seconds. |
 
@@ -42,7 +42,7 @@ Giving an LLM read-write access to an inventory database or CRM is risky if done
 ## What You Get
 
 - Transactional AI agent connected to your live catalog, CRM and calendar APIs
-- Validated read/write tool layer (`check_stock`, `create_order`, `book_slot`, `order_status`) with idempotency protection
+- Validated read/write tool layer (`check_stock`, `create_order`, `book_slot`, `lookup_order`, `generate_payment_link`) with idempotency protection
 - Deployment in your channels (web chat widget, Telegram, Viber, Instagram Direct, WhatsApp)
 - Full audit log of every tool call, payload and CRM transaction
 
@@ -57,4 +57,4 @@ Giving an LLM read-write access to an inventory database or CRM is risky if done
 
 ## Stack
 
-`Go` · `Python` · `OpenAI / Claude Tool Calling (Structured Outputs)` · `PostgreSQL` · `Redis` · `KeyCRM / SalesDrive / Shopify / WooCommerce / Horoshop APIs` · `Telegram / Viber / Meta Webhooks`
+`Go` · `Python` · `OpenAI / Claude Tool Calling (Structured Outputs)` · `PostgreSQL` · `Redis` · `KeyCRM / SalesDrive / Shopify / WooCommerce / Horoshop APIs` · `Monobank / LiqPay` · `Nova Poshta API` · `Telegram / Viber / Meta Webhooks`

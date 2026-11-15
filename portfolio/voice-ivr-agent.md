@@ -57,4 +57,4 @@ A phone call is unforgiving of latency and awkward turn-taking. If a voice bot p
 
 ## Stack
 
-`Go` · `SIP / RTP / WebRTC` · `Binotel / Ringostat / Asterisk / Twilio` · `Streaming STT (Whisper / Deepgram / Azure)` · `ElevenLabs & Azure Realtime TTS` · `OpenAI / Claude Tool Calling` · `Redis` · `PostgreSQL`
+`Go` · `SIP / RTP / WebRTC` · `Binotel / Ringostat / Asterisk / FreeSWITCH / Twilio` · `Streaming STT (Whisper / Deepgram / Azure)` · `ElevenLabs & Azure Realtime TTS` · `OpenAI / Claude Tool Calling` · `Redis` · `PostgreSQL`
