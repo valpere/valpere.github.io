@@ -52,6 +52,7 @@ minions/
 
 # Session recall — per-project, local-only context log/index
 .claude/session-log.md
+.claude/session-state.md
 .claude/sessions.db
 .claude/sessions.db-shm
 .claude/sessions.db-wal
@@ -64,6 +65,3 @@ minions/
 
 # Playwright MCP scratch artifacts (console logs, page snapshots)
 .playwright-mcp/
-
-# dreaming reports and run log are per machine, not committed (Val, 2026-10-27)
-.claude/dreaming/reports/
