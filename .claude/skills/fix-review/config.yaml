@@ -63,7 +63,11 @@ reviewers:
     - { tool: agy, model: "Gemini 3.8 Flash (Low)" }
     - { tool: omp }
     - { tool: codex }
-    - { tool: opencode, model: "opencode/nemotron-3-ultra-free" }
+    # opencode: mimo-v2.6-flash-free returned a valid JSON findings array via
+    # agent_opencode (7 s, 2026-11-24) and is a family no Ollama round uses; also live:
+    # deepseek-v4.1-flash-free (same family as round_2), nemotron-3.5-lightning-free.
+    # Free tags rotate: check `opencode models | grep -- -free`.
+    - { tool: opencode, model: "opencode/mimo-v2.6-flash-free" }
     - { tool: kilo }
 
 reviewer_set: cloud
