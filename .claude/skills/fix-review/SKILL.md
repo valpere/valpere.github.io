@@ -129,11 +129,7 @@ TELEMETRY_FILE=$(grep '^telemetry_file:'     .claude/skills/fix-review/config.ya
 TELEMETRY_ENABLED="${TELEMETRY_ENABLED:-true}"
 TELEMETRY_FILE="${TELEMETRY_FILE:-.claude/skills/fix-review/telemetry.jsonl}"
 
-now_ms() {
-  python3 -c "import time;print(int(time.time()*1000))" 2>/dev/null \
-    || date +%s%3N 2>/dev/null \
-    || echo $(($(date +%s) * 1000))
-}
+now_ms() { echo $(($(date +%s%N) / 1000000)); }
 ```
 
 ---
@@ -182,7 +178,7 @@ if [ "$DIFF_TYPE" = "docs" ]; then
   if [ -f "$DOCS_PROMPT_FILE" ]; then
     PROJECT_CONTEXT=$(head -150 CLAUDE.md 2>/dev/null || echo "")
     PROMPT_TEMPLATE=$(cat "$DOCS_PROMPT_FILE")
-    PROMPT_TEMPLATE=$(printf '%s' "$PROMPT_TEMPLATE" | sed "s|{PROJECT_CONTEXT}|$(printf '%s' "$PROJECT_CONTEXT" | sed 's/[\\/&]/\\&/g; s/$/\\n/' | tr -d '\n')|")
+    PROMPT_TEMPLATE="${PROMPT_TEMPLATE//\{PROJECT_CONTEXT\}/"$PROJECT_CONTEXT"}"
   else
     DIFF_TYPE=code
   fi
@@ -208,7 +204,9 @@ Git diff:
 ---"
 fi
 
-PROMPT=$(printf '%s' "$PROMPT_TEMPLATE" | sed "s|{DIFF}|$(printf '%s' "$DIFF" | sed 's/[\\/&]/\\&/g')|")
+# Plain bash substitution: sed breaks on newlines or '|' in the diff/context and
+# would leave PROMPT empty. The quoted replacement keeps '&' literal (bash 5.2).
+PROMPT="${PROMPT_TEMPLATE//\{DIFF\}/"$DIFF"}"
 ```
 
 ---
@@ -319,8 +317,15 @@ parse_round() {
   fi
   content=$(printf '%s' "$content" | sed -E 's/^```(json)?[[:space:]]*//; s/```[[:space:]]*$//')
   if ! echo "$content" | jq -e 'type == "array"' >/dev/null 2>&1; then
-    echo "warn: round ${n} (${model}) returned non-array — 0 findings" >&2
+    # Keep the raw answer for the arbiter (Step 5); [] only keeps aggregation working.
+    # Such a round is NOT clean: Step 11 reports it, telemetry has parse_ok:false.
     echo "[]" > "$RUN_DIR/round_${n}.findings.json"
+    if [ -n "$(printf '%s' "$content" | tr -d '[:space:]')" ]; then
+      printf '%s\n' "$content" > "$RUN_DIR/round_${n}.unparsed.txt"
+      echo "warn: round ${n} (${model}) response is not a valid JSON array — kept in round_${n}.unparsed.txt for the arbiter" >&2
+    else
+      echo "warn: round ${n} (${model}) returned empty content — 0 findings" >&2
+    fi
     return
   fi
   echo "$content" | jq --arg m "$model" 'map(. + {model: $m})' \
@@ -328,6 +333,10 @@ parse_round() {
 }
 for n in $(seq 1 "$NUM_ROUNDS"); do parse_round "$n"; done
 ```
+
+If a round returned prose or broken JSON, its findings are not lost: the raw
+answer is in `round_N.unparsed.txt` and the arbiter reads it (Step 5). Don't
+retry the model and don't repair the JSON with regexes — parallel mode runs once.
 
 ---
 
@@ -372,6 +381,10 @@ Read `$RUN_DIR/aggregated.json`. For each finding, rule:
 | **ESCALATE** | Real issue, more severe than tagged. |
 | **DISMISS** | False positive or conflicts with project conventions. Default for `votes == 1` unless clearly real. |
 | **DEFER** | Real but out of scope for this PR. Log, don't fix. |
+
+**Unparsed rounds**: for each `$RUN_DIR/round_*.unparsed.txt`, read the
+model's answer and carry its findings over by hand, as that model's vote
+(same file/line dedupe as Step 4). Note in Step 11 whether it was carried over.
 
 **Independent scan** of the full diff — flag anything all three models missed:
 - `og:image:` / `image:` frontmatter value is a hash instead of a string path (known jekyll-seo-tag 2.8.0 breakage)
@@ -444,6 +457,15 @@ for v in $(seq "$NUM_ROUNDS" -1 1); do
 done
 [ -z "$VOTE_BAND_REPORT" ] && VOTE_BAND_REPORT="  (no findings)"
 
+# Rounds whose answer was not a valid JSON array (Step 3). The arbiter appends
+# " — carried over by arbiter" / " — not carried over" to each entry (Step 5).
+UNPARSED=""
+for n in $(seq 1 "$NUM_ROUNDS"); do
+  [ -f "$RUN_DIR/round_${n}.unparsed.txt" ] || continue
+  UNPARSED+="round ${n} ($(head -1 "$RUN_DIR/round_${n}.meta")); "
+done
+UNPARSED="${UNPARSED%; }"; UNPARSED="${UNPARSED:-none}"
+
 FAILOVER_SECTION=""
 if [ -n "$FAILOVER_TIER" ]; then
   agents_csv=$(printf '%s, ' "${EXTERNAL_AGENTS[@]%%|*}" | sed 's/, $//')
@@ -486,7 +508,7 @@ $(jq -r '.[] | select(.ruling == "CONFIRM" or .ruling == "ESCALATE")
        | "- \(.file):\(.line) — \(.body | gsub("\n"; " ") | .[0:80])"' \
        "$RUN_DIR/arbiter.json" | head -20)
 
-Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+<attribution line from the current session's instructions>"
   git push
   COMMIT_SHA=$(git rev-parse --short HEAD)
 fi
@@ -532,6 +554,7 @@ if [ "$TELEMETRY_ENABLED" = "true" ]; then
     DURATION_MS=$(sed -n '2p' "$meta")
     read PROMPT_TOKENS COMPLETION_TOKENS < <(sed -n '3p' "$meta")
     FINDINGS_COUNT=$(jq 'length' "$RUN_DIR/round_${N}.findings.json")
+    PARSE_OK=true; [ -f "$RUN_DIR/round_${N}.unparsed.txt" ] && PARSE_OK=false
 
     jq -cn \
       --arg    ts        "$TIMESTAMP" \
@@ -540,12 +563,13 @@ if [ "$TELEMETRY_ENABLED" = "true" ]; then
       --arg    model     "$MODEL" \
       --arg    provider  "$ROUND_PROVIDER" \
       --argjson findings "${FINDINGS_COUNT}" \
+      --argjson parse_ok "${PARSE_OK}" \
       --argjson ptokens  "${PROMPT_TOKENS:-null}" \
       --argjson ctokens  "${COMPLETION_TOKENS:-null}" \
       --argjson cost     "null" \
       --argjson duration "${DURATION_MS}" \
       '{timestamp:$ts, pr_number:$pr, round_number:$round, model:$model,
-        provider:$provider, findings_count:$findings,
+        provider:$provider, findings_count:$findings, parse_ok:$parse_ok,
         prompt_tokens:$ptokens, completion_tokens:$ctokens,
         estimated_cost_usd:$cost, duration_ms:$duration, parallel:true}' \
       >> "$TELEMETRY_FILE" 2>/dev/null \
@@ -622,6 +646,8 @@ Provider: ${ACTIVE_PROVIDER}
 Rounds:   ${NUM_ROUNDS}
 Models:   ${MODELS_LIST}
 Wall time: ${WALL_TIME_MS} ms (sum-sequential ${SEQ_SUM_MS} ms — ${SPEEDUP}× speedup)
+
+Unparsed:  ${UNPARSED}          # e.g. "round 1 (glm-5.3:cloud) — carried over by arbiter"; "none"
 
 Aggregated findings: ${TOTAL_FINDINGS}
 ${VOTE_BAND_REPORT}
