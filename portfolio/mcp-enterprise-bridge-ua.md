@@ -43,7 +43,7 @@ lang_alt: /portfolio/mcp-enterprise-bridge/
 
 ## Що ви отримуєте
 
-- Кастомний продакшн MCP-сервер (Go або TypeScript) під ваші бази даних, CRM, Google Sheets/Drive, Notion або внутрішні REST API
+- Кастомний продакшн MCP-сервер (Go або Python/TypeScript) під ваші бази даних, CRM, Google Sheets/Drive, Notion або внутрішні REST API
 - Політики рольового доступу (`read-only`, `draft-write`, `approval-required`), rate limiting і правила маскування PII
 - Docker-розгортання з TLS-авторизацією та готові конфіги підключення для Claude Code/Desktop, Cursor, OpenCode або власного AI-бекенду
 - Схему аудит-логу, набір автотестів і документацію для розширення новими інструментами
@@ -59,4 +59,4 @@ lang_alt: /portfolio/mcp-enterprise-bridge/
 
 ## Стек
 
-`Model Context Protocol (MCP)` · `Go` · `PostgreSQL` · `Redis` · `JSON Schema` · `RBAC / OAuth2` · `KeyCRM / SalesDrive / Google Workspace / Notion APIs` · `Docker`
+`Model Context Protocol (MCP)` · `Go / Python` · `PostgreSQL` · `Redis` · `JSON Schema` · `RBAC / OAuth2` · `KeyCRM / SalesDrive / Google Workspace / Notion APIs` · `Docker`

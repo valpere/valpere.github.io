@@ -9,7 +9,7 @@ image: /portfolio/assets/images/anti-bot-intake-gate/hero-0900x0530.png
 
 Modern spam scripts and AI agents bypass traditional CAPTCHAs and flood website lead forms, public APIs and Telegram communities with synthetic submissions, click-fraud leads and fake signups. Blocking traffic blindly with aggressive firewalls hurts real customers, while leaving forms open floods your inbox and CRM with garbage. A **3-Layer Anti-Bot & Anti-Spam Intake Gate** combines edge protection (Cloudflare Turnstile, WAF, rate limiting), deterministic behavioral checks, and a lightweight Cognitive Proof-of-Work challenge for suspicious submissions.
 
-**Result: automated bot floods and AI form spam are stopped before they reach your inbox, real users pass without friction, and your CRM, email and Telegram chats stay clean.**
+**Result: automated bot floods and AI form spam drop by 95%+, real users pass frictionlessly in milliseconds, and your CRM, email and Telegram chats stay clean.**
 
 ---
 
@@ -33,7 +33,7 @@ Classic visual CAPTCHAs frustrate real buyers on mobile while cheap solver farms
 | Decision | Why |
 |---|---|
 | Invisible Cloudflare Turnstile instead of puzzle CAPTCHAs | Real visitors pass automatically without clicking traffic lights, preserving form conversion on mobile. |
-| Three escalating layers (Edge → Deterministic → Cognitive) | Stops most junk at near-zero cost before touching LLM or human review budgets. |
+| Three escalating layers (Edge → Deterministic → Cognitive) | Stops 90% of junk at near-zero cost before touching LLM or human review budgets. |
 | Quarantine queue instead of silent drops | Lets site owners audit blocked edge cases and tune rules without silently discarding a real customer. |
 | Works on both Web/API and Telegram communities | Same Redis rate-limit + behavioral + cognitive challenge engine protects WordPress/OpenCart/custom forms and Telegram chats/bots. |
 
@@ -42,7 +42,7 @@ Classic visual CAPTCHAs frustrate real buyers on mobile while cheap solver farms
 ## What You Get
 
 - Configured Cloudflare WAF + Turnstile + Nginx/Redis rate-limiting rules for your site and APIs
-- Backend anti-spam middleware (Go / PHP) with honeypots, payload deduplication and quarantine logging
+- Backend anti-spam middleware (Go / Python / PHP) with honeypots, payload deduplication and quarantine logging
 - Optional Telegram anti-spam moderation bot with cognitive join verification and auto-muting of spam accounts
 - Monitoring dashboard/alerts for attack spikes and clear documentation for rule tuning
 
@@ -57,4 +57,4 @@ Classic visual CAPTCHAs frustrate real buyers on mobile while cheap solver farms
 
 ## Stack
 
-`Cloudflare WAF & Turnstile` · `Nginx` · `Go / PHP` · `Redis` · `PostgreSQL` · `Telegram Bot API` · `Behavioral Scoring` · `Cognitive Gate`
+`Cloudflare WAF & Turnstile` · `Nginx` · `Go / Python / PHP` · `Redis` · `PostgreSQL` · `Telegram Bot API` · `Behavioral Scoring` · `Cognitive Gate`

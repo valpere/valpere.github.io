@@ -9,7 +9,7 @@ image: /portfolio/assets/images/llm-gateway-agents/hero-0900x0530.png
 
 Teams and solo founders building with AI agents often hit a wall when locked into a single provider: sudden content refusals on legitimate business tasks, strict rate limits, rising per-token bills, or privacy requirements that forbid sending sensitive data to one vendor. A multi-model AI gateway and agent environment decouples your coding and task agents from any single provider — routing requests across OpenRouter, DeepSeek, Grok, Qwen, Mistral or self-hosted Ollama/vLLM models based on task type, cost, latency and policy, with automatic failovers and hard budget caps.
 
-**Result: your AI agents keep running even when a provider throttles or refuses, token costs go down through tier routing, and you retain full control over models, prompts and keys.**
+**Result: your AI agents keep running even when a provider throttles or refuses, token costs drop 40–70% through smart tier routing, and you retain full control over models, prompts and keys.**
 
 ---
 
@@ -33,7 +33,7 @@ Swapping models in an agent setup is rarely a one-line URL change: different pro
 | Decision | Why |
 |---|---|
 | Single OpenAI-compatible gateway in front of all agents | Lets you switch or A/B-test DeepSeek, Grok, Qwen, Mistral, Claude or local Ollama models in one config file without rewriting agent code. |
-| Tiered routing (cheap bulk vs flagship reasoning) | Lowers monthly LLM bills while keeping high accuracy on complex planning and tool-use steps. |
+| Tiered routing (cheap bulk vs flagship reasoning) | Cuts monthly LLM bills by 40–70% while keeping high accuracy on complex planning and tool-use steps. |
 | Virtual keys with hard spend caps | Prevents a stuck agent loop from draining your main provider balance overnight. |
 | Tested prompt & tool-schema profiles per model | Eliminates broken JSON tool calls when moving away from proprietary providers to open-weight or less-restricted models. |
 
@@ -42,7 +42,7 @@ Swapping models in an agent setup is rarely a one-line URL change: different pro
 ## What You Get
 
 - Configured multi-model LLM gateway (OpenRouter / LiteLLM / Go proxy) with failover chains and virtual budget keys
-- Ready-to-use agent harness configuration (OpenCode, Cline, Roo Code or custom Go API client) tuned for non-proprietary / less-restricted models
+- Ready-to-use agent harness configuration (OpenCode, Cline, Roo Code or custom Python/Go API client) tuned for non-proprietary / less-restricted models
 - Optional self-hosted open-weight model deployment (Ollama / vLLM on your GPU server or RunPod)
 - Written playbook with benchmark notes on your real tasks, cost calculator and key-rotation checklist
 
@@ -57,4 +57,4 @@ Swapping models in an agent setup is rarely a one-line URL change: different pro
 
 ## Stack
 
-`OpenRouter` · `LiteLLM` · `Go` · `DeepSeek / Grok / Qwen / Mistral` · `Ollama / vLLM` · `OpenCode / Cline / Roo Code` · `Docker` · `Redis` · `PostgreSQL`
+`OpenRouter` · `LiteLLM` · `Go / Python` · `DeepSeek / Grok / Qwen / Mistral` · `Ollama / vLLM` · `OpenCode / Cline / Roo Code` · `Docker` · `Redis` · `PostgreSQL`

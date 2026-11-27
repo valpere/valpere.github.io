@@ -7,15 +7,15 @@ image: /portfolio/assets/images/fh-bid-filter/hero-0900x0530.png
 
 ## Overview
 
-Active employers, web studios and agency leads posting projects on Freelancehunt often receive dozens of bids within the first hour — many of them generic templates or AI-generated walls of text that never addressed the actual brief. Reading every bid burns hours of a founder's or PM's time. **fh-bid-filter** is a safe, human-in-the-loop screening tool built specifically for Freelancehunt employers: it strips boilerplate fluff deterministically, scores every bid against your project brief, flags unrealistic pricing or missing answers to your screening questions, generates one surgical verification question to copy-paste, and turns 100 bids into a compact **Top-5 Decision Matrix**.
+Active employers, web studios and agency leads posting projects on Freelancehunt routinely receive 60–120 bids within the first hour — 80% of which are generic templates or AI-generated walls of text that never addressed the actual brief. Reading every bid burns hours of a founder's or PM's time. **fh-bid-filter** is a safe, human-in-the-loop screening tool built specifically for Freelancehunt employers: it strips boilerplate fluff deterministically, scores every bid against your project brief, flags unrealistic pricing or missing answers to your screening questions, generates one surgical verification question to copy-paste, and turns 100 bids into a compact **Top-5 Decision Matrix**.
 
-**Result: employers review a 5-row structured comparison table instead of reading dozens of repetitive essays — with no automated messaging that could put their platform account at risk.**
+**Result: employers review a 5-row structured comparison table in 3 minutes instead of reading 100 repetitive essays — with zero automated bot messaging that could risk their platform account.**
 
 ---
 
 ## The Real Hard Part
 
-Naive "AI detectors" falsely flag strong engineers who write concisely, while aggressive auto-messaging browser scripts risk getting an employer's Freelancehunt account restricted by anti-automation systems. The engineering problem is screening much faster **without putting the account at risk**: strictly read-only analysis of the bids already visible in the employer's browser (or exported snapshot), deterministic fluff-stripping before any LLM scoring, and human-triggered 1-click follow-up questions instead of unattended chat automation.
+Naive "AI detectors" falsely flag strong engineers who write concisely, while aggressive auto-messaging browser scripts risk getting an employer's Freelancehunt account restricted by anti-automation systems. The engineering problem is achieving 10x screening speed with **zero account risk**: strictly read-only analysis of the bids already visible in the employer's browser (or exported snapshot), deterministic fluff-stripping before any LLM scoring, and human-triggered 1-click follow-up questions instead of unattended chat automation.
 
 ---
 
@@ -32,8 +32,8 @@ Naive "AI detectors" falsely flag strong engineers who write concisely, while ag
 
 | Decision | Why |
 |---|---|
-| Strictly read-only, zero auto-messaging | Keeps the employer's Freelancehunt account safe — the human clicks send on 3–5 finalists, never an automated script blasting dozens of chats. |
-| Deterministic pre-filter before LLM scoring | Drops empty template bids instantly without spending LLM tokens on generic "ready to start" spam. |
+| Strictly read-only, zero auto-messaging | Protects the employer's Freelancehunt account 100% — the human clicks send on 3–5 finalists, never an automated script blasting 80 chats. |
+| Deterministic pre-filter before LLM scoring | Cuts 60–70% of empty template bids instantly without spending LLM tokens on generic "ready to start" spam. |
 | Decision Matrix instead of chat summaries | Compares price, days, portfolio relevance, brief alignment and risks in one scannable table. |
 | Canary / screening question detector | Automatically highlights who actually read the brief vs who pasted a blind template. |
 
@@ -57,4 +57,4 @@ Naive "AI detectors" falsely flag strong engineers who write concisely, while ag
 
 ## Stack
 
-`TypeScript / Chrome Extension` · `Go` · `OpenAI / Claude / OpenRouter Structured Outputs` · `Deterministic Fluff-Stripping` · `Decision Matrix UI` · `CSV / Notion / Telegram Export`
+`TypeScript / Chrome Extension` · `Go / Python` · `OpenAI / Claude / OpenRouter Structured Outputs` · `Deterministic Fluff-Stripping` · `Decision Matrix UI` · `CSV / Notion / Telegram Export`

@@ -41,7 +41,7 @@ Connecting an agent to an internal API is easy for a demo; making it safe for da
 
 ## What You Get
 
-- Custom production MCP server (Go or TypeScript) tailored to your databases, CRM, Google Sheets/Drive, Notion or internal REST APIs
+- Custom production MCP server (Go or Python/TypeScript) tailored to your databases, CRM, Google Sheets/Drive, Notion or internal REST APIs
 - Role-based access policies (`read-only`, `draft-write`, `approval-required`), rate limits and PII redaction rules
 - Docker deployment with TLS authentication and ready client configs for Claude Desktop/Code, Cursor, OpenCode or your own AI backend
 - Audit log schema, test suite and handover documentation for adding new tools
@@ -57,4 +57,4 @@ Connecting an agent to an internal API is easy for a demo; making it safe for da
 
 ## Stack
 
-`Model Context Protocol (MCP)` · `Go` · `PostgreSQL` · `Redis` · `JSON Schema` · `RBAC / OAuth2` · `KeyCRM / SalesDrive / Google Workspace / Notion APIs` · `Docker`
+`Model Context Protocol (MCP)` · `Go / Python` · `PostgreSQL` · `Redis` · `JSON Schema` · `RBAC / OAuth2` · `KeyCRM / SalesDrive / Google Workspace / Notion APIs` · `Docker`

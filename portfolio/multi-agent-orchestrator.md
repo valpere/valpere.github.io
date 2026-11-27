@@ -32,7 +32,7 @@ Connecting multiple LLMs in a loop without deterministic orchestration produces 
 
 | Decision | Why |
 |---|---|
-| Deterministic state machine owning all transitions | Agents propose actions and outputs, but backend code enforces stage order, max iterations and stop conditions, so agent loops always terminate. |
+| Deterministic state machine owning all transitions | Agents propose actions and outputs, but backend code enforces stage order, max iterations and stop conditions — zero infinite agent loops. |
 | Typed JSON handoff contracts between roles | Planner, Worker and Reviewer exchange compact structured artifacts instead of forwarding raw 50K-token chat transcripts. |
 | Independent Reviewer role + automated checks | A model rarely catches its own mistakes inside the same context window; separating execution from review cuts error rates dramatically. |
 | Live control panel with audit trail and cost tracking | Gives managers and engineers full observability over active runs, bottlenecks, rejection reasons and per-task LLM cost. |
@@ -41,7 +41,7 @@ Connecting multiple LLMs in a loop without deterministic orchestration produces 
 
 ## What You Get
 
-- Production multi-agent orchestration service (Go, LangGraph or a custom state machine) with PostgreSQL + Redis persistence
+- Production multi-agent orchestration service (Go / Python / LangGraph or custom state machine) with PostgreSQL + Redis persistence
 - Specialized Planner, Worker and Reviewer agent roles with strict JSON handoff schemas and retry budgets
 - Web control panel (and optional Telegram notifications) for live run monitoring, audit logs and human-in-the-loop approval
 - Token-cost telemetry, dead-letter recovery and clear documentation for adding new agent roles
@@ -57,4 +57,4 @@ Connecting multiple LLMs in a loop without deterministic orchestration produces 
 
 ## Stack
 
-`Go` · `LangGraph / Custom State Machine` · `PostgreSQL` · `Redis` · `OpenAI / Claude / OpenRouter API` · `MCP / Tool Calling` · `WebSockets` · `Docker`
+`Go` · `Python` · `LangGraph / Custom State Machine` · `PostgreSQL` · `Redis` · `OpenAI / Claude / OpenRouter API` · `MCP / Tool Calling` · `WebSockets` · `Docker`

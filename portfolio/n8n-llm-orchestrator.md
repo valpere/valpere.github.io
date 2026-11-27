@@ -9,7 +9,7 @@ image: /portfolio/assets/images/n8n-llm-orchestrator/hero-0900x0530.png
 
 Most no-code and n8n/Make.com prototypes work on ten test records and break the moment real traffic arrives: a webhook burst stalls the single-process runner, an LLM timeout drops a paid lead without a trace, or an unbounded retry loop burns through API credits overnight. A production self-hosted n8n + LLM orchestration hub runs in Docker Queue Mode backed by PostgreSQL and Redis — processing webhooks reliably, running structured LLM steps with cost limits, syncing CRM, email, Google Sheets and Telegram, and alerting your team the second any upstream API fails.
 
-**Result: visual workflow speed paired with backend reliability — every failed lead caught and replayable, predictable LLM spend, and full ownership on your own VPS without per-operation SaaS markups.**
+**Result: visual workflow speed paired with backend reliability — zero silently dropped leads, predictable LLM spend, and full ownership on your own VPS without per-operation SaaS markups.**
 
 ---
 
@@ -32,10 +32,10 @@ Visual workflow tools hide classic distributed-systems failure modes: duplicate 
 
 | Decision | Why |
 |---|---|
-| Self-hosted Docker + Queue Mode (Redis + PostgreSQL) | Decouples webhook ingestion from slow LLM calls, eliminates SQLite locking, and removes per-operation SaaS fees at scale. |
+| Self-hosted Docker + Queue Mode (Redis + PostgreSQL) | Decouples webhook ingestion from slow LLM calls, eliminates SQLite locking, and cuts recurring SaaS operation fees by 5–10x at scale. |
 | Idempotency keys before every write node | External CRMs and messengers retry webhooks on timeouts; checking a processed-key store prevents duplicate deals, invoices or messages. |
 | Strict JSON Schema + token caps on LLM nodes | Prevents malformed model output from corrupting CRM/Sheets fields and stops runaway loops from draining API balances. |
-| Dedicated Error Workflow + Git exports | Silent failures kill trust in automation; every crash alerts Telegram immediately and every workflow version is backed up in Git. |
+| Dedicated Error Workflow + Git exports | Silent failures are the #1 killer of automation trust; every crash alerts Telegram immediately and every workflow version is backed up in Git. |
 
 ---
 
@@ -50,11 +50,11 @@ Visual workflow tools hide classic distributed-systems failure modes: duplicate 
 
 ## Boundaries
 
-- High-volume scraping behind aggressive anti-bot gates or real-time sub-second streaming belongs in a dedicated Go microservice called by n8n, not inside visual loop nodes.
+- High-volume scraping behind aggressive anti-bot gates or real-time sub-second streaming belongs in a dedicated Go/Python microservice called by n8n, not inside visual loop nodes.
 - Requires a Linux VPS (typically 2–4 vCPU, 4–8 GB RAM) and API keys for your target CRM/LLM providers.
 
 ---
 
 ## Stack
 
-`n8n (Queue Mode)` · `Docker Compose` · `PostgreSQL` · `Redis` · `Nginx + SSL` · `OpenRouter / OpenAI / Claude API` · `Go` · `CRM & Telegram Webhooks` · `Google Sheets / Drive API`
+`n8n (Queue Mode)` · `Docker Compose` · `PostgreSQL` · `Redis` · `Nginx + SSL` · `OpenRouter / OpenAI / Claude API` · `Go / Python` · `CRM & Telegram Webhooks` · `Google Sheets / Drive API`

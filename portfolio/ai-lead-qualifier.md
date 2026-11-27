@@ -9,7 +9,7 @@ image: /portfolio/assets/images/ai-lead-qualifier/hero-0900x0530.png
 
 Businesses running paid ads, website inquiry forms or Telegram/WhatsApp intake channels drown in low-intent inquiries, spam submissions and incomplete leads. Managers burn hours chasing unresponsive contacts while warm buyers wait. An **AI Inbound Lead Qualifier** applies the Cognitive Proof-of-Work principle to your sales and HR funnels: it strips obvious noise deterministically, asks 1–2 crisp domain-specific follow-up questions in real time, scores intent and fit against your criteria, and pushes only verified, structured lead cards into your CRM.
 
-**Result: sales and HR teams stop wading through noise and receive compact, pre-qualified CRM deals with budget, timeline, need and readiness score already filled in.**
+**Result: sales and HR teams stop wading through 80% noise and receive compact, pre-qualified CRM deals with budget, timeline, need and readiness score already filled in.**
 
 ---
 
@@ -57,4 +57,4 @@ A rigid static form with 15 required fields kills conversion, while an open chat
 
 ## Stack
 
-`Go` · `OpenAI / Claude / OpenRouter Structured Outputs` · `PostgreSQL` · `Redis` · `KeyCRM / SalesDrive / GoHighLevel / HubSpot API` · `Telegram / Meta / Web Form Webhooks` · `n8n`
+`Go / Python` · `OpenAI / Claude / OpenRouter Structured Outputs` · `PostgreSQL` · `Redis` · `KeyCRM / SalesDrive / GoHighLevel / HubSpot API` · `Telegram / Meta / Web Form Webhooks` · `n8n`

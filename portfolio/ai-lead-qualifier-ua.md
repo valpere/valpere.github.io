@@ -11,7 +11,7 @@ lang_alt: /portfolio/ai-lead-qualifier/
 
 Бізнес, що запускає рекламу, тримає форми на сайті або приймає звернення в Telegram/Instagram, постійно тоне в нецільових заявках, фейках і порожніх «скільки коштує?». Менеджери витрачають години на обробку сміття, поки гарячі клієнти чекають на відповідь. **AI-кваліфікатор вхідних заявок** застосовує принцип Cognitive Proof-of-Work до воронки продажів і HR: детерміновано відсікає очевидний шум, ставить 1–2 влучні уточнюючі питання по суті, оцінює релевантність і передає в CRM лише верифіковані структуровані картки лідів.
 
-**Результат: відділ продажів або HR позбувається шуму й отримує в CRM готові кваліфіковані угоди із заповненими потребою, терміном, бюджетом та оцінкою готовності.**
+**Результат: відділ продажів або HR позбувається до 80% шуму й отримує в CRM готові кваліфіковані угоди із заповненими потребою, терміном, бюджетом та оцінкою готовності.**
 
 ---
 
@@ -59,4 +59,4 @@ lang_alt: /portfolio/ai-lead-qualifier/
 
 ## Стек
 
-`Go` · `OpenAI / Claude / OpenRouter Structured Outputs` · `PostgreSQL` · `Redis` · `KeyCRM / SalesDrive / GoHighLevel / HubSpot API` · `Telegram / Meta / Web Form Webhooks` · `n8n`
+`Go / Python` · `OpenAI / Claude / OpenRouter Structured Outputs` · `PostgreSQL` · `Redis` · `KeyCRM / SalesDrive / GoHighLevel / HubSpot API` · `Telegram / Meta / Web Form Webhooks` · `n8n`
