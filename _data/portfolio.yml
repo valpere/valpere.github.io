@@ -95,7 +95,7 @@
   client_uk: "n8n-llm-orchestrator — self-hosted n8n та LLM: оркестрація бізнес-процесів у продакшені"
   role: "Solo Engineer / Architect"
   period: "2026"
-  stack: ["n8n (Queue Mode)", "Docker Compose", "PostgreSQL", "Redis", "OpenRouter / OpenAI / Claude API", "Go", "CRM & Telegram Webhooks", "Google Sheets / Drive API"]
+  stack: ["n8n (Queue Mode)", "Docker Compose", "PostgreSQL", "Redis", "Nginx + SSL", "OpenRouter / OpenAI / Claude API", "Go", "CRM & Telegram Webhooks", "Google Sheets / Drive API"]
   summary_en: "Production self-hosted n8n + LLM orchestration hub in Docker Queue Mode (PostgreSQL + Redis): deduplicates incoming webhooks with idempotency keys, runs structured LLM steps with JSON Schema validation and token caps, syncs CRM, email, Google Sheets and Telegram, and catches every upstream failure via a dedicated Error Workflow with Telegram alerts and replay."
   summary_uk: "Продакшн-хаб оркестрації бізнес-процесів на self-hosted n8n + LLM у Docker Queue Mode (PostgreSQL + Redis): дедуплікує вхідні вебхуки за ключами ідемпотентності, виконує типізовані LLM-кроки з JSON-валідацією та лімітами токенів, синхронізує CRM, пошту, Google Sheets і Telegram та перехоплює кожен збій через окремий Error Workflow з алертами й перезапуском."
   permalink: "/portfolio/n8n-llm-orchestrator/"
